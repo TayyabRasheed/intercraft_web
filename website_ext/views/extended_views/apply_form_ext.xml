@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="apply_form_customization" inherit_id="website_hr_recruitment.apply">
+        <xpath expr="//hr[@t-if='job.job_details']" position="replace"/>
+        <xpath expr="//div[@t-field='job.job_details']" position="replace"/>
+        <xpath expr="//div[@id='wrap']/nav" position="replace"/>
+        <xpath expr="//div[@id='wrap']/h1" position="attributes">
+            <attribute name="style">margin-top: 80px;</attribute>
+        </xpath>
+        <xpath expr="//div[contains(@class, 's_website_form_submit')]" position="attributes">
+            <attribute name="class">col-12 s_website_form_submit mb64 text-end</attribute>
+        </xpath>
+        <xpath expr="//a[@id='apply-btn']" position="replace">
+            <a href="#" role="button" class="btn btn-primary btn-lg s_website_form_send text-end" id="apply-btn">
+                Submit Application
+            </a>
+        </xpath>
+        <xpath expr="//input[@name='linkedin_profile']/ancestor::div[contains(@class, 's_website_form_field')]"
+               position="replace"/>
+
+
+    </template>
+
+
+</odoo>

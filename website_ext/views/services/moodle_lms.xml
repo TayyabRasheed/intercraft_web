@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="moodle-lms" model="website.page">
+        <field name="name">Moodle LMS</field>
+        <field name="type">qweb</field>
+        <field name="url">/moodle-lms</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.moodle-lms</field>
+        <field name="arch" type="xml">
+            <t name="Moodle LMS" t-name="website_ext.moodle-lms">
+                <t t-call="website.layout">
+                    <!-- Hero Section -->
+                    <section class="service-hero moodle-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">
+                                            Empower Learning with Our Advanced Moodle LMS
+                                        </h1>
+                                        <p class="service-hero-subtitle">
+                                            Seamlessly deliver, manage, and track education and training
+                                            with a fully customized, scalable, and user-friendly Moodle
+                                            solution designed for modern institutions.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Learning Management System</span>
+                                        <h2 class="service-title-services">Modern Learning, Powered by Moodle</h2>
+                                        <p class="service-description-services">
+                                            Deliver engaging, scalable, and remote-friendly training with
+                                            our tailored Moodle solutions. From setup to support, we
+                                            customize everything—platform, plugins, mobile apps—to match
+                                            your learning needs.
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/moodle-lms/moodle-side-image.png"
+                                                alt="Moodle LMS"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- InterCraft at a Glance Section -->
+                    <section class="at-a-glance">
+                        <div class="container">
+                            <div class="glance-content">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <h2 class="glance-title">InterCraft at a Glance</h2>
+                                        <p class="glance-description">
+                                            Explore how we simplify business with smart solutions—from LMS
+                                            and Odoo to custom app development.
+                                        </p>
+                                        <p class="glance-description">
+                                            Download our info sheet to see how we drive digital
+                                            transformation.
+                                        </p>
+                                        <a href="#" class="download-btn">
+                                            Download
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    fill="currentColor"
+                                                    class="bi bi-arrow-right"
+                                                    viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                        fill-rule="evenodd"
+                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="document-illustration">
+                                            <img
+                                                    src="/website_ext/static/src/images/glance.png"
+                                                    alt="Document Illustration"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Service Features Section -->
+                    <section class="service-features">
+                        <div class="services-bg">
+                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title">Our Moodle LMS Services</h2>
+                                <p class="section-subtitle">
+                                    Whether you're starting fresh or enhancing an existing platform, our
+                                    expert Moodle team is here to support you with everything from setup
+                                    and customization to integration, mobile app development, and
+                                    ongoing maintenance. We help you unlock the full potential of
+                                    Moodle—today and as your learning needs evolve.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moodle-customization.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-2.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Installation &amp; Setup</h3>
+                                        <p class="feature-description">
+                                            Complete installation and environment optimization for
+                                            on-premise or cloud-hosted Moodle platforms.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moodle-installation-icon.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Customization</h3>
+                                        <p class="feature-description">
+                                            Personalized themes, plugins, and course layouts aligned with
+                                            your branding and learning strategies.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moode-integration.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-3.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Integration</h3>
+                                        <p class="feature-description">
+                                            Seamless connections with external systems such as SIS, CRMs,
+                                            payment gateways, and analytics tools.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moodle-mig.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-4.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Migration</h3>
+                                        <p class="feature-description">
+                                            Secure and seamless migration from existing LMS platforms to
+                                            Moodle with minimal disruption.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moodle-main.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-5.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Support &amp; Maintenance</h3>
+                                        <p class="feature-description">
+                                            Ongoing updates, security checks, and technical support to
+                                            ensure consistent performance.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/moodle-mobile.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/moodle-lms/coloured/moodle-6.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Moodle Mobile App Development</h3>
+                                        <p class="feature-description">
+                                            Enabling learners to access training anytime, anywhere through a
+                                            responsive mobile app.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Our Team Section -->
+                    <section class="our-team">
+                        <div class="container">
+                            <div class="text-center mb-4">
+                                <h2 class="section-title">Our Team</h2>
+                                <p class="section-subtitle">
+                                    A passionate group of experts driving innovation, collaboration, and
+                                    results.
+                                </p>
+                            </div>
+
+                            <!-- Bootstrap Carousel for Team -->
+                            <div
+                                    id="teamCarousel"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-interval="4000"
+                            >
+                                <div class="carousel-inner">
+                                    <!-- First Slide - 3 Team Members -->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/lead.png"
+                                                                alt="Arslan Haroon"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Arslan Haroon</h4>
+                                                        <p class="team-role">Senior Software Engineer (Lead)</p>
+                                                        <a href="https://www.linkedin.com/in/arslanh123/" class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/senior-laravel.png"
+                                                                alt="Ahmad Ali"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ahmad Ali</h4>
+                                                        <p class="team-role">Senior Software Engineer</p>
+                                                        <a href="https://www.linkedin.com/in/connect-ahmad-ali/" class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/laravel-developer.png"
+                                                                alt="Ahsan Taqweem"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ahsan Taqweem</h4>
+                                                        <p class="team-role">Laravel Developer</p>
+                                                        <a href="https://www.linkedin.com/in/ahsan-taqweem-552712177/" class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Indicators (Dots) -->
+                                <div class="carousel-indicators team-indicators">
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-current="true"
+                                            aria-label="Slide 1"
+                                    />
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2"
+                                    />
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Innovate?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to turn your ideas into impactful digital
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_moodle_lms" model="website.menu">
+        <field name="name">moodle-lms</field>
+        <field name="url">/moodle-lms</field>
+        <field name="page_id" ref="website_ext.moodle-lms"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

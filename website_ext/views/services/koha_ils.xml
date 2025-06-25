@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="koha-ils" model="website.page">
+        <field name="name">Koha ILS</field>
+        <field name="type">qweb</field>
+        <field name="url">/koha-ils</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.koha-ils</field>
+        <field name="arch" type="xml">
+            <t name="Koha ILS" t-name="website_ext.koha-ils">
+                <t t-call="website.layout">
+                    <!-- Hero Section -->
+                    <section class="service-hero koha-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Koha ILS Solutions</h1>
+                                        <p class="service-hero-subtitle">
+                                            We offer tailored Koha ILS solutions that automate library workflows, enhance user experience, and simplify resource management for institutions of all sizes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Smarter Library Management</span>
+                                        <h2 class="service-title-services">Koha ILS Solutions</h2>
+                                        <p class="service-description-services">
+                                            Koha is the world’s first open-source Integrated Library System
+                                            — robust, flexible, and trusted by thousands of libraries
+                                            worldwide. We specialize in implementing, customizing, and
+                                            supporting Koha to help you streamline operations, improve
+                                            patron experiences, and embrace the power of modern, cloud-based
+                                            library automation.
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/koha-ils/sideimage.png"
+                                                alt="Moodle LMS"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- InterCraft at a Glance Section -->
+                    <section class="at-a-glance">
+                        <div class="container">
+                            <div class="glance-content">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <h2 class="glance-title">InterCraft at a Glance</h2>
+                                        <p class="glance-description">
+                                            Explore how we simplify business with smart solutions—from LMS
+                                            and Odoo to custom app development.
+                                        </p>
+                                        <p class="glance-description">
+                                            Download our info sheet to see how we drive digital
+                                            transformation.
+                                        </p>
+                                        <a href="#" class="download-btn">
+                                            Download
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    fill="currentColor"
+                                                    class="bi bi-arrow-right"
+                                                    viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                        fill-rule="evenodd"
+                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="document-illustration">
+                                            <img
+                                                    src="/website_ext/static/src/images/glance.png"
+                                                    alt="Document Illustration"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Service Features Section -->
+                    <section class="service-features">
+                         <div class="services-bg">
+                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title">Our Koha ILS Services</h2>
+                                <p class="section-subtitle">
+                                    Ready to modernize your library management with a flexible,
+                                    future-ready system? Let our Koha experts guide you from setup to
+                                    success.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Koha Installation &amp; Configuration</h3>
+                                        <p class="feature-description">
+                                            We handle full setup of the Koha ILS — from server provisioning
+                                            to complete backend configuration, ensuring a smooth, secure,
+                                            and scalable deployment.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon2.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon2.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Customization &amp; Module Tuning</h3>
+                                        <p class="feature-description">
+                                            Need features tailored to your workflow? We customize modules
+                                            like circulation, cataloging, OPAC, patron management, and
+                                            acquisitions to fit your exact needs.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon3.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon3.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Data Migration</h3>
+                                        <p class="feature-description">
+                                            Migrating from another ILS? We ensure a clean, accurate, and
+                                            complete transfer of your existing records, bibliographic data,
+                                            and user accounts into Koha.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon4.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon4.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Staff Training &amp; Documentation</h3>
+                                        <p class="feature-description">
+                                            We offer hands-on training for librarians, administrators, and
+                                            technical staff — plus comprehensive documentation to keep your
+                                            team confident and self-reliant.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon5.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon5.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Ongoing Support &amp; Maintenance</h3>
+                                        <p class="feature-description">
+                                            We provide regular updates, performance monitoring, security
+                                            patches, and technical support so your Koha system runs reliably
+                                            around the clock.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/koha-ils/coloured/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Koha Hosting</h3>
+                                        <p class="feature-description">
+                                            Prefer a cloud-based setup? We offer secure, fully-managed Koha
+                                            hosting with daily backups and guaranteed uptime.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Our Team Section -->
+                    <section class="our-team">
+                        <div class="container">
+                            <div class="text-center mb-4">
+                                <h2 class="section-title">Our Team</h2>
+                                <p class="section-subtitle">
+                                    A passionate group of experts driving innovation, collaboration, and
+                                    results.
+                                </p>
+                            </div>
+
+                            <!-- Bootstrap Carousel for Team -->
+                            <div
+                                    id="teamCarousel"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-interval="4000"
+                            >
+                                <div class="carousel-inner">
+                                    <!-- First Slide - 3 Team Members -->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/lead.png"
+                                                                alt="Arslan Haroon"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Arslan Haroon</h4>
+                                                        <p class="team-role">Senior Software Engineer (Lead)</p>
+                                                        <a href="https://www.linkedin.com/in/arslanh123/" class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/senior-laravel.png"
+                                                                alt="Ahmad Ali"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ahmad Ali</h4>
+                                                        <p class="team-role">Senior Software Engineer</p>
+                                                        <a href="https://www.linkedin.com/in/connect-ahmad-ali/" class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/laravel-developer.png"
+                                                                alt="Ahsan Taqweem"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ahsan Taqweem</h4>
+                                                        <p class="team-role">Laravel Developer</p>
+                                                       <a href="https://www.linkedin.com/in/ahsan-taqweem-552712177/
+ " class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Indicators (Dots) -->
+                                <div class="carousel-indicators team-indicators">
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="0"
+                                            class="active"
+                                            aria-current="true"
+                                            aria-label="Slide 1"
+                                    ></button>
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="1"
+                                            aria-label="Slide 2"
+                                    ></button>
+                                    <button
+                                            type="button"
+                                            data-bs-target="#teamCarousel"
+                                            data-bs-slide-to="2"
+                                            aria-label="Slide 3"
+                                    ></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Innovate?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to turn your ideas into impactful digital
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_koha_ils" model="website.menu">
+        <field name="name">koha-ils</field>
+        <field name="url">/koha-ils</field>
+        <field name="page_id" ref="website_ext.koha-ils"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>
