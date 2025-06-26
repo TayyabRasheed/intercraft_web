@@ -31,7 +31,7 @@
 
 .moodle-hero .service-hero-bg {
 
-    background: url("/website_ext/static/src/images/services-section/moodle-lms/moodle-lms.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/moodle-lms/moodle-lms.jpg") center / cover;
 }
 
 /* AI Expert Hero Background */
@@ -40,7 +40,7 @@
 }
 
 .ai-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg") center / cover;
 }
 
 /* ERP Solutions Hero Background */
@@ -49,7 +49,7 @@
 }
 
 .erp-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/erp-solution/erp-header-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/erp-solution/erp-header-bg.jpg") center / cover;
 }
 
 /* Resource Augmentation Hero Background */
@@ -58,7 +58,7 @@
 }
 
 .resource-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/resource-augmentation/resource-aug-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/resource-augmentation/resource-aug-bg.jpg") center / cover;
 }
 
 /* Web Applications Hero Background */
@@ -67,7 +67,7 @@
 }
 
 .web-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/web-applications/web-app-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/web-applications/web-app-bg.jpg") center / cover;
 }
 
 /* Koha ILS Hero Background */
@@ -76,7 +76,7 @@
 }
 
 .koha-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/koha-ils/koha-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/koha-ils/koha-bg.jpg") center / cover;
 }
 
 /* Mobile Applications Hero Background */
@@ -85,7 +85,7 @@
 }
 
 .mobile-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/mobile-applications/mobile-app-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/mobile-applications/mobile-app-bg.jpg") center / cover;
 }
 
 /* UI/UX Design Hero Background */
@@ -94,7 +94,7 @@
 }
 
 .uiux-hero .service-hero-bg {
-    background: url("/website_ext/static/src/images/services-section/ui-ux/ui-ux-bg.png") center / cover;
+    background: url("/website_ext/static/src/images/services-section/ui-ux/ui-ux-bg.jpg") center / cover;
 }
 
 .service-hero-content {

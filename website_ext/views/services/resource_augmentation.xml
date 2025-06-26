@@ -262,7 +262,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/odoo-lead.png"
+                                                                src="/website_ext/static/src/images/team/odoo-lead.jpg"
                                                                 alt="Tayyab Rasheed"
                                                                 class="img-fluid"
                                                         />
@@ -296,7 +296,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/senior-odoo.png"
+                                                                src="/website_ext/static/src/images/team/senior-odoo.jpg"
                                                                 alt="Javaid Khan"
                                                                 class="img-fluid"
                                                         />
@@ -330,7 +330,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/kashan.png"
+                                                                src="/website_ext/static/src/images/team/kashan.jpg"
                                                                 alt="Kashan"
                                                                 class="img-fluid"
                                                         />

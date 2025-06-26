@@ -14,7 +14,7 @@
                             class="hero"
                             style="
                                 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                                  url('/website_ext/static/src/images/career/career-bg.png') center/cover;
+                                  url('/website_ext/static/src/images/career/career-bg.jpg') center/cover;
                                 height: 503px;
                               "
                     >
@@ -90,10 +90,10 @@
                                             <a
                                                     class="lg-item"
                                                     data-lg-size="1600-1067"
-                                                    data-src="/website_ext/static/src/images/career/Media1.png"
+                                                    data-src="/website_ext/static/src/images/career/Media1.jpg"
                                             >
                                                 <img
-                                                        src="/website_ext/static/src/images/career/Media1.png"
+                                                        src="/website_ext/static/src/images/career/Media1.jpg"
                                                         class="w-100 shadow-1-strong mb-3 gallery-img"
                                                         alt="Celebrating Hr Day"
                                                 />
@@ -101,10 +101,10 @@
                                             <a
                                                     class="lg-item"
                                                     data-lg-size="1600-2400"
-                                                    data-src="images/career/Media2.png"
+                                                    data-src="images/career/Media2.jpg"
                                             >
                                                 <img
-                                                        src="/website_ext/static/src/images/career/Media2.png"
+                                                        src="/website_ext/static/src/images/career/Media2.jpg"
                                                         class="w-100 shadow-1-strong gallery-img"
                                                         alt="Team playing cricket"
                                                 />
@@ -114,10 +114,10 @@
                                             <a
                                                     class="lg-item"
                                                     data-lg-size="1600-2398"
-                                                    data-src="/website_ext/static/src/images/career/Media3.png"
+                                                    data-src="/website_ext/static/src/images/career/Media3.jpg"
                                             >
                                                 <img
-                                                        src="/website_ext/static/src/images/career/Media3.png"
+                                                        src="/website_ext/static/src/images/career/Media3.jpg"
                                                         class="w-100 shadow-1-strong mb-3 gallery-img"
                                                         alt="Team lunch gathering"
                                                 />
@@ -125,10 +125,10 @@
                                             <a
                                                     class="lg-item"
                                                     data-lg-size="1600-1065"
-                                                    data-src="/website_ext/static/src/images/career/Media4.png"
+                                                    data-src="/website_ext/static/src/images/career/Media4.jpg"
                                             >
                                                 <img
-                                                        src="/website_ext/static/src/images/career/Media4.png"
+                                                        src="/website_ext/static/src/images/career/Media4.jpg"
                                                         class="w-100 shadow-1-strong gallery-img"
                                                         alt="Team group photo"
                                                 />

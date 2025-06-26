@@ -16,7 +16,7 @@
                                 class="service-hero-bg"
                                 style="
                                   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-                                    url('/website_ext/static/src/images/our-team/our-team-bg.png') center / cover;
+                                    url('/website_ext/static/src/images/our-team/our-team-bg.jpg') center / cover;
                                 "
                         />
                         <div class="container">
@@ -154,7 +154,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/ceo.png"
+                                                    src="/website_ext/static/src/images/team/ceo.jpg"
                                                     alt="Nouman Bashir"
                                                     class="img-fluid"
                                             />
@@ -188,7 +188,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/cto.png"
+                                                    src="/website_ext/static/src/images/team/cto.jpg"
                                                     alt="Muhammad Raiz"
                                                     class="img-fluid"
                                             />
@@ -222,7 +222,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/odoo-lead.png"
+                                                    src="/website_ext/static/src/images/team/odoo-lead.jpg"
                                                     alt="Tayyab Rasheed"
                                                     class="img-fluid"
                                             />
@@ -256,7 +256,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/lead.png"
+                                                    src="/website_ext/static/src/images/team/lead.jpg"
                                                     alt="Arslan Haroon"
                                                     class="img-fluid"
                                             />
@@ -290,7 +290,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-sqa.png"
+                                                    src="/website_ext/static/src/images/team/senior-sqa.jpg"
                                                     alt="Eshrat-Ul-Islam"
                                                     class="img-fluid"
                                             />
@@ -325,7 +325,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-fronend.png"
+                                                    src="/website_ext/static/src/images/team/senior-fronend.jpg"
                                                     alt="Mudassir Rehman"
                                                     class="img-fluid"
                                             />
@@ -360,7 +360,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/kashan.png"
+                                                    src="/website_ext/static/src/images/team/kashan.jpg"
                                                     alt="Syed Kashan Ali"
                                                     class="img-fluid"
                                             />
@@ -394,7 +394,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/usama.png"
+                                                    src="/website_ext/static/src/images/team/usama.jpg"
                                                     alt="Usama Hadi"
                                                     class="img-fluid"
                                             />
@@ -428,7 +428,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-ui-ux-lead.png"
+                                                    src="/website_ext/static/src/images/team/senior-ui-ux-lead.jpg"
                                                     alt="Maryam Fizza"
                                                     class="img-fluid"
                                             />
@@ -462,7 +462,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-ui-ux.png"
+                                                    src="/website_ext/static/src/images/team/senior-ui-ux.jpg"
                                                     alt="Mubashar Ahmed"
                                                     class="img-fluid"
                                             />
@@ -496,7 +496,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-odoo.png"
+                                                    src="/website_ext/static/src/images/team/senior-odoo.jpg"
                                                     alt="Javaid Khan"
                                                     class="img-fluid"
                                             />
@@ -530,7 +530,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-laravel.png"
+                                                    src="/website_ext/static/src/images/team/senior-laravel.jpg"
                                                     alt="Ahmad Ali"
                                                     class="img-fluid"
                                             />
@@ -564,7 +564,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/laravel-developer.png"
+                                                    src="/website_ext/static/src/images/team/laravel-developer.jpg"
                                                     alt="Ahsan Taqweem"
                                                     class="img-fluid"
                                             />
@@ -599,7 +599,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/sqa-analyst.png"
+                                                    src="/website_ext/static/src/images/team/sqa-analyst.jpg"
                                                     alt="Usman Waheed"
                                                     class="img-fluid"
                                             />
@@ -633,7 +633,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/front-end-developer.png"
+                                                    src="/website_ext/static/src/images/team/front-end-developer.jpg"
                                                     alt="Mustehsan Ali"
                                                     class="img-fluid"
                                             />
@@ -667,7 +667,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/hr.png"
+                                                    src="/website_ext/static/src/images/team/hr.jpg"
                                                     alt="Alyzeh Fatymah"
                                                     class="img-fluid"
                                             />

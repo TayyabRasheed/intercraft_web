@@ -281,7 +281,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/lead.png"
+                                                                src="/website_ext/static/src/images/team/lead.jpg"
                                                                 alt="Arslan Haroon"
                                                                 class="img-fluid"
                                                         />
@@ -315,7 +315,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/senior-laravel.png"
+                                                                src="/website_ext/static/src/images/team/senior-laravel.jpg"
                                                                 alt="Ahmad Ali"
                                                                 class="img-fluid"
                                                         />
@@ -349,7 +349,7 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/laravel-developer.png"
+                                                                src="/website_ext/static/src/images/team/laravel-developer.jpg"
                                                                 alt="Ahsan Taqweem"
                                                                 class="img-fluid"
                                                         />
