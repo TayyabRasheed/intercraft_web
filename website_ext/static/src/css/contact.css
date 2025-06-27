@@ -27,7 +27,7 @@
 }
 
 .contact-title {
-  font-size: 56px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -35,9 +35,9 @@
 }
 
 .contact-description {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.5;
   color: #555;
   margin-bottom: 20px;
 }
@@ -53,8 +53,8 @@
 }
 
 .contact-icon {
-  width: 50px;
-  height: 50px;
+  width: 37px;
+  height: 37px;
   background: #ff5500;
   border-radius: 50%;
   display: flex;
@@ -68,7 +68,7 @@
 .contact-details h5 {
   margin: 0;
   color: #333;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -81,13 +81,13 @@
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .form-label {
   font-weight: 700;
   color: #333;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
   display: block;
   font-size: 16px;
 }

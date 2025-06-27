@@ -40,12 +40,12 @@ publicWidget.registry.alljobs = publicWidget.Widget.extend({
         // `).join('');
 
         const academic_jobs = this.open_jobs['academic_jobs'].map(job =>`
-            <div class="col-lg-4 col-md-6 mb-4 d-flex align-items-stretch">
+            <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
                 <div class="job-card w-100">
                     <img src="data:image/png;base64,${job.department_image}" class="card-img-top" alt="${job.college_name}" />
                     <div class="card-body">
                         <h5 class="card-title">${job.college_name}</h5>
-                        <a href="${job.url || '#'}" class="btn btn-details">
+                        <a href="${job.url || '#'}" class="contact-btn">
                             View Details
                         </a>
                     </div>

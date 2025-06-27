@@ -28,7 +28,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   object-fit: cover;
-  height: 200px;
+  height: 150px;
+  width: 200px;
 }
 
 .gallery-img:hover {
@@ -41,8 +42,10 @@
 }
 
 .lg-item {
-  display: block;
+  display: flex;
   text-decoration: none;
+  justify-content: center;
+  width: fit-content;
   position: relative;
   overflow: hidden;
   border-radius: 8px;
