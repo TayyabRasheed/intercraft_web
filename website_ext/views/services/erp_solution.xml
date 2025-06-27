@@ -258,8 +258,8 @@
                             >
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-lg-4 col-md-4 mb-4">
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-3 col-md-4 mb-4">
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
@@ -293,7 +293,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 mb-4">
+                                            <div class="col-lg-3 col-md-4 mb-4">
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
@@ -327,7 +327,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4 col-md-4 mb-4">
+                                            <div class="col-lg-3 col-md-4 mb-4">
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img

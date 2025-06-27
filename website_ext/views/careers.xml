@@ -47,14 +47,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-10 text-center">
-                                    <p
-                                            style="
-                                            font-size: 32px;
-                                            line-height: 1.8;
-                                            color: #303030;
-                                            font-weight: 700;
-                                            margin: 0;
-                                          "
+                                    <p style="font-size: 26px;line-height: 1.5;color: #303030;font-weight: 500;margin: 0;"
                                     >
                                         We're a global software company fueled by innovation,
                                         collaboration, and real impact. Join a diverse, data-driven team

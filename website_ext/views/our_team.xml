@@ -50,7 +50,8 @@
                                     <p class="section-description">
                                         We are a forward-thinking software company delivering web-based
                                         solutions that simplify processes and enhance productivity.
-                                        Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we use
+                                        Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we
+                                        use
                                         open-source technologies to build smart, scalable systems. Our
                                         focus: simple, innovative, and unified digital experiences.
                                     </p>
@@ -150,7 +151,7 @@
                                 </p>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -162,7 +163,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Nouman Bashir</h4>
                                             <p class="team-role">CEO, Intercraft</p>
-                                            <a href="https://www.linkedin.com/in/nouman-bashir-29b88b25b/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/nouman-bashir-29b88b25b/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -184,7 +186,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -218,7 +220,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -230,7 +232,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Tayyab Rasheed</h4>
                                             <p class="team-role">Technical Lead (Odoo)</p>
-                                            <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -252,7 +255,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -286,7 +289,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -321,7 +324,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -356,7 +359,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -390,7 +393,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -402,7 +405,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Usama Hadi</h4>
                                             <p class="team-role">Senior Laravel Developer</p>
-                                            <a href="https://www.linkedin.com/in/usama-hadi-601569170/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/usama-hadi-601569170/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -424,7 +428,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -458,7 +462,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -470,7 +474,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Mubashar Ahmed</h4>
                                             <p class="team-role">Senior UI/UX Designer</p>
-                                            <a href="https://www.linkedin.com/in/mubashar-ahmed-b4b03524a/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/mubashar-ahmed-b4b03524a/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -492,7 +497,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -504,7 +509,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Javaid Khan</h4>
                                             <p class="team-role">Senior Odoo Developer</p>
-                                            <a href="https://www.linkedin.com/in/javaid-khan-4971a6221" class="team-social">
+                                            <a href="https://www.linkedin.com/in/javaid-khan-4971a6221"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -526,7 +532,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -538,7 +544,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Ahmad Ali</h4>
                                             <p class="team-role">Senior Software Engineer</p>
-                                            <a href="https://www.linkedin.com/in/connect-ahmad-ali/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/connect-ahmad-ali/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -560,7 +567,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3
+ col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -595,7 +603,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3
+ col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -607,7 +616,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Usman Waheed</h4>
                                             <p class="team-role">SQA Engineer</p>
-                                            <a href="https://www.linkedin.com/in/muhammad-usman-waheed-549290247/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/muhammad-usman-waheed-549290247/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -629,7 +639,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3
+ col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -641,7 +652,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Mustehsan Ali</h4>
                                             <p class="team-role">Frontend Developer</p>
-                                            <a href="https://www.linkedin.com/in/mustehsan-ali-68b46a239/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/mustehsan-ali-68b46a239/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -663,7 +675,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="col-lg-3
+ col-md-6 mb-4">
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
@@ -675,7 +688,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Alyzeh Fatymah</h4>
                                             <p class="team-role">HR Manager</p>
-                                            <a href="https://www.linkedin.com/in/alyzeh-fatymah-51b81b263/" class="team-social">
+                                            <a href="https://www.linkedin.com/in/alyzeh-fatymah-51b81b263/"
+                                               class="team-social">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
