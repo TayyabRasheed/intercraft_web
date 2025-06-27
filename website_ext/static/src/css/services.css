@@ -206,7 +206,7 @@
 }
 
 .section-title {
-     font-size: 32px;
+    font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #303030;
@@ -279,7 +279,7 @@
 
 .feature-title {
     font-size: 20px;
-    font-weight: 5z00;
+    font-weight: 500;
     margin-bottom: 15px;
     color: #303030;
 }
@@ -313,10 +313,9 @@
     }
 }
 
+
 @media (max-width: 576px) {
-    .section-title {
-        font-size: 28px;
-    }
+
 
     .feature-card {
         padding: 20px;
@@ -503,41 +502,115 @@
     }
 }
 
+
 @media (max-width: 576px) {
-    .service-hero {
-        padding-bottom: 40px;
+    .section-label {
+        font-size: 22px !important;
+        margin-bottom: 0px !important;
     }
 
-    .service-hero-title {
-        font-size: 28px;
+    .section-description {
+        font-size: 12px !important;
+        line-height: 1.4 !important;
+        font-weight: 500 !important;
+        color: #666666 !important;
+        margin-bottom: 30px !important;
+        text-align: justify !important;
     }
 
-    .service-label {
-        font-size: 16px;
+    .ai-image-container, .document-illustration {
+        display: none !important;
+    }
+
+    .services-bg img {
+        display: none !important;
+    }
+
+    .partnerships-title {
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        text-align: center !important;
+    }
+
+    .partnerships-subtitle {
+        font-size: 12px !important;
+    }
+
+    .innovate-title {
+        font-size: 18px !important;
     }
 
     .section-title,
+    .footer-description {
+        font-size: 18px !important;
+        text-align: left !important;
+    }
+     .services-title{
+         font-size: 18px !important;
+        text-align: center !important;
+     }
+    .footer-certifications {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .partnerships {
+        background-color: #f9f9f9  !important;
+        padding: 0px 0 !important;
+        position: relative !important;
+    }
+
+    .footer-logo img {
+        height: 80px !important;
+    }
+
+    .footer-contact {
+        text-align: center !important;
+    }
+
+    .footer-logo, .footer-social {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .service-hero {
+        padding-bottom: 40px !important;
+    }
+
+    .service-hero-title {
+        font-size: 28px !important;
+    }
+
+    .service-label {
+        font-size: 16px !important;
+    }
+
     .ai-features-title {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .glance-title {
-        font-size: 24px;
+        font-size: 24px !important;
     }
 
     .glance-content {
-        padding: 20px;
+        padding: 20px !important;
     }
 
     .innovate-content {
-        padding: 40px 15px;
+        padding: 40px 15px !important;
     }
 
     .innovate-subtitle {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .team-image {
-        height: 200px;
+        height: 200px !important;
     }
 }

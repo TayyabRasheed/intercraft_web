@@ -55,7 +55,7 @@
         <section class="partners">
             <div class="container text-center">
                 <h3 class="partners-title">
-                    We partner with forward-thinking businesses to boost efficiency and<br/>drive
+                    We partner with forward-thinking businesses to boost efficiency and drive
                     digital transformation.
                 </h3>
                 <div
@@ -557,21 +557,21 @@
                         <div class="carousel-item active" data-bs-interval="10000">
                             <div class="partnerships-logos">
                                 <div class="row justify-content-center">
-                                    <div class="col-md-3 col-sm-6 col-6">
+                                    <div class="col-md-3 col-sm-4 col-4">
                                         <img
                                                 src="/website_ext/static/src/images/trusted-partners/logo1.png"
                                                 alt="Partner 4"
                                                 class="img-fluid"
                                         />
                                     </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
+                                    <div class="col-md-3 col-sm-4 col-4">
                                         <img
                                                 src="/website_ext/static/src/images/trusted-partners/logo2.png"
                                                 alt="Partner 5"
                                                 class="img-fluid"
                                         />
                                     </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
+                                    <div class="col-md-3 col-sm-4 col-4">
                                         <img
                                                 src="/website_ext/static/src/images/trusted-partners/logo3.png"
                                                 alt="Partner 6"

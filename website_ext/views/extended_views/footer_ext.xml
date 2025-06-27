@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 footer-column">
                             <div class="footer-logo">
-                                <img src="/website_ext/static/src/images/footer/logo.svg" alt="Intercraft Logo"/>
+                                <img src="/website_ext/static/src/images/footer/logo.svg" alt="Intercraft Logo" class="img-fluid"/>
                             </div>
                             <p class="footer-description">
                                 Intercraft delivers seamless system integration and application
@@ -89,7 +89,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
                             <h4 class="footer-title">Services</h4>
                             <ul class="footer-links">
                                 <li>
@@ -127,7 +127,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
                             <h4 class="footer-title">Resources</h4>
                             <ul class="footer-links">
                                 <li>
@@ -142,7 +142,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
                             <h4 class="footer-title">Company</h4>
                             <ul class="footer-links">
                                 <li>
@@ -160,12 +160,12 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column">
-                            <h4 class="footer-title">Follow Intercraft Journey</h4>
-                            <p class="footer-newsletter-text">
+                            <h4 class="footer-title d-none d-sm-none d-md-block">Follow Intercraft Journey</h4>
+                            <p class="footer-newsletter-text d-none d-sm-none d-md-block">
                                 Subscribe to receive the most relevant news on our company,
                                 products and industry.
                             </p>
-                            <form class="footer-newsletter">
+                            <form class="footer-newsletter d-none d-sm-none d-md-block">
                                 <input
                                         type="email"
                                         placeholder="Enter your email"
@@ -181,7 +181,7 @@
                                         alt="Vision"
                                         class="img-fluid certification-img"
                                 />
-                                <div class="certification-logos">
+                                <div class="certification-logos ">
                                     <img
                                             src="/website_ext/static/src/images/footer/pseb_logo.png"
                                             alt="PSEB"
@@ -201,7 +201,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom">
+                    <div class="footer-bottom d-none d-sm-none d-md-block" >
                         <div class="row">
                             <div class="col-md-6">
                                 <p class="footer-copyright">© Copyright 2025 Intercraftsol</p>
