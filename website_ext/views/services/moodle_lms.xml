@@ -110,10 +110,7 @@
                     </section>
                     <!-- Service Features Section -->
                     <section class="service-features">
-                        <div class="services-bg">
-                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
-                                 aria-hidden="true"/>
-                        </div>
+
                         <div class="container">
                             <div class="text-center mb-5">
                                 <h2 class="section-title">Our Moodle LMS Services</h2>
