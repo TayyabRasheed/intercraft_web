@@ -14,6 +14,7 @@
                     <button
                             class="navbar-toggler"
                             type="button"
+                            id="sm_nav_bar_toggle"
                             data-bs-toggle="collapse"
                             data-bs-target="#navbarNav"
                     >

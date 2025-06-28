@@ -540,10 +540,14 @@
         font-size: 18px !important;
     }
 
-    .section-title,
-    .footer-description {
+    .section-title
+     {
         font-size: 18px !important;
         text-align: left !important;
+    }
+    .footer-description {
+        font-size: 18px !important;
+        text-align: center !important;
     }
      .services-title{
          font-size: 18px !important;

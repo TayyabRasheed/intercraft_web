@@ -1,6 +1,6 @@
 /* ===== GENERAL STYLES ===== */
 body {
-    font-family: "Inter", sans-serif;
+
     color: #333;
     overflow-x: hidden;
 }
@@ -15,24 +15,16 @@ body {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-color: rgba(0, 0, 0, 0.3) ;
     height: calc(var(--nav-height));
-    padding: 15px 0 !important;
-    transition: all 0.3s ease !important;
+    padding: 15px 0 ;
+    transition: all 0.3s ease ;
 
-}
-
-.show {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
-    height: 24dvh !important;
-    margin: -6px !important;
-    width: 115vw !important;
 }
 
 .navbar-scrolled {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.9) ;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) ;
 }
 
 .navbar-brand img {
@@ -40,24 +32,23 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: white !important;
+    color: white ;
     font-weight: 500;
     margin: 0 10px;
     font-size: 16px;
+
 }
 
 .navbar-nav .nav-link.active {
-    color: white !important;
+    color: white ;
 }
 
 .navbar-toggler {
     border: none;
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.navbar-toggler.show {
-    background-color: rgba(213, 12, 12, 0.1) !important;
-}
+
 
 
 .navbar-toggler-icon {
@@ -300,6 +291,13 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+    .show {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+    height: 30dvh !important;
+    margin: -6px !important;
+    width: 115vw !important;
+}
 
     .mega-menu-icon {
         margin-bottom: 8px;
@@ -337,7 +335,7 @@ body {
 
 /* ===== HERO SECTION ===== */
 .hero {
-    height: 100vh !important;;
+    height: 100vh ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1337,6 +1335,7 @@ body {
 @media (max-width: 576px) {
     .hero {
         padding-bottom: 40px;
+        height: 100dvh !important;
     }
 
     .hero h1 {
