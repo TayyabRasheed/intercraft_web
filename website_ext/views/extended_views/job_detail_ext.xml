@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="job_detail" name="Job Detail" inherit_id="website_hr_recruitment.detail">
+        <xpath expr="//div[@t-field='job.website_description']" position="replace">
+            <div class="custom-job-description">
+                <div class="container">
+                    <p t-field="job.description" class="custom-text"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

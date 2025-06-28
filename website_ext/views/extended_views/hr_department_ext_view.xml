@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="custom_hr_department_form" model="ir.ui.view">
+        <field name="name">custom.hr.department.form</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='color']" position="after">
+                <field name="image_department" widget="image" class="oe_avatar m-0"
+                       options='{"zoom": true}'/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,48 @@
+{
+    'name': 'Website Ext',
+    'version': '17.0.0.0.0',
+    'category': 'Website',
+    'description': "Module to resdeign website",
+    'author': 'Tayyab Rasheed',
+    'company': 'Intercraftsol',
+    'maintainer': 'Intercraftsol',
+    'website': "https://www.Intercraftsol.com",
+    'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm'],
+    'data': [
+        'views/extended_views/header_ext.xml',
+        'views/snippet_home_page.xml',
+        'views/contact_us.xml',
+        'views/careers.xml',
+        'views/our_team.xml',
+        'views/about_us.xml',
+        'views/thank_you.xml',
+        'views/extended_views/footer_ext.xml',
+        'views/services/ai_expert.xml',
+        'views/services/erp_solution.xml',
+        'views/services/koha_ils.xml',
+        'views/services/mobile_application.xml',
+        'views/services/moodle_lms.xml',
+        'views/services/resource_augmentation.xml',
+        'views/services/ui_ux.xml',
+        'views/services/web_application.xml',
+        'views/extended_views/hr_department_ext_view.xml',
+        'views/extended_views/job_detail_ext.xml',
+        'views/extended_views/apply_form_ext.xml',
+        'views/extended_views/index_view_ext.xml',
+        'views/extended_views/thankyou_ext.xml',
+
+    ],
+    'assets': {
+        'web.assets_frontend': [
+
+            # '/website_ext/static/src/js/open_jobs.js',
+            '/website_ext/static/src/js/*.js',
+            '/website_ext/static/src/css/*.css'
+
+        ],
+    },
+    'license': 'AGPL-3',
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}

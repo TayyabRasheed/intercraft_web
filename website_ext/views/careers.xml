@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="career" model="website.page">
+        <field name="name">Career</field>
+        <field name="type">qweb</field>
+        <field name="url">/career</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.career</field>
+        <field name="arch" type="xml">
+            <t name="Career" t-name="website_ext.career">
+                <t t-call="website.layout">
+                    <section
+                            class="hero"
+                            style="
+                                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                                  url('/website_ext/static/src/images/career/career-bg.jpg') center/cover;
+                                height: 503px;
+                              "
+                    >
+                        <div class="container">
+                            <div class="hero-content text-center">
+                                <h1
+                                        style="
+                                          color: white;
+                                          font-size: 3.5rem;
+                                          font-weight: 700;
+                                          margin-bottom: 20px;
+                                        "
+                                >
+                                    Build the Future With Us
+                                </h1>
+                                <p
+                                        class="hero-subtitle"
+                                        style="color: white; font-size: 1.2rem; margin-bottom: 30px"
+                                >
+                                    Join a team of innovators, creators, and problem-solvers shaping
+                                    what's next.
+                                </p>
+                                <a href="#jobs-section" class="service-cta-btn">Explore Jobs</a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Company Description Section -->
+                    <section class="who-we-are" style="padding: 80px 0; background: #f8f9fa">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10 text-center">
+                                    <p style="font-size: 26px;line-height: 1.5;color: #303030;font-weight: 500;margin: 0;"
+                                    >
+                                        We're a global software company fueled by innovation,
+                                        collaboration, and real impact. Join a diverse, data-driven team
+                                        that values ownership, curiosity, and continuous learning.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Culture Section with Bootstrap Image Gallery -->
+                    <section class="culture-section">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center align-items-center min-vh-80 text-center">
+                                <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                                <h2 class="culture-title">Culture At Intercraftsol</h2>
+                                <p class="culture-text">
+                                    At Intercraftsol, growth is part of our DNA. Whether it's through
+                                    informal team discussions, in-house workshops, or expert-led
+                                    sessions from local and global thought leaders, continuous
+                                    learning is built into our culture.
+                                </p>
+                                <p class="culture-text">
+                                    Every opportunity is open to everyone—whether you're just starting
+                                    your journey or have been with us for years. If a program can help
+                                    you grow, it's yours to explore.
+                                </p>
+                            </div>
+                           <div class="col-lg-6 d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-wrap justify-content-center">
+            <img
+                src="/website_ext/static/src/images/career/Media1.jpg"
+                class="shadow-1-strong mb-2 gallery-img p-1 w-50"
+                alt="Celebrating Hr Day"
+            />
+            <img
+                src="/website_ext/static/src/images/career/Media2.jpg"
+                class="shadow-1-strong mb-2 gallery-img p-1 w-50"
+                alt="Team playing cricket"
+            />
+            <img
+                src="/website_ext/static/src/images/career/Media3.jpg"
+                class="shadow-1-strong mb-2 gallery-img p-1 w-50"
+                alt="Team lunch gathering"
+            />
+            <img
+                src="/website_ext/static/src/images/career/Media4.jpg"
+                class="shadow-1-strong mb-2 gallery-img p-1 w-50"
+                alt="Team group photo"
+            />
+        </div>
+    </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Open Positions Section -->
+                <section style="padding: 80px 0; background: #f8f9fa" id="jobs-section">
+                    <div class="container">
+                        <div class="text-center mb-5">
+                            <h2
+                                    style="
+                                              font-size: 32px;
+                                              font-weight: 700;
+                                              color: #303030;
+                                              margin-bottom: 30px;
+                                            "
+                            >
+                                Open Positions
+                            </h2>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <p style="font-size: 16px; font-weight: 500; line-height: 1.5; color: #4C4C4C">
+                                        At Intercraft, we don't believe in rigid hierarchies or
+                                        corporate jargon. There are no "bosses" here—just a group of
+                                        passionate people working side by side. We call ourselves the
+                                        Intercraft family, because collaboration, mutual respect, and
+                                        shared success are at the heart of everything we do.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <section class="view_all_jobs">
+                                <div class="container">
+                                    <div class="row " id="all_jobs">
+
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </t>
+    </field>
+</record>
+<record id="menu_career" model="website.menu">
+<field name="name">career</field>
+<field name="url">/career</field>
+<field name="page_id" ref="website_ext.career"/>
+<field name="parent_id" ref="website.main_menu"/>
+<field name="sequence" type="int">60</field>
+</record>
+        </odoo>

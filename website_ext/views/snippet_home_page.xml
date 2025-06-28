@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="snippet_home_page_custom" name="Home Page Snippet">
+
+        <section class="hero">
+            <div class="hero-video-container">
+                <video autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="hero-video">
+                    <source src="/website_ext/static/src/video/header.mp4" type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1>Innovative Digital Solutions for a<br/>Connected World
+                    </h1>
+                    <p class="hero-subtitle">
+                        Empowering businesses with cutting-edge technology in ERP, LMS, and
+                        custom<br/>software development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="who-we-are">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-label">Who We Are</div>
+                        <h2 class="section-title">
+                            Empowering Digital Growth Since 2016
+                        </h2>
+                        <p class="section-description">
+                            We are a forward-thinking software company delivering web-based
+                            solutions that simplify processes and enhance productivity.
+                            Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we use
+                            open-source technologies to build smart, scalable systems. Our
+                            focus: simple, innovative, and unified digital experiences.
+                        </p>
+                        <a href="/aboutus" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="ai-image-container">
+                            <img
+                                    src="/website_ext/static/src/images/who-we-are-section/ai.png"
+                                    alt="AI Technology"
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners Section with Automatic Carousel -->
+        <section class="partners">
+            <div class="container text-center">
+                <h3 class="partners-title">
+                    We partner with forward-thinking businesses to boost efficiency and drive
+                    digital transformation.
+                </h3>
+                <div
+                        id="partnersCarousel"
+                        class="carousel slide"
+                        data-bs-ride="carousel"
+                        data-bs-interval="3000"
+                >
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="partners-logos">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo2.png"
+                                                    alt="Partner 2"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-2.png"
+                                                    alt="Partner 2"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- InterCraft at a Glance Section -->
+        <section class="at-a-glance">
+            <div class="container">
+                <div class="glance-content">
+                    <div class="row align-items-center">
+                        <div class="col-lg-7">
+                            <h2 class="glance-title">InterCraft at a Glance</h2>
+                            <p class="glance-description">
+                                Explore how we simplify business with smart solutions—from LMS
+                                and Odoo to custom app development.
+                            </p>
+                            <p class="glance-description">
+                                Download our info sheet to see how we drive digital
+                                transformation.
+                            </p>
+                            <a href="#" class="download-btn">
+                                Download
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        fill="currentColor"
+                                        class="bi bi-arrow-right"
+                                        viewBox="0 0 16 16"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="document-illustration">
+                                <img
+                                        src="/website_ext/static/src/images/glance.png"
+                                        alt="Document Illustration"
+                                        class="img-fluid"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="services-bg">
+                <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec" aria-hidden="true"/>
+            </div>
+            <div class="container services-content">
+                <h2 class="services-title">
+                    Shaping a Better World Through Our Services
+                </h2>
+                <p class="services-subtitle">
+                    Empowering businesses with cutting-edge technology in ERP, LMS, and
+                    custom<br/>software development.
+                </p>
+                <div class="text-center">
+                    <a href="/contact-us" class="get-in-touch-btn">Get In Touch</a>
+                </div>
+                <div class="row">
+                    <!-- First row of services -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="moodle-lms">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/moodle-icon.svg"
+                                        alt="Moodle LMS"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
+                                        alt="Moodle LMS"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Moodle LMS Solutions</h3>
+                            <p class="service-description">
+                                We deliver tailored Moodle LMS solutions that enable scalable,
+                                user-friendly, and impactful e-learning for education and
+                                corporate training.
+                            </p>
+                            <a href="/moodle-lms" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="ai-expert">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/ai-icon.svg"
+                                        alt="AI Expert"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/ai-icon.svg"
+                                        alt="AI Expert"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">AI Expert</h3>
+                            <p class="service-description">
+                                From intelligent chatbots to voice insights, our AI solutions
+                                are designed to think, learn, and grow with your business.
+                            </p>
+                            <a href="/ai-expert" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="erp-solutions">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/erp-icon.svg"
+                                        alt="ERP Solutions"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
+                                        alt="ERP Solutions"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">ERP Solutions</h3>
+                            <p class="service-description">
+                                We deliver tailored ERP solutions that streamline processes,
+                                eliminate silos, and boost efficiency—through expert Odoo
+                                implementation, customization, and support.
+                            </p>
+                            <a href="/erp-solution" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="resource-augmentation">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/resource-aug-icon.svg"
+                                        alt="Resource Augmentation"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/resource-icon.svg"
+                                        alt="Resource Augmentation"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Resource Augmentation</h3>
+                            <p class="service-description">
+                                Our Resource Augmentation service quickly links you with skilled
+                                professionals—no hiring delays, just smooth, on-demand support.
+                            </p>
+                            <a
+                                    href="/resource-augmentation"
+                                    class="learn-more-link"
+                            >
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Second row of services -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="web-applications">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/web-app-icon.svg"
+                                        alt="Web Applications"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/web-icon.svg"
+                                        alt="Web Applications"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Web Applications</h3>
+                            <p class="service-description">
+                                We build fast, responsive, and scalable web apps that elevate
+                                your brand and streamline business.
+                            </p>
+                            <a href="/web-application" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="koha-ils">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/kohas-icon.svg"
+                                        alt="Koha ILS"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
+                                        alt="Koha ILS"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Koha ILS Solutions</h3>
+                            <p class="service-description">
+                                We offer tailored Koha Integrated Library System (ILS) services
+                                that bring automation, efficiency, and user-centric features to
+                                libraries of all sizes.
+                            </p>
+                            <a href="/koha-ils" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="mobile-applications">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/mob-app-icon.svg"
+                                        alt="Mobile Applications"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/mob-icon.svg"
+                                        alt="Mobile Applications"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Mobile Applications</h3>
+                            <p class="service-description">
+                                We create fast, user-friendly apps using the latest tech—native
+                                or cross-platform—designed to engage users and streamline
+                                operations.
+                            </p>
+                            <a
+                                    href="/mobile-application"
+                                    class="learn-more-link"
+                            >
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="ui-ux-design">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/ui-ux-icon.svg"
+                                        alt="UI/UX Design"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                        alt="UI/UX Design"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">UI/UX Design</h3>
+                            <p class="service-description">
+                                We craft intuitive, engaging, and visually stunning user
+                                experiences that align with your branding goals across web and
+                                mobile platforms.
+                            </p>
+                            <a href="/ui-ux" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted Partnerships Section with Carousel -->
+        <section class="partnerships">
+            <div class="container text-center">
+                <h2 class="partnerships-title">
+                    Trusted Partnerships That Power Innovation
+                </h2>
+                <p class="partnerships-subtitle">
+                    Proudly recognized by leading organizations like PSEB, we collaborate
+                    with
+                    <br/>
+                    industry leaders to deliver impactful, future-ready solutions.
+                </p>
+
+                <!-- Bootstrap Carousel -->
+                <div id="partnershipsCarousel" class="carousel carousel-dark slide">
+<!--                    <div class="carousel-indicators">-->
+<!--                        <button-->
+<!--                                type="button"-->
+<!--                                data-bs-target="#partnershipsCarousel"-->
+<!--                                data-bs-slide-to="0"-->
+<!--                                class="active"-->
+<!--                                aria-current="true"-->
+<!--                                aria-label="Slide 1"-->
+<!--                        />-->
+<!--                        <button-->
+<!--                                type="button"-->
+<!--                                data-bs-target="#partnershipsCarousel"-->
+<!--                                data-bs-slide-to="1"-->
+<!--                                aria-label="Slide 2"-->
+<!--                        />-->
+<!--                        <button-->
+<!--                                type="button"-->
+<!--                                data-bs-target="#partnershipsCarousel"-->
+<!--                                data-bs-slide-to="2"-->
+<!--                                aria-label="Slide 3"-->
+<!--                        />-->
+<!--                    </div>-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="partnerships-logos">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 col-sm-4 col-4">
+                                        <img
+                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"
+                                                alt="Partner 4"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-4">
+                                        <img
+                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"
+                                                alt="Partner 5"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-4">
+                                        <img
+                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"
+                                                alt="Partner 6"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        <div class="carousel-item" data-bs-interval="2000">-->
+<!--                            <div class="partnerships-logos">-->
+<!--                                <div class="row justify-content-center">-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"-->
+<!--                                                alt="Partner 4"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"-->
+<!--                                                alt="Partner 5"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"-->
+<!--                                                alt="Partner 6"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="carousel-item">-->
+<!--                            <div class="partnerships-logos">-->
+<!--                                <div class="row justify-content-center">-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"-->
+<!--                                                alt="Partner 7"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"-->
+<!--                                                alt="Partner 8"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-3 col-sm-6 col-6">-->
+<!--                                        <img-->
+<!--                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"-->
+<!--                                                alt="Partner 9"-->
+<!--                                                class="img-fluid"-->
+<!--                                        />-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div>
+<!--                    <button-->
+<!--                            class="carousel-control-prev"-->
+<!--                            type="button"-->
+<!--                            data-bs-target="#partnershipsCarousel"-->
+<!--                            data-bs-slide="prev"-->
+<!--                    >-->
+<!--                        <span class="carousel-control-prev-icon" aria-hidden="true"/>-->
+<!--                        <span class="visually-hidden">Previous</span>-->
+<!--                    </button>-->
+<!--                    <button-->
+<!--                            class="carousel-control-next"-->
+<!--                            type="button"-->
+<!--                            data-bs-target="#partnershipsCarousel"-->
+<!--                            data-bs-slide="next"-->
+<!--                    >-->
+<!--                        <span class="carousel-control-next-icon" aria-hidden="true"/>-->
+<!--                        <span class="visually-hidden">Next</span>-->
+<!--                    </button>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Ready to Innovate Section -->
+        <section class="innovate">
+            <div class="container text-center">
+                <div class="innovate-content">
+                    <h2 class="innovate-title">Ready to Innovate?</h2>
+                    <p class="innovate-subtitle">
+                        Let's collaborate to turn your ideas into impactful digital
+                        solutions.
+                    </p>
+                    <a href="/contact-us" class="get-started-btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+
+    </template>
+    <template id="external_snippets" inherit_id="website.snippets" priority="8">
+        <xpath expr="//div[@id='snippet_content']//t[@t-snippet][last()]" position="after">
+            <t t-snippet="website_ext.snippet_home_page_custom"
+               string="Main page"
+               t-thumbnail="/website/static/src/img/snippets_thumbs/s_embed_code.svg" t-forbid-sanitize="true"/>
+            <!--               t-thumbnail="/website/static/src/img/snippets_thumbs/s_searchbar.svg"-->
+
+        </xpath>
+    </template>
+
+</odoo>

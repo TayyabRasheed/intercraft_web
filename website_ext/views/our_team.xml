@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="our-team" model="website.page">
+        <field name="name">Our Team</field>
+        <field name="type">qweb</field>
+        <field name="url">/our-team</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.our-team</field>
+        <field name="arch" type="xml">
+            <t name="Our Team" t-name="website_ext.our-team">
+                <t t-call="website.layout">
+                    <!-- Hero Section -->
+                    <section class="service-hero">
+                        <div
+                                class="service-hero-bg"
+                                style="
+                                  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                                    url('/website_ext/static/src/images/our-team/our-team-bg.jpg') center / cover;
+                                "
+                        />
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Meet Our Experts</h1>
+                                        <p class="service-hero-subtitle">
+                                            At InterCraft, we fuse innovation, expertise, and technology to
+                                            build scalable solutions that
+                                            <br/>
+                                            empower businesses, streamline
+                                            systems, and drive digital growth across industries.
+                                        </p>
+                                        <a href="#team-section" class="service-cta-btn">See Our People</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Who We Are Section -->
+                    <section class="who-we-are">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="section-label">Who We Are</div>
+                                    <h2 class="section-title">
+                                        Empowering Digital Growth Since 2016
+                                    </h2>
+                                    <p class="section-description">
+                                        We are a forward-thinking software company delivering web-based
+                                        solutions that simplify processes and enhance productivity.
+                                        Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we
+                                        use
+                                        open-source technologies to build smart, scalable systems. Our
+                                        focus: simple, innovative, and unified digital experiences.
+                                    </p>
+                                    <a href="/aboutus" class="learn-more-btn">Learn More</a>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="ai-image-container">
+                                        <img
+                                                src="/website_ext/static/src/images/who-we-are-section/ai.png"
+                                                alt="AI Technology"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Partners Section -->
+                    <section class="partners">
+                        <div class="container text-center">
+                            <h3 class="partners-title">
+                                We partner with forward-thinking businesses to boost efficiency and
+                                drive digital transformation
+                            </h3>
+                            <div class="partners-logos">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo2.png"
+                                                    alt="Partner 2"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-2.png"
+                                                    alt="Partner 2"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Our Team Section -->
+                    <section class="service-features" id="team-section">
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title">Our Team</h2>
+                                <p class="section-subtitle">
+                                    A passionate group of experts driving innovation, collaboration, and
+                                    results.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/ceo.jpg"
+                                                    alt="Nouman Bashir"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Nouman Bashir</h4>
+                                            <p class="team-role">CEO, Intercraft</p>
+                                            <a href="https://www.linkedin.com/in/nouman-bashir-29b88b25b/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/cto.jpg"
+                                                    alt="Muhammad Raiz"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Muhammad Raiz</h4>
+                                            <p class="team-role">CTO, Intercraft</p>
+                                            <a href="https://www.linkedin.com/in/riazspace" class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/odoo-lead.jpg"
+                                                    alt="Tayyab Rasheed"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Tayyab Rasheed</h4>
+                                            <p class="team-role">Technical Lead (Odoo)</p>
+                                            <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/lead.jpg"
+                                                    alt="Arslan Haroon"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Arslan Haroon</h4>
+                                            <p class="team-role">Technical Lead (Laravel)</p>
+                                            <a href="https://www.linkedin.com/in/arslanh123/" class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-sqa.jpg"
+                                                    alt="Eshrat-Ul-Islam"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Eshrat-Ul-Islam</h4>
+                                            <p class="team-role">Senior SQA Engineer</p>
+                                            <a href="https://www.linkedin.com/in/eshrat-ul-islam/
+ " class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-fronend.jpg"
+                                                    alt="Mudassir Rehman"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Mudassir Rehman</h4>
+                                            <p class="team-role">Senior Frontend Developer</p>
+                                            <a href="https://www.linkedin.com/in/mudassir-rehman-0a4a01243/
+ " class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/kashan.jpg"
+                                                    alt="Syed Kashan Ali"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Syed Kashan Ali</h4>
+                                            <p class="team-role">Senior Functional Consultant</p>
+                                            <a href="www.linkedin.com/in/syed-kashan-ali-ab28b7213" class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/usama.jpg"
+                                                    alt="Usama Hadi"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Usama Hadi</h4>
+                                            <p class="team-role">Senior Laravel Developer</p>
+                                            <a href="https://www.linkedin.com/in/usama-hadi-601569170/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-ui-ux-lead.jpg"
+                                                    alt="Maryam Fizza"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Maryam Fizza</h4>
+                                            <p class="team-role">Senior U/UX Designer</p>
+                                            <a href="https://www.linkedin.com/in/maryamfizza/" class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-ui-ux.jpg"
+                                                    alt="Mubashar Ahmed"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Mubashar Ahmed</h4>
+                                            <p class="team-role">Senior UI/UX Designer</p>
+                                            <a href="https://www.linkedin.com/in/mubashar-ahmed-b4b03524a/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-odoo.jpg"
+                                                    alt="Javaid Khan"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Javaid Khan</h4>
+                                            <p class="team-role">Senior Odoo Developer</p>
+                                            <a href="https://www.linkedin.com/in/javaid-khan-4971a6221"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/senior-laravel.jpg"
+                                                    alt="Ahmad Ali"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Ahmad Ali</h4>
+                                            <p class="team-role">Senior Software Engineer</p>
+                                            <a href="https://www.linkedin.com/in/connect-ahmad-ali/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3
+ col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/laravel-developer.jpg"
+                                                    alt="Ahsan Taqweem"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Ahsan Taqweem</h4>
+                                            <p class="team-role">Laravel Developer</p>
+                                            <a href="https://www.linkedin.com/in/ahsan-taqweem-552712177/
+ " class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3
+ col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/sqa-analyst.jpg"
+                                                    alt="Usman Waheed"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Usman Waheed</h4>
+                                            <p class="team-role">SQA Engineer</p>
+                                            <a href="https://www.linkedin.com/in/muhammad-usman-waheed-549290247/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3
+ col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/front-end-developer.jpg"
+                                                    alt="Mustehsan Ali"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Mustehsan Ali</h4>
+                                            <p class="team-role">Frontend Developer</p>
+                                            <a href="https://www.linkedin.com/in/mustehsan-ali-68b46a239/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3
+ col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/hr.jpg"
+                                                    alt="Alyzeh Fatymah"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Alyzeh Fatymah</h4>
+                                            <p class="team-role">HR Manager</p>
+                                            <a href="https://www.linkedin.com/in/alyzeh-fatymah-51b81b263/"
+                                               class="team-social">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Join Our Team Section -->
+                    <section class="innovate">
+                        <div class="container">
+                            <div class="innovate-content text-center">
+                                <h2 class="innovate-title">Join Our Team</h2>
+                                <p class="innovate-subtitle">
+                                    Join our team of passionate innovators and help shape the digital
+                                    future.
+                                </p>
+                                <a href="/career" class="get-started-btn">Apply Now</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_our_team" model="website.menu">
+        <field name="name">our-team</field>
+        <field name="url">/our-team</field>
+        <field name="page_id" ref="website_ext.our-team"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

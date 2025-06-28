@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <template id="inherited_index" inherit_id="website_hr_recruitment.index">
+        <xpath expr="//div[@class='oe_empty text-muted mb16']" position="attributes">
+            <attribute name="class">oe_empty text-muted mb16 limited-description</attribute>
+        </xpath>
+        <xpath expr="//div[@id='jobs_grid_right']" position="replace"/>
+        <xpath expr="//div[@class='navbar mb-3 w-100']" position="replace"/>
+    </template>
+
+</odoo>

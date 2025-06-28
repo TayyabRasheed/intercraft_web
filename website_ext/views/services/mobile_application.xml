@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="mobile-application" model="website.page">
+        <field name="name">Mobile Application</field>
+        <field name="type">qweb</field>
+        <field name="url">/mobile-application</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.mobile-application</field>
+        <field name="arch" type="xml">
+            <t name="Mobile Application" t-name="website_ext.mobile-application">
+                <t t-call="website.layout">
+                    <!-- Hero Section -->
+                    <section class="service-hero mobile-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Mobile Application Development</h1>
+                                        <p class="service-hero-subtitle">
+                                            Powerful Mobile Apps Tailored for Your Business
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Mobile Applications</span>
+                                        <h2 class="service-title-services">
+                                            Mobile Applications That Drive Results
+                                        </h2>
+                                        <p class="service-description-services">
+                                            In today’s digital landscape, a strong, user-friendly web
+                                            presence is essential for staying ahead. Yet many businesses
+                                            still rely on outdated websites or applications that fall short
+                                            on functionality and user experience. Our Web Application
+                                            Development service bridges this gap with responsive, scalable,
+                                            and high-performing solutions that enhance your brand and
+                                            streamline operations.
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/mobile-applications/mobile-app-service.png"
+                                                alt="Mobile Applications"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- InterCraft at a Glance Section -->
+                    <section class="at-a-glance">
+                        <div class="container">
+                            <div class="glance-content">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-7">
+                                        <h2 class="glance-title">InterCraft at a Glance</h2>
+                                        <p class="glance-description">
+                                            Explore how we simplify business with smart solutions—from LMS
+                                            and Odoo to custom app development.
+                                        </p>
+                                        <p class="glance-description">
+                                            Download our info sheet to see how we drive digital
+                                            transformation.
+                                        </p>
+                                        <a href="#" class="download-btn">
+                                            Download
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    fill="currentColor"
+                                                    class="bi bi-arrow-right"
+                                                    viewBox="0 0 16 16"
+                                            >
+                                                <path
+                                                        fill-rule="evenodd"
+                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                                />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="document-illustration">
+                                            <img
+                                                    src="/website_ext/static/src/images/glance.png"
+                                                    alt="Document Illustration"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Service Features Section -->
+                    <section class="service-features">
+                        <div class="services-bg">
+                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title">Our Mobile Application Services</h2>
+                                <p class="section-subtitle">
+                                    Build seamless, high-performance mobile experiences with expert
+                                    native and cross-platform development—designed to engage users and
+                                    drive growth.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Custom Mobile App Development</h3>
+                                        <p class="feature-description">
+                                            Design and development of tailored apps to meet unique business
+                                            needs, whether for commerce, productivity, or enterprise use.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon2.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon2.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cross-Platform Mobile Apps</h3>
+                                        <p class="feature-description">
+                                            Use of technologies like React Native and Flutter to build
+                                            high-performance apps that run smoothly on both iOS and Android.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon3.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon3.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Native iOS &amp; Android Apps</h3>
+                                        <p class="feature-description">
+                                            Development of platform-specific applications for iOS (Swift)
+                                            and Android (Kotlin/Java) to maximize performance and user
+                                            experience.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon4.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon4.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">UI/UX Design for Mobile Apps</h3>
+                                        <p class="feature-description">
+                                            Creation of intuitive, visually appealing interfaces that ensure
+                                            seamless navigation and a top-tier user experience.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon5.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon5.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Mobile App Integration</h3>
+                                        <p class="feature-description">
+                                            Integration with backend systems, APIs, and third-party
+                                            platforms to enhance app functionality and enable smooth data
+                                            exchange.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/mobile-applications/coloured/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">App Maintenance &amp; Updates</h3>
+                                        <p class="feature-description">
+                                            Ongoing maintenance, updates, and performance tuning to ensure
+                                            your app stays secure, efficient, and relevant.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Our Team Section -->
+<!--                    <section class="our-team">-->
+<!--                        <div class="container">-->
+<!--                            <div class="text-center mb-5">-->
+<!--                                <h2 class="section-title">Our Team</h2>-->
+<!--                                <p class="section-subtitle">-->
+<!--                                    A passionate group of experts driving innovation, collaboration, and-->
+<!--                                    results.-->
+<!--                                </p>-->
+<!--                            </div>-->
+<!--                            <div class="team-slider-container">-->
+<!--                                <div class="team-slider">-->
+<!--                                    <div class="team-slide">-->
+<!--                                        <div class="row">-->
+<!--                                            <div class="col-md-4">-->
+<!--                                                <div class="team-card">-->
+<!--                                                    <div class="team-image">-->
+<!--                                                        <img-->
+<!--                                                                src="/website_ext/static/src/images/team/ceo.jpg"-->
+<!--                                                                alt="Muhammad Asif"-->
+<!--                                                                class="img-fluid"-->
+<!--                                                        />-->
+<!--                                                    </div>-->
+<!--                                                    <div class="team-info">-->
+<!--                                                        <h4 class="team-name">Nouman Bashir</h4>-->
+<!--                                                        <p class="team-role">CEO</p>-->
+<!--                                                        <a href="#" class="team-social">-->
+<!--                                                            <svg-->
+<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                                    width="16"-->
+<!--                                                                    height="16"-->
+<!--                                                                    viewBox="0 0 24 24"-->
+<!--                                                                    fill="white"-->
+<!--                                                                    stroke="currentColor"-->
+<!--                                                                    stroke-width="2"-->
+<!--                                                                    stroke-linecap="round"-->
+<!--                                                                    stroke-linejoin="round"-->
+<!--                                                            >-->
+<!--                                                                <path-->
+<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
+<!--                                                                />-->
+<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
+<!--                                                                <circle cx="4" cy="4" r="2"/>-->
+<!--                                                            </svg>-->
+<!--                                                        </a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="col-md-4">-->
+<!--                                                <div class="team-card">-->
+<!--                                                    <div class="team-image">-->
+<!--                                                        <img-->
+<!--                                                                src="/website_ext/static/src/images/team/cto.jpg"-->
+<!--                                                                alt="Muhammad Raiz"-->
+<!--                                                                class="img-fluid"-->
+<!--                                                        />-->
+<!--                                                    </div>-->
+<!--                                                    <div class="team-info">-->
+<!--                                                        <h4 class="team-name">Muhammad Raiz</h4>-->
+<!--                                                        <p class="team-role">CTO</p>-->
+<!--                                                        <a href="https://www.linkedin.com/in/riazspace" class="team-social">-->
+<!--                                                            <svg-->
+<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                                    width="16"-->
+<!--                                                                    height="16"-->
+<!--                                                                    viewBox="0 0 24 24"-->
+<!--                                                                    fill="white"-->
+<!--                                                                    stroke="currentColor"-->
+<!--                                                                    stroke-width="2"-->
+<!--                                                                    stroke-linecap="round"-->
+<!--                                                                    stroke-linejoin="round"-->
+<!--                                                            >-->
+<!--                                                                <path-->
+<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
+<!--                                                                />-->
+<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
+<!--                                                                <circle cx="4" cy="4" r="2"/>-->
+<!--                                                            </svg>-->
+<!--                                                        </a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <div class="col-md-4">-->
+<!--                                                <div class="team-card">-->
+<!--                                                    <div class="team-image">-->
+<!--                                                        <img-->
+<!--                                                                src="/website_ext/static/src/images/team/lead.png"-->
+<!--                                                                alt="Arslan Haroon"-->
+<!--                                                                class="img-fluid"-->
+<!--                                                        />-->
+<!--                                                    </div>-->
+<!--                                                    <div class="team-info">-->
+<!--                                                        <h4 class="team-name">Arslan Haroon</h4>-->
+<!--                                                        <p class="team-role">Senior Software Engineer (Lead)</p>-->
+<!--                                                        <a href="https://www.linkedin.com/in/arslanh123/" class="team-social">-->
+<!--                                                            <svg-->
+<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                                    width="16"-->
+<!--                                                                    height="16"-->
+<!--                                                                    viewBox="0 0 24 24"-->
+<!--                                                                    fill="white"-->
+<!--                                                                    stroke="currentColor"-->
+<!--                                                                    stroke-width="2"-->
+<!--                                                                    stroke-linecap="round"-->
+<!--                                                                    stroke-linejoin="round"-->
+<!--                                                            >-->
+<!--                                                                <path-->
+<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
+<!--                                                                />-->
+<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
+<!--                                                                <circle cx="4" cy="4" r="2"/>-->
+<!--                                                            </svg>-->
+<!--                                                        </a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="slider-dots">-->
+<!--                                    <div class="slider-dot active"/>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
+
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Innovate?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to transform your business with powerful ERP
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_mobile_application" model="website.menu">
+        <field name="name">mobile-application</field>
+        <field name="url">/mobile-application</field>
+        <field name="page_id" ref="website_ext.mobile-application"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>
