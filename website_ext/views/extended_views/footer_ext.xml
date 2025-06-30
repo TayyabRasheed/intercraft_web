@@ -9,7 +9,8 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 footer-column">
                             <div class="footer-logo">
-                                <img src="/website_ext/static/src/images/footer/logo.svg" alt="Intercraft Logo" class="img-fluid"/>
+                                <img src="/website_ext/static/src/images/footer/logo.svg" alt="Intercraft Logo"
+                                     class="img-fluid"/>
                             </div>
                             <p class="footer-description">
                                 Intercraft delivers seamless system integration and application
@@ -31,13 +32,13 @@
                             </div>
                             <div class="footer-social" style="color:#333;">
                                 <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
-                                   aria-label="LinkedIn" style="color:black">
+                                   aria-label="LinkedIn" style="color:#0077B5;">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="18"
                                             height="18"
                                             viewBox="0 0 24 24"
-                                            fill="none"
+                                            fill="#0077B5"
                                             stroke="currentColor"
                                             stroke-width="2"
                                             stroke-linecap="round"
@@ -51,13 +52,13 @@
                                     </svg>
                                 </a>
                                 <a href="https://www.facebook.com/share/1928ZKKhVP/" aria-label="Facebook"
-                                   style="color:black">
+                                   style="color:#1877F2">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
                                             width="18"
                                             height="18"
                                             viewBox="0 0 24 24"
-                                            fill="none"
+                                            fill="#1877F2"
                                             stroke="currentColor"
                                             stroke-width="2"
                                             stroke-linecap="round"
@@ -68,25 +69,32 @@
                                         />
                                     </svg>
                                 </a>
-                                <a href="https://www.youtube.com/@intercraft-sol" aria-label="YouTube"
-                                   style="color:black">
-                                    <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            width="18"
-                                            height="18"
-                                            viewBox="0 0 24 24"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="2"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                    >
-                                        <path
-                                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-                                        />
-                                        <path d="m10 15 5-3-5-3z"/>
+                                <a href="https://www.youtube.com/@intercraft-sol" aria-label="YouTube" target="_blank"
+                                   rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                         fill="#FF0000">
+                                        <path d="M23.498 6.186a2.99 2.99 0 0 0-2.106-2.113C19.392 3.5 12 3.5 12 3.5s-7.392 0-9.392.573a2.99 2.99 0 0 0-2.106 2.113C0 8.215 0 12 0 12s0 3.785.502 5.814a2.99 2.99 0 0 0 2.106 2.113C4.608 20.5 12 20.5 12 20.5s7.392 0 9.392-.573a2.99 2.99 0 0 0 2.106-2.113C24 15.785 24 12 24 12s0-3.785-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
                                     </svg>
                                 </a>
+<!--                                <a href="https://www.youtube.com/@intercraft-sol" aria-label="YouTube"-->
+<!--                                   style="color:#FF0000">-->
+<!--                                    <svg-->
+<!--                                            xmlns="http://www.w3.org/2000/svg"-->
+<!--                                            width="18"-->
+<!--                                            height="18"-->
+<!--                                            viewBox="0 0 24 24"-->
+<!--                                            fill="#FF0000"-->
+<!--                                            stroke="currentColor"-->
+<!--                                            stroke-width="2"-->
+<!--                                            stroke-linecap="round"-->
+<!--                                            stroke-linejoin="round"-->
+<!--                                    >-->
+<!--                                        <path-->
+<!--                                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"-->
+<!--                                        />-->
+<!--                                        <path d="m10 15 5-3-5-3z"/>-->
+<!--                                    </svg>-->
+<!--                                </a>-->
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
@@ -201,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-bottom d-none d-sm-none d-md-block" >
+                    <div class="footer-bottom d-none d-sm-none d-md-block">
                         <div class="row">
                             <div class="col-md-6">
                                 <p class="footer-copyright">© Copyright 2025 Intercraftsol</p>

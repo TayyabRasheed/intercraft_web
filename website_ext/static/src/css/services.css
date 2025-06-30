@@ -522,9 +522,6 @@
         display: none !important;
     }
 
-    .services-bg img {
-        display: none !important;
-    }
 
     .partnerships-title {
         font-size: 24px !important;
@@ -540,26 +537,28 @@
         font-size: 18px !important;
     }
 
-    .section-title
-     {
-        font-size: 18px !important;
-        text-align: left !important;
+    .section-title {
+        font-size: 32px !important;
+        text-align: center !important;
     }
+
     .footer-description {
         font-size: 18px !important;
         text-align: center !important;
     }
-     .services-title{
-         font-size: 18px !important;
+
+    .services-title {
+        font-size: 18px !important;
         text-align: center !important;
-     }
+    }
+
     .footer-certifications {
         width: 100% !important;
         text-align: center !important;
     }
 
     .partnerships {
-        background-color: #f9f9f9  !important;
+        background-color: #f9f9f9 !important;
         padding: 0px 0 !important;
         position: relative !important;
     }
@@ -584,8 +583,15 @@
 @media (max-width: 576px) {
     .service-hero {
         padding-bottom: 40px !important;
+        height: 40dvh !important;
     }
 
+    .service-image img {
+        display: none !important;
+    }
+    .services-bg img{
+        display: none !important;
+    }
     .service-hero-title {
         font-size: 28px !important;
     }
@@ -593,7 +599,9 @@
     .service-label {
         font-size: 16px !important;
     }
-
+    .ai-features{
+        background-image: none !important;
+    }
     .ai-features-title {
         font-size: 28px !important;
     }
@@ -615,6 +623,7 @@
     }
 
     .team-image {
-        height: 200px !important;
+        height: 350px !important;
     }
 }
+
