@@ -206,9 +206,19 @@ body {
 
 /* Mobile Responsive Styles */
 @media (max-width: 991px) {
+     .navbar-collapse.collapse:not(.mobile-show) {
+        display: block !important;
+    }
+
+    .navbar-collapse.collapse.show {
+        display: none !important;
+    }
+    .navbar-toggler {
+        display: block !important;
+    }
     .mega-dropdown .dropdown-menu {
         min-width: auto;
-        width: 100%;
+        width: 100vw;
         padding: 15px;
         margin-top: 10px;
         border-radius: 0 0 12px 12px;
@@ -277,6 +287,10 @@ body {
 
 /* For very small screens */
 @media (max-width: 576px) {
+
+    .navbar {
+         background-color: rgba(0, 0, 0, 0.9);
+    }
     .mega-menu-item {
         flex-direction: column;
         align-items: flex-start;

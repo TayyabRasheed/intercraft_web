@@ -11,16 +11,10 @@
                     height="40"
             />
         </a>
-        <button
-                class="navbar-toggler"
-                type="button"
-                id="sm_nav_bar_toggle"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-        >
+       <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" >
             <ul class="navbar-nav ms-auto align-items-center">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home</a>
