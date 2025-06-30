@@ -14,17 +14,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ===== NAVBAR FUNCTIONALITY =====
 function initNavbar() {
-  const navbar = document.querySelector(".navbar-custom");
+    const navbar = document.querySelector(".navbar-custom");
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector(".navbar-collapse");
 
-  if (navbar) {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add("navbar-scrolled");
-      } else {
-        navbar.classList.remove("navbar-scrolled");
-      }
-    });
-  }
+    // Scroll behavior
+    if (navbar) {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add("navbar-scrolled");
+            } else {
+                navbar.classList.remove("navbar-scrolled");
+            }
+        });
+    }
+
+    // Mobile menu toggle functionality
+    if (navbarToggler && navbarCollapse) {
+        // Set initial state based on screen size
+        function handleResponsive() {
+            if (window.innerWidth > 991) {
+                navbarCollapse.classList.add("show");
+                navbarToggler.setAttribute('aria-expanded', 'true');
+            } else {
+                navbarCollapse.classList.remove("show");
+                navbarToggler.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        // Initialize
+        handleResponsive();
+
+        // Toggle menu on button click
+        navbarToggler.addEventListener("click", function(e) {
+            e.stopPropagation(); // Prevent this click from bubbling to document
+            navbarCollapse.classList.toggle("show");
+            const isExpanded = navbarCollapse.classList.contains("show");
+            navbarToggler.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function(e) {
+            if (window.innerWidth <= 991 &&
+                !navbar.contains(e.target) &&
+                !e.target.classList.contains("navbar-toggler")) {
+                navbarCollapse.classList.remove("show");
+                navbarToggler.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Handle window resize
+        // window.addEventListener("resize", function() {
+        //     handleResponsive();
+        // });
+    }
 }
 
 // ===== SERVICE CARDS FUNCTIONALITY =====

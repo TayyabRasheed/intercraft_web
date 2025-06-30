@@ -28,7 +28,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   object-fit: cover;
-  height: 150px;
+  height: 224px;
   width: 200px;
 }
 
