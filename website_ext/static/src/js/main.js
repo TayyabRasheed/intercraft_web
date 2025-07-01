@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
   initServiceCards();
   initMegaMenu();
-  initTeamSlider();
+  // initTeamSlider();
   initSmoothScrolling();
   initScrollAnimations();
   initPartnerLogos();
@@ -14,12 +14,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ===== NAVBAR FUNCTIONALITY =====
 function initNavbar() {
-    const navbar = document.querySelector(".navbar-custom");
+    const navbar = document.querySelector(".navbar");
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector(".navbar-collapse");
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
-    // Scroll behavior
+    // Scroll behavior - add dark background when scrolled
     if (navbar) {
+        // Set initial state
+        if (window.scrollY > 50) {
+            navbar.classList.add("navbar-scrolled");
+        } else {
+            navbar.classList.remove("navbar-scrolled");
+        }
+
         window.addEventListener("scroll", () => {
             if (window.scrollY > 50) {
                 navbar.classList.add("navbar-scrolled");
@@ -31,23 +39,15 @@ function initNavbar() {
 
     // Mobile menu toggle functionality
     if (navbarToggler && navbarCollapse) {
-        // Set initial state based on screen size
-        function handleResponsive() {
-            if (window.innerWidth > 991) {
-                navbarCollapse.classList.add("show");
-                navbarToggler.setAttribute('aria-expanded', 'true');
-            } else {
-                navbarCollapse.classList.remove("show");
-                navbarToggler.setAttribute('aria-expanded', 'false');
-            }
+        // Initialize - ensure menu is closed on small screens
+        if (window.innerWidth <= 991) {
+            navbarCollapse.classList.remove("show");
+            navbarToggler.setAttribute('aria-expanded', 'false');
         }
-
-        // Initialize
-        handleResponsive();
 
         // Toggle menu on button click
         navbarToggler.addEventListener("click", function(e) {
-            e.stopPropagation(); // Prevent this click from bubbling to document
+            e.stopPropagation();
             navbarCollapse.classList.toggle("show");
             const isExpanded = navbarCollapse.classList.contains("show");
             navbarToggler.setAttribute('aria-expanded', isExpanded);
@@ -63,13 +63,77 @@ function initNavbar() {
             }
         });
 
-        // Handle window resize
-        // window.addEventListener("resize", function() {
-        //     handleResponsive();
-        // });
+        // Close menu when a nav link is clicked (for mobile)
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 991) {
+                    navbarCollapse.classList.remove("show");
+                    navbarToggler.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
     }
 }
 
+// Initialize the navbar when DOM is loaded
+document.addEventListener('DOMContentLoaded', initNavbar);
+// function initNavbar() {
+//     const navbar = document.querySelector(".navbar-custom");
+//     const navbarToggler = document.querySelector(".navbar-toggler");
+//     const navbarCollapse = document.querySelector(".navbar-collapse");
+//     const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+//
+//     // Scroll behavior
+//     if (navbar) {
+//         window.addEventListener("scroll", () => {
+//             if (window.scrollY > 50) {
+//                 navbar.classList.add("navbar-scrolled");
+//             } else {
+//                 navbar.classList.remove("navbar-scrolled");
+//             }
+//         });
+//     }
+//
+//     // Mobile menu toggle functionality
+//     if (navbarToggler && navbarCollapse) {
+//         // Initialize - ensure menu is closed on small screens
+//         if (window.innerWidth <= 991) {
+//             navbarCollapse.classList.remove("show");
+//             navbarToggler.setAttribute('aria-expanded', 'false');
+//         }
+//
+//         // Toggle menu on button click
+//         navbarToggler.addEventListener("click", function(e) {
+//             e.stopPropagation();
+//             navbarCollapse.classList.toggle("show");
+//             const isExpanded = navbarCollapse.classList.contains("show");
+//             navbarToggler.setAttribute('aria-expanded', isExpanded);
+//         });
+//
+//         // Close menu when clicking outside
+//         document.addEventListener("click", function(e) {
+//             if (window.innerWidth <= 991 &&
+//                 !navbar.contains(e.target) &&
+//                 !e.target.classList.contains("navbar-toggler")) {
+//                 navbarCollapse.classList.remove("show");
+//                 navbarToggler.setAttribute('aria-expanded', 'false');
+//             }
+//         });
+//
+//         // Close menu when a nav link is clicked (for mobile)
+//         navLinks.forEach(link => {
+//             link.addEventListener('click', () => {
+//                 if (window.innerWidth <= 991) {
+//                     navbarCollapse.classList.remove("show");
+//                     navbarToggler.setAttribute('aria-expanded', 'false');
+//                 }
+//             });
+//         });
+//     }
+// }
+
+// Initialize the navbar when DOM is loaded
+document.addEventListener('DOMContentLoaded', initNavbar);
 // ===== SERVICE CARDS FUNCTIONALITY =====
 function initServiceCards() {
   const serviceCards = document.querySelectorAll(".service-card");
