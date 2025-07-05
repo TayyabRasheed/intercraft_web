@@ -1,3 +1,10 @@
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1{
+    font-family: 'Manrope', sans-serif;
+}
 /* ===== SERVICE HERO SECTIONS ===== */
 .service-hero {
     height: 503px;
@@ -204,7 +211,13 @@
     position: relative;
     z-index: 1;
 }
-
+.section-title_sub{
+     font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #303030;
+    text-align: center;
+}
 .section-title {
     font-size: 32px;
     font-weight: 700;
@@ -298,15 +311,26 @@
         padding: 60px 0;
     }
 
-    .section-title {
+    .section-title-sub {
         font-size: 32px;
+        text-align: center;
+    }.section-title {
+        font-size: 32px;
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
+
     .service-features {
-        padding: 50px 0;
-    }
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
     .feature-card {
         margin-bottom: 20px;
@@ -536,7 +560,10 @@
     .innovate-title {
         font-size: 18px !important;
     }
-
+.section-title-sub {
+        font-size: 32px !important;
+        text-align: center !important;
+    }
     .section-title {
         font-size: 32px !important;
         text-align: left !important;

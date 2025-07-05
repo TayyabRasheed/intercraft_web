@@ -109,13 +109,13 @@
                     </section>
                     <!-- Service Features Section -->
                     <section class="service-features">
-                         <div class="services-bg">
+                         <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
                                  aria-hidden="true"/>
                         </div>
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title">Our UI/UX Design Services</h2>
+                                <h2 class="section-title-sub">Our UI/UX Design Services</h2>
                                 <p class="section-subtitle">
                                     A custom-crafted design system and High-fidelity mockups with
                                     interactive prototypes.
@@ -238,7 +238,7 @@
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-4">
-                                <h2 class="section-title">Our Team</h2>
+                                <h2 class="section-title-sub">Our Team</h2>
                                 <p class="section-subtitle">
                                     A passionate group of experts driving innovation, collaboration, and
                                     results.

@@ -112,7 +112,7 @@
                     </section>
                     <!-- Service Features Section -->
                     <section class="service-features">
-                        <div class="services-bg">
+                        <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
                                  aria-hidden="true"/>
                         </div>

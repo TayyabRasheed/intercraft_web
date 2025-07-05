@@ -52,7 +52,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <div class="service-image">
+                                    <div class="service-image d-none d-sm-block">
                                         <img
                                                 src="/website_ext/static/src/images/services-section/moodle-lms/moodle-side-image.png"
                                                 alt="Moodle LMS"
@@ -113,7 +113,7 @@
 
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title">Our Moodle LMS Services</h2>
+                                <h2 class="section-title_sub">Our Moodle LMS Services</h2>
                                 <p class="section-subtitle">
                                     Whether you're starting fresh or enhancing an existing platform, our
                                     expert Moodle team is here to support you with everything from setup
@@ -256,7 +256,7 @@
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-4">
-                                <h2 class="section-title">Our Team</h2>
+                                <h2 class="section-title-sub">Our Team</h2>
                                 <p class="section-subtitle">
                                     A passionate group of experts driving innovation, collaboration, and
                                     results.
