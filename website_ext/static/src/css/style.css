@@ -959,7 +959,7 @@ body {
     .hero {
         padding-bottom: 40px;
         height: 40dvh !important;
-        margin-top: calc(var(--nav-height)  - 2px);
+        margin-top: calc(var(--nav-height)  - 3px);
     }
 
     .hero h1 {
