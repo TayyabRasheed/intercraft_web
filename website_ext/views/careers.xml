@@ -11,7 +11,7 @@
             <t name="Career" t-name="website_ext.career">
                 <t t-call="website.layout">
                     <section
-                            class="hero"
+                            class="service-hero"
                             style="
                                 background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
                                   url('/website_ext/static/src/images/career/career-bg.jpg') center/cover;

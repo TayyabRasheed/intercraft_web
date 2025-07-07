@@ -311,6 +311,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 /* Responsive styles */
 @media (max-width: 992px) {
+
     .service-features {
         padding: 60px 0;
     }
@@ -450,7 +451,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 @media (max-width: 992px) {
     .service-hero {
-        padding-bottom: 60px;
+        padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: var(--nav-height) ;
     }
 
     .service-hero-title {
@@ -485,12 +488,14 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 @media (max-width: 768px) {
-    .service-hero {
-        padding-bottom: 50px;
+ .service-hero {
+             padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: var(--nav-height) ;
     }
 
     .service-hero-title {
-        font-size: 32px;
+        font-size: 20px;
     }
 
     .service-hero-subtitle {
@@ -534,6 +539,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 
 @media (max-width: 576px) {
+     .service-hero {
+             padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: var(--nav-height) ;
+    }
     .section-label {
         font-size: 22px !important;
         margin-bottom: 0px !important;
