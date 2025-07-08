@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     initNavbar();
-    initServiceCards();
+    // initServiceCards();
     initMobileAccordion();
     initFeatureCards();
     initPartnerLogos();
@@ -76,24 +76,24 @@ function initNavbar() {
 // NO CHANGES ARE NEEDED BELOW THIS LINE. THE REST OF THE FILE IS CORRECT.
 // Your other features like service cards, team carousel, etc., are unaffected.
 
-function initServiceCards() {
-    const serviceCards = document.querySelectorAll(".service-card");
-    serviceCards.forEach((card) => {
-        card.addEventListener("mouseenter", () => card.classList.add("hovered"));
-        card.addEventListener("mouseleave", () => card.classList.remove("hovered"));
-        card.addEventListener("click", function (e) {
-            if (e.target.tagName === "A") { return; }
-            serviceCards.forEach((c) => c.classList.remove("active"));
-            this.classList.add("active");
-            const serviceType = this.getAttribute("data-service");
-            if (serviceType) {
-                setTimeout(() => {
-                    window.location.href = `/services/${serviceType}.html`;
-                }, 300);
-            }
-        });
-    });
-}
+// function initServiceCards() {
+//     const serviceCards = document.querySelectorAll(".service-card");
+//     serviceCards.forEach((card) => {
+//         card.addEventListener("mouseenter", () => card.classList.add("hovered"));
+//         card.addEventListener("mouseleave", () => card.classList.remove("hovered"));
+//         card.addEventListener("click", function (e) {
+//             if (e.target.tagName === "A") { return; }
+//             serviceCards.forEach((c) => c.classList.remove("active"));
+//             this.classList.add("active");
+//             const serviceType = this.getAttribute("data-service");
+//             if (serviceType) {
+//                 setTimeout(() => {
+//                     window.location.href = `/services/${serviceType}.html`;
+//                 }, 300);
+//             }
+//         });
+//     });
+// }
 
 function initFeatureCards() {
     const featureCards = document.querySelectorAll(".feature-card");
