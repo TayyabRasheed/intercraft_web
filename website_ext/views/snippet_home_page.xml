@@ -82,20 +82,7 @@
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo2.png"
-                                                    alt="Partner 2"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-2.png"
-                                                    alt="Partner 2"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
+
                                     <div class="col-md-3 col-sm-6 col-6">
                                         <div class="partner-logo-container">
                                             <img
@@ -120,6 +107,86 @@
                                             <img
                                                     src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
                                                     alt="Partner 4"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
+                                                    alt="Alfaisal University"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
+                                                    alt="Alfaisal University"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="partners-logos">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
+                                                    alt="King Faisal University"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"
+                                                    alt="King Faisal University"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
+                                                    alt="QTS"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
+                                                    alt="QTS"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"
+                                                    alt="Taleem"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"
+                                                    alt="Taleem"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"
+                                                    alt="Taleem"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"
+                                                    alt="Taleem"
                                                     class="img-fluid partner-logo-colored"
                                             />
                                         </div>
@@ -516,239 +583,37 @@
             </div>
         </section>
 
-        <!-- Trusted Partnerships Section with Carousel -->
-<!--        <section class="partnerships">-->
-<!--            <div class="container text-center">-->
-<!--                <h2 class="partnerships-title">-->
-<!--                    Trusted Partnerships That Power Innovation-->
-<!--                </h2>-->
-<!--                <p class="partnerships-subtitle">-->
-<!--                    Proudly recognized by leading organizations like PSEB, we collaborate-->
-<!--                    with-->
-<!--                    <br/>-->
-<!--                    industry leaders to deliver impactful, future-ready solutions.-->
-<!--                </p>-->
+        <!-- Trusted Partnerships Section -->
+        <section class="partnerships">
+            <div class="container text-center">
+                <h2 class="partnerships-title">
+                    Trusted Partnerships That Power Innovation
+                </h2>
+                <p class="partnerships-subtitle">
+                    Proudly recognized by leading organizations like PSEB, we collaborate
+                    with industry leaders to deliver impactful, future-ready solutions.
+                </p>
 
-<!--                &lt;!&ndash; Bootstrap Carousel &ndash;&gt;-->
-<!--                <div id="partnershipsCarousel" class="carousel carousel-dark slide">-->
-<!--&lt;!&ndash;                    <div class="carousel-indicators">&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button&ndash;&gt;-->
-<!--&lt;!&ndash;                                type="button"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-target="#partnershipsCarousel"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-slide-to="0"&ndash;&gt;-->
-<!--&lt;!&ndash;                                class="active"&ndash;&gt;-->
-<!--&lt;!&ndash;                                aria-current="true"&ndash;&gt;-->
-<!--&lt;!&ndash;                                aria-label="Slide 1"&ndash;&gt;-->
-<!--&lt;!&ndash;                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button&ndash;&gt;-->
-<!--&lt;!&ndash;                                type="button"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-target="#partnershipsCarousel"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-slide-to="1"&ndash;&gt;-->
-<!--&lt;!&ndash;                                aria-label="Slide 2"&ndash;&gt;-->
-<!--&lt;!&ndash;                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                        <button&ndash;&gt;-->
-<!--&lt;!&ndash;                                type="button"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-target="#partnershipsCarousel"&ndash;&gt;-->
-<!--&lt;!&ndash;                                data-bs-slide-to="2"&ndash;&gt;-->
-<!--&lt;!&ndash;                                aria-label="Slide 3"&ndash;&gt;-->
-<!--&lt;!&ndash;                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
-<!--                    <div class="carousel-inner">-->
-<!--                        <div class="carousel-item active" data-bs-interval="10000">-->
-<!--                            <div class="partnerships-logos">-->
-<!--                                <div class="row justify-content-center">-->
-<!--                                    <div class="col-md-3 col-sm-4 col-3">-->
-<!--                                        <img-->
-<!--                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"-->
-<!--                                                alt="Partner 4"-->
-<!--                                                class="img-fluid"-->
-<!--                                        />-->
-<!--                                    </div>-->
-<!--                                    <div class="col-md-3 col-sm-4 col-4">-->
-<!--                                        <img-->
-<!--                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"-->
-<!--                                                alt="Partner 5"-->
-<!--                                                class="img-fluid"-->
-<!--                                        />-->
-<!--                                    </div>-->
-<!--                                    <div class="col-md-3 col-sm-4 col-4">-->
-<!--                                        <img-->
-<!--                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"-->
-<!--                                                alt="Partner 6"-->
-<!--                                                class="img-fluid"-->
-<!--                                        />-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--&lt;!&ndash;                        <div class="carousel-item" data-bs-interval="2000">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class="partnerships-logos">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class="row justify-content-center">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 4"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 5"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 6"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <div class="carousel-item">&ndash;&gt;-->
-<!--&lt;!&ndash;                            <div class="partnerships-logos">&ndash;&gt;-->
-<!--&lt;!&ndash;                                <div class="row justify-content-center">&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo1.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 7"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo2.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 8"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                    <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;-->
-<!--&lt;!&ndash;                                        <img&ndash;&gt;-->
-<!--&lt;!&ndash;                                                src="/website_ext/static/src/images/trusted-partners/logo3.png"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                alt="Partner 9"&ndash;&gt;-->
-<!--&lt;!&ndash;                                                class="img-fluid"&ndash;&gt;-->
-<!--&lt;!&ndash;                                        />&ndash;&gt;-->
-<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
-<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
-<!--                    </div>-->
-<!--&lt;!&ndash;                    <button&ndash;&gt;-->
-<!--&lt;!&ndash;                            class="carousel-control-prev"&ndash;&gt;-->
-<!--&lt;!&ndash;                            type="button"&ndash;&gt;-->
-<!--&lt;!&ndash;                            data-bs-target="#partnershipsCarousel"&ndash;&gt;-->
-<!--&lt;!&ndash;                            data-bs-slide="prev"&ndash;&gt;-->
-<!--&lt;!&ndash;                    >&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="carousel-control-prev-icon" aria-hidden="true"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="visually-hidden">Previous</span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </button>&ndash;&gt;-->
-<!--&lt;!&ndash;                    <button&ndash;&gt;-->
-<!--&lt;!&ndash;                            class="carousel-control-next"&ndash;&gt;-->
-<!--&lt;!&ndash;                            type="button"&ndash;&gt;-->
-<!--&lt;!&ndash;                            data-bs-target="#partnershipsCarousel"&ndash;&gt;-->
-<!--&lt;!&ndash;                            data-bs-slide="next"&ndash;&gt;-->
-<!--&lt;!&ndash;                    >&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="carousel-control-next-icon" aria-hidden="true"/>&ndash;&gt;-->
-<!--&lt;!&ndash;                        <span class="visually-hidden">Next</span>&ndash;&gt;-->
-<!--&lt;!&ndash;                    </button>&ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-<!-- Trusted Partnerships Section -->
-<!-- Trusted Partnerships Section -->
-<section class="partnerships">
-    <div class="container text-center">
-        <h2 class="partnerships-title">
-            Trusted Partnerships That Power Innovation
-        </h2>
-        <p class="partnerships-subtitle">
-            Proudly recognized by leading organizations like PSEB, we collaborate
-            with industry leaders to deliver impactful, future-ready solutions.
-        </p>
-
-        <div class="partnerships-logos">
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                    <div class="partner-logo-container">
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/alfaisal.png"
-                            alt="Alfaisal University"
-                            class="img-fluid partner-logo-default"
-                        />
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/alfaisal1.png"
-                            alt="Alfaisal University"
-                            class="img-fluid partner-logo-colored"
-                        />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                    <div class="partner-logo-container">
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/kingfaisal.png"
-                            alt="King Faisal University"
-                            class="img-fluid partner-logo-default"
-                        />
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/kingfaisal1.png"
-                            alt="King Faisal University"
-                            class="img-fluid partner-logo-colored"
-                        />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                    <div class="partner-logo-container">
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/qts.png"
-                            alt="QTS"
-                            class="img-fluid partner-logo-default"
-                        />
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/qts1.png"
-                            alt="QTS"
-                            class="img-fluid partner-logo-colored"
-                        />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                    <div class="partner-logo-container">
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/taleem.png"
-                            alt="Taleem"
-                            class="img-fluid partner-logo-default"
-                        />
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/taleem1.png"
-                            alt="Taleem"
-                            class="img-fluid partner-logo-colored"
-                        />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                    <div class="partner-logo-container">
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/zad.png"
-                            alt="PSEB"
-                            class="img-fluid partner-logo-default"
-                        />
-                        <img
-                            src="/website_ext/static/src/images/trusted-partners/zad1.png"
-                            alt="PSEB"
-                            class="img-fluid partner-logo-colored"
-                        />
+                <div class="partnerships-logos">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="partner-logo-container">
+                                <img
+                                        src="/website_ext/static/src/images/trusted-partners/zad.png"
+                                        alt="PSEB"
+                                        class="img-fluid partner-logo-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/trusted-partners/zad1.png"
+                                        alt="PSEB"
+                                        class="img-fluid partner-logo-colored"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
         <!-- Ready to Innovate Section -->
         <section class="innovate">
             <div class="container text-center">
