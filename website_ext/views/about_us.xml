@@ -11,7 +11,7 @@
             <t name="About Us Page" t-name="website_ext.aboutus">
                 <t t-call="website.layout">
                     <section class="service-hero">
-                        <div class="service-hero-bg"
+                        <div class="service-hero-bg "
 
                              style="background: url('/website_ext/static/src/images/about-us/about-us-bg.jpg') center / cover;"></div>
                         <div class="container">
@@ -145,13 +145,13 @@
 
                     <!-- Our Expertise Section -->
                     <section class="service-features" id="expertise">
-                        <div class="services-bg d-none d-sm-block">
+                        <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
                                  aria-hidden="true"/>
                         </div>
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title">Our Expertise</h2>
+                                <h2 class="section-title-sub">Our Expertise</h2>
                                 <p class="section-subtitle">To empower organizations by providing innovative, scalable,
                                     and cost-effective
                                     digital solutions that streamline operations and enhance productivity.
@@ -244,7 +244,7 @@
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title">Our Reach &amp; Culture</h2>
+                                <h2 class="section-title-sub">Our Reach &amp; Culture</h2>
                                 <p class="section-subtitle">With offices in Riyadh, KSA, and Islamabad, Pakistan,
                                     InterCraft serves a global
                                     clientele with innovative solutions. Our culture is the foundation of our success,

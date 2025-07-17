@@ -72,6 +72,28 @@
                                                 </svg>
                                             </div>
                                             <div class="contact-details">
+                                                <h5>+1 512-355-5400</h5>
+                                            </div>
+                                        </div>
+                                        <div class="contact-item">
+                                            <div class="contact-icon">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="20"
+                                                        height="20"
+                                                        viewBox="0 0 24 24"
+                                                        fill="none"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                                                    />
+                                                </svg>
+                                            </div>
+                                            <div class="contact-details">
                                                 <h5>(051) - 5913054</h5>
                                             </div>
                                         </div>
@@ -104,81 +126,92 @@
 
                                 <div class="col-lg-6">
                                     <div class="contact-form">
-                                        <form action="/website/crm/" method="POST" enctype="multipart/form-data"
-                                              class="o_website_form">
-                                            <input type="hidden" name="model_name" value="crm.lead"/>
-                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                            <div class="form-group">
-                                                <label class="form-label">Name</label>
-                                                <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        name="name"
-                                                        required="required"
-                                                />
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="form-label">Email</label>
-                                                <input
-                                                        type="email"
-                                                        class="form-control"
-                                                        name="email"
-                                                        required="required"
-                                                />
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="form-label">Contact Number</label>
-                                                <div class="phone-input-group">
-
-                                                    <input
-                                                            type="tel"
-                                                            class="form-control phone-number"
-                                                            name="phone"
-                                                            required="required"
-                                                    />
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="form-label">Subject</label>
-                                                <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        name="subject"
-                                                        required="required"
-                                                />
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="form-label">Message/Query</label>
-                                                <textarea
-                                                        class="form-control"
-                                                        name="message"
-                                                        rows="5"
-                                                        placeholder="Tell us about your project or inquiry..."
-                                                        required="required"
-                                                />
-                                            </div>
-
-                                            <div class="form-group">
-                                                <small class="privacy-text">
-                                                    For information on our privacy practices, please review our
-                                                    <a href="/">Privacy Policy</a>.
-                                                </small>
-                                            </div>
-
-                                            <button type="submit" class="submit-btn">Submit</button>
-                                        </form>
+                                        <t t-call="website.s_website_form"/>
                                     </div>
+
+                                    <!--                                    <div class="contact-form">-->
+                                    <!--                                        <form action="/website/crm/" method="POST" enctype="multipart/form-data"-->
+                                    <!--                                              class="o_website_form">-->
+                                    <!--                                            <input type="hidden" name="model_name" value="crm.lead"/>-->
+                                    <!--                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>-->
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <label class="form-label">Name</label>-->
+                                    <!--                                                <input-->
+                                    <!--                                                        type="text"-->
+                                    <!--                                                        class="form-control"-->
+                                    <!--                                                        name="name"-->
+                                    <!--                                                        required="required"-->
+                                    <!--                                                />-->
+                                    <!--                                            </div>-->
+
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <label class="form-label">Email</label>-->
+                                    <!--                                                <input-->
+                                    <!--                                                        type="email"-->
+                                    <!--                                                        class="form-control"-->
+                                    <!--                                                        name="email"-->
+                                    <!--                                                        required="required"-->
+                                    <!--                                                />-->
+                                    <!--                                            </div>-->
+
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <label class="form-label">Contact Number</label>-->
+                                    <!--                                                <div class="phone-input-group">-->
+
+                                    <!--                                                    <input-->
+                                    <!--                                                            type="tel"-->
+                                    <!--                                                            class="form-control phone-number"-->
+                                    <!--                                                            name="phone"-->
+                                    <!--                                                            required="required"-->
+                                    <!--                                                    />-->
+                                    <!--                                                </div>-->
+                                    <!--                                            </div>-->
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <label class="form-label">Subject</label>-->
+                                    <!--                                                <input-->
+                                    <!--                                                        type="text"-->
+                                    <!--                                                        class="form-control"-->
+                                    <!--                                                        name="subject"-->
+                                    <!--                                                        required="required"-->
+                                    <!--                                                />-->
+                                    <!--                                            </div>-->
+
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <label class="form-label">Message/Query</label>-->
+                                    <!--                                                <textarea-->
+                                    <!--                                                        class="form-control"-->
+                                    <!--                                                        name="message"-->
+                                    <!--                                                        rows="5"-->
+                                    <!--                                                        placeholder="Tell us about your project or inquiry..."-->
+                                    <!--                                                        required="required"-->
+                                    <!--                                                />-->
+                                    <!--                                            </div>-->
+
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <small class="privacy-text">-->
+                                    <!--                                                    For information on our privacy practices, please review our-->
+                                    <!--                                                    <a href="/">Privacy Policy</a>.-->
+                                    <!--                                                </small>-->
+                                    <!--                                            </div>-->
+                                    <!--                                            <div class="form-group">-->
+                                    <!--                                                <div class="g-recaptcha"-->
+                                    <!--                                                     t-att-data-sitekey="request.env['ir.config_parameter'].sudo().get_param('recaptcha_public_key')">-->
+                                    <!--                                                </div>-->
+                                    <!--                                            </div>-->
+
+                                    <!--                                            <button type="submit" class="submit-btn">Submit</button>-->
+                                    <!--                                        </form>-->
+                                    <!--                                    </div>-->
                                 </div>
                             </div>
                         </div>
+                        <!--                        <script src="https://www.google.com/recaptcha/api.js" async="async" defer="defer"/>-->
                     </section>
                 </t>
             </t>
         </field>
     </record>
+
     <record id="menu_contact_us" model="website.menu">
         <field name="name">contact-us</field>
         <field name="url">/contact-us</field>
@@ -186,4 +219,19 @@
         <field name="parent_id" ref="website.main_menu"/>
         <field name="sequence" type="int">60</field>
     </record>
+    <template id="website_form_custom_submit_style" inherit_id="website.s_website_form">
+        <xpath expr="//div[contains(@class, 's_website_form_submit')]/a" position="attributes">
+            <attribute name="class" add="custom-submit-btn" separator=" "/>
+            <attribute name="style">width: 100% !important;</attribute>
+        </xpath>
+
+        <xpath expr="//span[@id='s_website_form_result']" position="before">
+            <br class="mt-2"/>
+        </xpath>
+    </template>
+    <template id="custom_website_form_hidden_input" inherit_id="website.s_website_form">
+        <xpath expr="//form" position="inside">
+                <input type="hidden" name="form_source" value="contact-us"/>
+        </xpath>
+    </template>
 </odoo>

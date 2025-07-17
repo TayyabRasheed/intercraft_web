@@ -29,6 +29,9 @@
                                     </a
                                     >
                                 </p>
+                                <p>(051) - 5913054</p>
+                                <p>+92 336 9237827</p>
+                                <p>+1 512-355-5400</p>
                             </div>
                             <div class="footer-social" style="color:#333;">
                                 <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
@@ -167,7 +170,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-md-6 footer-column">
+                        <div class="col-lg-2 col-md-6 footer-column d-none d-lg-block">
                             <h4 class="footer-title d-none d-sm-none d-md-block">Follow Intercraft Journey</h4>
                             <p class="footer-newsletter-text d-none d-sm-none d-md-block">
                                 Subscribe to receive the most relevant news on our company,
@@ -183,7 +186,7 @@
                                     Subscribe
                                 </button>
                             </form>
-                            <div class="footer-certifications">
+                            <div class="footer-certifications ">
                                 <img
                                         src="/website_ext/static/src/images/footer/vision.png"
                                         alt="Vision"

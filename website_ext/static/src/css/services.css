@@ -1,3 +1,12 @@
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    font-family: 'Manrope', sans-serif;
+}
+
 /* ===== SERVICE HERO SECTIONS ===== */
 .service-hero {
     height: 503px;
@@ -205,6 +214,14 @@
     z-index: 1;
 }
 
+.section-title_sub {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #303030;
+    text-align: center;
+}
+
 .section-title {
     font-size: 32px;
     font-weight: 700;
@@ -294,19 +311,33 @@
 
 /* Responsive styles */
 @media (max-width: 992px) {
+
     .service-features {
         padding: 60px 0;
     }
 
+    .section-title-sub {
+        font-size: 32px;
+        text-align: center;
+    }
+
     .section-title {
         font-size: 32px;
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
+
     .service-features {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
         padding: 50px 0;
+        position: relative;
+        overflow: hidden;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
+
 
     .feature-card {
         margin-bottom: 20px;
@@ -420,7 +451,9 @@
 
 @media (max-width: 992px) {
     .service-hero {
-        padding-bottom: 60px;
+        padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: var(--nav-height) ;
     }
 
     .service-hero-title {
@@ -455,12 +488,14 @@
 }
 
 @media (max-width: 768px) {
-    .service-hero {
-        padding-bottom: 50px;
+ .service-hero {
+             padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: var(--nav-height) ;
     }
 
     .service-hero-title {
-        font-size: 32px;
+        font-size: 20px;
     }
 
     .service-hero-subtitle {
@@ -504,6 +539,11 @@
 
 
 @media (max-width: 576px) {
+     .service-hero {
+             padding-bottom: 40px !important;
+        height: 40dvh !important;
+        margin-top: calc(var(--nav-height) - 1px) !important ;
+    }
     .section-label {
         font-size: 22px !important;
         margin-bottom: 0px !important;
@@ -535,6 +575,11 @@
 
     .innovate-title {
         font-size: 18px !important;
+    }
+
+    .section-title-sub {
+        font-size: 32px !important;
+        text-align: center !important;
     }
 
     .section-title {
@@ -584,14 +629,17 @@
     .service-hero {
         padding-bottom: 40px !important;
         height: 40dvh !important;
+        margin-top: var(--nav-height) ;
     }
 
     .service-image img {
         display: none !important;
     }
-    .services-bg img{
+
+    .services-bg img {
         display: none !important;
     }
+
     .service-hero-title {
         font-size: 28px !important;
     }
@@ -599,9 +647,11 @@
     .service-label {
         font-size: 16px !important;
     }
-    .ai-features{
+
+    .ai-features {
         background-image: none !important;
     }
+
     .ai-features-title {
         font-size: 28px !important;
     }
