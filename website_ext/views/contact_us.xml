@@ -48,7 +48,7 @@
                                                 </svg>
                                             </div>
                                             <div class="contact-details">
-                                                <h5><a href="+923369237827">+92 336 9237827</a></h5>
+                                                <h5><a href="tel:+923369237827">+92 336 9237827</a></h5>
                                             </div>
                                         </div>
 
@@ -83,7 +83,7 @@
                                                 </svg>
                                             </div>
                                             <div class="contact-details">
-                                                <h5>info@intercraftsol.com</h5>
+                                                <h5> <a href="mailto:info@intercraftsol.com">info@intercraftsol.com</a></h5>
                                             </div>
                                         </div>
                                     </div>
