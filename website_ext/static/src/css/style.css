@@ -566,9 +566,34 @@ body {
 }
 
 @media (max-width: 768px) {
+    /*.partner-logo-container {*/
+    /*    height: 60px;*/
+    /*}*/
     .partner-logo-container {
-        height: 60px;
-    }
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.partner-logo-container img {
+    max-height: 80px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.partner-logo-colored {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
 }
 
 @media (max-width: 576px) {
