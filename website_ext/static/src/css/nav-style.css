@@ -82,15 +82,14 @@ nav.navbar.fixed-top .navbar-toggler-icon {
         color: #333;
         margin-bottom: 20px;
         padding-bottom: 10px;
-        border-bottom: 2px solid #ff5500;
         display: inline-block;
     }
 
     .mega-menu-item {
         display: flex;
         align-items: center;
-        padding: 12px 15px;
-        margin-bottom: 8px;
+        padding: 4px 4px;
+        margin-bottom: 4px;
         border-radius: 8px;
         text-decoration: none;
         color: #333;
@@ -138,7 +137,8 @@ nav.navbar.fixed-top .navbar-toggler-icon {
         background-color: #f8f9fa;
         padding: 20px;
         border-radius: 8px;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+       margin-top: 96px;
         border-left: 4px solid #ff5500;
     }
 

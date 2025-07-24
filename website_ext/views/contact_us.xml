@@ -87,6 +87,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <t t-call="website.s_google_map"/>
                                 </div>
 
                                 <div class="col-lg-6">

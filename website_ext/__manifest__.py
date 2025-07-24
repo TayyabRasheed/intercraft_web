@@ -24,6 +24,8 @@
         'views/services/moodle_lms.xml',
         'views/services/resource_augmentation.xml',
         'views/services/ui_ux.xml',
+        'views/services/sqa.xml',
+        'views/services/cloud-services.xml',
         'views/services/web_application.xml',
         'views/extended_views/hr_department_ext_view.xml',
         'views/extended_views/job_detail_ext.xml',
