@@ -10,6 +10,7 @@
         <field name="arch" type="xml">
             <t name="Cloud Services" t-name="website_ext.cloud-services">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <!-- Hero Section -->
                     <section class="service-hero cloud-hero">
                         <div class="service-hero-bg"/>

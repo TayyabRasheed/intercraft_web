@@ -10,6 +10,7 @@
         <field name="arch" type="xml">
             <t name="Web Application" t-name="website_ext.web-application">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <!-- Hero Section -->
                     <section class="service-hero web-hero">
                         <div class="service-hero-bg"/>

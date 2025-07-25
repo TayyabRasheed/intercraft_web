@@ -10,6 +10,7 @@
         <field name="arch" type="xml">
             <t name="Koha ILS" t-name="website_ext.koha-ils">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <!-- Hero Section -->
                     <section class="service-hero koha-hero">
                         <div class="service-hero-bg"/>

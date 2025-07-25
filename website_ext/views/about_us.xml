@@ -10,6 +10,7 @@
         <field name="arch" type="xml">
             <t name="About Us Page" t-name="website_ext.aboutus">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <section class="service-hero">
                         <div class="service-hero-bg "
 

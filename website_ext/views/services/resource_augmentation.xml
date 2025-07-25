@@ -10,6 +10,7 @@
         <field name="arch" type="xml">
             <t name="Resource Augmentation" t-name="website_ext.resource-augmentation">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <!-- Hero Section -->
                     <section class="service-hero resource-hero">
                         <div class="service-hero-bg"/>
