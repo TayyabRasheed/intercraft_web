@@ -231,38 +231,38 @@
     }
 }
 
-.side-contact-btn_contact {
-    position: fixed;
-    font-size: larger;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%) rotate(-90deg) translateX(100%);
-    transform-origin: right center;
-    background: linear-gradient(to right, #f25c05, #d12c09);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px 8px 0 0;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 9999;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
-}
+/*.side-contact-btn_contact {*/
+/*    position: fixed;*/
+/*    font-size: larger;*/
+/*    top: 50%;*/
+/*    right: 24px;*/
+/*    transform: translateY(-50%) rotate(-90deg) translateX(100%);*/
+/*    transform-origin: right center;*/
+/*    background: linear-gradient(to right, #f25c05, #d12c09);*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    padding: 10px 20px;*/
+/*    border-radius: 8px 8px 0 0;*/
+/*    font-weight: bold;*/
+/*    display: inline-flex;*/
+/*    align-items: center;*/
+/*    gap: 8px;*/
+/*    z-index: 9999;*/
+/*    transition: background-color 0.3s ease;*/
+/*    white-space: nowrap;*/
+/*}*/
 
 
-.side-contact-btn_contact:hover {
-    background: linear-gradient(to left, #f25c05, #d12c09);
-    color: white ;
-}
+/*.side-contact-btn_contact:hover {*/
+/*    background: linear-gradient(to left, #f25c05, #d12c09);*/
+/*    color: white ;*/
+/*}*/
 
-.side-contact-btn_contact img {
-    width: 34px;
-    height: 34px;
-    transform: rotate(45deg);
-}
+/*.side-contact-btn_contact img {*/
+/*    width: 34px;*/
+/*    height: 34px;*/
+/*    transform: rotate(45deg);*/
+/*}*/
 
 /*!* Overlay backdrop *!*/
 /*.contact-form-overlay {*/

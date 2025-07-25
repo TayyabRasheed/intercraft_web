@@ -23,23 +23,13 @@ publicWidget.registry.alljobs = publicWidget.Widget.extend({
     },
 
     renderJobs() {
-        // const academic_jobs = this.open_jobs['academic_jobs'].map(job => `
-        //     <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4 mb-3">
-        //          <div class="card  shadow-lg border-0 rounded-lg overflow-hidden h-100">
-        //                 <img src="data:image/png;base64,${job.department_image}" class="card-img-top img-fluid" alt="${job.college_name}" />
-        //             <div class="card-body text-center d-flex flex-column justify-content-between">
-        //                 <h5 class="card-title font-weight-bold text-dark mb-3">${job.college_name}</h5>
-        //                 <a href="${job.url || '#'}" class="btn btn-primary btn-block shadow-sm">
-        //                      View Details
-        //                 </a>
-        //             </div>
-        //          </div>
-        //     </div>
-        //
-        //
-        // `).join('');
 
-        const academic_jobs = this.open_jobs['academic_jobs'].map(job =>`
+        let job_details = '';
+
+        const academicJobs = this.open_jobs.academic_jobs || [];
+        console.log(academicJobs.length)
+        if (academicJobs.length > 0) {
+            job_details = this.open_jobs['academic_jobs'].map(job => `
             <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
                 <div class="job-card w-100">
                     <img src="data:image/png;base64,${job.department_image}" class="card-img-top" alt="${job.college_name}" />
@@ -52,8 +42,11 @@ publicWidget.registry.alljobs = publicWidget.Widget.extend({
                 </div>
             </div>
         `).join('');
+        } else {
+            job_details = "<h4 class='text-center'>We're not hiring currently, but we'd love to hear from you later!</h4>";
+        }
 
-        this.$('#all_jobs').html(academic_jobs);
+        this.$('#all_jobs').html(job_details);
 
     }
 });

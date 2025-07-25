@@ -51,7 +51,23 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .ai-hero .service-hero-bg {
     background: url("/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg") center / cover;
 }
+/* Cloud Hero Background */
+.cloud-hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
 
+.cloud-hero .service-hero-bg {
+    background: url("/website_ext/static/src/images/services-section/cloud/cloud_banner.jpg") center / cover;
+}
+
+/* Sqa Hero Background */
+.sqa-hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.sqa-hero .service-hero-bg {
+    background: url("/website_ext/static/src/images/services-section/sqa/sqa_banner.jpg") center / cover;
+}
 /* ERP Solutions Hero Background */
 .erp-hero {
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);

@@ -11,18 +11,20 @@
             <t name="Cloud Services" t-name="website_ext.cloud-services">
                 <t t-call="website.layout">
                     <!-- Hero Section -->
-                    <section class="service-hero ai-hero">
+                    <section class="service-hero cloud-hero">
                         <div class="service-hero-bg"/>
                         <div class="container">
                             <div class="row align-items-center min-vh-100">
                                 <div class="col-lg-20">
                                     <div class="service-hero-content">
                                         <h1 class="service-hero-title">
-                                            Transform Business with Cutting-Edge AI Solutions
+                                            Accelerate Innovation with Scalable Cloud Solutions
                                         </h1>
                                         <p class="service-hero-subtitle">
-                                            Automate, optimize, and innovate with tailored AI services
-                                            designed to accelerate growth and efficiency.
+                                            Robust, secure, and scalable cloud solutions designed to support modern
+                                            business needs. From architecture to deployment, our cloud engineering
+                                            services optimize performance, reduce costs, and enable agility across your
+                                            infrastructure
                                         </p>
                                     </div>
                                 </div>
@@ -37,12 +39,15 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="service-content">
-                                        <span class="service-label">AI Solutions</span>
-                                        <h2 class="service-title-services">Smarter Systems Start with AI</h2>
+                                        <span class="service-label">Cloud Engineering</span>
+                                        <h2 class="service-title-services">Cloud Solutions Built for Scale and Agility
+                                        </h2>
                                         <p class="service-description-services">
-                                            Unlock the power of artificial intelligence to streamline
-                                            operations, enhance decision-making, and deliver smarter
-                                            customer experiences.
+                                            n today’s digital-first world, scalable and secure cloud infrastructure is
+                                            critical to staying competitive. Yet many organizations struggle with
+                                            complex cloud environments and rising costs. Our Cloud Engineering services
+                                            simplify this journey—delivering customized, reliable, and cost-effective
+                                            solutions that support innovation, agility, and long-term growth.
                                         </p>
                                         <a href="/contact-us" class="service-cta-btn"
                                         >Let's Connect
@@ -53,7 +58,7 @@
                                 <div class="col-lg-6">
                                     <div class="service-image">
                                         <img
-                                                src="/website_ext/static/src/images/services-section/ai-expert/chat-ai.png"
+                                                src="/website_ext/static/src/images/services-section/cloud/cloud_about.png"
                                                 alt="AI Expert"
                                                 class="img-fluid"
                                         />
@@ -109,18 +114,17 @@
                     </section>
                     <!-- AI Features Section -->
                     <section class="ai-features">
-                         <div class="services-bg d-none d-md-block">
+                        <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
                                  aria-hidden="true"/>
                         </div>
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="ai-features-title">AI That Drives Results</h2>
+                                <h2 class="ai-features-title">Modernize Infrastructure, Maximize Agility</h2>
                                 <p class="ai-features-subtitle">
-                                    Our custom-built AI solutions—powered by machine learning, NLP, and
-                                    deep learning—go beyond automation. They learn, adapt, and evolve
-                                    with your business. Make smarter decisions. Streamline operations.
-                                    Stay ahead—automatically.
+                                    We provide end-to-end cloud engineering services tailored to your business and
+                                    technical needs. From architecture design to deployment and optimization, we ensure
+                                    your cloud infrastructure is secure, high-performing, and built to scale.
                                 </p>
                             </div>
                             <div class="row">
@@ -128,21 +132,20 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/voicemail.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/cloud.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon1.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/cloud1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">AI Voice Assistant</h3>
+                                        <h3 class="feature-title">Cloud Architecture Design</h3>
                                         <p class="feature-description">
-                                            Let your customers talk—and be heard. Our voice assistants
-                                            handle queries naturally and in real-time, so your support team
-                                            can breathe easy.
+                                            We design robust cloud architectures aligned with your business goals,
+                                            ensuring flexibility, security, and efficiency.
                                         </p>
                                     </div>
                                 </div>
@@ -150,21 +153,20 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/customize-chatbots.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/arrow.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon2.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/arrow1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">Customized Chatbot</h3>
+                                        <h3 class="feature-title">Cloud Migration</h3>
                                         <p class="feature-description">
-                                            Our smart, branded chatbots are ready 24/7 to deliver answers
-                                            that feel human—with the accuracy and speed only AI can provide.
-                                            Instant responses.
+                                            Smoothly transition from legacy infrastructure to the cloud with minimal
+                                            downtime and zero data loss.
                                         </p>
                                     </div>
                                 </div>
@@ -172,20 +174,20 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/response-bots.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/cloudlock.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon3.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/cloudlock1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">Response Bots</h3>
+                                        <h3 class="feature-title">Cloud Security &amp; Compliance</h3>
                                         <p class="feature-description">
-                                            Our AI-driven response bots handle repetitive queries with speed
-                                            and consistency—learning and improving with every interaction.
+                                            Implement best-in-class security practices and compliance measures to
+                                            protect your assets and maintain regulatory standards.
                                         </p>
                                     </div>
                                 </div>
@@ -193,21 +195,20 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/phone-call.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/gear.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon4.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/gear1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">Call Evaluations</h3>
+                                        <h3 class="feature-title">Cloud Optimization</h3>
                                         <p class="feature-description">
-                                            AI that truly hears your customers. We analyze calls for tone,
-                                            sentiment, and performance—delivering instant insights, not
-                                            hours of review.
+                                            Maximize performance and reduce costs with continuous monitoring, resource
+                                            right-sizing, and usage analytics.
                                         </p>
                                     </div>
                                 </div>
@@ -215,20 +216,20 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/mail-star.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/refresh.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon5.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/refresh1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">Email Co-Pilot</h3>
+                                        <h3 class="feature-title">DevOps &amp; Automation</h3>
                                         <p class="feature-description">
-                                            Inbox overload? Not anymore. Our AI co-pilot drafts and manages
-                                            emails so your team can focus on what matters most.
+                                            Streamline development and deployment through infrastructure automation and
+                                            CI/CD pipelines.
                                         </p>
                                     </div>
                                 </div>
@@ -236,46 +237,24 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/microphone-alt-1.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/clouds.svg"
                                                     alt="icon"
                                                     class="icon-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon6.svg"
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/clouds1.svg"
                                                     alt="icon"
                                                     class="icon-colored"
                                             />
                                         </div>
-                                        <h3 class="feature-title">Voice Intelligence</h3>
+                                        <h3 class="feature-title">Multi-Cloud &amp; Hybrid Cloud Solutions</h3>
                                         <p class="feature-description">
-                                            Conversations hold power—our AI unlocks it. Dive deep into your
-                                            voice data to uncover trends, sentiments, and insights that
-                                            drive strategy.
+                                            Design and manage flexible architectures that work across AWS, Azure, GCP,
+                                            or on-prem environments.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <div class="feature-card">
-                                        <div class="feature-icon">
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/business-automation.svg"
-                                                    alt="icon"
-                                                    class="icon-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/ai-expert/coloured/icon7.svg"
-                                                    alt="icon"
-                                                    class="icon-colored"
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">​Business Automation</h3>
-                                        <p class="feature-description">
-                                            We automate routine tasks across departments so your team can
-                                            focus on impact, not repetition.Flawless workflows. Faster
-                                            results. Zero burnout.
-                                        </p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </section>
@@ -299,41 +278,41 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="row justify-content-center">
-                                             <div class="col-lg-3 col-md-6 mb-4">
-                                    <div class="team-card">
-                                        <div class="team-image">
-                                            <img
-                                                    src="/website_ext/static/src/images/team/cloud.png"
-                                                    alt="Ghulam Mujtaba"
-                                                    class="img-fluid"
-                                            />
-                                        </div>
-                                        <div class="team-info">
-                                            <h4 class="team-name">Ghulam Mujtaba</h4>
-                                            <p class="team-role">Cloud and DevOps Engineer</p>
-                                            <a href="https://www.linkedin.com/in/alyzeh-fatymah-51b81b263/"
-                                               class="team-social">
-                                                <svg
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        width="16"
-                                                        height="16"
-                                                        viewBox="0 0 24 24"
-                                                        fill="white"
-                                                        stroke="currentColor"
-                                                        stroke-width="2"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                >
-                                                    <path
-                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                                                    />
-                                                    <rect width="4" height="12" x="2" y="9"/>
-                                                    <circle cx="4" cy="4" r="2"/>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                            <div class="col-lg-3 col-md-6 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/cloud.png"
+                                                                alt="Ghulam Mujtaba"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ghulam Mujtaba</h4>
+                                                        <p class="team-role">Cloud and DevOps Engineer</p>
+                                                        <a href="https://www.linkedin.com/in/alyzeh-fatymah-51b81b263/"
+                                                           class="team-social">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

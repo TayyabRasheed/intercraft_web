@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="portal_side_contact_us" name="Side Contact Us Panel">
+        <!-- This ID is essential for the new JavaScript to find the component -->
+        <div id="portal_side_contact_us">
+            <a class="side-contact-btn_contact" id="contactToggleBtn">
+                    <img src="/website_ext/static/src/images/logo_white.svg" alt="icon"/>
+                    <span>Let's Connect</span>
+
+                </a>
+            <div class="contact-form-overlay  " id="contactFormModal">
+                <div class="contact-form-wrapper set_margin_top">
+                    <a href="#" class="contact-close-btn" id="closeContactForm">×</a>
+                    <h3 class="text-center">Contact Us</h3>
+                    <div class="contact-form-body">
+                        <t t-call="website.s_website_form"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+        <template id="inject_manrope_font_side" inherit_id="website.layout" name="Inject Assets">
+        <xpath expr="//body" position="inside">
+            <script type="text/javascript" src="/website_ext/static/src/js/side_contact_us.js"/>
+
+        </xpath>
+    </template>
+</odoo>
+
+<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<!--<odoo>-->
+<!--    <template id="portal_side_contact_us" name="contact_us_side" customize_show="True" priority="30">-->
+<!--        <t t-call="web.layout">-->
+
+<!--            <body>-->
+<!--                <a class="side-contact-btn_contact" id="contactToggleBtn">-->
+<!--                    <img src="/website_ext/static/src/images/logo_white.svg" alt="icon"/>-->
+<!--                    <span>Let's Connect</span>-->
+
+<!--                </a>-->
+<!--                <div class="contact-form-overlay" id="contactFormModal">-->
+<!--                    <div class="contact-form-wrapper">-->
+<!--                        &lt;!&ndash;                <button class="close-btn" id="closeContactForm">&times;</button>&ndash;&gt;-->
+<!--                        <h3>Contact Us</h3>-->
+<!--                        <form id="sideContactForm">-->
+<!--                            <div class="contact-form">-->
+<!--                                <t t-call="website.s_website_form"/>-->
+<!--                            </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <script src="/website_ext/static/src/js/side_contact_us.js"/>-->
+<!--            </body>-->
+<!--        </t>-->
+<!--    </template>-->
+<!--</odoo>-->
