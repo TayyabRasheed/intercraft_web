@@ -114,7 +114,7 @@
                     <!-- Service Features Section -->
                     <section class="service-features">
                         <div class="services-bg d-none d-md-block">
-                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
                                  aria-hidden="true"/>
                         </div>
                         <div class="container">

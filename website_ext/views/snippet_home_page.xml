@@ -2,7 +2,7 @@
 <odoo>
 
     <template id="snippet_home_page_custom" name="Home Page Snippet">
-<!--       <t t-call="website_ext.portal_side_contact_us"/>-->
+        <!--       <t t-call="website_ext.portal_side_contact_us"/>-->
         <section class="hero">
             <div class="hero-video-container">
                 <video autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="hero-video">
@@ -248,7 +248,7 @@
         <!-- Services Section -->
         <section class="services">
             <div class="services-bg d-none d-md-block">
-                <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec" aria-hidden="true"/>
+                <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec" aria-hidden="true"/>
             </div>
             <div class="container services-content">
                 <h2 class="services-title">
@@ -263,45 +263,6 @@
                 </div>
                 <div class="row">
                     <!-- First row of services -->
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card" data-service="moodle-lms">
-                            <div class="service-icon">
-                                <img
-                                        src="/website_ext/static/src/images/services-section/moodle-icon.svg"
-                                        alt="Moodle LMS"
-                                        class="icon-default"
-                                />
-                                <img
-                                        src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
-                                        alt="Moodle LMS"
-                                        class="icon-colored"
-                                />
-                            </div>
-                            <h3 class="service-title">Moodle LMS Solutions</h3>
-                            <p class="service-description">
-                                We deliver tailored Moodle LMS solutions that enable scalable,
-                                user-friendly, and impactful e-learning for education and
-                                corporate training.
-                            </p>
-                            <a href="/moodle-lms" class="learn-more-link">
-                                Learn More
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                >
-                                    <path d="M5 12h14"/>
-                                    <path d="m12 5 7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="service-card" data-service="ai-expert">
                             <div class="service-icon">
@@ -341,26 +302,25 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card" data-service="erp-solutions">
+                        <div class="service-card" data-service="cloud-services">
                             <div class="service-icon">
                                 <img
-                                        src="/website_ext/static/src/images/services-section/erp-icon.svg"
-                                        alt="ERP Solutions"
+                                        src="/website_ext/static/src/images/services-section/ui-ux-icon.svg"
+                                        alt="UI/UX Design"
                                         class="icon-default"
                                 />
                                 <img
-                                        src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
-                                        alt="ERP Solutions"
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                        alt="UI/UX Design"
                                         class="icon-colored"
                                 />
                             </div>
-                            <h3 class="service-title">ERP Solutions</h3>
+                            <h3 class="service-title">Cloud Infrastructure Services</h3>
                             <p class="service-description">
-                                We deliver tailored ERP solutions that streamline processes,
-                                eliminate silos, and boost efficiency—through expert Odoo
-                                implementation, customization, and support.
+                                Robust and Scalable Cloud Infrastructure Services to power your digital transformation
+                                with reliability and efficiency.
                             </p>
-                            <a href="/erp-solution" class="learn-more-link">
+                            <a href="/cloud-services" class="learn-more-link">
                                 Learn More
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -420,8 +380,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Second row of services -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="service-card" data-service="web-applications">
                             <div class="service-icon">
@@ -460,45 +418,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                        <div class="service-card" data-service="koha-ils">
-                            <div class="service-icon">
-                                <img
-                                        src="/website_ext/static/src/images/services-section/kohas-icon.svg"
-                                        alt="Koha ILS"
-                                        class="icon-default"
-                                />
-                                <img
-                                        src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
-                                        alt="Koha ILS"
-                                        class="icon-colored"
-                                />
-                            </div>
-                            <h3 class="service-title">Koha ILS Solutions</h3>
-                            <p class="service-description">
-                                We offer tailored Koha Integrated Library System (ILS) services
-                                that bring automation, efficiency, and user-centric features to
-                                libraries of all sizes.
-                            </p>
-                            <a href="/koha-ils" class="learn-more-link">
-                                Learn More
-                                <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                >
-                                    <path d="M5 12h14"/>
-                                    <path d="m12 5 7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <!-- Second row of services -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="service-card" data-service="mobile-applications">
                             <div class="service-icon">
@@ -580,6 +500,164 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="sqa">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/ui-ux-icon.svg"
+                                        alt="UI/UX Design"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                        alt="UI/UX Design"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Software Quality Assurance</h3>
+                            <p class="service-description">
+                                Ensure flawless performance with our end-to-end Software Quality Assurance services,
+                                including manual and automated testing for reliable, bug-free delivery.
+                            </p>
+                            <a href="/sqa" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="moodle-lms">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/moodle-icon.svg"
+                                        alt="Moodle LMS"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
+                                        alt="Moodle LMS"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Moodle LMS Solutions</h3>
+                            <p class="service-description">
+                                We deliver tailored Moodle LMS solutions that enable scalable,
+                                user-friendly, and impactful e-learning for education and
+                                corporate training.
+                            </p>
+                            <a href="/moodle-lms" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Third row of services -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="erp-solutions">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/erp-icon.svg"
+                                        alt="ERP Solutions"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
+                                        alt="ERP Solutions"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">ERP Solutions</h3>
+                            <p class="service-description">
+                                We deliver tailored ERP solutions that streamline processes,
+                                eliminate silos, and boost efficiency—through expert Odoo
+                                implementation, customization, and support.
+                            </p>
+                            <a href="/erp-solution" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="service-card" data-service="koha-ils">
+                            <div class="service-icon">
+                                <img
+                                        src="/website_ext/static/src/images/services-section/kohas-icon.svg"
+                                        alt="Koha ILS"
+                                        class="icon-default"
+                                />
+                                <img
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
+                                        alt="Koha ILS"
+                                        class="icon-colored"
+                                />
+                            </div>
+                            <h3 class="service-title">Koha ILS Solutions</h3>
+                            <p class="service-description">
+                                We offer tailored Koha Integrated Library System (ILS) services
+                                that bring automation, efficiency, and user-centric features to
+                                libraries of all sizes.
+                            </p>
+                            <a href="/koha-ils" class="learn-more-link">
+                                Learn More
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path d="M5 12h14"/>
+                                    <path d="m12 5 7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
