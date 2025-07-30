@@ -140,6 +140,7 @@ body {
 .partners-logos {
     width: 100%;
 }
+
 .partner-logo-container {
     position: relative;
     width: 100%;
@@ -175,6 +176,7 @@ body {
 .partner-logo-container:hover .partner-logo-colored {
     opacity: 1;
 }
+
 /*.partner-logo-container {*/
 /*    position: relative;*/
 /*    display: inline-block;*/
@@ -604,30 +606,30 @@ body {
     /*    height: 60px;*/
     /*}*/
     .partner-logo-container {
-    position: relative;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
+        position: relative;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
 
-.partner-logo-container img {
-    max-height: 80px;
-    max-width: 100%;
-    object-fit: contain;
-    transition: opacity 0.3s ease;
-}
+    .partner-logo-container img {
+        max-height: 80px;
+        max-width: 100%;
+        object-fit: contain;
+        transition: opacity 0.3s ease;
+    }
 
-.partner-logo-colored {
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
+    .partner-logo-colored {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 @media (max-width: 576px) {
@@ -950,7 +952,7 @@ body {
         font-size: 40px;
     }
 
-    .section-title,.section-title-sub,
+    .section-title, .section-title-sub,
     .services-title,
     .partnerships-title,
     .innovate-title {
@@ -1036,7 +1038,7 @@ body {
     .hero {
         padding-bottom: 40px;
         height: 40dvh !important;
-        margin-top: calc(var(--nav-height)  - 3px);
+        margin-top: calc(var(--nav-height) - 3px);
     }
 
     .hero h1 {
@@ -1127,7 +1129,7 @@ body {
 
 
 .pt4 {
-        padding-top: 0px !important;
+    padding-top: 0px !important;
 }
 
 
@@ -1146,6 +1148,7 @@ body {
     background: linear-gradient(to right, #ff6b00, #fa541c); /* Reverse gradient on hover */
     color: #fff;
 }
+
 .footer-contact .office-address {
     display: flex;
     align-items: flex-start;
@@ -1157,4 +1160,9 @@ body {
     width: 20px;
     height: auto;
     margin-top: 5px;
+}
+
+.oe_structure {
+
+    margin-top: calc(var(--nav-height) + 10px);
 }
