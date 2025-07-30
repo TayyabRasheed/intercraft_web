@@ -113,15 +113,15 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
+                                         <div class="partner-logo-container">
                                             <img
                                                     src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
-                                                    alt="Alfaisal University"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-default"
                                             />
                                             <img
                                                     src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
-                                                    alt="Alfaisal University"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-colored"
                                             />
                                         </div>
@@ -135,15 +135,15 @@
                             <div class="partners-logos">
                                 <div class="row">
                                     <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
+                                         <div class="partner-logo-container">
                                             <img
                                                     src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
-                                                    alt="King Faisal University"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"
-                                                    alt="King Faisal University"
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal.png"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-colored"
                                             />
                                         </div>
@@ -261,7 +261,7 @@
                 <div class="text-center">
                     <a href="/contact-us" class="get-in-touch-btn">Get In Touch</a>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <!-- First row of services -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="service-card" data-service="ai-expert">
@@ -305,12 +305,12 @@
                         <div class="service-card" data-service="cloud-services">
                             <div class="service-icon">
                                 <img
-                                        src="/website_ext/static/src/images/services-section/ui-ux-icon.svg"
+                                        src="/website_ext/static/src/images/services-section/cloud-icon.svg"
                                         alt="UI/UX Design"
                                         class="icon-default"
                                 />
                                 <img
-                                        src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/cloud-icon.svg"
                                         alt="UI/UX Design"
                                         class="icon-colored"
                                 />
@@ -331,8 +331,7 @@
                                         stroke="currentColor"
                                         stroke-width="2"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                >
+                                        stroke-linejoin="round">
                                     <path d="M5 12h14"/>
                                     <path d="m12 5 7 7-7 7"/>
                                 </svg>
@@ -504,12 +503,12 @@
                         <div class="service-card" data-service="sqa">
                             <div class="service-icon">
                                 <img
-                                        src="/website_ext/static/src/images/services-section/ui-ux-icon.svg"
+                                        src="/website_ext/static/src/images/services-section/sqa-icon.svg"
                                         alt="UI/UX Design"
                                         class="icon-default"
                                 />
                                 <img
-                                        src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                        src="/website_ext/static/src/images/services-section/coloured-icon/sqa-icon.svg"
                                         alt="UI/UX Design"
                                         class="icon-colored"
                                 />
@@ -536,6 +535,23 @@
                                     <path d="m12 5 7 7-7 7"/>
                                 </svg>
                             </a>
+                            <a href="/sqa" class="learn-more-link">
+        Learn More
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+        >
+            <path d="M5 12h14"/>
+            <path d="m12 5 7 7-7 7"/>
+        </svg>
+    </a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
