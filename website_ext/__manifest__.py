@@ -13,6 +13,8 @@
         'views/snippet_home_page.xml',
         'views/contact_us.xml',
         'views/careers.xml',
+        'views/privacy_policy.xml',
+        'views/terms_conditions.xml',
         'views/side_contact_us.xml',
         'views/our_team.xml',
         'views/about_us.xml',

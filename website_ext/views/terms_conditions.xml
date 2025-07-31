@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="terms-and-conditions" model="website.page">
+        <field name="name">Terms And Conditions</field>
+        <field name="type">qweb</field>
+        <field name="url">/terms-and-conditions</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.terms-and-conditions</field>
+        <field name="arch" type="xml">
+            <t name="Terms And Conditions" t-name="website_ext.terms-and-conditions">
+                <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
+                    <section class="service-hero">
+                        <div class="service-hero-bg "
+                             style="background: url('/website_ext/static/src/images/termsandcond.png') center / cover;"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-12">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Guidelines for Using Our Services and Website
+                                        </h1>
+                                        <p class="service-hero-subtitle">These terms define how you may use our website
+                                            and services, ensuring a secure and transparent experience for all users.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="py-5 py-lg-6 bg-white">
+                        <div class="container">
+                            <div class="row mb-5">
+                                <div class="col-lg-10 mx-auto text-left">
+                                    <h6 class="text-uppercase text-danger fw-bold">Terms and Conditions</h6>
+                                    <h2 class="fw-bold display-6">Website Terms of Use</h2>
+                                    <p class="text-muted mt-3 fs-7">
+                                        Welcome to Intercraft Solutions. These Terms and Conditions govern your access
+                                        to and use of our website, including all associated subdomains, features,
+                                        services, and content (collectively referred to as the "Site"). By accessing or
+                                        using the Site, you agree to be bound by these Terms and Conditions, along with
+                                        all applicable laws and regulations. If you do not agree with any part of these
+                                        terms, you must refrain from using the Site.
+                                        <br/>
+                                        Intercraft Solutions reserves the right to update or modify these Terms and
+                                        Conditions at any time. Continued use of the Site following any changes
+                                        constitutes your acceptance of the revised terms. We encourage you to review
+                                        these Terms regularly to stay informed of any updates.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-center">
+                                <div class="col-lg-10">
+                                    <div class="mb-5">
+                                        <div class="d-flex mb-3">
+                                            <div class="flex-shrink-0">
+                                                <i class="fa fa-2x fa-copyright text-danger"/>
+                                            </div>
+                                            <div class="flex-grow-1 ms-4">
+                                                <h4 class="fw-bold">Copyright and Trademark Notice</h4>
+                                                <p class="text-muted">Unless otherwise stated, all content, materials,
+                                                    graphics, images, and code on this Site are the property of
+                                                    Intercraft Solutions and are protected by copyright, trademark, and
+                                                    other applicable intellectual property laws.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ps-5 ms-3">
+                                            <h5 class="fw-bold mt-3">Permitted Use:</h5>
+                                            <p class="text-muted">You may download or print content from this Site for
+                                                personal, non-commercial use only, provided that you do not alter or
+                                                remove any copyright, trademark, or other proprietary notices. Any other
+                                                use-including reproduction, distribution, modification, or
+                                                republication-is strictly prohibited without prior written consent from
+                                                Intercraft Solutions.
+                                            </p>
+                                            <h5 class="fw-bold mt-4">You agree not to:</h5>
+                                            <ul class="list-unstyled text-muted mt-3">
+                                                <li class="d-flex align-items-center mb-2">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>Do not modify, reproduce, or distribute any content from the
+                                                        Site for commercial purposes.
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-2">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>Do not use automated tools, scripts, or deep-linking to access
+                                                        any part of the Site without prior written permission.
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>Do not frame or mirror any portion of the Site without our
+                                                        express written consent.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-5">
+                                        <div class="d-flex mb-3">
+                                            <div class="flex-shrink-0">
+                                                <i class="fa fa-2x fa-exclamation-triangle text-danger"/>
+                                            </div>
+                                            <div class="flex-grow-1 ms-4">
+                                                <h4 class="fw-bold">Disclaimer of Warranties</h4>
+                                                <p class="text-muted">All content and services on this Site are provided
+                                                    "as is" and "as available" without warranties of any kind. While we
+                                                    strive to ensure the accuracy and reliability of information,
+                                                    Intercraft Solutions does not warrant or guarantee:
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="ps-5 ms-3">
+                                            <p class="text-muted">Intercraft Solutions does not warrant or guarantee:
+                                            </p>
+                                            <ul class="list-unstyled text-muted mt-3">
+                                                <li class="d-flex align-items-center mb-2">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>The accuracy, completeness, or reliability of any content
+                                                        provided on the Site.
+                                                    </span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-2">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>The uninterrupted or error-free operation of the Site.</span>
+                                                </li>
+                                                <li class="d-flex align-items-center mb-2">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>The correction of any defects or technical issues.</span>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <i class="fa fa-times-circle text-danger me-2"/>
+                                                    <span>Use of the information on the Site is solely at your own
+                                                        risk.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0">
+                                                <i class="fa fa-2x fa-balance-scale text-danger"/>
+                                            </div>
+                                            <div class="flex-grow-1 ms-4">
+                                                <h4 class="fw-bold">Severability</h4>
+                                                <p class="text-muted">If any provision of these Terms is found to be
+                                                    invalid or unenforceable by a court of law, the remaining provisions
+                                                    shall continue in full force and effect.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="menu_terms_and_conditions_link" model="website.menu">
+        <field name="name">Terms &amp; Conditions</field>
+        <field name="url">/terms-and-conditions</field>
+        <field name="page_id" ref="website_ext.terms-and-conditions"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">65</field>
+    </record>
+</odoo>

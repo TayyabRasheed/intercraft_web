@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="privacy-policy" model="website.page">
+        <field name="name">Privacy Policy</field>
+        <field name="type">qweb</field>
+        <field name="url">/privacy-policy</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.privacy-policy</field>
+        <field name="arch" type="xml">
+            <t name="Privacy Policy" t-name="website_ext.privacy-policy">
+                <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
+                    <section class="service-hero">
+                        <div class="service-hero-bg "
+                             style="background: url('/website_ext/static/src/images/privacypolicy.png') center / cover;"></div>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-12">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Our Commitment to Your Privacy</h1>
+                                        <p class="service-hero-subtitle">This policy explains how we collect, use, and
+                                            protect your personal information to ensure your privacy and data security
+                                            when using our website and services.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="py-5 py-lg-6 bg-white">
+                        <div class="container">
+                            <div class="row mb-5">
+                                <div class="col-lg-10  text-left">
+                                    <h6 class="text-uppercase text-danger fw-bold">Privacy Policy</h6>
+                                    <h2 class="fw-bold display-6">Overview of Privacy and Data Protection</h2>
+                                    <p class="text-muted mt-3 fs-7 " >
+                                        Intercraft Solutions is committed to safeguarding the privacy and personal data
+                                        of individuals who access our website (“the Site”) and utilize our software
+                                        development and IT services (“the Services”).
+                                        <br/>
+                                        This Privacy Policy outlines the categories of information collected, the
+                                        purposes for which it is used, and the measures implemented to ensure its
+                                        protection in compliance with applicable data protection laws.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row g-4 g-lg-5">
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-refresh text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Updates to the Privacy Policy</h5>
+                                            <p class="text-muted">We may update this Privacy Policy from time to time.
+                                                Changes will be posted on this page with an updated revision date.
+                                                Material changes will be announced via the Site or by email. Your
+                                                continued use of the Site or Services constitutes acceptance of the
+                                                revised policy.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-list-alt text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Information We Collect</h5>
+                                            <p class="text-muted">We may collect personal information such as name,
+                                                email, phone number, device data, and IP addresses. This information may
+                                                be required to deliver our Services and maintain site security. We also
+                                                log usage data like date/time of access, browser type, and geographic
+                                                location.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-gears text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Use of Information</h5>
+                                            <p class="text-muted">We use your information to provide and improve our
+                                                Services, communicate with you, verify identity, fulfill legal
+                                                obligations, and ensure site functionality. We may also collect data
+                                                through surveys or support inquiries.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-link text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Cookies &amp; Tracking</h5>
+                                            <p class="text-muted">We use cookies, web beacons, and server logs to
+                                                enhance your experience, authenticate sessions, and track usage.
+                                                Disabling cookies may reduce website functionality.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-share-alt text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Social Media Services</h5>
+                                            <p class="text-muted">Our Site may include login or sharing features linked
+                                                to third-party social networks. These may collect usage and identity
+                                                data and are governed by the respective platforms' privacy policies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-bell text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Communications</h5>
+                                            <p class="text-muted">We may send transactional and security-related emails
+                                                or SMS messages. Marketing messages are optional and can be opted out
+                                                of. We never request your credentials via email.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-ban text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Information Sharing</h5>
+                                            <p class="text-muted">We do not sell or share your personal information with
+                                                third parties except as required for legal compliance or with your
+                                                explicit consent.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-shield text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Information Security</h5>
+                                            <p class="text-muted">We employ commercially reasonable measures to secure
+                                                your data. However, no method of transmission is 100% secure. Users are
+                                                responsible for maintaining the confidentiality of their account
+                                                information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-gavel text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">User Rights</h5>
+                                            <p class="text-muted">You may review and update your personal data at any
+                                                time. Contact us at info@intercraftsol.com for corrections or data
+                                                removal requests.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-globe text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">International Visitors</h5>
+                                            <p class="text-muted">By using our Services from outside Pakistan, you
+                                                consent to the transfer of your data to and processing in Pakistan under
+                                                this Privacy Policy.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <i class="fa fa-2x fa-child text-danger"/>
+                                        </div>
+                                        <div class="flex-grow-1 ms-4">
+                                            <h5 class="fw-bold">Children’s Privacy</h5>
+                                            <p class="text-muted">Our Site is not intended for users under the age of
+                                                18. We do not knowingly collect personal information from minors. If you
+                                                believe we have collected such data, please contact us.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="menu_term_and_condition" model="website.menu">
+        <field name="name">Privacy Policy</field>
+        <field name="url">/privacy-policy</field>
+        <field name="page_id" ref="website_ext.privacy-policy"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>
