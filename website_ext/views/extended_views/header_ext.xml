@@ -163,14 +163,18 @@
                                                                     </a>
                                                                     <a href="/sqa" class="mega-menu-item">
                                                                         <div class="mega-menu-icon">
+                                                                            <!-- Gear Icon -->
                                                                             <svg xmlns="http://www.w3.org/2000/svg"
                                                                                  width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
+                                                                                 height="20"
+                                                                                 viewBox="0 0 24 24"
                                                                                  fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
+                                                                                 stroke="currentColor"
+                                                                                 stroke-width="2"
                                                                                  stroke-linecap="round"
                                                                                  stroke-linejoin="round">
-                                                                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                                                                <circle cx="12" cy="12" r="3"/>
+                                                                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
                                                                             </svg>
                                                                         </div>
                                                                         <div class="mega-menu-content">
@@ -258,33 +262,7 @@
                                             <div class="col-lg-4">
                                                 <div class="mega-menu-section">
                                                     <h6 class="mega-menu-title">For Any Need</h6>
-                                                    <a href="https://wa.me/923369237827" class="mega-menu-item"
-                                                       target="_blank">
-                                                        <div class="mega-menu-icon">
-                                                            <!-- WhatsApp Icon -->
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20"
-                                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                                 stroke-width="2" stroke-linecap="round"
-                                                                 stroke-linejoin="round">
-                                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2
-                                                                         19.79 19.79 0 0 1-8.63-3.07
-                                                                         19.5 19.5 0 0 1-6-6
-                                                                         19.79 19.79 0 0 1-3.07-8.67
-                                                                         A2 2 0 0 1 4.11 2h3
-                                                                         a2 2 0 0 1 2 1.72
-                                                                         12.05 12.05 0 0 0 .7 2.81
-                                                                         2 2 0 0 1-.45 2.11L8.09 9.91
-                                                                         a16 16 0 0 0 6 6l1.27-1.27
-                                                                         a2 2 0 0 1 2.11-.45
-                                                                         12.05 12.05 0 0 0 2.81.7
-                                                                         A2 2 0 0 1 22 16.92z"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">+92 336 9237827</span>
-                                                        </div>
-                                                    </a>
+
 
                                                     <a href="mailto:info@intercraftsol.com" class="mega-menu-item">
                                                         <div class="mega-menu-icon">
@@ -300,6 +278,16 @@
                                                         </div>
                                                         <div class="mega-menu-content">
                                                             <span class="mega-menu-label">info@intercraftsol.com</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="https://wa.me/923369237827" class="mega-menu-item"
+                                                       target="_blank">
+                                                        <div class="mega-menu-icon">
+                                                            <!-- WhatsApp Icon using Font Awesome -->
+                                                            <i class="fa fa-whatsapp" style="font-size: 20px;"></i>
+                                                        </div>
+                                                        <div class="mega-menu-content">
+                                                            <span class="mega-menu-label">+92 336 9237827</span>
                                                         </div>
                                                     </a>
 

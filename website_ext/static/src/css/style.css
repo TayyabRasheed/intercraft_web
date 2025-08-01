@@ -1006,6 +1006,8 @@ body {
 
     .partner-logo-container img {
         max-height: 60px;
+        top: 0px !important;
+        left: 0px !important;
     }
 
     .glance-content {
@@ -1162,7 +1164,10 @@ body {
     margin-top: 5px;
 }
 
-.oe_structure {
+/*.oe_structure {*/
 
-    margin-top: calc(var(--nav-height) + 10px);
+/*    margin-top: calc(var(--nav-height) + 10px);*/
+/*}*/
+.o_footer .o_footer_copyright {
+    display: none;
 }

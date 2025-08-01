@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template id="custom_footer" inherit_id="website.layout">
+
         <xpath expr="//div[@id='footer']" position="replace">
             <footer class="footer">
-
-
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 footer-column">
@@ -41,20 +40,21 @@
                                         Islamabad, Pakistan
                                     </p>
                                 </div>
-                                <p>
+                                <p style="text-align: left;">
                                     <a href="mailto:info@intercraftsol.com"
                                     >info@intercraftsol.com
                                     </a
                                     >
                                 </p>
-                                <p>
+                                <p style="text-align: left;">
                                     <a href="tel:+15123555400">+1 512-355-5400</a>
                                 </p>
-                                <p>
-                                    <a href="tel:+923369237827">+92 336 9237827</a>
-                                </p>
-                                <p>
+
+                                <p style="text-align: left;">
                                     <a href="tel:+92515913054">+92 51 5913054</a>
+                                </p>
+                                <p style="text-align: left;">
+                                    <a href="tel:+923369237827">+92 336 9237827</a>
                                 </p>
                             </div>
                             <div class="footer-social" style="color:#333;">
@@ -222,10 +222,10 @@
                                 <img
                                         src="/website_ext/static/src/images/footer/odoo_logo.svg"
                                         alt="Odoo"
-                                        class="img-fluid"
+                                        style="width:200%;"
 
                                 />
-                                <div class="certification-logos ">
+                                <div class="certification-logos mt-2">
 
                                     <img
                                             src="/website_ext/static/src/images/footer/pseb_logo.png"

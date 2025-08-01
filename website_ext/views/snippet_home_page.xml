@@ -2,7 +2,7 @@
 <odoo>
 
     <template id="snippet_home_page_custom" name="Home Page Snippet">
-        <!--       <t t-call="website_ext.portal_side_contact_us"/>-->
+        <t t-call="website_ext.portal_side_contact_us"/>
         <section class="hero">
             <div class="hero-video-container">
                 <video autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" class="hero-video">
@@ -72,18 +72,17 @@
                                     <div class="col-md-3 col-sm-6 col-6">
                                         <div class="partner-logo-container">
                                             <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
-                                                    alt="Partner 1"
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-default"
                                             />
                                             <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
-                                                    alt="Partner 1"
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
+                                                    alt="Partner 3"
                                                     class="img-fluid partner-logo-colored"
                                             />
                                         </div>
                                     </div>
-
                                     <div class="col-md-3 col-sm-6 col-6">
                                         <div class="partner-logo-container">
                                             <img
@@ -98,72 +97,6 @@
                                             />
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
-                                                    alt="Partner 4"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
-                                                    alt="Partner 4"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                         <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="partners-logos">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                         <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
-                                                    alt="QTS"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
-                                                    alt="QTS"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-
                                     <div class="col-md-3 col-sm-6 col-6">
                                         <div class="partner-logo-container">
                                             <img
@@ -188,6 +121,69 @@
                                             <img
                                                     src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"
                                                     alt="Taleem"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="partners-logos">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
+                                                    alt="Partner 1"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
+                                                    alt="Partner 4"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal.png"
+                                                    alt="Partner 3"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-6">
+                                        <div class="partner-logo-container">
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
+                                                    alt="QTS"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
+                                                    alt="QTS"
                                                     class="img-fluid partner-logo-colored"
                                             />
                                         </div>
@@ -535,23 +531,7 @@
                                     <path d="m12 5 7 7-7 7"/>
                                 </svg>
                             </a>
-                            <a href="/sqa" class="learn-more-link">
-        Learn More
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-        >
-            <path d="M5 12h14"/>
-            <path d="m12 5 7 7-7 7"/>
-        </svg>
-    </a>
+
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4">
