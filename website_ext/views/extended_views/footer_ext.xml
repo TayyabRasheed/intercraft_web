@@ -40,25 +40,25 @@
                                         Islamabad, Pakistan
                                     </p>
                                 </div>
-                                <p style="text-align: left;">
+                                <p class="footer-contact-links">
                                     <a href="mailto:info@intercraftsol.com"
                                     >info@intercraftsol.com
                                     </a
                                     >
                                 </p>
-                                <p style="text-align: left;">
+                                <p class="footer-contact-links">
                                     <a href="tel:+15123555400">+1 512-355-5400</a>
                                 </p>
 
-                                <p style="text-align: left;">
+                                <p class="footer-contact-links">
                                     <a href="tel:+92515913054">+92 51 5913054</a>
                                 </p>
-                                <p style="text-align: left;">
+                                <p class="footer-contact-links">
                                     <a href="tel:+923369237827">+92 336 9237827</a>
                                 </p>
                             </div>
                             <div class="footer-social" style="color:#333;">
-                                <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
+                                <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true" target="_blank"
                                    aria-label="LinkedIn" style="color:#0077B5;">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@
                                         <circle cx="4" cy="4" r="2"/>
                                     </svg>
                                 </a>
-                                <a href="https://www.facebook.com/share/1928ZKKhVP/" aria-label="Facebook"
+                                <a href="https://www.facebook.com/share/1928ZKKhVP/" aria-label="Facebook" target="_blank"
                                    style="color:#1877F2">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,8 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
-                            <h4 class="footer-title">Services</h4>
+                            <h4 class="footer-title" >Services
+                            </h4>
                             <ul class="footer-links">
                                 <li>
                                     <a href="/ai-expert">Artificial Intelligence Transformation</a>
@@ -198,7 +199,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-lg-block">
-                            <h4 class="footer-title d-none d-sm-none d-md-block">Follow Intercraft Journey</h4>
+                            <h4 class="footer-title d-none d-sm-none d-md-block">Follow The Intercraft Journey</h4>
                             <p class="footer-newsletter-text d-none d-sm-none d-md-block">
                                 Subscribe to receive the most relevant news on our company,
                                 products and industry.

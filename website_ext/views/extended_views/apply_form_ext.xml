@@ -5,7 +5,7 @@
         <xpath expr="//div[@t-field='job.job_details']" position="replace"/>
         <xpath expr="//div[@id='wrap']/nav" position="replace"/>
         <xpath expr="//div[@id='wrap']/h1" position="attributes">
-            <attribute name="style">margin-top: 80px;</attribute>
+            <attribute name="style">margin-top: 140px;</attribute>
         </xpath>
         <xpath expr="//div[contains(@class, 's_website_form_submit')]" position="attributes">
             <attribute name="class">col-12 s_website_form_submit mb64 text-end</attribute>

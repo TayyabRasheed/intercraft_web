@@ -72,68 +72,142 @@
                     </section>
 
                     <!-- Partners Section -->
-                    <section class="partners">
+                     <section class="partners">
                         <div class="container text-center">
                             <h3 class="partners-title">
-                                We partner with forward-thinking businesses to boost efficiency and
-                                drive digital transformation
+                                We partner with forward-thinking businesses to boost efficiency and drive
+                                digital transformation.
                             </h3>
-                            <div class="partners-logos">
-                                <div class="row">
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
-                                                    alt="Partner 1"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
-                                                    alt="Partner 1"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
+                            <div
+                                    id="partnersCarousel"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-interval="3000"
+                            >
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="partners-logos">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"
+                                                                alt="Taleem"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"
+                                                                alt="Taleem"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"
+                                                                alt="Taleem"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"
+                                                                alt="Taleem"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo2.png"
-                                                    alt="Partner 2"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-2.png"
-                                                    alt="Partner 2"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
-                                                    alt="Partner 3"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-sm-6 col-6">
-                                        <div class="partner-logo-container">
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
-                                                    alt="Partner 4"
-                                                    class="img-fluid partner-logo-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
-                                                    alt="Partner 4"
-                                                    class="img-fluid partner-logo-colored"
-                                            />
+                                    <div class="carousel-item">
+                                        <div class="partners-logos">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
+                                                                alt="Partner 1"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
+                                                                alt="Partner 1"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
+                                                                alt="Partner 4"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
+                                                                alt="Partner 4"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"
+                                                                alt="Partner 3"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 col-6">
+                                                    <div class="partner-logo-container">
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
+                                                                alt="QTS"
+                                                                class="img-fluid partner-logo-default"
+                                                        />
+                                                        <img
+                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
+                                                                alt="QTS"
+                                                                class="img-fluid partner-logo-colored"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

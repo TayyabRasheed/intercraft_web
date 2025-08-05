@@ -17,14 +17,12 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <!-- DESKTOP MENU (Hidden on Mobile) -->
-                    <!-- This uses the standard Bootstrap collapse for desktop -->
+
                     <div class="collapse navbar-collapse d-none d-lg-block">
                         <ul class="navbar-nav ms-auto align-items-center">
                             <li class="nav-item">
                                 <a class="nav-link" href="/">Home</a>
                             </li>
-                            <!-- DESKTOP MEGA-MENU (Hover) -->
                             <li class="nav-item dropdown mega-dropdown">
                                 <a class="nav-link dropdown-toggle active" href="#" role="button">Services</a>
                                 <div class="dropdown-menu mega-menu">

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="intercraftsol_seo_meta_tags" name="IntercraftSol SEO Meta Tags" inherit_id="website.layout">
+
+        <!-- Remove default meta tags first -->
+<!--         <xpath expr="//meta[@default_title]" position="replace"/>-->
+        <xpath expr="//meta[@name='description']" position="replace"/>
+        <xpath expr="//meta[@name='keywords']" position="replace"/>
+        <xpath expr="//meta[@property='og:title']" position="replace"/>
+        <xpath expr="//meta[@property='og:description']" position="replace"/>
+        <xpath expr="//meta[@property='og:image']" position="replace"/>
+        <xpath expr="//meta[@name='twitter:card']" position="replace"/>
+
+
+        <!-- Add your custom meta tags -->
+        <xpath expr="//head" position="inside">
+            <!-- Basic Meta Tags -->
+            <title> Digital solutions for a connected world | intercraftsol.com</title>
+          <meta name="default_title" content="Digital solutions for a connected world | intercraftsol.com"/>
+            <meta name="description"
+                  content="Intercraft is a forward-thinking software company Specialized in Artificial Intelligence, Moodle LMS, Odoo ERP, Web applications development, UI/UX designs, SQA and mobile application development. Our focus: simple, innovative, and unified digital experiences."/>
+            <meta name="keywords"
+                  content="Odoo ERP, Moodle LMS, Artificial Intelligence, Web Development, Mobile App Development, UI/UX Design, SQA, Software Company Pakistan"/>
+            <meta name="author" content="Intercraft Solutions"/>
+            <meta name="copyright" content="Copyright (c) 2023 Intercraft Solutions. All Rights Reserved."/>
+            <meta name="robots" content="index, follow"/>
+            <meta name="googlebot" content="index, follow"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+            <!-- OpenGraph/Facebook Meta Tags -->
+
+            <meta property="og:title" content="Digital solutions for a connected world | intercraftsol.com"/>
+            <meta property="og:site_name" content="Intercraft Solutions"/>
+            <meta property="og:url" content="https://www.intercraftsol.com/"/>
+            <meta property="og:description"
+                  content="Intercraft is a forward-thinking software company Specialized in AI, Moodle LMS, Odoo ERP, and custom web/mobile application development."/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:image" content="/website_ext/static/src/images/intercraft_logo.png"/>
+            <meta property="og:image:alt" content="Intercraft Solutions Logo and Tagline"/>
+
+            <!-- Twitter Meta Tags -->
+            <meta name="twitter:card" content="summary_large_image"/>
+            <meta name="twitter:title" content="Digital solutions for a connected world | intercraftsol.com"/>
+            <meta name="twitter:description"
+                  content="Intercraft is a forward-thinking software company Specialized in AI, Moodle LMS, Odoo ERP, and custom web/mobile application development."/>
+
+            <!-- Schema.org JSON-LD -->
+            <script type="application/ld+json">
+                {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Intercraft Solutions",
+                "alternateName": "intercraftsol",
+                "url": "https://www.intercraftsol.com/",
+                "logo": "/website_ext/static/src/images/intercraft_logo.png",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+92-51-5913054",
+                "contactType": "customer service"
+                },
+                "sameAs": [
+                "https://www.facebook.com/profile.php?id=61564661302143",
+                "https://www.linkedin.com/company/intercraft/"
+                ]
+                }
+            </script>
+        </xpath>
+    </template>
+</odoo>

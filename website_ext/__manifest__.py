@@ -3,13 +3,15 @@
     'version': '17.0.0.0.0',
     'category': 'Website',
     'description': "Module to resdeign website",
-    'author': 'Tayyab Rasheed',
+    'author': 'Intercraftsol',
     'company': 'Intercraftsol',
     'maintainer': 'Intercraftsol',
     'website': "https://www.Intercraftsol.com",
     'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm'],
     'data': [
         'views/extended_views/header_ext.xml',
+        # 'views/extended_views/s_google_map_ext.xml',
+        'views/extended_views/website_form_view_ext.xml',
         'views/snippet_home_page.xml',
         'views/contact_us.xml',
         'views/careers.xml',
@@ -35,6 +37,7 @@
         'views/extended_views/apply_form_ext.xml',
         'views/extended_views/index_view_ext.xml',
         'views/extended_views/thankyou_ext.xml',
+        'views/seo_templates.xml',
 
     ],
     'assets': {

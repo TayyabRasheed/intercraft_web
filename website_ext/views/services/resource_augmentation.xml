@@ -237,58 +237,75 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Artificial Intelligence (AI)</h3>
+                                        <p class="feature-description">
+                                            We provide skilled AI experts and tailored resources to help you build
+                                            intelligent systems, automate processes, and extract actionable insights
+                                            from data.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon7.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon7.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">UI/UX</h3>
+                                        <p class="feature-description">
+                                            We provide expert UI/UX designers to craft intuitive interfaces and seamless
+                                            user journeys for web and mobile, ensuring your product is both functional.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon8.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon8.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Network Engineer</h3>
+                                        <p class="feature-description">
+                                            From architecture design to migration and management, we provide experts who
+                                            work across AWS, Azure, and GCP to meet your infrastructure goals.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
 
                     <!-- Our Team Section -->
-                    <section class="our-team">
-                        <div class="container">
-                            <div class="text-center mb-4">
-                                <h2 class="section-title-sub">Our Team</h2>
-                                <p class="section-subtitle">
-                                    A passionate group of experts driving innovation, collaboration, and
-                                    results.
-                                </p>
-                            </div>
-                            <div
-                                    id="teamCarousel"
-                                    class="carousel slide"
-                                    data-bs-ride="carousel"
-                                    data-bs-interval="4000"
-                            >
-                                <div class="carousel-inner">
-
-                                </div>
-
-                                <!-- Carousel Indicators (Dots) -->
-                                <div class="carousel-indicators team-indicators">
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="0"
-                                            class="active"
-                                            aria-current="true"
-                                            aria-label="Slide 1"
-                                    />
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="1"
-                                            aria-label="Slide 2"
-                                    />
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="2"
-                                            aria-label="Slide 3"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-4">

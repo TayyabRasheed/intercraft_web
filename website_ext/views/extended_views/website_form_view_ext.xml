@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="website_form_subject_dropdown" inherit_id="website.s_website_form">
+        <xpath expr="//input[@name='subject']" position="replace">
+            <select class="form-control s_website_form_input" name="subject" required="1" id="oqsf4m51acj">
+                <option value="">Select a Subject</option>
+                <option value="AI services">AI services</option>
+                <option value="Cloud and DevOps Services">Cloud and DevOps Services</option>
+                <option value="Moodle LMS Solutions">Moodle LMS Solutions</option>
+                <option value="Odoo ERP Services">Odoo ERP Services</option>
+                <option value="Koha ILS ">Koha ILS </option>
+                <option value="Resource Augmentation">Resource Augmentation</option>
+                <option value="Web Applications ">Web Applications </option>
+                <option value="Mobile Applications">Mobile Applications</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Software Quality Assurance">Software Quality Assurance</option>
+            </select>
+        </xpath>
+    </template>
+     <template id="custom_website_form_hidden_input" inherit_id="website.s_website_form">
+        <xpath expr="//form" position="inside">
+            <input type="hidden" name="form_source" value="contact-us"/>
+        </xpath>
+    </template>
+<!--    <template id="s_google_map_inherit" inherit_id="website.s_google_map">-->
+<!--        <xpath expr="//section[contains(@class, 's_google_map')]" position="attributes">-->
+<!--            <attribute name="class">s_google_map pt256</attribute>-->
+<!--        </xpath>-->
+<!--    </template>-->
+</odoo>

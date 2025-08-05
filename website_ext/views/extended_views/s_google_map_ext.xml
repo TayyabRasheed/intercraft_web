@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+     <template id="s_google_map_inherit" inherit_id="website.s_google_map">
+        <xpath expr="//section[contains(@class, 's_google_map')]" position="attributes">
+            <attribute name="class">s_google_map pt256</attribute>
+        </xpath>
+    </template>
+</odoo>
