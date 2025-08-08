@@ -19,13 +19,12 @@
                                 <div class="col-lg-20">
                                     <div class="service-hero-content">
                                         <h1 class="service-hero-title">
-                                            On-Demand Skilled Professionals for Your Projects
+                                            On-Demand Skilled Professionals
                                         </h1>
                                         <p class="service-hero-subtitle">
-                                            Our Resource Augmentation service offers flexible access to
-                                            skilled professionals—no long-term hiring required. Whether for
-                                            short projects or ongoing support, our experts blend seamlessly
-                                            with your team to speed up delivery and maintain high quality.
+                                            Our Resource Augmentation service gives you flexible access to experts—no
+                                            long-term hiring needed. For short projects or ongoing support, they
+                                            integrate smoothly with your team to speed delivery and ensure quality.
                                         </p>
                                     </div>
                                 </div>
@@ -335,7 +334,7 @@
                                                         <h4 class="team-name">Muhammad Raiz</h4>
                                                         <p class="team-role">CTO, AI Engineer</p>
                                                         <a href="https://www.linkedin.com/in/riazspace"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -372,7 +371,7 @@
                                                             Lead)
                                                         </p>
                                                         <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -407,7 +406,7 @@
                                                         <h4 class="team-name">Arslan Haroon</h4>
                                                         <p class="team-role">Senior Software Engineer (Lead)</p>
                                                         <a href="https://www.linkedin.com/in/arslanh123/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -447,7 +446,7 @@
                                                         <h4 class="team-name">Eshrat-Ul-Islam</h4>
                                                         <p class="team-role">Senior SQA Engineer (Lead)</p>
                                                         <a href="https://www.linkedin.com/in/eshrat-ul-islam/
- " class="team-social"  target="_blank">
+ " class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -482,7 +481,7 @@
                                                         <h4 class="team-name">Maryam Fizza</h4>
                                                         <p class="team-role">Senior Ui Ux (Lead)</p>
                                                         <a href="https://www.linkedin.com/in/maryamfizza/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -517,7 +516,7 @@
                                                         <h4 class="team-name">Ghulam Mujtaba</h4>
                                                         <p class="team-role">Cloud and DevOps Engineer</p>
                                                         <a href="https://www.linkedin.com/in/ghulammujtabajuna/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -558,7 +557,7 @@
                                                         <h4 class="team-name">Mudassir Rehman</h4>
                                                         <p class="team-role">Senior Frontend Developer</p>
                                                         <a href="https://www.linkedin.com/in/mudassir-rehman-0a4a01243/
- " class="team-social"  target="_blank">
+ " class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -593,7 +592,7 @@
                                                         <h4 class="team-name">Ahmad Ali</h4>
                                                         <p class="team-role">Senior Software Engineer</p>
                                                         <a href="https://www.linkedin.com/in/connect-ahmad-ali/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -628,7 +627,7 @@
                                                         <h4 class="team-name">Usama Hadi</h4>
                                                         <p class="team-role">Senior Laravel Deveoper</p>
                                                         <a href="https://www.linkedin.com/in/usama-hadi-601569170/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -667,7 +666,7 @@
                                                         <h4 class="team-name">Javaid Khan</h4>
                                                         <p class="team-role">Senior Odoo Developer</p>
                                                         <a href="https://www.linkedin.com/in/javaid-khan-4971a6221"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -702,7 +701,7 @@
                                                         <h4 class="team-name">Syed Kashan Ali</h4>
                                                         <p class="team-role">Senior Functional Consultant</p>
                                                         <a href="https://www.linkedin.com/in/syed-kashan-ali-ab28b7213"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -737,7 +736,7 @@
                                                         <h4 class="team-name">Mubashar Ahmed</h4>
                                                         <p class="team-role">Senior Ui Ux</p>
                                                         <a href="https://www.linkedin.com/in/mubashar-ahmed-b4b03524a/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -777,7 +776,7 @@
                                                         <h4 class="team-name">Usman Waheed</h4>
                                                         <p class="team-role">SQA Engineer</p>
                                                         <a href="https://www.linkedin.com/in/muhammad-usman-waheed-549290247/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -811,7 +810,7 @@
                                                     <div class="team-info">
                                                         <h4 class="team-name">Mustehsan Ali</h4>
                                                         <p class="team-role">Front End Developer</p>
-                                                        <a href="#" class="team-social"  target="_blank">
+                                                        <a href="#" class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -846,7 +845,7 @@
                                                         <h4 class="team-name">Ahsan Taqweem</h4>
                                                         <p class="team-role">Laravel Developer</p>
                                                         <a href="https://www.linkedin.com/in/ahsan-taqweem-552712177/
- " class="team-social"  target="_blank">
+ " class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -875,22 +874,22 @@
                                 </div>
 
                                 <!-- Carousel Indicators (Dots) -->
-<!--                                <div class="carousel-indicators team-indicators">-->
-<!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0"-->
-<!--                                            class="active" aria-current="true" aria-label="Slide 1"/>-->
+                                <!--                                <div class="carousel-indicators team-indicators">-->
+                                <!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0"-->
+                                <!--                                            class="active" aria-current="true" aria-label="Slide 1"/>-->
 
-<!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"-->
-<!--                                            aria-label="Slide 2"/>-->
+                                <!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"-->
+                                <!--                                            aria-label="Slide 2"/>-->
 
-<!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"-->
-<!--                                            aria-label="Slide 3"/>-->
+                                <!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"-->
+                                <!--                                            aria-label="Slide 3"/>-->
 
-<!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3"-->
-<!--                                            aria-label="Slide 4"/>-->
+                                <!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3"-->
+                                <!--                                            aria-label="Slide 4"/>-->
 
-<!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="4"-->
-<!--                                            aria-label="Slide 5"/>-->
-<!--                                </div>-->
+                                <!--                                    <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="4"-->
+                                <!--                                            aria-label="Slide 5"/>-->
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </section>

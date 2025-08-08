@@ -22,10 +22,9 @@
                                             Ensure Excellence with Expert SQA Solutions
                                         </h1>
                                         <p class="service-hero-subtitle">
-                                            Skilled QA professionals manage functional, automated,
-                                            and performance testing—seamlessly integrated into your
-                                            development process—to ensure a stable, scalable product
-                                            that meets the highest quality standards.
+                                            killed QA professionals handle functional, automated, and performance
+                                            testing, integrating seamlessly into your process to deliver stable,
+                                            scalable, high-quality products.
                                         </p>
                                     </div>
                                 </div>
@@ -273,7 +272,7 @@
                                                         <h4 class="team-name">Eshrat-Ul-Islam</h4>
                                                         <p class="team-role">Senior SQA Engineer</p>
                                                         <a href="https://www.linkedin.com/in/eshrat-ul-islam/
- " class="team-social"  target="_blank">
+ " class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -308,7 +307,7 @@
                                                         <h4 class="team-name">Usman Waheed</h4>
                                                         <p class="team-role">SQA Engineer</p>
                                                         <a href="https://www.linkedin.com/in/muhammad-usman-waheed-549290247/"
-                                                           class="team-social"  target="_blank">
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -335,28 +334,28 @@
                                 </div>
 
                                 <!-- Carousel Indicators (Dots) -->
-<!--                                <div class="carousel-indicators team-indicators">-->
-<!--                                    <button-->
-<!--                                            type="button"-->
-<!--                                            data-bs-target="#teamCarousel"-->
-<!--                                            data-bs-slide-to="0"-->
-<!--                                            class="active"-->
-<!--                                            aria-current="true"-->
-<!--                                            aria-label="Slide 1"-->
-<!--                                    />-->
-<!--                                    <button-->
-<!--                                            type="button"-->
-<!--                                            data-bs-target="#teamCarousel"-->
-<!--                                            data-bs-slide-to="1"-->
-<!--                                            aria-label="Slide 2"-->
-<!--                                    />-->
-<!--                                    <button-->
-<!--                                            type="button"-->
-<!--                                            data-bs-target="#teamCarousel"-->
-<!--                                            data-bs-slide-to="2"-->
-<!--                                            aria-label="Slide 3"-->
-<!--                                    />-->
-<!--                                </div>-->
+                                <!--                                <div class="carousel-indicators team-indicators">-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="0"-->
+                                <!--                                            class="active"-->
+                                <!--                                            aria-current="true"-->
+                                <!--                                            aria-label="Slide 1"-->
+                                <!--                                    />-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="1"-->
+                                <!--                                            aria-label="Slide 2"-->
+                                <!--                                    />-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="2"-->
+                                <!--                                            aria-label="Slide 3"-->
+                                <!--                                    />-->
+                                <!--                                </div>-->
                             </div>
                         </div>
                     </section>

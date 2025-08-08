@@ -152,9 +152,11 @@
                                                        class="logo-showcase-partner">
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
                                                              alt="Misbar Builds Logo"
+                                                             style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
                                                              alt="Misbar Builds Logo Colored"
+                                                             style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
@@ -176,9 +178,11 @@
                                                        class="logo-showcase-partner">
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
                                                              alt="QTS Fitout Logo"
+                                                             style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
                                                              alt="QTS Fitout Logo Colored"
+                                                             style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
