@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+    <!--    <template id="remove_footer_colored_level" inherit_id="website.layout">-->
+    <!--    <xpath expr="//div[contains(@class, 'o_footer_copyright') ]" position="replace">-->
+    <!--        &lt;!&ndash; Removing entire block &ndash;&gt;-->
+    <!--    </xpath>-->
+    <!--</template>-->
+    <template id="hide_footer_copyright_style" inherit_id="web.layout">
+        <xpath expr="//head" position="inside">
+            <style>
+                .o_footer_copyright {
+                display: none !important;
+                }
+            </style>
+        </xpath>
+    </template>
+
     <template id="custom_footer" inherit_id="website.layout" priority="1000">
 
         <xpath expr="//div[@id='footer']" position="replace">
@@ -49,9 +64,9 @@
                                         <br/>
                                         Islamabad, Pakistan
                                         <br/>
-                                        <a href="tel:+92515913054"   target="_blank">+92 51 5913054</a>
+                                        <a href="tel:+92515913054" target="_blank">+92 51 5913054</a>
                                         <br/>
-                                        <a href="https://wa.me/923369237827"   target="_blank">+92 336 9237827</a>
+                                        <a href="https://wa.me/923369237827" target="_blank">+92 336 9237827</a>
                                     </p>
                                 </div>
                                 <!--                               -->
@@ -238,30 +253,33 @@
 
                                 />
                                 <div class="certification-logos mt-2">
-<!--                                    <a href="https://techdestination.com/" target="_blank" >-->
-                                        <img
-                                                src="/website_ext/static/src/images/footer/pseb_logo.png"
-                                                alt="PSEB"
-                                                class="img-fluid"
+                                    <!--                                    <a href="https://techdestination.com/" target="_blank" >-->
+                                    <img
+                                            src="/website_ext/static/src/images/footer/pseb_logo.png"
+                                            alt="PSEB"
+                                            class="img-fluid"
 
 
-                                        />
-<!--                                    </a>-->
-<!--                                    <a href="https://techdestination.com/" target="_blank">-->
-                                        <img
-                                                src="/website_ext/static/src/images/footer/TDAP_logo.png"
-                                                alt="TDAP"
-                                                class="img-fluid"
+                                    >
+                                        <!--                                    <a href="https://techdestination.com/" target="_blank" >-->
 
-                                        />
-<!--                                    </a>-->
-<!--                                    <a href="https://techdestination.com/" target="_blank">-->
-                                        <img
-                                                src="/website_ext/static/src/images/footer/digital_logo.png"
-                                                alt="digital pakistan"
-                                                class="img-fluid"
-                                        />
-<!--                                    </a>-->
+                                    </img>
+                                    <!--                                    </a>-->
+                                    <!--                                    <a href="https://techdestination.com/" target="_blank">-->
+                                    <img
+                                            src="/website_ext/static/src/images/footer/TDAP_logo.png"
+                                            alt="TDAP"
+                                            class="img-fluid"
+
+                                    />
+                                    <!--                                    </a>-->
+                                    <!--                                    <a href="https://techdestination.com/" target="_blank">-->
+                                    <img
+                                            src="/website_ext/static/src/images/footer/digital_logo.png"
+                                            alt="digital pakistan"
+                                            class="img-fluid"
+                                    />
+                                    <!--                                    </a>-->
 
 
                                 </div>
