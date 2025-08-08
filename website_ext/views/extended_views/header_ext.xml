@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="new_header" inherit_id="website.layout">
+    <template id="new_header" inherit_id="website.layout" priority="1000">
         <xpath expr="//header" position="replace">
             <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 99999;">
                 <div class="container">
@@ -189,7 +189,7 @@
                                                         <div class="col-6">
                                                             <div class="row">
                                                                 <h6 class="mega-menu-title">
-                                                                    Our Products
+                                                                    Our Expertise
                                                                 </h6>
                                                                 <div class="col-md-12">
                                                                     <a href="/erp-solution" class="mega-menu-item">
@@ -259,10 +259,11 @@
                                             </div>
                                             <div class="col-lg-4">
                                                 <div class="mega-menu-section">
-                                                    <h6 class="mega-menu-title">For Any Need</h6>
+                                                    <h6 class="mega-menu-title">Stay Connected</h6>
 
 
-                                                    <a href="mailto:info@intercraftsol.com" class="mega-menu-item">
+                                                    <a href="mailto:info@intercraftsol.com" target="_blank"
+                                                       class="mega-menu-item">
                                                         <div class="mega-menu-icon">
                                                             <!-- Email Icon -->
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20"
@@ -278,6 +279,22 @@
                                                             <span class="mega-menu-label">info@intercraftsol.com</span>
                                                         </div>
                                                     </a>
+                                                    <a href="tel:+15123555400" class="mega-menu-item"
+                                                       target="_blank">
+                                                        <div class="mega-menu-icon">
+                                                            <!--                                                            <i class="fa-solid fa-phone"></i>-->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                 height="20"
+                                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                                 stroke-width="2" stroke-linecap="round"
+                                                                 stroke-linejoin="round">
+                                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="mega-menu-content">
+                                                            <span class="mega-menu-label">+1 512-355-5400</span>
+                                                        </div>
+                                                    </a>
                                                     <a href="https://wa.me/923369237827" class="mega-menu-item"
                                                        target="_blank">
                                                         <div class="mega-menu-icon">
@@ -288,23 +305,8 @@
                                                             <span class="mega-menu-label">+92 336 9237827</span>
                                                         </div>
                                                     </a>
-
-                                                    <a href="https://www.youtube.com/@intercraft-sol"
-                                                       class="mega-menu-item">
-                                                        <div class="mega-menu-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20" viewBox="0 0 24 24" fill="none"
-                                                                 stroke="currentColor" stroke-width="2"
-                                                                 stroke-linecap="round" stroke-linejoin="round">
-                                                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
-                                                                <polygon points="10 15 15 12 10 9 10 15"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">Youtube</span>
-                                                        </div>
-                                                    </a>
                                                     <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
+                                                       target="_blank"
                                                        class="mega-menu-item">
                                                         <div class="mega-menu-icon">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="20"
@@ -320,12 +322,29 @@
                                                             <span class="mega-menu-label">Linkedin</span>
                                                         </div>
                                                     </a>
-                                                    <div class="events-section">
-                                                        <h6 class="events-title">Events</h6>
-                                                        <p class="events-description">Receive updates on the latest
-                                                            events or new features.
-                                                        </p>
-                                                    </div>
+                                                    <a href="https://www.youtube.com/@intercraft-sol" target="_blank"
+                                                       class="mega-menu-item">
+                                                        <div class="mega-menu-icon">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                 height="20" viewBox="0 0 24 24" fill="none"
+                                                                 stroke="currentColor" stroke-width="2"
+                                                                 stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
+                                                                <polygon points="10 15 15 12 10 9 10 15"/>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="mega-menu-content">
+                                                            <span class="mega-menu-label">Youtube</span>
+                                                        </div>
+                                                    </a>
+
+
+                                                    <!--                                                    <div class="events-section">-->
+                                                    <!--                                                        <h6 class="events-title">Events</h6>-->
+                                                    <!--                                                        <p class="events-description">Receive updates on the latest-->
+                                                    <!--                                                            events or new features.-->
+                                                    <!--                                                        </p>-->
+                                                    <!--                                                    </div>-->
                                                 </div>
                                             </div>
                                         </div>

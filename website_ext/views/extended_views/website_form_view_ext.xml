@@ -14,6 +14,7 @@
                 <option value="Mobile Applications">Mobile Applications</option>
                 <option value="UI/UX Design">UI/UX Design</option>
                 <option value="Software Quality Assurance">Software Quality Assurance</option>
+                <option value="Other Services">Other Services</option>
             </select>
         </xpath>
     </template>

@@ -37,16 +37,13 @@
                                     <div class="service-content">
                                         <span class="service-label">Mobile Applications</span>
                                         <h2 class="service-title-services">
-                                            Mobile Applications That Drive Results
+                                            Mobile Apps That Help Your Business Grow
                                         </h2>
                                         <p class="service-description-services">
-                                            In today’s digital landscape, a strong, user-friendly web
-                                            presence is essential for staying ahead. Yet many businesses
-                                            still rely on outdated websites or applications that fall short
-                                            on functionality and user experience. Our Web Application
-                                            Development service bridges this gap with responsive, scalable,
-                                            and high-performing solutions that enhance your brand and
-                                            streamline operations.
+                                            Today, people use their phones for almost everything. Having a simple,
+                                            easy-to-use mobile app is important to connect with your customers anywhere,
+                                            anytime. We create modern, fast, and reliable mobile apps that make your
+                                            brand stronger, keep your customers happy, and make your work easier.
                                         </p>
                                         <a href="/contact-us" class="service-cta-btn"
                                         >Let's Connect
@@ -259,131 +256,90 @@
                         </div>
                     </section>
 
+
                     <!-- Our Team Section -->
-<!--                    <section class="our-team">-->
-<!--                        <div class="container">-->
-<!--                            <div class="text-center mb-5">-->
-<!--                                <h2 class="section-title">Our Team</h2>-->
-<!--                                <p class="section-subtitle">-->
-<!--                                    A passionate group of experts driving innovation, collaboration, and-->
-<!--                                    results.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                            <div class="team-slider-container">-->
-<!--                                <div class="team-slider">-->
-<!--                                    <div class="team-slide">-->
-<!--                                        <div class="row">-->
-<!--                                            <div class="col-md-4">-->
-<!--                                                <div class="team-card">-->
-<!--                                                    <div class="team-image">-->
-<!--                                                        <img-->
-<!--                                                                src="/website_ext/static/src/images/team/ceo.jpg"-->
-<!--                                                                alt="Muhammad Asif"-->
-<!--                                                                class="img-fluid"-->
-<!--                                                        />-->
-<!--                                                    </div>-->
-<!--                                                    <div class="team-info">-->
-<!--                                                        <h4 class="team-name">Nouman Bashir</h4>-->
-<!--                                                        <p class="team-role">CEO</p>-->
-<!--                                                        <a href="#" class="team-social">-->
-<!--                                                            <svg-->
-<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                                                    width="16"-->
-<!--                                                                    height="16"-->
-<!--                                                                    viewBox="0 0 24 24"-->
-<!--                                                                    fill="white"-->
-<!--                                                                    stroke="currentColor"-->
-<!--                                                                    stroke-width="2"-->
-<!--                                                                    stroke-linecap="round"-->
-<!--                                                                    stroke-linejoin="round"-->
-<!--                                                            >-->
-<!--                                                                <path-->
-<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
-<!--                                                                />-->
-<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
-<!--                                                                <circle cx="4" cy="4" r="2"/>-->
-<!--                                                            </svg>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-md-4">-->
-<!--                                                <div class="team-card">-->
-<!--                                                    <div class="team-image">-->
-<!--                                                        <img-->
-<!--                                                                src="/website_ext/static/src/images/team/cto.jpg"-->
-<!--                                                                alt="Muhammad Raiz"-->
-<!--                                                                class="img-fluid"-->
-<!--                                                        />-->
-<!--                                                    </div>-->
-<!--                                                    <div class="team-info">-->
-<!--                                                        <h4 class="team-name">Muhammad Raiz</h4>-->
-<!--                                                        <p class="team-role">CTO</p>-->
-<!--                                                        <a href="https://www.linkedin.com/in/riazspace" class="team-social">-->
-<!--                                                            <svg-->
-<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                                                    width="16"-->
-<!--                                                                    height="16"-->
-<!--                                                                    viewBox="0 0 24 24"-->
-<!--                                                                    fill="white"-->
-<!--                                                                    stroke="currentColor"-->
-<!--                                                                    stroke-width="2"-->
-<!--                                                                    stroke-linecap="round"-->
-<!--                                                                    stroke-linejoin="round"-->
-<!--                                                            >-->
-<!--                                                                <path-->
-<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
-<!--                                                                />-->
-<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
-<!--                                                                <circle cx="4" cy="4" r="2"/>-->
-<!--                                                            </svg>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                            <div class="col-md-4">-->
-<!--                                                <div class="team-card">-->
-<!--                                                    <div class="team-image">-->
-<!--                                                        <img-->
-<!--                                                                src="/website_ext/static/src/images/team/lead.png"-->
-<!--                                                                alt="Arslan Haroon"-->
-<!--                                                                class="img-fluid"-->
-<!--                                                        />-->
-<!--                                                    </div>-->
-<!--                                                    <div class="team-info">-->
-<!--                                                        <h4 class="team-name">Arslan Haroon</h4>-->
-<!--                                                        <p class="team-role">Senior Software Engineer (Lead)</p>-->
-<!--                                                        <a href="https://www.linkedin.com/in/arslanh123/" class="team-social">-->
-<!--                                                            <svg-->
-<!--                                                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                                                    width="16"-->
-<!--                                                                    height="16"-->
-<!--                                                                    viewBox="0 0 24 24"-->
-<!--                                                                    fill="white"-->
-<!--                                                                    stroke="currentColor"-->
-<!--                                                                    stroke-width="2"-->
-<!--                                                                    stroke-linecap="round"-->
-<!--                                                                    stroke-linejoin="round"-->
-<!--                                                            >-->
-<!--                                                                <path-->
-<!--                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"-->
-<!--                                                                />-->
-<!--                                                                <rect width="4" height="12" x="2" y="9"/>-->
-<!--                                                                <circle cx="4" cy="4" r="2"/>-->
-<!--                                                            </svg>-->
-<!--                                                        </a>-->
-<!--                                                    </div>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="slider-dots">-->
-<!--                                    <div class="slider-dot active"/>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </section>-->
+                    <section class="our-team">
+                        <div class="container">
+                            <div class="text-center mb-4">
+                                <h2 class="section-title-sub">Our Team</h2>
+                                <p class="section-subtitle">
+                                    A passionate group of expert driving innovation, collaboration, and
+                                    results.
+                                </p>
+                            </div>
+                            <div
+                                    id="teamCarousel"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                    data-bs-interval="4000"
+                            >
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-center">
+                                            <div class=" col-lg-3 col-md-4 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/front-end-developer.jpg"
+                                                                alt="Ahsan Taqweem"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Mustehsan Ali</h4>
+                                                        <p class="team-role">Front End Developer</p>
+                                                        <a href="#" class="team-social" target="_blank">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Carousel Indicators (Dots) -->
+                                <!--                                <div class="carousel-indicators team-indicators">-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="0"-->
+                                <!--                                            class="active"-->
+                                <!--                                            aria-current="true"-->
+                                <!--                                            aria-label="Slide 1"-->
+                                <!--                                    />-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="1"-->
+                                <!--                                            aria-label="Slide 2"-->
+                                <!--                                    />-->
+                                <!--                                    <button-->
+                                <!--                                            type="button"-->
+                                <!--                                            data-bs-target="#teamCarousel"-->
+                                <!--                                            data-bs-slide-to="2"-->
+                                <!--                                            aria-label="Slide 3"-->
+                                <!--                                    />-->
+                                <!--                                </div>-->
+                            </div>
+                        </div>
+                    </section>
 
                     <!-- Ready to Innovate Section -->
                     <section class="innovate">

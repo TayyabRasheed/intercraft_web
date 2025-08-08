@@ -3,6 +3,7 @@
      <template id="s_google_map_inherit" inherit_id="website.s_google_map">
         <xpath expr="//section[contains(@class, 's_google_map')]" position="attributes">
             <attribute name="class">s_google_map pt256</attribute>
+            <attribute name="data-map-gps">(30.407642364501953,-97.62741088867188)</attribute>
         </xpath>
     </template>
 </odoo>

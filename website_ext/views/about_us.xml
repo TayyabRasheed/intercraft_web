@@ -42,11 +42,12 @@
                                         Empowering Digital Growth Since 2016
                                     </h2>
                                     <p class="section-description">
-                                        We are a forward-thinking software company delivering web-based
-                                        solutions that simplify processes and enhance productivity.
-                                        Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we use
-                                        open-source technologies to build smart, scalable systems. Our
-                                        focus: simple, innovative, and unified digital experiences.
+                                        We are a forward-thinking software company delivering web and mobile-based
+                                        solutions that simplify processes and enhance productivity. Specializing in
+                                        Artificial Intelligence, Cloud Networks, DevOps, Web Applications, Odoo ERP,
+                                        Moodle LMS and Mobile Applications. We prefer open-source technologies to build
+                                        smart and scalable systems. Our focus is simple, innovative, and unified digital
+                                        experiences.
                                     </p>
                                     <a href="/aboutus" class="learn-more-btn">Learn More</a>
                                 </div>
@@ -82,7 +83,8 @@
                                         <div class="partners-logos">
                                             <div class="row">
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container"
+                                                       href="https://eforms.alfaisal.edu/login" target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
                                                                 alt="Partner 3"
@@ -93,10 +95,11 @@
                                                                 alt="Partner 3"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container"
+                                                       href="https://bap.baseerat.academy/login" target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
                                                                 alt="Partner 3"
@@ -107,10 +110,11 @@
                                                                 alt="Partner 3"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container"
+                                                       href="https://sap.taleemmuyassar.academy/login" target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"
                                                                 alt="Taleem"
@@ -121,10 +125,11 @@
                                                                 alt="Taleem"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container"
+                                                       href="https://www.irthalotrujjah.com/" target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"
                                                                 alt="Taleem"
@@ -135,7 +140,7 @@
                                                                 alt="Taleem"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
 
@@ -145,7 +150,8 @@
                                         <div class="partners-logos">
                                             <div class="row">
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container" href="https://www.hmg.com/"
+                                                       target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
                                                                 alt="Partner 1"
@@ -156,10 +162,11 @@
                                                                 alt="Partner 1"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container" href="https://misbarbuilds.com/"
+                                                       target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
                                                                 alt="Partner 4"
@@ -170,10 +177,11 @@
                                                                 alt="Partner 4"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container" href="https://www.kfshrc.edu.sa/ "
+                                                       target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
                                                                 alt="Partner 3"
@@ -184,10 +192,11 @@
                                                                 alt="Partner 3"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                                 <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
+                                                    <a class="partner-logo-container" href="https://qts-fitout.com/"
+                                                       target="_blank">
                                                         <img
                                                                 src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
                                                                 alt="QTS"
@@ -198,7 +207,7 @@
                                                                 alt="QTS"
                                                                 class="img-fluid partner-logo-colored"
                                                         />
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -217,13 +226,42 @@
                         </div>
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our Expertise</h2>
+                                <h2 class="section-title-sub">Our Services</h2>
                                 <p class="section-subtitle">To empower organizations by providing innovative, scalable,
                                     and cost-effective
                                     digital solutions that streamline operations and enhance productivity.
                                 </p>
                             </div>
                             <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/ai-expert">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/ai-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Artificial Intelligence</h3>
+                                        <p class="feature-description">Our custom-built AI solutions—powered by machine
+                                            learning, NLP, and deep learning—go beyond automation.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/cloud-services">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/cloud-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Services</h3>
+                                        <p class="feature-description">From architecture design to deployment and optimization, we ensure your cloud infrastructure is secure, high-performing, and built to scale.
+                                        </p>
+                                    </a>
+                                </div>
                                 <div class="col-lg-6 col-md-6 mb-4">
                                     <a class="feature-card" href="/moodle-lms">
                                         <div class="feature-icon">
@@ -302,6 +340,20 @@
                                         </p>
                                     </a>
                                 </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/sqa">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/sqa-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Software Quality Assurance</h3>
+                                        <p class="feature-description">From manual and automated testing to performance validation, our services ensure your software is reliable, secure, and user-ready.
+                                        </p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -310,7 +362,7 @@
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our Reach &amp; Culture</h2>
+                                <h2 class="section-title-sub">Our Culture</h2>
                                 <p class="section-subtitle">With offices in USA and Islamabad, Pakistan,
                                     InterCraft serves a global
                                     clientele with innovative solutions. Our culture is the foundation of our success,

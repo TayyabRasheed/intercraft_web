@@ -272,7 +272,7 @@
                                                     <div class="team-info">
                                                         <h4 class="team-name">Tayyab Rasheed</h4>
                                                         <p class="team-role">Senior Software Engineer (Odoo Technical Lead)</p>
-                                                        <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/" class="team-social">
+                                                        <a href="https://www.linkedin.com/in/tayyab-rasheed-465522105/" class="team-social"  target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -340,7 +340,7 @@
                                                     <div class="team-info">
                                                         <h4 class="team-name">Syed Kashan Ali</h4>
                                                         <p class="team-role">Senior Functional Consultant</p>
-                                                        <a href="www.linkedin.com/in/syed-kashan-ali-ab28b7213" class="team-social">
+                                                        <a href="https://www.linkedin.com/in/syed-kashan-ali-ab28b7213" class="team-social">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -367,28 +367,28 @@
                                 </div>
 
                                 <!-- Carousel Indicators (Dots) -->
-                                <div class="carousel-indicators team-indicators">
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="0"
-                                            class="active"
-                                            aria-current="true"
-                                            aria-label="Slide 1"
-                                    />
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="1"
-                                            aria-label="Slide 2"
-                                    />
-                                    <button
-                                            type="button"
-                                            data-bs-target="#teamCarousel"
-                                            data-bs-slide-to="2"
-                                            aria-label="Slide 3"
-                                    />
-                                </div>
+<!--                                <div class="carousel-indicators team-indicators">-->
+<!--                                    <button-->
+<!--                                            type="button"-->
+<!--                                            data-bs-target="#teamCarousel"-->
+<!--                                            data-bs-slide-to="0"-->
+<!--                                            class="active"-->
+<!--                                            aria-current="true"-->
+<!--                                            aria-label="Slide 1"-->
+<!--                                    />-->
+<!--                                    <button-->
+<!--                                            type="button"-->
+<!--                                            data-bs-target="#teamCarousel"-->
+<!--                                            data-bs-slide-to="1"-->
+<!--                                            aria-label="Slide 2"-->
+<!--                                    />-->
+<!--                                    <button-->
+<!--                                            type="button"-->
+<!--                                            data-bs-target="#teamCarousel"-->
+<!--                                            data-bs-slide-to="2"-->
+<!--                                            aria-label="Slide 3"-->
+<!--                                    />-->
+<!--                                </div>-->
                             </div>
                         </div>
                     </section>

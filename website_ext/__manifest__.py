@@ -10,7 +10,7 @@
     'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm'],
     'data': [
         'views/extended_views/header_ext.xml',
-        # 'views/extended_views/s_google_map_ext.xml',
+        'views/extended_views/s_google_map_ext.xml',
         'views/extended_views/website_form_view_ext.xml',
         'views/snippet_home_page.xml',
         'views/contact_us.xml',

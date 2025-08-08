@@ -421,12 +421,15 @@ body {
 }
 
 .service-description {
+    text-align: justify;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     color: #666666;
     margin-bottom: 20px;
     flex-grow: 1;
+
+
 }
 
 .learn-more-link {

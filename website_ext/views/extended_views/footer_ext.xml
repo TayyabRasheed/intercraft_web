@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <template id="custom_footer" inherit_id="website.layout">
+    <template id="custom_footer" inherit_id="website.layout" priority="1000">
 
         <xpath expr="//div[@id='footer']" position="replace">
             <footer class="footer">
@@ -18,6 +18,12 @@
                             </p>
                             <div class="footer-contact">
                                 <h4>Contact Us</h4>
+                                <p class="footer-contact-links">
+                                    <a href="mailto:info@intercraftsol.com"
+                                    >info@intercraftsol.com
+                                    </a
+                                    >
+                                </p>
                                 <div class="office-address">
                                     <img src="/website_ext/static/src/images/flags/us.svg" alt="USA Flag"
                                          class="flag-icon"/>
@@ -27,7 +33,11 @@
                                         Pflugerville, TX 78660,
                                         <br/>
                                         USA
+                                        <br/>
+                                        <a href="tel:+15123555400">+1 512-355-5400</a>
                                     </p>
+
+
                                 </div>
                                 <div class="office-address">
                                     <img src="/website_ext/static/src/images/flags/pk.svg" alt="Pakistan Flag"
@@ -38,24 +48,22 @@
                                         D - Markaz, Gulberg Greens,
                                         <br/>
                                         Islamabad, Pakistan
+                                        <br/>
+                                        <a href="tel:+92515913054"   target="_blank">+92 51 5913054</a>
+                                        <br/>
+                                        <a href="https://wa.me/923369237827"   target="_blank">+92 336 9237827</a>
                                     </p>
                                 </div>
-                                <p class="footer-contact-links">
-                                    <a href="mailto:info@intercraftsol.com"
-                                    >info@intercraftsol.com
-                                    </a
-                                    >
-                                </p>
-                                <p class="footer-contact-links">
-                                    <a href="tel:+15123555400">+1 512-355-5400</a>
-                                </p>
+                                <!--                               -->
+                                <!--                                <p class="footer-contact-links">-->
+                                <!--                                </p>-->
 
-                                <p class="footer-contact-links">
-                                    <a href="tel:+92515913054">+92 51 5913054</a>
-                                </p>
-                                <p class="footer-contact-links">
-                                    <a href="tel:+923369237827">+92 336 9237827</a>
-                                </p>
+                                <!--                                <p class="footer-contact-links">-->
+
+                                <!--                                </p>-->
+                                <!--                                <p class="footer-contact-links">-->
+                                <!--                                    -->
+                                <!--                                </p>-->
                             </div>
                             <div class="footer-social" style="color:#333;">
                                 <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true" target="_blank"
@@ -78,7 +86,8 @@
                                         <circle cx="4" cy="4" r="2"/>
                                     </svg>
                                 </a>
-                                <a href="https://www.facebook.com/share/1928ZKKhVP/" aria-label="Facebook" target="_blank"
+                                <a href="https://www.facebook.com/share/1928ZKKhVP/" aria-label="Facebook"
+                                   target="_blank"
                                    style="color:#1877F2">
                                     <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +134,7 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
-                            <h4 class="footer-title" >Services
+                            <h4 class="footer-title" style="color:#373636">Our Services
                             </h4>
                             <ul class="footer-links">
                                 <li>
@@ -163,7 +172,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
-                            <h4 class="footer-title">Products</h4>
+                            <h4 class="footer-title" style="color:#373636">Our Expertise</h4>
                             <ul class="footer-links">
                                 <li>
                                     <a href="/erp-solution">Odoo ERP Solutions</a>
@@ -178,7 +187,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
-                            <h4 class="footer-title">Company</h4>
+                            <h4 class="footer-title" style="color:#373636">Discover Intercraft</h4>
                             <ul class="footer-links">
                                 <li>
                                     <a href="/aboutus">About Intercraft</a>
@@ -199,7 +208,9 @@
                             </ul>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-lg-block">
-                            <h4 class="footer-title d-none d-sm-none d-md-block">Follow The Intercraft Journey</h4>
+                            <h4 class="footer-title d-none d-sm-none d-md-block" style="color:#373636">Follow The
+                                Intercraft Journey
+                            </h4>
                             <p class="footer-newsletter-text d-none d-sm-none d-md-block">
                                 Subscribe to receive the most relevant news on our company,
                                 products and industry.
@@ -210,7 +221,7 @@
                                         placeholder="Enter your email"
                                         class="footer-newsletter-input"
                                 />
-                                <button type="submit" class="footer-newsletter-btn">
+                                <button type="submit" class="footer-newsletter-btn" href="/">
                                     Subscribe
                                 </button>
                             </form>
@@ -227,22 +238,32 @@
 
                                 />
                                 <div class="certification-logos mt-2">
+<!--                                    <a href="https://techdestination.com/" target="_blank" >-->
+                                        <img
+                                                src="/website_ext/static/src/images/footer/pseb_logo.png"
+                                                alt="PSEB"
+                                                class="img-fluid"
 
-                                    <img
-                                            src="/website_ext/static/src/images/footer/pseb_logo.png"
-                                            alt="PSEB"
-                                            class="img-fluid"
-                                    />
-                                    <img
-                                            src="/website_ext/static/src/images/footer/TDAP_logo.png"
-                                            alt="TDAP"
-                                            class="img-fluid"
-                                    />
-                                    <img
-                                            src="/website_ext/static/src/images/footer/digital_logo.png"
-                                            alt="digital pakistan"
-                                            class="img-fluid"
-                                    />
+
+                                        />
+<!--                                    </a>-->
+<!--                                    <a href="https://techdestination.com/" target="_blank">-->
+                                        <img
+                                                src="/website_ext/static/src/images/footer/TDAP_logo.png"
+                                                alt="TDAP"
+                                                class="img-fluid"
+
+                                        />
+<!--                                    </a>-->
+<!--                                    <a href="https://techdestination.com/" target="_blank">-->
+                                        <img
+                                                src="/website_ext/static/src/images/footer/digital_logo.png"
+                                                alt="digital pakistan"
+                                                class="img-fluid"
+                                        />
+<!--                                    </a>-->
+
+
                                 </div>
                             </div>
                         </div>
