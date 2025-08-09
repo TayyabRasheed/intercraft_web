@@ -322,6 +322,25 @@
                                                             <span class="mega-menu-label">Linkedin</span>
                                                         </div>
                                                     </a>
+                                                    <a href="https://www.facebook.com/share/151tYSeVwNi/" class="mega-menu-item"
+                                                       target="_blank">
+                                                        <div class="mega-menu-icon">
+                                                            <i class="fa fa-facebook" style="font-size: 20px;"></i>
+                                                        </div>
+                                                        <div class="mega-menu-content">
+                                                            <span class="mega-menu-label">Facebook</span>
+                                                        </div>
+                                                    </a>
+
+                                                    <a href="https://www.instagram.com/intercraftsol/" class="mega-menu-item"
+                                                       target="_blank">
+                                                        <div class="mega-menu-icon">
+                                                            <i class="fa fa-instagram" style="font-size: 20px;"></i>
+                                                        </div>
+                                                        <div class="mega-menu-content">
+                                                            <span class="mega-menu-label">Instagram</span>
+                                                        </div>
+                                                    </a>
                                                     <a href="https://www.youtube.com/@intercraft-sol" target="_blank"
                                                        class="mega-menu-item">
                                                         <div class="mega-menu-icon">

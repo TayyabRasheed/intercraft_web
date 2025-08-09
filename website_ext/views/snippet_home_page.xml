@@ -74,7 +74,7 @@
                                     id="partnersCarousel"
                                     class="carousel slide"
                                     data-bs-ride="carousel"
-                                    data-bs-interval="3000"
+                                    data-bs-interval="6000"
                             >
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -161,17 +161,17 @@
                                                     </a>
                                                 </div>
                                                 <!-- Partner 7 -->
-                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
-                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"
-                                                       class="logo-showcase-partner">
-                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
-                                                             alt="King Faisal Specialist Hospital Logo"
-                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
-                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"
-                                                             alt="King Faisal Specialist Hospital Logo Colored"
-                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
-                                                    </a>
-                                                </div>
+<!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
+<!--                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"-->
+<!--                                                       class="logo-showcase-partner">-->
+<!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"-->
+<!--                                                             alt="King Faisal Specialist Hospital Logo"-->
+<!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;default"/>-->
+<!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"-->
+<!--                                                             alt="King Faisal Specialist Hospital Logo Colored"-->
+<!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;hover"/>-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
                                                 <!-- Partner 8 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://qts-fitout.com/" target="_blank"
@@ -1061,10 +1061,10 @@
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">
-                                <h2 class="innovate-title">Ready to Innovate?</h2>
+                                <h2 class="innovate-title">Ready to Craft?</h2>
                                 <p class="innovate-subtitle">
-                                    Let's collaborate to turn your ideas into impactful digital
-                                    solutions.
+                                    Let's collaborate to craft your ideas into intelligent AI
+                                    solution.
                                 </p>
                                 <a href="/contact-us" class="get-started-btn">Get Started</a>
                             </div>

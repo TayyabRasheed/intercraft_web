@@ -67,7 +67,7 @@
                     <!-- Partners Section with Automatic Carousel -->
 
 
-                     <section class="partners">
+                    <section class="partners">
                         <div class="container text-center">
                             <h3 class="partners-title">
                                 We partner with forward-thinking businesses to boost efficiency and drive
@@ -164,17 +164,17 @@
                                                     </a>
                                                 </div>
                                                 <!-- Partner 7 -->
-                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
-                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"
-                                                       class="logo-showcase-partner">
-                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"
-                                                             alt="King Faisal Specialist Hospital Logo"
-                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
-                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"
-                                                             alt="King Faisal Specialist Hospital Logo Colored"
-                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
-                                                    </a>
-                                                </div>
+                                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
+                                                <!--                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"-->
+                                                <!--                                                       class="logo-showcase-partner">-->
+                                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"-->
+                                                <!--                                                             alt="King Faisal Specialist Hospital Logo"-->
+                                                <!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;default"/>-->
+                                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"-->
+                                                <!--                                                             alt="King Faisal Specialist Hospital Logo Colored"-->
+                                                <!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;hover"/>-->
+                                                <!--                                                    </a>-->
+                                                <!--                                                </div>-->
                                                 <!-- Partner 8 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://qts-fitout.com/" target="_blank"
@@ -573,9 +573,10 @@
 
                                             />
                                         </div>
-                                        <h3 class="feature-title">Artificial Intelligence</h3>
-                                        <p class="feature-description">Our custom-built AI solutions—powered by machine
-                                            learning, NLP, and deep learning—go beyond automation.
+                                        <h3 class="feature-title">AI Expert</h3>
+                                        <p class="feature-description">From intelligent chatbots to voice insights, our
+                                            AI solutions
+                                            are designed to think, learn, and grow with your business.
                                         </p>
                                     </a>
                                 </div>
@@ -588,86 +589,59 @@
 
                                             />
                                         </div>
-                                        <h3 class="feature-title">Cloud Services</h3>
-                                        <p class="feature-description">From architecture design to deployment and optimization, we ensure your cloud infrastructure is secure, high-performing, and built to scale.
+                                        <h3 class="feature-title">Cloud Infrastructure Services</h3>
+                                        <p class="feature-description">Robust and Scalable Cloud Infrastructure Services
+                                            to power your digital transformation with reliability and efficiency.
                                         </p>
                                     </a>
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/moodle-lms">
+                                    <a class="feature-card" href="/resource-augmentation">
                                         <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-1.svg"
-                                                 alt="system integration"/>
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/resource-icon.svg"
+                                                 alt="Resource Aug"/>
                                         </div>
-                                        <h3 class="feature-title">System Integration</h3>
-                                        <p class="feature-description">Ensuring seamless communication between diverse
-                                            business
-                                            platforms.
+                                        <h3 class="feature-title">Resource Augmentation</h3>
+                                        <p class="feature-description">Our Resource Augmentation service quickly links you with skilled
+                                            professionals—no hiring delays, just smooth, on-demand support.
                                         </p>
                                     </a>
                                 </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
+                                 <div class="col-lg-6 col-md-6 mb-4">
                                     <a class="feature-card" href="/web-application">
                                         <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-2.svg"
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/web-icon.svg"
                                                  alt="application development"/>
                                         </div>
                                         <h3 class="feature-title">Web Development</h3>
-                                        <p class="feature-description">Crafting customized applications tailored to
-                                            unique business
-                                            needs.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/erp-solution">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-3.svg"
-                                                 alt="open-source"/>
-                                        </div>
-                                        <h3 class="feature-title">Open-Source Solutions</h3>
-                                        <p class="feature-description">Leveraging platforms like Odoo ERP and Moodle LMS
-                                            to deliver flexible
-                                            and robust solutions.
+                                        <p class="feature-description">We build fast, responsive, and scalable web apps that elevate
+                                            your brand and streamline business.
                                         </p>
                                     </a>
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-4">
                                     <a class="feature-card" href="/mobile-application">
                                         <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-4.svg"
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/mob-icon.svg"
                                                  alt="mob-icon"/>
                                         </div>
-                                        <h3 class="feature-title">Mobile App Development</h3>
-                                        <p class="feature-description">Creating user-friendly mobile applications to
-                                            engage customers
-                                            effectively.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/moodle-lms">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-5.svg"
-                                                 alt="e-learning"/>
-                                        </div>
-                                        <h3 class="feature-title">E-Learning Solutions</h3>
-                                        <p class="feature-description">Developing comprehensive e-learning platforms to
-                                            facilitate modern
-                                            education and training needs.
+                                        <h3 class="feature-title">Mobile Applications</h3>
+                                        <p class="feature-description"> We create fast, user-friendly apps using the latest tech—native
+                                            or cross-platform—designed to engage users and streamline
+                                            operations.
                                         </p>
                                     </a>
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-4">
                                     <a class="feature-card" href="/ui-ux">
                                         <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-6.svg"
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
                                                  alt="ui-ux-design"/>
                                         </div>
                                         <h3 class="feature-title">UI/UX Design</h3>
-                                        <p class="feature-description">Designing clean, user-friendly interfaces that
-                                            enhance usability,
-                                            engagement, and brand experience.
+                                        <p class="feature-description"> We craft intuitive, engaging, and visually stunning user
+                                            experiences that align with your branding goals across web and
+                                            mobile platforms.
                                         </p>
                                     </a>
                                 </div>
@@ -681,10 +655,54 @@
                                             />
                                         </div>
                                         <h3 class="feature-title">Software Quality Assurance</h3>
-                                        <p class="feature-description">From manual and automated testing to performance validation, our services ensure your software is reliable, secure, and user-ready.
+                                        <p class="feature-description"> Ensure flawless performance with our end-to-end Software Quality Assurance
+                                            services, including manual and automated testing for reliable, bug-free delivery.
                                         </p>
                                     </a>
                                 </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/moodle-lms">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
+                                                 alt="moodle"/>
+                                        </div>
+                                        <h3 class="feature-title">Moodle LMS Solutions</h3>
+                                        <p class="feature-description">We deliver tailored Moodle LMS solutions that enable scalable,
+                                            user-friendly, and impactful e-learning for education and
+                                            corporate training.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/erp-solution">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
+                                                 alt="open-source"/>
+                                        </div>
+                                        <h3 class="feature-title">ERP Solutions</h3>
+                                        <p class="feature-description">We deliver tailored ERP solutions that streamline processes,
+                                            eliminate silos, and boost efficiency—through expert Odoo
+                                            implementation, customization, and support.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/koha-ils">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
+                                                 alt="e-learning"/>
+                                        </div>
+                                        <h3 class="feature-title">Koha ILS Solutions</h3>
+                                        <p class="feature-description"> We offer tailored Koha Integrated Library System (ILS) services
+                                            that bring automation, efficiency, and user-centric features to
+                                            libraries of all sizes.
+                                        </p>
+                                    </a>
+                                </div>
+
+
                             </div>
                         </div>
                     </section>

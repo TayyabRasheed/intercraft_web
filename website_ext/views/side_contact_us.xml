@@ -3,7 +3,7 @@
     <template id="portal_side_contact_us" name="Side Contact Us Panel">
         <div id="portal_side_contact_us" class="d-none d-md-block">
             <a class="side-contact-btn_contact" id="contactToggleBtn">
-                    <img src="/website_ext/static/src/images/logo_white.svg" alt="icon"/>
+<!--                    <img src="/website_ext/static/src/images/logo_white.svg" alt="icon"/>-->
                     <span>Let's Connect</span>
 
                 </a>
