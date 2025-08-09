@@ -133,7 +133,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="partners-logos">
-                                            <div class="row">
+                                            <div class="row" style=" justify-content: center;">
                                                 <!-- Partner 5 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://www.hmg.com/" target="_blank"
