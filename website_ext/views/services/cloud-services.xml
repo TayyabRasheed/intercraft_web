@@ -68,50 +68,50 @@
                         </div>
                     </section>
                     <!-- InterCraft at a Glance Section -->
-                    <section class="at-a-glance">
-                        <div class="container">
-                            <div class="glance-content">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-7">
-                                        <h2 class="glance-title">InterCraft at a Glance</h2>
-                                        <p class="glance-description">
-                                            Explore how we simplify business with smart solutions—from LMS
-                                            and Odoo to custom app development.
-                                        </p>
-                                        <p class="glance-description">
-                                            Download our info sheet to see how we drive digital
-                                            transformation.
-                                        </p>
-                                        <a href="#" class="download-btn">
-                                            Download
-                                            <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="16"
-                                                    height="16"
-                                                    fill="currentColor"
-                                                    class="bi bi-arrow-right"
-                                                    viewBox="0 0 16 16"
-                                            >
-                                                <path
-                                                        fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <div class="document-illustration">
-                                            <img
-                                                    src="/website_ext/static/src/images/glance.png"
-                                                    alt="Document Illustration"
-                                                    class="img-fluid"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+<!--                    <section class="at-a-glance">-->
+<!--                        <div class="container">-->
+<!--                            <div class="glance-content">-->
+<!--                                <div class="row align-items-center">-->
+<!--                                    <div class="col-lg-7">-->
+<!--                                        <h2 class="glance-title">InterCraft at a Glance</h2>-->
+<!--                                        <p class="glance-description">-->
+<!--                                            Explore how we simplify business with smart solutions—from LMS-->
+<!--                                            and Odoo to custom app development.-->
+<!--                                        </p>-->
+<!--                                        <p class="glance-description">-->
+<!--                                            Download our info sheet to see how we drive digital-->
+<!--                                            transformation.-->
+<!--                                        </p>-->
+<!--                                        <a href="#" class="download-btn">-->
+<!--                                            Download-->
+<!--                                            <svg-->
+<!--                                                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                    width="16"-->
+<!--                                                    height="16"-->
+<!--                                                    fill="currentColor"-->
+<!--                                                    class="bi bi-arrow-right"-->
+<!--                                                    viewBox="0 0 16 16"-->
+<!--                                            >-->
+<!--                                                <path-->
+<!--                                                        fill-rule="evenodd"-->
+<!--                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"-->
+<!--                                                />-->
+<!--                                            </svg>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-5">-->
+<!--                                        <div class="document-illustration">-->
+<!--                                            <img-->
+<!--                                                    src="/website_ext/static/src/images/glance.png"-->
+<!--                                                    alt="Document Illustration"-->
+<!--                                                    class="img-fluid"-->
+<!--                                            />-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
                     <!-- AI Features Section -->
                     <section class="ai-features">
                         <div class="services-bg d-none d-md-block">

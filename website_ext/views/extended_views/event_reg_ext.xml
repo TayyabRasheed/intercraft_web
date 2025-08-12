@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="event_description_full_inherit" inherit_id="website_event.event_description_full">
+
+        <!-- Remove the right sidebar block entirely -->
+        <xpath expr="//div[contains(@class, 'd-lg-flex') and contains(@class, 'justify-content-end')]"
+               position="replace">
+        </xpath>
+
+    </template>
+<!--     <template id="remove_event_navbar" inherit_id="website_event.navbar" name="Remove Event Navbar">-->
+<!--        <xpath expr="." position="replace"/>-->
+<!--          <xpath expr="//div[contains(@class, container my-3)]"-->
+<!--               position="replace">-->
+<!--        </xpath> <xpath expr="//div[contains(@class,navbar navbar-light navbar-expand-md d-none d-md-block p-0)]"-->
+<!--               position="replace">-->
+<!--        </xpath>-->
+<!--         <xpath expr="." position="replace"/>-->
+<!--          <xpath expr="//div[contains(@class, container d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center) and contains(@class, 'justify-content-end')]"-->
+<!--               position="replace">-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+<!--    <template id="remove_event_navbar_content" inherit_id="website_event.navbar" name="Remove Event Navbar Content">-->
+<!--        <xpath expr="." position="replace">-->
+<!--            &lt;!&ndash; Keep the template valid but with no content &ndash;&gt;-->
+<!--        </xpath>-->
+<!--    </template>-->
+
+
+
+</odoo>

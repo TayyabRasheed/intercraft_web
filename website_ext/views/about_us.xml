@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <record id="aboutus" model="website.page">
         <field name="name">About Us</field>
         <field name="type">qweb</field>
@@ -136,7 +137,7 @@
                                     </div>
                                     <div class="carousel-item">
                                         <div class="partners-logos">
-                                            <div class="row">
+                                            <div class="row" style=" justify-content: center;">
                                                 <!-- Partner 5 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://www.hmg.com/" target="_blank"
@@ -163,19 +164,6 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
-                                                <!-- Partner 7 -->
-                                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                                <!--                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"-->
-                                                <!--                                                       class="logo-showcase-partner">-->
-                                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"-->
-                                                <!--                                                             alt="King Faisal Specialist Hospital Logo"-->
-                                                <!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;default"/>-->
-                                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"-->
-                                                <!--                                                             alt="King Faisal Specialist Hospital Logo Colored"-->
-                                                <!--                                                             class="logo-showcase-partner__image logo-showcase-partner__image&#45;&#45;hover"/>-->
-                                                <!--                                                    </a>-->
-                                                <!--                                                </div>-->
-                                                <!-- Partner 8 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://qts-fitout.com/" target="_blank"
                                                        class="logo-showcase-partner">
@@ -193,519 +181,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!--                                <div class="carousel-inner">-->
-                                <!--                                    <div class="carousel-item active">-->
-                                <!--                                        <div class="partners-logos">-->
-                                <!--                                            <div class="row">-->
-                                <!--                                                &lt;!&ndash; Partner 1 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://eforms.alfaisal.edu/login" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"-->
-                                <!--                                                             alt="Alfaisal University Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"-->
-                                <!--                                                             alt="Alfaisal University Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 2 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://bap.baseerat.academy/login" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"-->
-                                <!--                                                             alt="Baseerat Academy Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"-->
-                                <!--                                                             alt="Baseerat Academy Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 3 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://sap.taleemmuyassar.academy/login" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"-->
-                                <!--                                                             alt="Taleem Muyassar Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"-->
-                                <!--                                                             alt="Taleem Muyassar Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 4 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://www.irthalotrujjah.com/" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"-->
-                                <!--                                                             alt="Irth Alotrujjah Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"-->
-                                <!--                                                             alt="Irth Alotrujjah Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                            </div>-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
-
-                                <!--                                    <div class="carousel-item">-->
-                                <!--                                        <div class="partners-logos">-->
-                                <!--                                            <div class="row">-->
-                                <!--                                                &lt;!&ndash; Partner 5 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://www.hmg.com/" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"-->
-                                <!--                                                             alt="HMG Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"-->
-                                <!--                                                             alt="HMG Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 6 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://misbarbuilds.com/" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"-->
-                                <!--                                                             alt="Misbar Builds Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"-->
-                                <!--                                                             alt="Misbar Builds Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 7 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://www.kfshrc.edu.sa/" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"-->
-                                <!--                                                             alt="King Faisal Specialist Hospital Logo"-->
-                                <!--                                                             class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"-->
-                                <!--                                                             alt="King Faisal Specialist Hospital Logo Colored"-->
-                                <!--                                                             class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                                &lt;!&ndash; Partner 8 &ndash;&gt;-->
-                                <!--                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">-->
-                                <!--                                                    <a href="https://qts-fitout.com/" target="_blank"-->
-                                <!--                                                       class="partner-logo-container_image">-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"-->
-                                <!--                                                             alt="QTS Fitout Logo" class="logo-default"/>-->
-                                <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"-->
-                                <!--                                                             alt="QTS Fitout Logo Colored" class="logo-hover"/>-->
-                                <!--                                                    </a>-->
-                                <!--                                                </div>-->
-                                <!--                                            </div>-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
-                                <!--                                    &lt;!&ndash;                                    <div class="carousel-item active">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                        <div class="partners-logos">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                            <div class="row">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a href="https://eforms.alfaisal.edu/login" target="_blank"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       class="partner-logo-link">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="partner-logo default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3 Colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="partner-logo hover"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class=" col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       href="https://bap.baseerat.academy/login" target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class=" col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       href="https://sap.taleemmuyassar.academy/login" target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class=" col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       href="https://www.irthalotrujjah.com/" target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-4 col-6 text-center">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;    <a class="partner-logo-container d-block"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;       href="https://eforms.alfaisal.edu/login"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;       target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;            class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;</div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-4 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       href="https://bap.baseerat.academy/login" target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-4 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       href="https://sap.taleemmuyassar.academy/login" target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       href="https://www.irthalotrujjah.com/" target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Taleem"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                            </div>&ndash;&gt;-->
-
-                                <!--                                    &lt;!&ndash;                                        </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                    </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                    <div class="carousel-item">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                        <div class="partners-logos">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                            <div class="row">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class="col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo" href="https://www.hmg.com/"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 1"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 1"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class="col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo" href="https://misbarbuilds.com/"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 4"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 4"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class="col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo" href="https://www.kfshrc.edu.sa/ "&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                <div class="col-6 col-md-3 col-sm-4  d-flex justify-content-center align-items-center">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    <a class="partners_logo" href="https://qts-fitout.com/"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                       target="_blank">&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="QTS"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        <img&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                alt="QTS"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                        />&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                    </a>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container" href="https://www.hmg.com/"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 1"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 1"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container" href="https://misbarbuilds.com/"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 4"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 4"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container" href="https://www.kfshrc.edu.sa/ "&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/kingfaisal.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/kingfaisal1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="Partner 3"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                <div class="col-md-3 col-sm-6 col-6">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    <a class="partner-logo-container" href="https://qts-fitout.com/"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                       target="_blank">&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="QTS"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-default"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        <img&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                alt="QTS"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                                class="img-fluid partner-logo-colored"&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                        />&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                    </a>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                                &lt;!&ndash;                                                </div>&ndash;&gt;&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                            </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                        </div>&ndash;&gt;-->
-                                <!--                                    &lt;!&ndash;                                    </div>&ndash;&gt;-->
-                                <!--                                </div>-->
-                            </div>
-                        </div>
-                    </section>
-
-
-                    <!-- Our Expertise Section -->
-                    <section class="service-features" id="expertise">
-                        <div class="services-bg d-none d-md-block">
-                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
-                                 aria-hidden="true"/>
-                        </div>
-                        <div class="container">
-                            <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our Services</h2>
-                                <p class="section-subtitle">To empower organizations by providing innovative, scalable,
-                                    and cost-effective
-                                    digital solutions that streamline operations and enhance productivity.
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/ai-expert">
-                                        <div class="feature-icon">
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/coloured-icon/ai-icon.svg"
-                                                    alt="AI Expert"
-
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">AI Expert</h3>
-                                        <p class="feature-description">From intelligent chatbots to voice insights, our
-                                            AI solutions
-                                            are designed to think, learn, and grow with your business.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/cloud-services">
-                                        <div class="feature-icon">
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/coloured-icon/cloud-icon.svg"
-                                                    alt="AI Expert"
-
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">Cloud Infrastructure Services</h3>
-                                        <p class="feature-description">Robust and Scalable Cloud Infrastructure Services
-                                            to power your digital transformation with reliability and efficiency.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/resource-augmentation">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/resource-icon.svg"
-                                                 alt="Resource Aug"/>
-                                        </div>
-                                        <h3 class="feature-title">Resource Augmentation</h3>
-                                        <p class="feature-description">Our Resource Augmentation service quickly links you with skilled
-                                            professionals—no hiring delays, just smooth, on-demand support.
-                                        </p>
-                                    </a>
-                                </div>
-                                 <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/web-application">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/web-icon.svg"
-                                                 alt="application development"/>
-                                        </div>
-                                        <h3 class="feature-title">Web Development</h3>
-                                        <p class="feature-description">We build fast, responsive, and scalable web apps that elevate
-                                            your brand and streamline business.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/mobile-application">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/mob-icon.svg"
-                                                 alt="mob-icon"/>
-                                        </div>
-                                        <h3 class="feature-title">Mobile Applications</h3>
-                                        <p class="feature-description"> We create fast, user-friendly apps using the latest tech—native
-                                            or cross-platform—designed to engage users and streamline
-                                            operations.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/ui-ux">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
-                                                 alt="ui-ux-design"/>
-                                        </div>
-                                        <h3 class="feature-title">UI/UX Design</h3>
-                                        <p class="feature-description"> We craft intuitive, engaging, and visually stunning user
-                                            experiences that align with your branding goals across web and
-                                            mobile platforms.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/sqa">
-                                        <div class="feature-icon">
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/coloured-icon/sqa-icon.svg"
-                                                    alt="AI Expert"
-
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">Software Quality Assurance</h3>
-                                        <p class="feature-description"> Ensure flawless performance with our end-to-end Software Quality Assurance
-                                            services, including manual and automated testing for reliable, bug-free delivery.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/moodle-lms">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
-                                                 alt="moodle"/>
-                                        </div>
-                                        <h3 class="feature-title">Moodle LMS Solutions</h3>
-                                        <p class="feature-description">We deliver tailored Moodle LMS solutions that enable scalable,
-                                            user-friendly, and impactful e-learning for education and
-                                            corporate training.
-                                        </p>
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/erp-solution">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
-                                                 alt="open-source"/>
-                                        </div>
-                                        <h3 class="feature-title">ERP Solutions</h3>
-                                        <p class="feature-description">We deliver tailored ERP solutions that streamline processes,
-                                            eliminate silos, and boost efficiency—through expert Odoo
-                                            implementation, customization, and support.
-                                        </p>
-                                    </a>
-                                </div>
-
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/koha-ils">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
-                                                 alt="e-learning"/>
-                                        </div>
-                                        <h3 class="feature-title">Koha ILS Solutions</h3>
-                                        <p class="feature-description"> We offer tailored Koha Integrated Library System (ILS) services
-                                            that bring automation, efficiency, and user-centric features to
-                                            libraries of all sizes.
-                                        </p>
-                                    </a>
-                                </div>
-
 
                             </div>
                         </div>
                     </section>
+                    <section>
+                        <t t-call="website.s_features"/>
+                    </section>
+
 
                     <!-- Our Reach & Culture Section -->
                     <section class="our-team">
@@ -776,6 +259,173 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Our Expertise Section -->
+                    <section class="service-features" id="expertise">
+                        <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title-sub">Our Services</h2>
+                                <p class="section-subtitle">To empower organizations by providing innovative, scalable,
+                                    and cost-effective
+                                    digital solutions that streamline operations and enhance productivity.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/ai-expert">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/ai-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">AI Expert</h3>
+                                        <p class="feature-description">From intelligent chatbots to voice insights, our
+                                            AI solutions
+                                            are designed to think, learn, and grow with your business.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/cloud-services">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/cloud-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Infrastructure Services</h3>
+                                        <p class="feature-description">Robust and Scalable Cloud Infrastructure Services
+                                            to power your digital transformation with reliability and efficiency.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/resource-augmentation">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/resource-icon.svg"
+                                                 alt="Resource Aug"/>
+                                        </div>
+                                        <h3 class="feature-title">Resource Augmentation</h3>
+                                        <p class="feature-description">Our Resource Augmentation service quickly links
+                                            you with skilled
+                                            professionals—no hiring delays, just smooth, on-demand support.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/web-application">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/web-icon.svg"
+                                                 alt="application development"/>
+                                        </div>
+                                        <h3 class="feature-title">Web Development</h3>
+                                        <p class="feature-description">We build fast, responsive, and scalable web apps
+                                            that elevate
+                                            your brand and streamline business.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/mobile-application">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/mob-icon.svg"
+                                                 alt="mob-icon"/>
+                                        </div>
+                                        <h3 class="feature-title">Mobile Applications</h3>
+                                        <p class="feature-description">We create fast, user-friendly apps using the
+                                            latest tech—native
+                                            or cross-platform—designed to engage users and streamline
+                                            operations.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/ui-ux">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                                 alt="ui-ux-design"/>
+                                        </div>
+                                        <h3 class="feature-title">UI/UX Design</h3>
+                                        <p class="feature-description">We craft intuitive, engaging, and visually
+                                            stunning user
+                                            experiences that align with your branding goals across web and
+                                            mobile platforms.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/sqa">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/sqa-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Software Quality Assurance</h3>
+                                        <p class="feature-description">Ensure flawless performance with our end-to-end
+                                            Software Quality Assurance
+                                            services, including manual and automated testing for reliable, bug-free
+                                            delivery.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/moodle-lms">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
+                                                 alt="moodle"/>
+                                        </div>
+                                        <h3 class="feature-title">Moodle LMS Solutions</h3>
+                                        <p class="feature-description">We deliver tailored Moodle LMS solutions that
+                                            enable scalable,
+                                            user-friendly, and impactful e-learning for education and
+                                            corporate training.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/erp-solution">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
+                                                 alt="open-source"/>
+                                        </div>
+                                        <h3 class="feature-title">ERP Solutions</h3>
+                                        <p class="feature-description">We deliver tailored ERP solutions that streamline
+                                            processes,
+                                            eliminate silos, and boost efficiency—through expert Odoo
+                                            implementation, customization, and support.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/koha-ils">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
+                                                 alt="e-learning"/>
+                                        </div>
+                                        <h3 class="feature-title">Koha ILS Solutions</h3>
+                                        <p class="feature-description">We offer tailored Koha Integrated Library System
+                                            (ILS) services
+                                            that bring automation, efficiency, and user-centric features to
+                                            libraries of all sizes.
+                                        </p>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
 
                     <!-- Join Our Team Section -->
                     <section class="innovate">
@@ -786,6 +436,7 @@
                                     digital future.
                                 </p>
                                 <a href="/career" class="get-started-btn">Apply Now</a>
+
                             </div>
                         </div>
                     </section>

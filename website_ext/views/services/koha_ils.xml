@@ -64,50 +64,50 @@
                         </div>
                     </section>
                     <!-- InterCraft at a Glance Section -->
-                    <section class="at-a-glance">
-                        <div class="container">
-                            <div class="glance-content">
-                                <div class="row align-items-center">
-                                    <div class="col-lg-7">
-                                        <h2 class="glance-title">InterCraft at a Glance</h2>
-                                        <p class="glance-description">
-                                            Explore how we simplify business with smart solutions—from LMS
-                                            and Odoo to custom app development.
-                                        </p>
-                                        <p class="glance-description">
-                                            Download our info sheet to see how we drive digital
-                                            transformation.
-                                        </p>
-                                        <a href="#" class="download-btn">
-                                            Download
-                                            <svg
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    width="16"
-                                                    height="16"
-                                                    fill="currentColor"
-                                                    class="bi bi-arrow-right"
-                                                    viewBox="0 0 16 16"
-                                            >
-                                                <path
-                                                        fill-rule="evenodd"
-                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                                />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <div class="document-illustration">
-                                            <img
-                                                    src="/website_ext/static/src/images/glance.png"
-                                                    alt="Document Illustration"
-                                                    class="img-fluid"
-                                            />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+<!--                    <section class="at-a-glance">-->
+<!--                        <div class="container">-->
+<!--                            <div class="glance-content">-->
+<!--                                <div class="row align-items-center">-->
+<!--                                    <div class="col-lg-7">-->
+<!--                                        <h2 class="glance-title">InterCraft at a Glance</h2>-->
+<!--                                        <p class="glance-description">-->
+<!--                                            Explore how we simplify business with smart solutions—from LMS-->
+<!--                                            and Odoo to custom app development.-->
+<!--                                        </p>-->
+<!--                                        <p class="glance-description">-->
+<!--                                            Download our info sheet to see how we drive digital-->
+<!--                                            transformation.-->
+<!--                                        </p>-->
+<!--                                        <a href="#" class="download-btn">-->
+<!--                                            Download-->
+<!--                                            <svg-->
+<!--                                                    xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                    width="16"-->
+<!--                                                    height="16"-->
+<!--                                                    fill="currentColor"-->
+<!--                                                    class="bi bi-arrow-right"-->
+<!--                                                    viewBox="0 0 16 16"-->
+<!--                                            >-->
+<!--                                                <path-->
+<!--                                                        fill-rule="evenodd"-->
+<!--                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"-->
+<!--                                                />-->
+<!--                                            </svg>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-5">-->
+<!--                                        <div class="document-illustration">-->
+<!--                                            <img-->
+<!--                                                    src="/website_ext/static/src/images/glance.png"-->
+<!--                                                    alt="Document Illustration"-->
+<!--                                                    class="img-fluid"-->
+<!--                                            />-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </section>-->
                     <!-- Service Features Section -->
                     <section class="service-features">
 <!--                         <div class="services-bg">-->
@@ -278,21 +278,24 @@
                             >
                                 <div class="carousel-inner">
                                     <!-- First Slide - 3 Team Members -->
+
                                     <div class="carousel-item active">
                                         <div class="row justify-content-center">
-                                            <div class=" col-lg-3 col-md-4 mb-4">
+
+                                             <div class=" col-lg-3 col-md-4 mb-4">
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/lead.jpg"
-                                                                alt="Arslan Haroon"
+                                                                src="/website_ext/static/src/images/team/senior-fronend.jpg"
+                                                                alt="Mudassir Rehman"
                                                                 class="img-fluid"
                                                         />
                                                     </div>
                                                     <div class="team-info">
-                                                        <h4 class="team-name">Arslan Haroon</h4>
-                                                        <p class="team-role">Senior Software Engineer (Lead)</p>
-                                                        <a href="https://www.linkedin.com/in/arslanh123/" class="team-social"  target="_blank">
+                                                        <h4 class="team-name">Mudassir Rehman</h4>
+                                                        <p class="team-role">Senior Frontend Developer</p>
+                                                        <a href="https://www.linkedin.com/in/mudassir-rehman-0a4a01243/
+ " class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"
@@ -318,50 +321,50 @@
                                                 <div class="team-card">
                                                     <div class="team-image">
                                                         <img
-                                                                src="/website_ext/static/src/images/team/senior-laravel.jpg"
-                                                                alt="Ahmad Ali"
-                                                                class="img-fluid"
-                                                        />
-                                                    </div>
-                                                    <div class="team-info">
-                                                        <h4 class="team-name">Ahmad Ali</h4>
-                                                        <p class="team-role">Senior Software Engineer</p>
-                                                        <a href="https://www.linkedin.com/in/connect-ahmad-ali/" class="team-social"  target="_blank">
-                                                            <svg
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                    width="16"
-                                                                    height="16"
-                                                                    viewBox="0 0 24 24"
-                                                                    fill="white"
-                                                                    stroke="currentColor"
-                                                                    stroke-width="2"
-                                                                    stroke-linecap="round"
-                                                                    stroke-linejoin="round"
-                                                            >
-                                                                <path
-                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                                                                />
-                                                                <rect width="4" height="12" x="2" y="9"/>
-                                                                <circle cx="4" cy="4" r="2"/>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-3 col-md-4 mb-4">
-                                                <div class="team-card">
-                                                    <div class="team-image">
-                                                        <img
-                                                                src="/website_ext/static/src/images/team/laravel-developer.jpg"
+                                                                src="/website_ext/static/src/images/team/front-end-developer.jpg"
                                                                 alt="Ahsan Taqweem"
                                                                 class="img-fluid"
                                                         />
                                                     </div>
                                                     <div class="team-info">
-                                                        <h4 class="team-name">Ahsan Taqweem</h4>
-                                                        <p class="team-role">Laravel Developer</p>
-                                                       <a href="https://www.linkedin.com/in/ahsan-taqweem-552712177/
- " class="team-social"  target="_blank">
+                                                        <h4 class="team-name">Mustehsan Ali</h4>
+                                                        <p class="team-role">Front End Developer</p>
+                                                        <a href="#" class="team-social" target="_blank">
+                                                            <svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    width="16"
+                                                                    height="16"
+                                                                    viewBox="0 0 24 24"
+                                                                    fill="white"
+                                                                    stroke="currentColor"
+                                                                    stroke-width="2"
+                                                                    stroke-linecap="round"
+                                                                    stroke-linejoin="round"
+                                                            >
+                                                                <path
+                                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                                />
+                                                                <rect width="4" height="12" x="2" y="9"/>
+                                                                <circle cx="4" cy="4" r="2"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              <div class="col-lg-3 col-md-6 mb-4">
+                                                <div class="team-card">
+                                                    <div class="team-image">
+                                                        <img
+                                                                src="/website_ext/static/src/images/team/cloud.png"
+                                                                alt="Ghulam Mujtaba"
+                                                                class="img-fluid"
+                                                        />
+                                                    </div>
+                                                    <div class="team-info">
+                                                        <h4 class="team-name">Ghulam Mujtaba</h4>
+                                                        <p class="team-role">Cloud and DevOps Engineer</p>
+                                                        <a href="https://www.linkedin.com/in/ghulammujtabajuna/"
+                                                           class="team-social" target="_blank">
                                                             <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                     width="16"

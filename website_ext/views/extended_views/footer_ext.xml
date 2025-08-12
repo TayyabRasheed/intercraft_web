@@ -5,6 +5,15 @@
     <!--        &lt;!&ndash; Removing entire block &ndash;&gt;-->
     <!--    </xpath>-->
     <!--</template>-->
+
+    <template id="s_newsletter_subscribe_form_inherit" inherit_id="website_mass_mailing.s_newsletter_subscribe_form">
+        <xpath expr="//a[contains(@class, 'js_subscribed_btn')]" position="replace">
+            <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit" disabled="disabled">
+                Subscribed
+            </a>
+        </xpath>
+    </template>
+
     <template id="hide_footer_copyright_style" inherit_id="web.layout">
         <xpath expr="//head" position="inside">
             <style>
@@ -21,6 +30,11 @@
             <footer class="footer">
                 <div class="container">
                     <div class="row">
+                        <div class="btt-link btn-top text-center">
+                            <a href="#">
+                                <i class="fa fa-angle-up"></i>
+                            </a>
+                        </div>
                         <div class="col-lg-4 col-md-6 footer-column">
                             <div class="footer-logo">
                                 <img src="/website_ext/static/src/images/footer/logo.svg" alt="Intercraft Logo"
@@ -214,6 +228,9 @@
                                     <a href="#">Events</a>
                                 </li>
                                 <li>
+                                    <a href="/blog">Blogs</a>
+                                </li>
+                                <li>
                                     <a href="/career">Careers</a>
                                 </li>
 
@@ -230,56 +247,61 @@
                                 Subscribe to receive the most relevant news on our company,
                                 products and industry.
                             </p>
-                            <form class="footer-newsletter d-none d-sm-none d-md-block">
-                                <input
-                                        type="email"
-                                        placeholder="Enter your email"
-                                        class="footer-newsletter-input"
-                                />
-                                <button type="submit" class="footer-newsletter-btn" href="/">
-                                    Subscribe
-                                </button>
-                            </form>
+                            <div>
+                                <!--                                <t t-call="website_mass_mailing.s_newsletter_subscribe_form"/>-->
+                            </div>
+                            <!--                            <form class="footer-newsletter d-none d-sm-none d-md-block">-->
+                            <!--                                <input-->
+                            <!--                                        type="email"-->
+                            <!--                                        placeholder="Enter your email"-->
+                            <!--                                        class="footer-newsletter-input"-->
+                            <!--                                />-->
+                            <!--                                <button type="submit" class="footer-newsletter-btn" href="/">-->
+                            <!--                                    Subscribe-->
+                            <!--                                </button>-->
+                            <!--                            </form>-->
                             <div class="footer-certifications ">
-                                <img
-                                        src="/website_ext/static/src/images/footer/vision.png"
-                                        alt="Vision"
-                                        class="img-fluid certification-img"
-                                />
-                                <img
-                                        src="/website_ext/static/src/images/footer/odoo_logo.svg"
-                                        alt="Odoo"
-                                        style="width:200%;"
+                                <a href="https://www.vision2030.gov.sa/en" target="_blank">
 
-                                />
-                                <div class="certification-logos mt-2">
-                                    <!--                                    <a href="https://techdestination.com/" target="_blank" >-->
                                     <img
-                                            src="/website_ext/static/src/images/footer/pseb_logo.png"
-                                            alt="PSEB"
-                                            class="img-fluid"
-
-
-                                    >
-                                        <!--                                    <a href="https://techdestination.com/" target="_blank" >-->
-
-                                    </img>
-                                    <!--                                    </a>-->
-                                    <!--                                    <a href="https://techdestination.com/" target="_blank">-->
+                                            src="/website_ext/static/src/images/footer/vision.png"
+                                            alt="Vision"
+                                            class="img-fluid certification-img"
+                                    />
+                                </a>
+                                <a href="https://www.odoo.com/" target="_blank">
                                     <img
-                                            src="/website_ext/static/src/images/footer/TDAP_logo.png"
-                                            alt="TDAP"
-                                            class="img-fluid"
+                                            src="/website_ext/static/src/images/footer/odoo_logo.svg"
+                                            alt="Odoo"
+                                            style="width:200%;"
 
                                     />
+                                </a>
+                                <div class=" mt-2 d-flex ">
+                                    <a href="https://techdestination.com/" class="" target="_blank">
+                                        <img
+                                                src="/website_ext/static/src/images/footer/pseb_logo.png"
+                                                alt="PSEB"
+                                                class="img-fluid"
+                                        >
+                                        </img>
+                                    </a>
+                                    <a href="https://tdap.gov.pk/" class="" target="_blank">
+                                        <img
+                                                src="/website_ext/static/src/images/footer/TDAP_logo.png"
+                                                alt="TDAP"
+                                                class="img-fluid"
+
+                                        />
+                                    </a>
                                     <!--                                    </a>-->
-                                    <!--                                    <a href="https://techdestination.com/" target="_blank">-->
-                                    <img
-                                            src="/website_ext/static/src/images/footer/digital_logo.png"
-                                            alt="digital pakistan"
-                                            class="img-fluid"
-                                    />
-                                    <!--                                    </a>-->
+                                    <a href="https://moitt.gov.pk/" class="" target="_blank">
+                                        <img
+                                                src="/website_ext/static/src/images/footer/digital_logo.png"
+                                                alt="digital pakistan"
+                                                class="img-fluid"
+                                        />
+                                    </a>
 
 
                                 </div>
@@ -304,4 +326,24 @@
 
         </xpath>
     </template>
+    <!--    <template id="custom_scrolltop_button" inherit_id="website.layout">-->
+    <!--        <xpath expr="//body" position="inside">-->
+    <!--            <script>-->
+    <!--                document.addEventListener('DOMContentLoaded', function() {-->
+    <!--                // Find your custom button (replace with your actual button selector)-->
+    <!--                const customButton = document.querySelector('.your-custom-button-class');-->
+
+    <!--                if (customButton) {-->
+    <!--                customButton.addEventListener('click', function(e) {-->
+    <!--                e.preventDefault();-->
+    <!--                window.scrollTo({-->
+    <!--                top: 0,-->
+    <!--                behavior: 'smooth'-->
+    <!--                });-->
+    <!--                });-->
+    <!--                }-->
+    <!--                });-->
+    <!--            </script>-->
+    <!--        </xpath>-->
+    <!--    </template>-->
 </odoo>

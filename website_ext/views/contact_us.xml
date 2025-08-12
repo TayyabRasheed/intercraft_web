@@ -92,6 +92,8 @@
                                     <!--                                    </section>-->
                                     <section>
                                         <div t-call="website.s_google_map"
+                                             data-lat1="30.407642"
+                                             data-lng1="-97.627411"
                                              data-lat="30.407642"
                                              data-lng="-97.627411"
                                              data-address="14015 Hymill Dr,Pflugerville, TX 78660,USA"

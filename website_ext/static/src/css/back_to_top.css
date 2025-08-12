@@ -1,0 +1,37 @@
+.btn-top {
+  position: fixed;
+  bottom: 25px;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #d12c09, #f25c05);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
+
+.btn-top:hover {
+  opacity: 0.85;
+}
+
+.btn-top i::before {
+
+  font-weight: 900;
+  font-size: 32px;
+  color: white;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .btn-top {
+    bottom: 0px;
+    right: 15px;
+  }
+}
+

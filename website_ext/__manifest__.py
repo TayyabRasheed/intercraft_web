@@ -7,7 +7,7 @@
     'company': 'Intercraftsol',
     'maintainer': 'Intercraftsol',
     'website': "https://www.Intercraftsol.com",
-    'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm'],
+    'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm','website_mass_mailing','website_event'],
     'data': [
         'views/extended_views/header_ext.xml',
         'views/extended_views/s_google_map_ext.xml',
@@ -34,6 +34,7 @@
         'views/services/web_application.xml',
         'views/extended_views/hr_department_ext_view.xml',
         'views/extended_views/job_detail_ext.xml',
+        'views/extended_views/event_reg_ext.xml',
         'views/extended_views/apply_form_ext.xml',
         'views/extended_views/index_view_ext.xml',
         'views/extended_views/thankyou_ext.xml',
@@ -46,6 +47,7 @@
             # '/website_ext/static/src/js/open_jobs.js',
             '/website_ext/static/src/js/*.js',
             '/website_ext/static/src/css/*.css'
+            # '/website_ext/static/src/scss/*.s/css'
 
         ],
     },
