@@ -559,7 +559,7 @@
                                             Download our info sheet to see how we drive digital
                                             transformation.
                                         </p>
-                                        <a href="#" class="download-btn">
+                                        <a href="/website_ext/static/src/files/intercraft-profile.pdf" class="download-btn" download="download">
                                             Download
                                             <svg
                                                     xmlns="http://www.w3.org/2000/svg"
