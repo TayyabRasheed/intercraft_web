@@ -1,16 +1,22 @@
-/*.o_wevent_index, .o_wevent_event {*/
-/*    margin-top: calc(var(--nav-height) + 20px);*/
-/*}*/
+.o_wevent_index, .o_wevent_event {
+    margin-top: calc(var(--nav-height) + 20px);
+}
 
-/*.modal-content {*/
-/*    margin-top: calc(var(--nav-height) + 1px);*/
-/*}*/
+.modal-content {
+    margin-top: calc(var(--nav-height) + 1px);
+}
 
-/*.oe_website_sale {*/
-/*    margin-top: calc(var(--nav-height) + 1px);*/
-/*}*/
+.oe_website_sale {
+    margin-top: calc(var(--nav-height) + 1px);
+}
 
 
-/*.form-select {*/
-/*    padding: 12px 33px;*/
-/*}*/
+.form-select {
+    padding: 12px 33px;
+}
+#o_wblog_blog_top{
+    display: none !important;
+}
+.website_blog #o_wblog_posts_loop .o_wblog_post_list_author {
+  opacity: 0;
+}
