@@ -84,21 +84,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--                                    <div >-->
-                                    <!--                                      -->
-                                    <!--                                    </div>-->
-                                    <!--                                    <section>-->
-                                    <!--                                          <t t-call="website.s_google_map"/>-->
-                                    <!--                                    </section>-->
-                                    <section>
-                                        <div t-call="website.s_google_map"
-                                             data-lat1="30.407642"
-                                             data-lng1="-97.627411"
-                                             data-lat="30.407642"
-                                             data-lng="-97.627411"
-                                             data-address="14015 Hymill Dr,Pflugerville, TX 78660,USA"
-                                             data-marker-color="red">
-                                        </div>
+
+                                    <section class="mt-4">
+                                        <div id="map" style="height: 240px;border-radius: 8px;position: relative;overflow: hidden;"></div>
                                     </section>
 
 
@@ -136,6 +124,4 @@
             <br class="mt-2"/>
         </xpath>
     </template>
-
-
 </odoo>
