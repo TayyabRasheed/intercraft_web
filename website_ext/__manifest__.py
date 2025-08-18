@@ -12,6 +12,7 @@
         'views/extended_views/header_ext.xml',
         'views/extended_views/s_google_map_ext.xml',
         'views/extended_views/website_form_view_ext.xml',
+        'views/extended_views/newletter_ext.xml',
         'views/snippet_home_page.xml',
         'views/contact_us.xml',
         'views/careers.xml',

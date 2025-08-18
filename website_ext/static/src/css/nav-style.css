@@ -238,20 +238,30 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     margin-top: 80px;
 }
 
-@media (max-width: 991px) {
-    nav.navbar.fixed-top{
-         background-color: rgba(0, 0, 0, 0.9);
+/*@media (max-width: 991px) {*/
+/*    nav.navbar.fixed-top{*/
+/*         background-color: rgba(0, 0, 0, 0.9);*/
+/*    }*/
+
+/*}*/
+/*@media (max-width: 576px) {*/
+/*    nav.navbar.fixed-top{*/
+/*         background-color: rgba(0, 0, 0, 0.9);*/
+/*    }*/
+/*    .hero{*/
+/*        margin-top: calc(var(--nav-height));*/
+/*    }*/
+/*    .hero-content {*/
+/*        margin-top: calc(var(--nav-height) + 1px);*/
+/*    }*/
+/*}*/
+@media (max-width: 991.98px) {
+    nav.navbar.fixed-top {
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
-}
-@media (max-width: 576px) {
-    nav.navbar.fixed-top{
-         background-color: rgba(0, 0, 0, 0.9);
-    }
-    .hero{
-        margin-top: calc(var(--nav-height));
-    }
-    .hero-content {
-        margin-top: calc(var(--nav-height) + 1px);
+    /* Ensure the desktop mega menu doesn't show on mobile */
+    .mega-dropdown .mega-menu {
+        display: none !important;
     }
 }

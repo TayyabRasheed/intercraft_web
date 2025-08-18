@@ -11,7 +11,7 @@
 
                     <!-- MOBILE HAMBURGER BUTTON -->
                     <!-- This now targets the offcanvas menu -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#mobileMenuOffcanvas" aria-controls="mobileMenuOffcanvas"
                             aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -322,7 +322,8 @@
                                                             <span class="mega-menu-label">Linkedin</span>
                                                         </div>
                                                     </a>
-                                                    <a href="https://www.facebook.com/share/151tYSeVwNi/" class="mega-menu-item"
+                                                    <a href="https://www.facebook.com/share/151tYSeVwNi/"
+                                                       class="mega-menu-item"
                                                        target="_blank">
                                                         <div class="mega-menu-icon">
                                                             <i class="fa fa-facebook" style="font-size: 20px;"></i>
@@ -332,7 +333,8 @@
                                                         </div>
                                                     </a>
 
-                                                    <a href="https://www.instagram.com/intercraftsol/" class="mega-menu-item"
+                                                    <a href="https://www.instagram.com/intercraftsol/"
+                                                       class="mega-menu-item"
                                                        target="_blank">
                                                         <div class="mega-menu-icon">
                                                             <i class="fa fa-instagram" style="font-size: 20px;"></i>
@@ -387,7 +389,9 @@
 
                     <!-- MOBILE OFFCANVAS MENU (Hidden on Desktop) -->
                     <!-- This is the new slide-in menu -->
-                    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenuOffcanvas"
+                    <!--                    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenuOffcanvas"-->
+                    <!--                         aria-labelledby="mobileMenuOffcanvasLabel">-->
+                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenuOffcanvas"
                          aria-labelledby="mobileMenuOffcanvasLabel">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="mobileMenuOffcanvasLabel">

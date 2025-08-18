@@ -1,0 +1,14 @@
+#map-mobile {
+    height: 240px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+#map-desktop {
+    height: 240px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
