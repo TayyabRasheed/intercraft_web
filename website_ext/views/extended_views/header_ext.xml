@@ -2,464 +2,396 @@
 <odoo>
     <template id="new_header" inherit_id="website.layout" priority="1000">
         <xpath expr="//header" position="replace">
-            <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 99999;">
-                <div class="container">
-                    <!-- LOGO -->
-                    <a class="navbar-brand" href="/">
-                        <img src="/website_ext/static/src/images/intercraftLogo.png" alt="Intercraft Logo" height="40"/>
-                    </a>
+            <header>
+                <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 99999;">
+                    <div class="container">
+                        <!-- LOGO -->
+                        <a class="navbar-brand" href="/">
+                            <img src="/website_ext/static/src/images/intercraftLogo.png" alt="Intercraft Logo"
+                                 height="40"/>
+                        </a>
 
-                    <!-- MOBILE HAMBURGER BUTTON -->
-                    <!-- This now targets the offcanvas menu -->
-                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#mobileMenuOffcanvas" aria-controls="mobileMenuOffcanvas"
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-
-                    <div class="collapse navbar-collapse d-none d-lg-block">
-                        <ul class="navbar-nav ms-auto align-items-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/">Home</a>
-                            </li>
-                            <li class="nav-item dropdown mega-dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" role="button">Services</a>
-                                <div class="dropdown-menu mega-menu">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                                <div class="mega-menu-section">
-
-                                                    <div class="row">
-
-                                                        <div class="col-6">
-                                                            <div class="row">
-                                                                <h6 class="mega-menu-title">
-                                                                    Our Services
-                                                                </h6>
-                                                                <div class="col-md-12">
-                                                                    <a href="/ai-expert" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                                                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                                                                <line x1="12" x2="12" y1="19" y2="22"/>
-                                                                                <line x1="8" x2="16" y1="22" y2="22"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Artificial
-                                                                                Intelligence Transformation
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/cloud-services" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20" height="20"
-                                                                                 viewBox="0 0 24 24"
-                                                                                 fill="none" stroke="currentColor"
-                                                                                 stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M15 18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18M15 18C15 16.3431 13.6569 15 12 15M15 18H21M9 18C9 16.3431 10.3431 15 12 15M9 18H3M12 15V12M9.6 12C7.61177 12 6 10.46 6 8.56026C6 6.98576 7.2 5.53125 9 5.25C9.56463 3.95553 10.9009 3 12.4595 3C14.456 3 16.0878 4.49304 16.2 6.375C17.2595 6.82171 18 7.91806 18 9.10513C18 10.7039 16.6569 12 15 12L9.6 12Z"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Cloud
-                                                                                Infrastructure Services
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/resource-augmentation"
-                                                                       class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                                                                                <circle cx="9" cy="7" r="4"/>
-                                                                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                                                                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Resource
-                                                                                Augmentation
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/web-application" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <rect width="18" height="18" x="3" y="3"
-                                                                                      rx="2"/>
-                                                                                <path d="M9 9h6v6H9z"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Web
-                                                                                Applications
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/mobile-application"
-                                                                       class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <rect width="14" height="20" x="5" y="2"
-                                                                                      rx="2"
-                                                                                      ry="2"/>
-                                                                                <path d="M12 18h.01"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Mobile
-                                                                                Applications
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/ui-ux" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">UI/UX Design
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/sqa" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <!-- Gear Icon -->
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20"
-                                                                                 viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor"
-                                                                                 stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <circle cx="12" cy="12" r="3"/>
-                                                                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Software
-                                                                                Quality Assurance
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
+                        <!-- MOBILE HAMBURGER BUTTON -->
+                        <!-- This now targets the offcanvas menu -->
+                        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#mobileMenuOffcanvas" aria-controls="mobileMenuOffcanvas"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
 
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-6">
-                                                            <div class="row">
-                                                                <h6 class="mega-menu-title">
-                                                                    Our Expertise
-                                                                </h6>
-                                                                <div class="col-md-12">
-                                                                    <a href="/erp-solution" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Odoo ERP
-                                                                                Solutions
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/moodle-lms" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                                                                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Moodle LMS
-                                                                                Solutions
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-                                                                    <a href="/koha-ils" class="mega-menu-item">
-                                                                        <div class="mega-menu-icon">
-                                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                                 width="20"
-                                                                                 height="20" viewBox="0 0 24 24"
-                                                                                 fill="none"
-                                                                                 stroke="currentColor" stroke-width="2"
-                                                                                 stroke-linecap="round"
-                                                                                 stroke-linejoin="round">
-                                                                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-                                                                            </svg>
-                                                                        </div>
-                                                                        <div class="mega-menu-content">
-                                                                            <span class="mega-menu-label">Koha ILS
-                                                                                Solutions
-                                                                            </span>
-                                                                        </div>
-                                                                    </a>
-
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4">
-                                                <div class="mega-menu-section">
-                                                    <h6 class="mega-menu-title">Stay Connected</h6>
-
-
-                                                    <a href="mailto:info@intercraftsol.com" target="_blank"
-                                                       class="mega-menu-item">
-                                                        <div class="mega-menu-icon">
-                                                            <!-- Email Icon -->
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20"
-                                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                                 stroke-width="2" stroke-linecap="round"
-                                                                 stroke-linejoin="round">
-                                                                <rect x="3" y="5" width="18" height="14" rx="2" ry="2"/>
-                                                                <polyline points="3 7 12 13 21 7"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">info@intercraftsol.com</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="tel:+15123555400" class="mega-menu-item"
-                                                       target="_blank">
-                                                        <div class="mega-menu-icon">
-                                                            <!--                                                            <i class="fa-solid fa-phone"></i>-->
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20"
-                                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                                 stroke-width="2" stroke-linecap="round"
-                                                                 stroke-linejoin="round">
-                                                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">+1 512-355-5400</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="https://wa.me/923369237827" class="mega-menu-item"
-                                                       target="_blank">
-                                                        <div class="mega-menu-icon">
-                                                            <!-- WhatsApp Icon using Font Awesome -->
-                                                            <i class="fa fa-whatsapp" style="font-size: 20px;"></i>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">+92 336 9237827</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
-                                                       target="_blank"
-                                                       class="mega-menu-item">
-                                                        <div class="mega-menu-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20" viewBox="0 0 24 24" fill="none"
-                                                                 stroke="currentColor" stroke-width="2"
-                                                                 stroke-linecap="round" stroke-linejoin="round">
-                                                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                                                <rect x="2" y="9" width="4" height="12"/>
-                                                                <circle cx="4" cy="4" r="2"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">Linkedin</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="https://www.facebook.com/share/151tYSeVwNi/"
-                                                       class="mega-menu-item"
-                                                       target="_blank">
-                                                        <div class="mega-menu-icon">
-                                                            <i class="fa fa-facebook" style="font-size: 20px;"></i>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">Facebook</span>
-                                                        </div>
-                                                    </a>
-
-                                                    <a href="https://www.instagram.com/intercraftsol/"
-                                                       class="mega-menu-item"
-                                                       target="_blank">
-                                                        <div class="mega-menu-icon">
-                                                            <i class="fa fa-instagram" style="font-size: 20px;"></i>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">Instagram</span>
-                                                        </div>
-                                                    </a>
-                                                    <a href="https://www.youtube.com/@intercraft-sol" target="_blank"
-                                                       class="mega-menu-item">
-                                                        <div class="mega-menu-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                 height="20" viewBox="0 0 24 24" fill="none"
-                                                                 stroke="currentColor" stroke-width="2"
-                                                                 stroke-linecap="round" stroke-linejoin="round">
-                                                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
-                                                                <polygon points="10 15 15 12 10 9 10 15"/>
-                                                            </svg>
-                                                        </div>
-                                                        <div class="mega-menu-content">
-                                                            <span class="mega-menu-label">Youtube</span>
-                                                        </div>
-                                                    </a>
-
-
-                                                    <!--                                                    <div class="events-section">-->
-                                                    <!--                                                        <h6 class="events-title">Events</h6>-->
-                                                    <!--                                                        <p class="events-description">Receive updates on the latest-->
-                                                    <!--                                                            events or new features.-->
-                                                    <!--                                                        </p>-->
-                                                    <!--                                                    </div>-->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/aboutus">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/our-team">Our Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/career">Careers</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="contact-btn" href="/contact-us">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- MOBILE OFFCANVAS MENU (Hidden on Desktop) -->
-                    <!-- This is the new slide-in menu -->
-                    <!--                    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenuOffcanvas"-->
-                    <!--                         aria-labelledby="mobileMenuOffcanvasLabel">-->
-                    <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenuOffcanvas"
-                         aria-labelledby="mobileMenuOffcanvasLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="mobileMenuOffcanvasLabel">
-                                <img src="/website_ext/static/src/images/intercraftLogo.png" alt="Intercraft Logo"
-                                     height="30"/>
-                            </h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav">
+                        <div class="collapse navbar-collapse d-none d-lg-block">
+                            <ul class="navbar-nav ms-auto align-items-center">
                                 <li class="nav-item">
                                     <a class="nav-link" href="/">Home</a>
                                 </li>
-                                <!-- MOBILE ACCORDION FOR SERVICES -->
-                                <li class="nav-item">
+                                <li class="nav-item dropdown mega-dropdown">
+                                    <a class="nav-link dropdown-toggle active" href="#" role="button">Services</a>
+                                    <div class="dropdown-menu mega-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-8">
+                                                    <div class="mega-menu-section">
+
+                                                        <div class="row">
+
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <h6 class="mega-menu-title">
+                                                                        Our Services
+                                                                    </h6>
+                                                                    <div class="col-md-12">
+                                                                        <a href="/ai-expert" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                                                                    <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                                                                    <line x1="12" x2="12" y1="19"
+                                                                                          y2="22"/>
+                                                                                    <line x1="8" x2="16" y1="22"
+                                                                                          y2="22"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Artificial
+                                                                                    Intelligence Transformation
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/cloud-services"
+                                                                           class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20" height="20"
+                                                                                     viewBox="0 0 24 24"
+                                                                                     fill="none" stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M15 18C15 19.6569 13.6569 21 12 21C10.3431 21 9 19.6569 9 18M15 18C15 16.3431 13.6569 15 12 15M15 18H21M9 18C9 16.3431 10.3431 15 12 15M9 18H3M12 15V12M9.6 12C7.61177 12 6 10.46 6 8.56026C6 6.98576 7.2 5.53125 9 5.25C9.56463 3.95553 10.9009 3 12.4595 3C14.456 3 16.0878 4.49304 16.2 6.375C17.2595 6.82171 18 7.91806 18 9.10513C18 10.7039 16.6569 12 15 12L9.6 12Z"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Cloud
+                                                                                    Infrastructure Services
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/resource-augmentation"
+                                                                           class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                                                                                    <circle cx="9" cy="7" r="4"/>
+                                                                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                                                                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Resource
+                                                                                    Augmentation
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/web-application"
+                                                                           class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <rect width="18" height="18" x="3"
+                                                                                          y="3"
+                                                                                          rx="2"/>
+                                                                                    <path d="M9 9h6v6H9z"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Web
+                                                                                    Applications
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/mobile-application"
+                                                                           class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <rect width="14" height="20" x="5"
+                                                                                          y="2"
+                                                                                          rx="2"
+                                                                                          ry="2"/>
+                                                                                    <path d="M12 18h.01"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Mobile
+                                                                                    Applications
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/ui-ux" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">UI/UX
+                                                                                    Design
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/sqa" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <!-- Gear Icon -->
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20"
+                                                                                     viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <circle cx="12" cy="12" r="3"/>
+                                                                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Software
+                                                                                    Quality Assurance
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
 
 
-                                    <a id="servicesAccordionToggle"
-                                       class="nav-link dropdown-toggle" href="#"
-                                       aria-expanded="false" aria-controls="servicesAccordion">
-                                        Services
-                                    </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <div class="row">
+                                                                    <h6 class="mega-menu-title">
+                                                                        Our Expertise
+                                                                    </h6>
+                                                                    <div class="col-md-12">
+                                                                        <a href="/erp-solution" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Odoo ERP
+                                                                                    Solutions
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/moodle-lms" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                                                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Moodle LMS
+                                                                                    Solutions
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
+                                                                        <a href="/koha-ils" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20"
+                                                                                     height="20" viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Koha ILS
+                                                                                    Solutions
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
 
-                                    <div class="collapse" id="servicesAccordion">
-                                        <ul class="list-unstyled ps-4">
-                                            <li>
-                                                <a class="nav-link sub-link" href="/ai-expert">Artificial Intelligence
-                                                    Transformation
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/cloud-services">Cloud Infrastructure
-                                                    Services
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/resource-augmentation">Resource
-                                                    Augmentation
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/web-application">Web Applications
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/mobile-application">Mobile
-                                                    Applications
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/ui-ux">UI/UX Design</a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/sqa">Software Quality Assurance</a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/erp-solution">Odoo ERP Solution</a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/moodle-lms">Moodle LMS Solution</a>
-                                            </li>
-                                            <li>
-                                                <a class="nav-link sub-link" href="/koha-ils">Koha ILS Solutions</a>
-                                            </li>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
 
-                                        </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="mega-menu-section">
+                                                        <h6 class="mega-menu-title">Stay Connected</h6>
+
+
+                                                        <a href="mailto:info@intercraftsol.com" target="_blank"
+                                                           class="mega-menu-item">
+                                                            <div class="mega-menu-icon">
+                                                                <!-- Email Icon -->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                     height="20"
+                                                                     viewBox="0 0 24 24" fill="none"
+                                                                     stroke="currentColor"
+                                                                     stroke-width="2" stroke-linecap="round"
+                                                                     stroke-linejoin="round">
+                                                                    <rect x="3" y="5" width="18" height="14" rx="2"
+                                                                          ry="2"/>
+                                                                    <polyline points="3 7 12 13 21 7"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">info@intercraftsol.com
+                                                                </span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="tel:+15123555400" class="mega-menu-item"
+                                                           target="_blank">
+                                                            <div class="mega-menu-icon">
+                                                                <!--                                                            <i class="fa-solid fa-phone"></i>-->
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                     height="20"
+                                                                     viewBox="0 0 24 24" fill="none"
+                                                                     stroke="currentColor"
+                                                                     stroke-width="2" stroke-linecap="round"
+                                                                     stroke-linejoin="round">
+                                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">+1 512-355-5400</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="https://wa.me/923369237827" class="mega-menu-item"
+                                                           target="_blank">
+                                                            <div class="mega-menu-icon">
+                                                                <!-- WhatsApp Icon using Font Awesome -->
+                                                                <i class="fa fa-whatsapp" style="font-size: 20px;"></i>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">+92 336 9237827</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/company/intercraft/?viewAsMember=true"
+                                                           target="_blank"
+                                                           class="mega-menu-item">
+                                                            <div class="mega-menu-icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                     height="20" viewBox="0 0 24 24" fill="none"
+                                                                     stroke="currentColor" stroke-width="2"
+                                                                     stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                                                    <rect x="2" y="9" width="4" height="12"/>
+                                                                    <circle cx="4" cy="4" r="2"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">Linkedin</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="https://www.facebook.com/share/151tYSeVwNi/"
+                                                           class="mega-menu-item"
+                                                           target="_blank">
+                                                            <div class="mega-menu-icon">
+                                                                <i class="fa fa-facebook" style="font-size: 20px;"></i>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">Facebook</span>
+                                                            </div>
+                                                        </a>
+
+                                                        <a href="https://www.instagram.com/intercraftsol/"
+                                                           class="mega-menu-item"
+                                                           target="_blank">
+                                                            <div class="mega-menu-icon">
+                                                                <i class="fa fa-instagram" style="font-size: 20px;"></i>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">Instagram</span>
+                                                            </div>
+                                                        </a>
+                                                        <a href="https://www.youtube.com/@intercraft-sol"
+                                                           target="_blank"
+                                                           class="mega-menu-item">
+                                                            <div class="mega-menu-icon">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                     height="20" viewBox="0 0 24 24" fill="none"
+                                                                     stroke="currentColor" stroke-width="2"
+                                                                     stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
+                                                                    <polygon points="10 15 15 12 10 9 10 15"/>
+                                                                </svg>
+                                                            </div>
+                                                            <div class="mega-menu-content">
+                                                                <span class="mega-menu-label">Youtube</span>
+                                                            </div>
+                                                        </a>
+
+
+                                                        <!--                                                    <div class="events-section">-->
+                                                        <!--                                                        <h6 class="events-title">Events</h6>-->
+                                                        <!--                                                        <p class="events-description">Receive updates on the latest-->
+                                                        <!--                                                            events or new features.-->
+                                                        <!--                                                        </p>-->
+                                                        <!--                                                    </div>-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -471,15 +403,115 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/career">Careers</a>
                                 </li>
-                                <li class="nav-item mt-4">
+                                <li class="nav-item">
                                     <a class="contact-btn" href="/contact-us">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
 
-                </div>
-            </nav>
+                        <!-- MOBILE OFFCANVAS MENU (Hidden on Desktop) -->
+                        <!-- This is the new slide-in menu -->
+                        <!--                    <div class="offcanvas offcanvas-end d-md-none" tabindex="-1" id="mobileMenuOffcanvas"-->
+                        <!--                         aria-labelledby="mobileMenuOffcanvasLabel">-->
+                        <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="mobileMenuOffcanvas"
+                             aria-labelledby="mobileMenuOffcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="mobileMenuOffcanvasLabel">
+                                    <img src="/website_ext/static/src/images/intercraftLogo.png" alt="Intercraft Logo"
+                                         height="30"/>
+                                </h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/">Home</a>
+                                    </li>
+                                    <!-- MOBILE ACCORDION FOR SERVICES -->
+                                    <li class="nav-item">
+
+
+                                        <a id="servicesAccordionToggle"
+                                           class="nav-link dropdown-toggle" href="#"
+                                           aria-expanded="false" aria-controls="servicesAccordion">
+                                            Services
+                                        </a>
+
+                                        <div class="collapse" id="servicesAccordion">
+                                            <ul class="list-unstyled ps-4">
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/ai-expert">Artificial
+                                                        Intelligence
+                                                        Transformation
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/cloud-services">Cloud
+                                                        Infrastructure
+                                                        Services
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/resource-augmentation">Resource
+                                                        Augmentation
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/web-application">Web
+                                                        Applications
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/mobile-application">Mobile
+                                                        Applications
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/ui-ux">UI/UX Design</a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/sqa">Software Quality
+                                                        Assurance
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/erp-solution">Odoo ERP
+                                                        Solution
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/moodle-lms">Moodle LMS
+                                                        Solution
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a class="nav-link sub-link" href="/koha-ils">Koha ILS Solutions</a>
+                                                </li>
+
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/aboutus">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/our-team">Our Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/career">Careers</a>
+                                    </li>
+                                    <li class="nav-item mt-4">
+                                        <a class="contact-btn" href="/contact-us">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+            </header>
         </xpath>
     </template>
     <template id="inject_manrope_font" inherit_id="website.layout" name="Inject Assets">
