@@ -65,51 +65,51 @@
                         </div>
                     </section>
                     <!-- InterCraft at a Glance Section -->
-<!--                    <section class="at-a-glance">-->
-<!--                        <div class="container">-->
-<!--                            <div class="glance-content">-->
-<!--                                <div class="row align-items-center">-->
-<!--                                    <div class="col-lg-7">-->
-<!--                                        <h2 class="glance-title">InterCraft at a Glance</h2>-->
-<!--                                        <p class="glance-description">-->
-<!--                                            Explore how we simplify business with smart solutions—from LMS-->
-<!--                                            and Odoo to custom app development.-->
-<!--                                        </p>-->
-<!--                                        <p class="glance-description">-->
-<!--                                            Download our info sheet to see how we drive digital-->
-<!--                                            transformation.-->
-<!--                                        </p>-->
-<!--                                        <a href="#" class="download-btn">-->
-<!--                                            Download-->
-<!--                                            <svg-->
-<!--                                                    xmlns="http://www.w3.org/2000/svg"-->
-<!--                                                    width="16"-->
-<!--                                                    height="16"-->
-<!--                                                    fill="currentColor"-->
-<!--                                                    class="bi bi-arrow-right"-->
-<!--                                                    viewBox="0 0 16 16"-->
-<!--                                            >-->
-<!--                                                <path-->
-<!--                                                        fill-rule="evenodd"-->
-<!--                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"-->
-<!--                                                />-->
-<!--                                            </svg>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                    <div class="col-lg-5">-->
-<!--                                        <div class="document-illustration">-->
-<!--                                            <img-->
-<!--                                                    src="/website_ext/static/src/images/glance.png"-->
-<!--                                                    alt="Document Illustration"-->
-<!--                                                    class="img-fluid"-->
-<!--                                            />-->
-<!--                                            F-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </section>-->
+                    <!--                    <section class="at-a-glance">-->
+                    <!--                        <div class="container">-->
+                    <!--                            <div class="glance-content">-->
+                    <!--                                <div class="row align-items-center">-->
+                    <!--                                    <div class="col-lg-7">-->
+                    <!--                                        <h2 class="glance-title">InterCraft at a Glance</h2>-->
+                    <!--                                        <p class="glance-description">-->
+                    <!--                                            Explore how we simplify business with smart solutions—from LMS-->
+                    <!--                                            and Odoo to custom app development.-->
+                    <!--                                        </p>-->
+                    <!--                                        <p class="glance-description">-->
+                    <!--                                            Download our info sheet to see how we drive digital-->
+                    <!--                                            transformation.-->
+                    <!--                                        </p>-->
+                    <!--                                        <a href="#" class="download-btn">-->
+                    <!--                                            Download-->
+                    <!--                                            <svg-->
+                    <!--                                                    xmlns="http://www.w3.org/2000/svg"-->
+                    <!--                                                    width="16"-->
+                    <!--                                                    height="16"-->
+                    <!--                                                    fill="currentColor"-->
+                    <!--                                                    class="bi bi-arrow-right"-->
+                    <!--                                                    viewBox="0 0 16 16"-->
+                    <!--                                            >-->
+                    <!--                                                <path-->
+                    <!--                                                        fill-rule="evenodd"-->
+                    <!--                                                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"-->
+                    <!--                                                />-->
+                    <!--                                            </svg>-->
+                    <!--                                        </a>-->
+                    <!--                                    </div>-->
+                    <!--                                    <div class="col-lg-5">-->
+                    <!--                                        <div class="document-illustration">-->
+                    <!--                                            <img-->
+                    <!--                                                    src="/website_ext/static/src/images/glance.png"-->
+                    <!--                                                    alt="Document Illustration"-->
+                    <!--                                                    class="img-fluid"-->
+                    <!--                                            />-->
+                    <!--                                            F-->
+                    <!--                                        </div>-->
+                    <!--                                    </div>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                        </div>-->
+                    <!--                    </section>-->
                     <!-- Service Features Section -->
                     <section class="service-features">
                         <div class="services-bg d-none d-md-block">
@@ -126,6 +126,49 @@
                                 </p>
                             </div>
                             <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon6.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Artificial Intelligence Experts</h3>
+                                        <p class="feature-description">
+                                            We provide skilled AI experts and tailored resources to help you build
+                                            intelligent systems, automate processes, and extract actionable insights
+                                            from data.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon8.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon8.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Network Engineers</h3>
+                                        <p class="feature-description">
+                                            From architecture design to migration and management, we provide experts who
+                                            work across AWS, Azure, and GCP to meet your infrastructure goals.
+                                        </p>
+                                    </div>
+                                </div>
                                 <div class="col-lg-6 col-md-6 mb-4">
                                     <div class="feature-card">
                                         <div class="feature-icon">
@@ -240,28 +283,6 @@
                                     <div class="feature-card">
                                         <div class="feature-icon">
                                             <img
-                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon6.svg"
-                                                    alt="icon"
-                                                    class="icon-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon6.svg"
-                                                    alt="icon"
-                                                    class="icon-colored"
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">Artificial Intelligence Experts</h3>
-                                        <p class="feature-description">
-                                            We provide skilled AI experts and tailored resources to help you build
-                                            intelligent systems, automate processes, and extract actionable insights
-                                            from data.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <div class="feature-card">
-                                        <div class="feature-icon">
-                                            <img
                                                     src="/website_ext/static/src/images/services-section/resource-augmentation/icon7.svg"
                                                     alt="icon"
                                                     class="icon-default"
@@ -276,27 +297,6 @@
                                         <p class="feature-description">
                                             We provide expert UI/UX designers to craft intuitive interfaces and seamless
                                             user journeys for web and mobile, ensuring your product is both functional.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <div class="feature-card">
-                                        <div class="feature-icon">
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/icon8.svg"
-                                                    alt="icon"
-                                                    class="icon-default"
-                                            />
-                                            <img
-                                                    src="/website_ext/static/src/images/services-section/resource-augmentation/coloured/icon8.svg"
-                                                    alt="icon"
-                                                    class="icon-colored"
-                                            />
-                                        </div>
-                                        <h3 class="feature-title">Cloud Network Engineers</h3>
-                                        <p class="feature-description">
-                                            From architecture design to migration and management, we provide experts who
-                                            work across AWS, Azure, and GCP to meet your infrastructure goals.
                                         </p>
                                     </div>
                                 </div>
