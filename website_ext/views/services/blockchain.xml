@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="blockchain" model="website.page">
+        <field name="name">Blockchain</field>
+        <field name="type">qweb</field>
+        <field name="url">/blockchain</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.blockchain</field>
+        <field name="arch" type="xml">
+            <t name="UI UX" t-name="website_ext.blockchain">
+                <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
+                    <!-- Hero Section -->
+                    <section class="service-hero blockchain-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">Blockchain Development Services</h1>
+                                        <p class="service-hero-subtitle">
+                                            Secure, scalable, and innovative blockchain solutions to power the next
+                                            generation of digital transformation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Blockchain Services</span>
+                                        <h2 class="service-title-services">Blockchain Solutions That Drive Innovation
+                                        </h2>
+                                        <p class="service-description-services">
+                                            In today’s decentralized world, blockchain is revolutionizing industries
+                                            with transparency, automation, and trustless systems. From smart contracts
+                                            and dApps to DeFi platforms and NFT marketplaces, our blockchain services
+                                            help businesses embrace the Web3 era. We build secure, scalable, and
+                                            efficient blockchain solutions tailored to your needs.
+
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/blockchain/blockchain1.png"
+                                                alt="Moodle LMS"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="service-features">
+                        <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title-sub">Our Blockchain Services</h2>
+                                <p class="section-subtitle">
+                                    We design and develop blockchain-powered solutions that unlock new possibilities for
+                                    your business.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/file-contract-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/file-contract.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Smart Contract Development (Solidity, EVM)</h3>
+                                        <p class="feature-description">
+                                            Build secure, reliable, and audited smart contracts for your decentralized
+                                            applications, tailored to Ethereum and other EVM-compatible chains
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                             <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coin-alt-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/coin-alt.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">
+                                            Token &amp; Meme Coin Creation
+                                        </h3>
+                                        <p class="feature-description">
+                                            Launch your custom cryptocurrency, utility token, or meme coin with secure
+                                            tokenomics and smart contract implementation.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/chart-network-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/chart-network.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Decentralized Applications (DApps &amp; DeFi)</h3>
+                                        <p class="feature-description">
+                                             From lending platforms to staking solutions, we create innovative dApps and DeFi ecosystems that empower your users.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/shop-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/shop.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">NFT Marketplace Development</h3>
+                                        <p class="feature-description">
+                                            Build secure and scalable NFT platforms with features like minting, auctions, royalties, and wallet integration.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/code-alt-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/code-alt.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">DEX (Decentralized Exchange) Development</h3>
+                                        <p class="feature-description">
+                                            Create high-performance decentralized exchanges with liquidity pools, swaps, and yield farming functionalities.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/location-crosshairs-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/location-crosshairs.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Telegram Trading Bots &amp; Mini Apps</h3>
+                                        <p class="feature-description">
+                                            Automate trading strategies and engage users with custom Telegram bots and mini-apps for crypto ecosystems.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/wallet-1.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/wallet.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Web3 Wallets &amp; Chrome Extensions</h3>
+                                        <p class="feature-description">
+                                            Develop secure Web3 mobile wallets and browser extensions that provide seamless access to blockchain networks.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Innovate?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to turn your ideas into impactful digital
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_blockchain" model="website.menu">
+        <field name="name">blockchain</field>
+        <field name="url">/blockchain</field>
+        <field name="page_id" ref="website_ext.blockchain"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

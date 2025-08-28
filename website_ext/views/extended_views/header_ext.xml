@@ -84,6 +84,26 @@
                                                                                 </span>
                                                                             </div>
                                                                         </a>
+                                                                         <a href="/blockchain" class="mega-menu-item">
+                                                                            <div class="mega-menu-icon">
+                                                                                <!-- Gear Icon -->
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     width="20" height="20"
+                                                                                     viewBox="0 0 24 24"
+                                                                                     fill="none"
+                                                                                     stroke="currentColor"
+                                                                                     stroke-width="2"
+                                                                                     stroke-linecap="round"
+                                                                                     stroke-linejoin="round">
+                                                                                    <path d="M10 13a5 5 0 0 1 7 7l-1.5 1.5a5 5 0 0 1-7-7l1.5-1.5"/>
+                                                                                    <path d="M14 11a5 5 0 0 1-7-7L8.5 2.5a5 5 0 0 1 7 7L14 11"/>
+                                                                                </svg>
+                                                                            </div>
+                                                                            <div class="mega-menu-content">
+                                                                                <span class="mega-menu-label">Blockchain Services
+                                                                                </span>
+                                                                            </div>
+                                                                        </a>
                                                                         <a href="/resource-augmentation"
                                                                            class="mega-menu-item">
                                                                             <div class="mega-menu-icon">
@@ -195,6 +215,7 @@
                                                                                 </span>
                                                                             </div>
                                                                         </a>
+
 
 
                                                                     </div>
@@ -453,6 +474,11 @@
                                                     </a>
                                                 </li>
                                                 <li>
+                                                    <a class="nav-link sub-link" href="/blockchain">
+                                                        Blockchain Services
+                                                    </a>
+                                                </li>
+                                                <li>
                                                     <a class="nav-link sub-link" href="/resource-augmentation">Resource
                                                         Augmentation
                                                     </a>
@@ -475,6 +501,7 @@
                                                         Assurance
                                                     </a>
                                                 </li>
+
                                                 <li>
                                                     <a class="nav-link sub-link" href="/erp-solution">Odoo ERP
                                                         Solution

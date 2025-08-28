@@ -172,6 +172,10 @@
                                 <li>
                                     <a href="/cloud-services">Cloud Infrastructure Services</a>
                                 </li>
+                                 <li>
+                                    <a  href="/blockchain"> Blockchain Services</a>
+
+                                </li>
                                 <li>
                                     <a href="/resource-augmentation"
                                     >Resource Augmentation
@@ -196,6 +200,7 @@
                                 <li>
                                     <a href="/sqa">Software Quality Assurance</a>
                                 </li>
+
 
 
                             </ul>
@@ -248,19 +253,9 @@
                                 products and industry.
                             </p>
                             <div>
-                                <!--                                <t t-call="website_mass_mailing.s_newsletter_subscribe_form"/>-->
                             </div>
-                            <!--                            <form class="footer-newsletter d-none d-sm-none d-md-block">-->
-                            <!--                                <input-->
-                            <!--                                        type="email"-->
-                            <!--                                        placeholder="Enter your email"-->
-                            <!--                                        class="footer-newsletter-input"-->
-                            <!--                                />-->
-                            <!--                                <button type="submit" class="footer-newsletter-btn" href="/">-->
-                            <!--                                    Subscribe-->
-                            <!--                                </button>-->
-                            <!--                            </form>-->
-                            <div class="footer-certifications ">
+
+                            <div class="footer-certifications mt-4">
                                 <a href="https://www.vision2030.gov.sa/en" target="_blank">
 
                                     <img

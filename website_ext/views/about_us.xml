@@ -50,7 +50,7 @@
                                         smart and scalable systems. Our focus is simple, innovative, and unified digital
                                         experiences.
                                     </p>
-<!--                                    <a href="/aboutus" class="learn-more-btn">Learn More</a>a-->
+                                    <!--                                    <a href="/aboutus" class="learn-more-btn">Learn More</a>a-->
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="ai-image-container">
@@ -302,6 +302,21 @@
                                         <h3 class="feature-title">Cloud Infrastructure Services</h3>
                                         <p class="feature-description">Robust and Scalable Cloud Infrastructure Services
                                             to power your digital transformation with reliability and efficiency.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/resource-augmentation">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/blockchain/coloured/chart-network.svg"
+                                                 alt="Resource Aug"/>
+                                        </div>
+                                        <h3 class="feature-title">Blockchain Services</h3>
+                                        <p class="feature-description">O
+                                            Unlock the power of blockchain with secure, scalable, and future-ready
+                                            solutions.
+                                            From smart contracts and dApps to DeFi platforms and NFT marketplaces,
+                                            deliver innovation that drives the Web3 era forward.
                                         </p>
                                     </a>
                                 </div>
