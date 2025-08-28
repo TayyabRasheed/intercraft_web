@@ -686,6 +686,46 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="service-card" data-service="blockchain">
+                                        <div class="service-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/chart-network-1.svg"
+                                                    alt="blockchain"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/blockchain/coloured/chart-network.svg"
+                                                    alt="blockchain"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="service-title">Blockchain Services</h3>
+                                        <p class="service-description">
+                                            From smart contracts to decentralized apps, our blockchain solutions are built to secure, scale, and evolve with your business.
+                                        </p>
+                                        <a
+                                                href="/blockchain"
+                                                class="learn-more-link"
+                                        >
+                                            Learn More
+                                            <svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    width="16"
+                                                    height="16"
+                                                    viewBox="0 0 24 24"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    stroke-width="2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                            >
+                                                <path d="M5 12h14"/>
+                                                <path d="m12 5 7 7-7 7"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                 <div class="col-lg-3 col-md-6 mb-4">
                                     <div class="service-card" data-service="resource-augmentation">
                                         <div class="service-icon">
                                             <img
