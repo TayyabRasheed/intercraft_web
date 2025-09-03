@@ -1,0 +1,111 @@
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 400px;
+    cursor: pointer;
+
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid; /* You must specify border width */
+  border-image: linear-gradient(135deg, #fd7e14, #dc3545) 1;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-inner,
+.card-body {
+    background: linear-gradient(135deg, #fd7e14, #dc3545);
+    color: white;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-front img {
+    width: auto; /* Let width scale naturally */
+    height: 100%; /* Fill the container */
+    max-height: 100%; /* Avoid overflow */
+    object-fit: contain; /* Keep proportions */
+    object-position: center; /* Center the icon */
+    display: block;
+    margin: auto; /* Center horizontally */
+    padding: 1rem; /* Optional spacing around icon */
+}
+
+.flip-card {
+    height: 380px; /* or 360px */
+}
+
+.icon-container {
+    height: 180px; /* Fixed container height */
+    padding: 1rem;
+}
+
+.icon-container img {
+    max-height: 100%;
+    max-width: 80%; /* Prevent overly wide icons */
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
+}
+
+.flip-card-front {
+    background-color: #fff;
+
+    color: black;
+}
+
+.flip-card-front .card-body {
+    padding: 10px;
+}
+
+.flip-card-back {
+    background: linear-gradient(135deg, #fd7e14, #dc3545);
+
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: left;
+    font-size: 13px;
+}
+
+
+.flip-card-back a {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.flip-card-back a:hover {
+    color: #fbb9b6;
+}
+
+@media (max-width: 768px) {
+   .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+}

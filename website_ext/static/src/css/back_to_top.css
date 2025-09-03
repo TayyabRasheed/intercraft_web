@@ -1,7 +1,7 @@
 .btn-top {
   position: fixed;
   bottom: 25px;
-  right: 50%;
+  right: 10px;
   width: 50px;
   height: 50px;
   background: linear-gradient(to right, #d12c09, #f25c05);

@@ -186,7 +186,104 @@
                         </div>
                     </section>
                     <section>
-                        <t t-call="website.s_features"/>
+                        <div class="container py-5">
+                            <div class="row g-4 justify-content-center">
+
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/vision.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Vision</h5>
+
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <p style="padding-right: 15px; padding-left: 15px; text-align: justify; font-size: 16px;">
+                                                    To be the world’s most trusted partner in digital
+                                                    transformation—empowering organizations of all sizes to thrive
+                                                    through creativity, innovation, and seamless experiences
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card" >
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/mission.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Mission</h5>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+
+                                                <p style="padding-right: 15px; padding-left: 15px; text-align: justify; font-size: 16px;">Shaping the future with simple,innovative, and Unified
+                                                    digitalsolutions that enhance efficiency,fuel growth, and solve
+                                                    real-worldchallenges to transform industries.
+                                                    Values:
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card" >
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/values.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Values</h5>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <ul style="text-align: justify; padding-right: 15px;">
+                                                    <li>
+                                                        <span style="font-size: 16px;">Quality &amp; Reliability</span>
+                                                         Deliversolutions that meet the
+                                                        higheststandards of performance andtrust.
+
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Continuous Innovation</span>
+                                                        Embrace change and explorenew ideas to
+                                                        stay future-ready.
+
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Strategic Partnerships</span>
+                                                        Buildrelationships that create
+                                                        mutualgrowth and value.
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Global Presence</span>
+                                                        Expandworldwide while adapting tolocal needs
+                                                        and cultures.
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!--                        <t t-call="website.s_features"/>-->
                     </section>
 
 
