@@ -83,18 +83,10 @@
                                         <a href="https://wa.me/923369237827" target="_blank">+92 336 9237827</a>
                                     </p>
                                 </div>
-                                <!--                               -->
-                                <!--                                <p class="footer-contact-links">-->
-                                <!--                                </p>-->
 
-                                <!--                                <p class="footer-contact-links">-->
-
-                                <!--                                </p>-->
-                                <!--                                <p class="footer-contact-links">-->
-                                <!--                                    -->
-                                <!--                                </p>-->
                             </div>
-                            <div class="footer-social" style="color:#333;">
+                           <section>
+                                <div class="footer-social" style="color:#333;">
                                 <a href="https://www.linkedin.com/company/intercraftsol" target="_blank"
                                    aria-label="LinkedIn" style="color:#0077B5;">
                                     <svg
@@ -113,6 +105,16 @@
                                         />
                                         <rect width="4" height="12" x="2" y="9"/>
                                         <circle cx="4" cy="4" r="2"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/intercraftsol/" aria-label="Instagram"
+                                   target="_blank" rel="noopener">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 24 24"
+                                         fill="none" stroke="#E1306C" stroke-width="2"
+                                         stroke-linecap="round" stroke-linejoin="round">
+                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                                     </svg>
                                 </a>
                                 <a href="https://www.facebook.com/Intercraftsol/" aria-label="Facebook"
@@ -141,19 +143,8 @@
                                         <path d="M23.498 6.186a2.99 2.99 0 0 0-2.106-2.113C19.392 3.5 12 3.5 12 3.5s-7.392 0-9.392.573a2.99 2.99 0 0 0-2.106 2.113C0 8.215 0 12 0 12s0 3.785.502 5.814a2.99 2.99 0 0 0 2.106 2.113C4.608 20.5 12 20.5 12 20.5s7.392 0 9.392-.573a2.99 2.99 0 0 0 2.106-2.113C24 15.785 24 12 24 12s0-3.785-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
                                     </svg>
                                 </a>
-                                <a href="https://www.instagram.com/intercraftsol/" aria-label="Instagram"
-                                   target="_blank" rel="noopener">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22" viewBox="0 0 24 24"
-                                         fill="none" stroke="#E1306C" stroke-width="2"
-                                         stroke-linecap="round" stroke-linejoin="round">
-                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                    </svg>
-                                </a>
-
-
                             </div>
+                           </section>
                         </div>
                         <div class="col-lg-2 col-md-6 footer-column d-none d-sm-none d-md-block">
                             <h4 class="footer-title" style="color:#373636">Our Services
@@ -245,6 +236,10 @@
                                 products and industry.
                             </p>
                             <div>
+                                <section>
+
+                                </section>
+<!--                                <t t-call="website_mass_mailing.s_newsletter_subscribe_form"/>-->
                             </div>
 
                             <div class="footer-certifications mt-4">
