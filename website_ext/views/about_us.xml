@@ -197,7 +197,7 @@
                                                     <img src="/website_ext/static/src/images/vision/vision.svg"
                                                          alt="Team Member" style="max-height: 100px;"/>
                                                 </div>
-                                                <div class="card-body text-center">
+                                                <div class="card-body card-body-flip text-center">
                                                     <h5 class="card-title" style="font-size: 30px;">Our Vision</h5>
 
                                                 </div>
@@ -221,7 +221,7 @@
                                                     <img src="/website_ext/static/src/images/vision/mission.svg"
                                                          alt="Team Member" style="max-height: 100px;"/>
                                                 </div>
-                                                <div class="card-body text-center">
+                                                <div class="card-body card-body-flip text-center">
                                                     <h5 class="card-title" style="font-size: 30px;">Our Mission</h5>
                                                 </div>
                                             </div>
@@ -245,7 +245,7 @@
                                                     <img src="/website_ext/static/src/images/vision/values.svg"
                                                          alt="Team Member" style="max-height: 100px;"/>
                                                 </div>
-                                                <div class="card-body text-center">
+                                                <div class="card-body card-body-flip text-center">
                                                     <h5 class="card-title" style="font-size: 30px;">Our Values</h5>
                                                 </div>
                                             </div>

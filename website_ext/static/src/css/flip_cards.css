@@ -23,7 +23,7 @@
 }
 
 .flip-card-inner,
-.card-body {
+.card-body-flip {
     background: linear-gradient(135deg, #fd7e14, #dc3545);
     color: white;
 }

@@ -2,8 +2,7 @@
 <odoo>
     <template id="intercraftsol_seo_meta_tags" name="IntercraftSol SEO Meta Tags" inherit_id="website.layout">
 
-        <!-- Remove default meta tags first -->
-<!--         <xpath expr="//meta[@default_title]" position="replace"/>-->
+
         <xpath expr="//meta[@name='description']" position="replace"/>
         <xpath expr="//meta[@name='keywords']" position="replace"/>
         <xpath expr="//meta[@property='og:title']" position="replace"/>
@@ -12,9 +11,7 @@
         <xpath expr="//meta[@name='twitter:card']" position="replace"/>
 
 
-        <!-- Add your custom meta tags -->
         <xpath expr="//head" position="inside">
-            <!-- Basic Meta Tags -->
             <title> Digital solutions for a connected world | intercraftsol.com</title>
           <meta name="default_title" content="Digital solutions for a connected world | intercraftsol.com"/>
             <meta name="description"
@@ -27,7 +24,6 @@
             <meta name="googlebot" content="index, follow"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-            <!-- OpenGraph/Facebook Meta Tags -->
 
             <meta property="og:title" content="Digital solutions for a connected world | intercraftsol.com"/>
             <meta property="og:site_name" content="Intercraft Solutions"/>
@@ -38,13 +34,11 @@
             <meta property="og:image" content="/website_ext/static/src/images/intercraft_logo.png"/>
             <meta property="og:image:alt" content="Intercraft Solutions Logo and Tagline"/>
 
-            <!-- Twitter Meta Tags -->
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:title" content="Digital solutions for a connected world | intercraftsol.com"/>
             <meta name="twitter:description"
                   content="Intercraft is a forward-thinking software company Specialized in AI, Moodle LMS, Odoo ERP, and custom web/mobile application development."/>
 
-            <!-- Schema.org JSON-LD -->
             <script type="application/ld+json">
                 {
                 "@context": "https://schema.org",

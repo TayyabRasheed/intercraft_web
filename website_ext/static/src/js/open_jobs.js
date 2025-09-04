@@ -13,8 +13,6 @@ publicWidget.registry.alljobs = publicWidget.Widget.extend({
     async start() {
         try {
             const data = await jsonrpc("/careers/jobs");
-            console.log("Jobs data:", data);
-
             this.open_jobs = data;
             this.renderJobs();
         } catch (error) {
@@ -27,7 +25,6 @@ publicWidget.registry.alljobs = publicWidget.Widget.extend({
         let job_details = '';
 
         const academicJobs = this.open_jobs.academic_jobs || [];
-        console.log(academicJobs.length)
         if (academicJobs.length > 0) {
             job_details = this.open_jobs['academic_jobs'].map(job => `
             <div class="col-lg-3 col-md-6 mb-4 d-flex align-items-stretch">
