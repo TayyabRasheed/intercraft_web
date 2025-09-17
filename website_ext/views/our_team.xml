@@ -167,7 +167,8 @@
                                         <div class="team-info">
                                             <h4 class="team-name">Syed Awais Syed</h4>
                                             <p class="team-role">Business Development, UAE</p>
-                                            <a href="https://www.linkedin.com/in/syed-awais-3b0ab118" class="team-social" target="_blank">
+                                            <a href="https://www.linkedin.com/in/syed-awais-3b0ab118"
+                                               class="team-social" target="_blank">
                                                 <svg
                                                         xmlns="http://www.w3.org/2000/svg"
                                                         width="16"
@@ -333,7 +334,7 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/cloud.png"
+                                                    src="/website_ext/static/src/images/team/cloud.jpg"
                                                     alt="Ghulam Mujtaba"
                                                     class="img-fluid"
                                             />
@@ -683,13 +684,13 @@
                                     <div class="team-card">
                                         <div class="team-image">
                                             <img
-                                                    src="/website_ext/static/src/images/team/senior-odoo.jpg"
-                                                    alt="Javaid Khan"
+                                                    src="/website_ext/static/src/images/team/hummad.jpg"
+                                                    alt="Hummad Hassan"
                                                     class="img-fluid"
                                             />
                                         </div>
                                         <div class="team-info">
-                                            <h4 class="team-name">Javaid Khan</h4>
+                                            <h4 class="team-name">Hummad Hassan</h4>
                                             <p class="team-role">Senior Odoo Developer</p>
                                             <a href="https://www.linkedin.com/in/javaid-khan-4971a6221"
                                                class="team-social" target="_blank">
@@ -714,6 +715,43 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                    <div class="team-card">
+                                        <div class="team-image">
+                                            <img
+                                                    src="/website_ext/static/src/images/team/safi.jpg"
+                                                    alt="Safi Ullah"
+                                                    class="img-fluid"
+                                            />
+                                        </div>
+                                        <div class="team-info">
+                                            <h4 class="team-name">Safi Ullah</h4>
+                                            <p class="team-role">Junior Odoo Developer</p>
+                                            <a href="https://www.linkedin.com/in/javaid-khan-4971a6221"
+                                               class="team-social" target="_blank">
+                                                <svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="16"
+                                                        height="16"
+                                                        viewBox="0 0 24 24"
+                                                        fill="white"
+                                                        stroke="currentColor"
+                                                        stroke-width="2"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                >
+                                                    <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                                    />
+                                                    <rect width="4" height="12" x="2" y="9"/>
+                                                    <circle cx="4" cy="4" r="2"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
 
                             </div>
                         </div>
