@@ -165,11 +165,24 @@
                                                     <a href="https://qts-fitout.com/" target="_blank"
                                                        class="logo-showcase-partner">
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
-                                                             alt="QTS Fitout Logo"
+                                                             alt="sa Fitout Logo"
                                                              style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
                                                         <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
-                                                             alt="QTS Fitout Logo Colored"
+                                                             alt="sa Fitout Logo Colored"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://taawunholding.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/sa.png"
+                                                             alt="sa Fitout Logo"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/sa.png"
+                                                             alt="sa Fitout Logo Colored"
                                                              style="padding-top: 10px;"
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>

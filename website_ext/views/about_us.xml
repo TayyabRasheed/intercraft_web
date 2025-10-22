@@ -177,6 +177,19 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://taawunholding.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/sa.png"
+                                                             alt="sa Fitout Logo"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/sa.png"
+                                                             alt="sa Fitout Logo Colored"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +227,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12  col-md-3">
-                                    <div class="flip-card" >
+                                    <div class="flip-card">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <div class="icon-container d-flex align-items-center justify-content-center">
@@ -227,7 +240,8 @@
                                             </div>
                                             <div class="flip-card-back">
 
-                                                <p style="padding-right: 15px; padding-left: 15px; text-align: left; font-size: 16px;">Shaping the future with simple,innovative, and Unified
+                                                <p style="padding-right: 15px; padding-left: 15px; text-align: left; font-size: 16px;">
+                                                    Shaping the future with simple,innovative, and Unified
                                                     digitalsolutions that enhance efficiency,fuel growth, and solve
                                                     real-worldchallenges to transform industries.
                                                 </p>
@@ -237,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="col-12  col-md-3">
-                                    <div class="flip-card" >
+                                    <div class="flip-card">
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <div class="icon-container d-flex align-items-center justify-content-center">
@@ -252,7 +266,7 @@
                                                 <ul style="text-align: left; padding-right: 15px;">
                                                     <li>
                                                         <span style="font-size: 16px;">Quality &amp; Reliability</span>
-                                                         Deliversolutions that meet the
+                                                        Deliversolutions that meet the
                                                         higheststandards of performance andtrust.
 
                                                     </li>
