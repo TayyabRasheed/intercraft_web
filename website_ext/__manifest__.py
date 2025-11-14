@@ -9,6 +9,9 @@
     'website': "https://www.Intercraftsol.com",
     'depends': ['base', 'hr', 'website', 'website_hr_recruitment', 'crm','website_mass_mailing','website_event'],
     'data': [
+        'security/ir.model.access.csv',
+        'views/team_member_views.xml',
+        'views/team_components.xml',
         'views/extended_views/header_ext.xml',
         'views/extended_views/s_google_map_ext.xml',
         'views/extended_views/website_form_view_ext.xml',

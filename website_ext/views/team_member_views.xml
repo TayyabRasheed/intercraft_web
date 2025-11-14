@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree View -->
+    <record id="team_member_tree_view" model="ir.ui.view">
+        <field name="name">team.member.tree</field>
+        <field name="model">website.team.member</field>
+        <field name="arch" type="xml">
+            <tree string="Team Members">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="role"/>
+                <field name="linkedin_url"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="team_member_form_view" model="ir.ui.view">
+        <field name="name">team.member.form</field>
+        <field name="model">website.team.member</field>
+        <field name="arch" type="xml">
+            <form string="Team Member">
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Team Member Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="role"/>
+                            <field name="linkedin_url"/>
+                        </group>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="team_member_action" model="ir.actions.act_window">
+        <field name="name">Team Members</field>
+        <field name="res_model">website.team.member</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first team member!
+            </p>
+        </field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="team_member_root_menu"
+              name="Team Management"
+              sequence="60"/>
+    
+    <menuitem id="team_member_menu"
+              name="Team Members"
+              parent="team_member_root_menu"
+              action="team_member_action"
+              sequence="10"/>
+</odoo>

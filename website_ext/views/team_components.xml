@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Team Member Card Component -->
+    <template id="team_member_card" name="Team Member Card">
+        <t t-foreach="request.env['website.team.member'].sudo().search([('active', '=', True)], order='sequence, name')" t-as="member">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="team-card">
+                <div class="team-image">
+                    <img t-attf-src="data:image/png;base64,{{member.image}}"
+                         t-att-alt="member.name"
+                         class="img-fluid"/>
+                </div>
+                <div class="team-info">
+                    <h4 class="team-name" t-esc="member.name"/>
+                    <p class="team-role" t-esc="member.role"/>
+                    <a t-if="member.linkedin_url" 
+                       t-att-href="member.linkedin_url"
+                       class="team-social" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             width="16" height="16" viewBox="0 0 24 24"
+                             fill="white" stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round"
+                             stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </t>
+    </template>
+
+    <!-- Team Members List Component -->
+<!--    <template id="team_members_list" name="Team Members List">-->
+<!--        <t t-set="team_members" t-value=""/>-->
+<!--        <t t-foreach="team_members" t-as="member">-->
+<!--            <t t-call="website_ext.team_member_card"/>-->
+<!--        </t>-->
+<!--    </template>-->
+</odoo>
