@@ -38,23 +38,6 @@
                             </div>
                         </div>
                     </section>
-
-<!--  <section class="service-features" id="team-section">-->
-<!--                        <div class="container">-->
-<!--                            <div class="text-center mb-5">-->
-<!--                                <h2 class="section-title-sub">Our Team</h2>-->
-<!--                                <p class="section-subtitle">-->
-<!--                                    A passionate group of experts driving innovation, collaboration, and-->
-<!--                                    results.-->
-<!--                                </p>-->
-<!--                            </div>-->
-<!--                            <div class="row" style="justify-content: center;">-->
-<!--                                <t t-call="website_ext.team_member_card"/>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </section>-->
-
-
                     <section class="service-features" id="team-section">
                         <div class="container">
                             <div class="text-center mb-5">
@@ -65,7 +48,22 @@
                                 </p>
                             </div>
                             <div class="row" style="justify-content: center;">
-                                 <t t-call="website_ext.team_member_card"/>
+                                <t t-call="website_ext.team_member_card">
+                                    <t t-set="team_members"
+                                       t-value="request.env['website.team.member'].sudo().search(['|', ('tag_ids', '=', False), '&amp;', ('active', '=', True), ('tag_ids.name', '!=', 'ai')], order='sequence, name')"/>
+                                </t>
+                            </div>
+                            <div class="text-center mb-5">
+                                <h2 class="section-title-sub">Our AI Experts</h2>
+                                <p class="section-subtitle">
+                                    Experts driving innovation through intelligent systems.
+                                </p>
+                            </div>
+                             <div class="row" style="justify-content: center;">
+                                <t t-call="website_ext.team_member_card">
+                                    <t t-set="team_members"
+                                       t-value="request.env['website.team.member'].sudo().search([('active', '=', True), ('tag_ids.name', '=', 'ai')], order='sequence, name')"/>
+                                </t>
                             </div>
                         </div>
                     </section>

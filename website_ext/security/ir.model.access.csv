@@ -1,3 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_team_member_user,team.member.user,model_website_team_member,base.group_user,1,1,1,1
 access_team_member_public,team.member.public,model_website_team_member,,1,0,0,0
+access_team_tag_user,team.tag.user,model_website_team_tag,base.group_user,1,1,1,1
+access_team_tag_public,team.tag.public,model_website_team_tag,,1,0,0,0

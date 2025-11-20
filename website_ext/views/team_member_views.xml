@@ -9,7 +9,9 @@
                 <field name="sequence" widget="handle"/>
                 <field name="name"/>
                 <field name="role"/>
+                <field name="tag_ids" widget="many2many_tags"/>
                 <field name="linkedin_url"/>
+                <field name="sequence"/>
                 <field name="active"/>
             </tree>
         </field>
@@ -31,6 +33,7 @@
                     <group>
                         <group>
                             <field name="role"/>
+                            <field name="tag_ids" widget="many2many_tags"/>
                             <field name="linkedin_url"/>
                         </group>
                         <group>
