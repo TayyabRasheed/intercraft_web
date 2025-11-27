@@ -744,6 +744,21 @@
                                             />
                                         </a>
                                     </div>
+                                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                                        <a class="partner-logo-container" href="https://abiyatech.com/"
+                                           target="_blank">
+                                            <img
+                                                    src="/website_ext/static/src/images/trusted-partners/ab.png"
+                                                    alt="mg"
+                                                    class="img-fluid partner-logo-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/trusted-partners/ab1.png"
+                                                    alt="mg"
+                                                    class="img-fluid partner-logo-colored"
+                                            />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
