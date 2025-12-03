@@ -5,15 +5,23 @@
         <t t-foreach="team_members" t-as="member">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="team-card">
-                    <div class="team-image">
-                        <img t-attf-src="data:image/png;base64,{{member.image}}"
-                             t-att-alt="member.name"
-                             class="img-fluid"/>
-                    </div>
+<!--                                         <img t-attf-src="/web/image/website.team.member/#{member.id}/image"-->
+<!--                                             t-att-alt="member.name"-->
+<!--                                             class="img-fluid"-->
+<!--                                             loading="lazy"/>-->
+                    <img t-attf-src="/web/image?model=website.team.member&amp;id=#{member.id}&amp;field=image&amp;width=512&amp;height=512"
+                         t-att-alt="member.name"
+                         class="img-fluid"
+                         loading="lazy"/>
+                    <!--                    <div class="team-image">-->
+                    <!--                        <img t-attf-src="data:image/png;base64,{{member.image}}"-->
+                    <!--                             t-att-alt="member.name"-->
+                    <!--                             class="img-fluid"/>-->
+                    <!--                    </div>-->
                     <div class="team-info">
                         <h4 class="team-name" t-esc="member.name"/>
                         <p class="team-role" t-esc="member.role"/>
-                        <a t-if="member.linkedin_url" 
+                        <a t-if="member.linkedin_url"
                            t-att-href="member.linkedin_url"
                            class="team-social" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -33,10 +41,10 @@
     </template>
 
     <!-- Team Members List Component -->
-<!--    <template id="team_members_list" name="Team Members List">-->
-<!--        <t t-set="team_members" t-value=""/>-->
-<!--        <t t-foreach="team_members" t-as="member">-->
-<!--            <t t-call="website_ext.team_member_card"/>-->
-<!--        </t>-->
-<!--    </template>-->
+    <!--    <template id="team_members_list" name="Team Members List">-->
+    <!--        <t t-set="team_members" t-value=""/>-->
+    <!--        <t t-foreach="team_members" t-as="member">-->
+    <!--            <t t-call="website_ext.team_member_card"/>-->
+    <!--        </t>-->
+    <!--    </template>-->
 </odoo>

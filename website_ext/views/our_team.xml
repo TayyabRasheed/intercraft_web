@@ -47,23 +47,33 @@
                                     results.
                                 </p>
                             </div>
-                            <div class="row" style="justify-content: center;">
-                                <t t-call="website_ext.team_member_card">
-                                    <t t-set="team_members"
-                                       t-value="request.env['website.team.member'].sudo().search(['|', ('tag_ids', '=', False), '&amp;', ('active', '=', True), ('tag_ids.name', '!=', 'ai')], order='sequence, name')"/>
-                                </t>
+                            
+                            <!-- Loading Spinner -->
+                            <div id="team-loading" class="text-center py-5">
+                                <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
+                                </div>
                             </div>
-                            <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our AI Experts</h2>
-                                <p class="section-subtitle">
-                                    Experts driving innovation through intelligent systems.
-                                </p>
-                            </div>
-                             <div class="row" style="justify-content: center;">
-                                <t t-call="website_ext.team_member_card">
-                                    <t t-set="team_members"
-                                       t-value="request.env['website.team.member'].sudo().search([('active', '=', True), ('tag_ids.name', '=', 'ai')], order='sequence, name')"/>
-                                </t>
+                            
+                            <!-- Team Content -->
+                            <div id="team-content" style="display: none;">
+                                <div class="row" style="justify-content: center;">
+                                    <t t-call="website_ext.team_member_card">
+                                        <t t-set="team_members"
+                                           t-value="request.env['website.team.member'].sudo().search(['|', ('tag_ids', '=', False), '&amp;', ('active', '=', True), ('tag_ids.name', '!=', 'ai')], order='sequence, name')"/>
+                                    </t>
+                                </div>
+                                <div class="text-center mb-5">
+                                    <h2 class="section-title-sub">Our AI Experts</h2>
+                                    <p class="section-subtitle">
+                                        Experts driving innovation through intelligent systems.
+                                    </p>
+                                </div>
+                                 <div class="row" style="justify-content: center;">
+                                    <t t-call="website_ext.team_member_card">
+                                        <t t-set="team_members"
+                                           t-value="request.env['website.team.member'].sudo().search([('active', '=', True), ('tag_ids.name', '=', 'ai')], order='sequence, name')"/>
+                                    </t>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -81,6 +91,14 @@
                             </div>
                         </div>
                     </section>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            setTimeout(function() {
+                                document.getElementById('team-loading').style.display = 'none';
+                                document.getElementById('team-content').style.display = 'block';
+                            }, 1000);
+                        });
+                    </script>
                 </t>
             </t>
         </field>
