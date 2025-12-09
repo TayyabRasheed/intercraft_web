@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="event_image_1" model="website.event.image">
+            <field name="name">Team Meeting</field>
+            <field name="sequence">10</field>
+            <field name="is_active">True</field>
+        </record>
+        
+        <record id="event_image_2" model="website.event.image">
+            <field name="name">Office Culture</field>
+            <field name="sequence">20</field>
+            <field name="is_active">True</field>
+        </record>
+        
+        <record id="event_image_3" model="website.event.image">
+            <field name="name">Team Collaboration</field>
+            <field name="sequence">30</field>
+            <field name="is_active">True</field>
+        </record>
+    </data>
+</odoo>
