@@ -15,3 +15,4 @@ class AccountAssetExt(models.Model):
                                          string="Allocation Status", default='not_allocated',
                                          help="Specify whether the asset is allocated or not.", tracking=True)
 
+    lot_no = fields.Char(string="Serial No / Lot No")

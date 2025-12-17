@@ -10,7 +10,9 @@
             <xpath expr="//div[hasclass('oe_title')]" position="before">
                <widget name="web_ribbon" title="ALLOCATED" invisible="allocation_status != 'allocated'"/>
            </xpath>
-
+              <xpath expr="//field[@name='model_id']" position="after">
+                    <field name="lot_no" class="o_input" force_save="1" required="state != 'model'"/>
+              </xpath>
             <xpath expr="//page[@name='related_items']" position="after">
                 <page string="Allocation Info" name="allocation_info">
                     <group>
