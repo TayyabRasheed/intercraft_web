@@ -19,7 +19,7 @@
                             <t t-set="event_images" t-value="request.env['website.event.image'].sudo().search([('is_active', '=', True)], order='sequence, id')"/>
                             <t t-if="event_images">
                                 <t t-foreach="event_images" t-as="image">
-                                    <t t-set="delay_value" t-value="-(35 - ((image_index) * (35 / len(event_images))))"/>
+                                    <t t-set="delay_value" t-value="-(image_index * 5)"/>
                                     .item-<t t-esc="image_index + 1"/> { animation-delay: <t t-esc="delay_value"/>s; }
                                 </t>
                             </t>
