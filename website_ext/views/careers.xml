@@ -117,12 +117,14 @@
                             <div class="svg-container">
                                 <svg viewBox="0 0 1440 500" preserveAspectRatio="none"
                                      xmlns="http://www.w3.org/2000/svg" class="w-100 h-100">
-                                    <path class="draw-anim float-1"
+                                    <!-- Path 1 -->
+                                    <path class="culture-wave line-1"
                                           d="M-50,220 C100,-50 250,150 450,400 C650,650 850,50 1150,50 C1300,50 1400,80 1500,100"
                                           fill="none" stroke="#E85C0D" stroke-width="2.5" stroke-linecap="round"/>
-                                    <path class="draw-anim float-2"
+                                    <!-- Path 2 -->
+                                    <path class="culture-wave line-2"
                                           d="M-50,250 C100,220 250,580 600,480 C800,420 950,250 1050,300 C1150,400 1300,700 1500,900"
-                                          fill="none" stroke="rgba(232,92,13,0.5)" stroke-width="2"
+                                          fill="none" stroke="rgba(232,92,13,0.3)" stroke-width="2"
                                           stroke-linecap="round"/>
                                 </svg>
                             </div>
@@ -130,20 +132,34 @@
                             <!--            <div class="slider-container">-->
                             <!--                <div class="slider-track" id="sliderTrack"></div>-->
                             <!--            </div>-->
+                            <!--                            <div class="slider-container">-->
+                            <!--                                <div class="slider-track" id="sliderTrack">-->
+                            <!--                                    <t t-foreach="culture_images" t-as="img_rec">-->
+                            <!--                                        &lt;!&ndash; Dynamically add 'portrait' or 'landscape' class &ndash;&gt;-->
+                            <!--                                        <div t-attf-class="slide-item #{img_rec.orientation}">-->
+                            <!--                                            <div class="img-card">-->
+                            <!--                                                &lt;!&ndash; Odoo helper to convert binary to image source &ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                <img t-att-src="image_data_uri(img_rec.image)"&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                     t-att-alt="img_rec.name"&ndash;&gt;-->
+                            <!--&lt;!&ndash;                                                     loading="lazy"/>&ndash;&gt;-->
+                            <!--                                                <img t-att-src="image_data_uri(img_rec.image)"-->
+                            <!--                                                     t-att-alt="img_rec.name"-->
+                            <!--                                                     class="img-fluid"-->
+                            <!--                                                     style="image-rendering: auto;"/>-->
+                            <!--                                            </div>-->
+                            <!--                                        </div>-->
+                            <!--                                    </t>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
                             <div class="slider-container">
                                 <div class="slider-track" id="sliderTrack">
                                     <t t-foreach="culture_images" t-as="img_rec">
-                                        <!-- Dynamically add 'portrait' or 'landscape' class -->
                                         <div t-attf-class="slide-item #{img_rec.orientation}">
                                             <div class="img-card">
-                                                <!-- Odoo helper to convert binary to image source -->
-<!--                                                <img t-att-src="image_data_uri(img_rec.image)"-->
-<!--                                                     t-att-alt="img_rec.name"-->
-<!--                                                     loading="lazy"/>-->
-                                                <img t-att-src="image_data_uri(img_rec.image)"
+                                                <!-- TARGET 1024px for sharpness -->
+                                                <img t-attf-src="/web/image/website.event.image/#{img_rec.id}/image/1024x1024"
                                                      t-att-alt="img_rec.name"
-                                                     class="img-fluid"
-                                                     style="image-rendering: auto;"/>
+                                                     loading="lazy"/>
                                             </div>
                                         </div>
                                     </t>

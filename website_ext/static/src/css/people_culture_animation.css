@@ -1,4 +1,7 @@
-/* --- 1. Section Layout --- */
+/* ==========================================================================
+   PEOPLE & CULTURE SECTION
+   ========================================================================== */
+
 .people-culture-section {
     width: 100%;
     position: relative;
@@ -19,6 +22,7 @@
     font-weight: 700;
     color: #212529;
     margin-bottom: 20px;
+    letter-spacing: -0.5px;
 }
 
 .culture-header p {
@@ -29,15 +33,68 @@
     line-height: 1.6;
 }
 
-/* --- 2. Animation Stage --- */
+/* ==========================================================================
+   SVG WAVE ANIMATIONS (The Moving Lines)
+   ========================================================================== */
+
+.svg-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.culture-wave {
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+    transform-origin: center;
+    will-change: transform, stroke-dashoffset;
+}
+
+/* Line 1: Faster, tighter float */
+.culture-wave.line-1 {
+    animation:
+        drawWave 4s ease-out forwards,
+        floatWave1 10s ease-in-out infinite alternate;
+}
+
+/* Line 2: Slower, wider float */
+.culture-wave.line-2 {
+    animation:
+        drawWave 4s ease-out forwards,
+        floatWave2 15s ease-in-out infinite alternate;
+    animation-delay: 0.5s, 0s;
+}
+
+@keyframes drawWave {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes floatWave1 {
+    0% { transform: translate3d(-30px, -15px, 0) rotate(-1deg); }
+    100% { transform: translate3d(30px, 15px, 0) rotate(1deg); }
+}
+
+@keyframes floatWave2 {
+    0% { transform: translate3d(30px, 20px, 0) scaleX(1.05); }
+    100% { transform: translate3d(-30px, -20px, 0) scaleX(0.95); }
+}
+
+/* ==========================================================================
+   ANIMATION STAGE & SLIDER
+   ========================================================================== */
+
 .animation-stage {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 520px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    /* Edge Mask: Fades out the left and right to hide the loop reset point */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
 
 .slider-container {
@@ -47,13 +104,13 @@
     display: flex;
     align-items: center;
     z-index: 5;
-    perspective: 1200px; /* Enhanced depth for scaling */
+    perspective: 1000px;
 }
 
 .slider-track {
     display: flex;
     gap: 60px;
-    align-items: center; /* VITAL: Centers Portrait & Landscape vertically */
+    align-items: center; /* VITAL: Vertically centers Portrait & Landscape */
     animation: slideLeft 180s linear infinite;
     will-change: transform;
     transform-style: preserve-3d;
@@ -63,17 +120,20 @@
     animation-play-state: paused;
 }
 
-/* --- 3. Slide Items & Cards --- */
+/* ==========================================================================
+   SLIDE ITEMS (Portrait vs Landscape)
+   ========================================================================== */
+
 .slide-item {
     flex-shrink: 0;
     position: relative;
     will-change: transform, opacity;
-    /* IMPORTANT: Remove transitions so JS updates are buttery smooth */
+    /* DO NOT add transitions here (JS handles it) */
     transition: none !important;
     transform-style: preserve-3d;
 }
 
-/* Desktop Sizes */
+/* Custom Base Sizes */
 .slide-item.landscape { width: 400px; height: 280px; }
 .slide-item.portrait { width: 240px; height: 320px; }
 
@@ -85,7 +145,7 @@
     overflow: hidden;
     background: #fff;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
-    /* Performance & Sharpness */
+    /* Performance Fixes */
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -96,59 +156,32 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    /* Anti-Blur properties */
+    /* Clarity/Anti-Blur */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     transform: translateZ(0);
 }
 
-/* --- 4. Quality & Effects --- */
+/* Standard Infinite Loop Animation */
 @keyframes slideLeft {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-50%, 0, 0); }
 }
 
-.animation-stage::before,
-.animation-stage::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    z-index: 10;
-    pointer-events: none;
-}
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
 
-.animation-stage::before {
-    left: 0;
-    background: linear-gradient(to right, #fcfcfc 0%, transparent 100%);
-}
-
-.animation-stage::after {
-    right: 0;
-    background: linear-gradient(to left, #fcfcfc 0%, transparent 100%);
-}
-
-.svg-container {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.6;
-}
-
-/* --- 5. Responsiveness (Cleaned & Merged) --- */
 @media (max-width: 992px) {
     .culture-header h2 { font-size: 2.5rem; }
+    .animation-stage { height: 450px; }
     .slide-item.landscape { width: 320px; height: 220px; }
-    .slide-item.portrait { width: 200px; height: 280px; }
+    .slide-item.portrait { width: 200px; height: 260px; }
 }
 
 @media (max-width: 768px) {
-    .people-culture-section { padding: 40px 0; }
     .culture-header h2 { font-size: 2rem; }
     .culture-header p { font-size: 1rem; padding: 0 20px; }
-
     .animation-stage { height: 380px; }
     .slide-item.landscape { width: 260px; height: 180px; }
     .slide-item.portrait { width: 160px; height: 220px; }
@@ -156,13 +189,10 @@
 }
 
 @media (max-width: 576px) {
-    .animation-stage { height: 300px; }
+    .people-culture-section { padding: 40px 0; }
+    .animation-stage { height: 220px; }
     .slide-item.landscape { width: 200px; height: 140px; }
     .slide-item.portrait { width: 130px; height: 180px; }
-    .slider-track { gap: 20px; }
-
-    .img-card {
-        border-width: 3px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
+    .slider-track { gap: 15px; }
+    .img-card { border-width: 3px; }
 }
