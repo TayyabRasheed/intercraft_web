@@ -14,16 +14,7 @@
                         <link rel="stylesheet" type="text/css" href="/website_ext/static/src/css/people_culture.css"/>
                         <link rel="stylesheet" type="text/css"
                               href="/website_ext/static/src/css/people_culture_animation.css"/>
-                        <script type="text/javascript" src="/website_ext/static/src/js/people_culture.js"></script>
-                        <style>
-                            <t t-set="event_images" t-value="request.env['website.event.image'].sudo().search([('is_active', '=', True)], order='sequence, id')"/>
-                            <t t-if="event_images">
-                                <t t-foreach="event_images" t-as="image">
-                                    <t t-set="delay_value" t-value="-(image_index * 5)"/>
-                                    .item-<t t-esc="image_index + 1"/> { animation-delay: <t t-esc="delay_value"/>s; }
-                                </t>
-                            </t>
-                        </style>
+                        <script src="/website_ext/static/src/js/animation.js"></script>
                     </t>
                     <t t-call="website_ext.portal_side_contact_us"/>
                     <section class="service-hero"
@@ -111,63 +102,57 @@
                             </div>
                         </div>
                     </section>
-
-                    <section class="people-culture-section w-100 position-relative"
-                             style="background-color: #fcfcfc; overflow: hidden;">
-                        <div class="container pt-5 pb-4 position-relative z-3">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-10 text-center">
-                                    <h2 class="display-5 fw-bold mb-3" style="color: #212529;">People and Culture We
-                                        Offer
-                                    </h2>
-                                    <p class="text-muted" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto;">
-                                        We’re not just a company; we’re a community of passionate and curious builders
-                                        driven to reimagine what’s possible.
-                                    </p>
-                                </div>
+                    <!--                    animation section animation>-->
+                    <section class="people-culture-section">
+                        <div class="container">
+                            <div class="culture-header">
+                                <h2>People and Culture We Offer</h2>
+                                <p>We're not just a company; we're a community of passionate and curious builders driven
+                                    to reimagine what's possible.
+                                </p>
                             </div>
                         </div>
 
-                        <div class="animation-stage position-relative w-100" style="height: 500px;">
-                            <div class="svg-container position-absolute w-100 h-100 start-0"
-                                 style="top: 0; z-index: 0; pointer-events: none;">
+                        <div class="animation-stage">
+                            <div class="svg-container">
                                 <svg viewBox="0 0 1440 500" preserveAspectRatio="none"
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     class="w-100 h-100">
+                                     xmlns="http://www.w3.org/2000/svg" class="w-100 h-100">
                                     <path class="draw-anim float-1"
                                           d="M-50,220 C100,-50 250,150 450,400 C650,650 850,50 1150,50 C1300,50 1400,80 1500,100"
                                           fill="none" stroke="#E85C0D" stroke-width="2.5" stroke-linecap="round"/>
-                                    <path class="draw-anim float-2 delay-line"
+                                    <path class="draw-anim float-2"
                                           d="M-50,250 C100,220 250,580 600,480 C800,420 950,250 1050,300 C1150,400 1300,700 1500,900"
                                           fill="none" stroke="rgba(232,92,13,0.5)" stroke-width="2"
                                           stroke-linecap="round"/>
                                 </svg>
                             </div>
 
-                            <div class="carousel-track position-relative w-100 h-100 d-flex justify-content-center align-items-center">
-                                <t t-if="event_images">
-                                    <t t-foreach="event_images" t-as="image">
-                                        <div t-attf-class="anim-item item-#{image_index + 1} #{image.orientation}">
+                            <!--            <div class="slider-container">-->
+                            <!--                <div class="slider-track" id="sliderTrack"></div>-->
+                            <!--            </div>-->
+                            <div class="slider-container">
+                                <div class="slider-track" id="sliderTrack">
+                                    <t t-foreach="culture_images" t-as="img_rec">
+                                        <!-- Dynamically add 'portrait' or 'landscape' class -->
+                                        <div t-attf-class="slide-item #{img_rec.orientation}">
                                             <div class="img-card">
-                                                <img t-attf-src="/web/image?model=website.event.image&amp;id=#{image.id}&amp;field=image&amp;width=512&amp;height=512"
-                                                     t-att-alt="image.name"
+                                                <!-- Odoo helper to convert binary to image source -->
+<!--                                                <img t-att-src="image_data_uri(img_rec.image)"-->
+<!--                                                     t-att-alt="img_rec.name"-->
+<!--                                                     loading="lazy"/>-->
+                                                <img t-att-src="image_data_uri(img_rec.image)"
+                                                     t-att-alt="img_rec.name"
                                                      class="img-fluid"
-                                                     loading="lazy"/>
+                                                     style="image-rendering: auto;"/>
                                             </div>
                                         </div>
                                     </t>
-                                </t>
-                                <t t-else="">
-                                    <!-- Fallback static images if no dynamic images -->
-                                    <div class="anim-item item-1 portrait">
-                                        <div class="img-card">
-                                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=400&amp;q=80"/>
-                                        </div>
-                                    </div>
-                                </t>
+                                </div>
                             </div>
                         </div>
                     </section>
+
+
                 </t>
             </t>
         </field>
