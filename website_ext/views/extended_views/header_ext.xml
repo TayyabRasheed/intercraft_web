@@ -3,6 +3,28 @@
     <template id="new_header" inherit_id="website.layout" priority="1000">
         <xpath expr="//header" position="replace">
             <header>
+                <div class="top-bar">
+                    <div class="container d-flex justify-content-between align-items-center">
+                        <div class="top-bar-social">
+                            <a href="https://www.instagram.com/intercraftsol/" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/intercraftsol" target="_blank">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@intercraft-sol" target="_blank">
+                                <i class="fa fa-youtube-play"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Intercraftsol/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="top-bar-contact">
+                            <i class="fa fa-phone me-2"></i>
+                            <span>Toll Free Number: +1 (833) 412-2070</span>
+                        </div>
+                    </div>
+                </div>
                 <nav class="navbar navbar-expand-lg fixed-top" style="z-index: 99999;">
                     <div class="container">
                         <!-- LOGO -->
@@ -84,7 +106,7 @@
                                                                                 </span>
                                                                             </div>
                                                                         </a>
-                                                                         <a href="/blockchain" class="mega-menu-item">
+                                                                        <a href="/blockchain" class="mega-menu-item">
                                                                             <div class="mega-menu-icon">
                                                                                 <!-- Gear Icon -->
                                                                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +122,8 @@
                                                                                 </svg>
                                                                             </div>
                                                                             <div class="mega-menu-content">
-                                                                                <span class="mega-menu-label">Blockchain Services
+                                                                                <span class="mega-menu-label">Blockchain
+                                                                                    Services
                                                                                 </span>
                                                                             </div>
                                                                         </a>
@@ -215,7 +238,6 @@
                                                                                 </span>
                                                                             </div>
                                                                         </a>
-
 
 
                                                                     </div>
@@ -416,6 +438,9 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/our-work">Our Work</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/aboutus">About Us</a>
                                 </li>
                                 <li class="nav-item">
@@ -519,6 +544,9 @@
 
                                             </ul>
                                         </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/our-work">Our Work</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="/aboutus">About Us</a>

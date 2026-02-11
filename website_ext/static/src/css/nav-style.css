@@ -1,11 +1,115 @@
 /* ===================================================================
    INTERCRAFT THEME - CUSTOM HEADER & NAVIGATION STYLES
    =================================================================== */
-:root{
-     --nav-height: 80px;
+:root {
+    --nav-height: 80px;
+    --top-bar-height: 40px;
 }
+
+/* --- TOP BAR: Fixed, Centered, and Always Visible --- */
+.top-bar {
+    height: var(--top-bar-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Keeps the top bar white as seen in your image */
+    z-index: 10000; /* Stays on top of everything */
+    display: flex;
+    align-items: center; /* Perfectly centers items top-to-bottom */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure the inner container fills the height for flex centering */
+.top-bar .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- MAIN NAVBAR: Preserving your transparency and positioning --- */
 nav.navbar.fixed-top {
     --nav-height: 80px;
+    top: var(--top-bar-height) !important; /* Stays exactly below the top bar */
+    height: var(--nav-height);
+    background-color: rgba(0, 0, 0, 0.2); /* Your original transparency */
+    padding: 15px 0;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+/* Keeping your scroll effect exactly as you had it */
+nav.navbar.fixed-top.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Mobile Adjustment to keep text on one line */
+@media (max-width: 576px) {
+    .top-bar-contact span {
+        font-size: 11px;
+    }
+
+    .top-bar-social a {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+}
+
+/* Ensure the dark background on mobile doesn't break */
+@media (max-width: 991.98px) {
+    nav.navbar.fixed-top {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+.top-bar-social {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Controls the exact distance between icons */
+}
+
+.top-bar-social a {
+    color: #e64a19; /* Matches the brand orange in your logo */
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover Effect: Glow or slight scale up */
+.top-bar-social a:hover {
+    color: #b71c1c; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Styling for the Phone/Contact section to match */
+.top-bar-contact {
+    display: flex;
+    align-items: center;
+    color: #333; /* Dark gray for the text */
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.top-bar-contact i {
+    color: #e64a19; /* Phone icon matches social icons */
+    margin-right: 8px;
+}
+
+/* Mobile specific spacing */
+@media (max-width: 576px) {
+    .top-bar-social {
+        gap: 10px; /* Tighter spacing on small phones */
+    }
+}
+
+nav.navbar.fixed-top {
+
+    --nav-height: 80px;
+    top: var(--top-bar-height);
     height: var(--nav-height);
     background-color: rgba(0, 0, 0, 0.2);
     padding: 15px 0;
@@ -46,6 +150,7 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     background-position: center;
     background-size: 100%;
 }
+
 @media (min-width: 992px) {
     .mega-dropdown .mega-menu {
         display: block;
@@ -138,7 +243,7 @@ nav.navbar.fixed-top .navbar-toggler-icon {
         padding: 20px;
         border-radius: 8px;
         /*margin-top: 20px;*/
-       margin-top: 45px;
+        margin-top: 45px;
         border-left: 4px solid #ff5500;
     }
 
