@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="our_work" model="website.page">
+        <field name="name">our_work</field>
+        <field name="type">qweb</field>
+        <field name="url">/our-work</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.our_work</field>
+        <field name="arch" type="xml">
+            <t name="our_work" t-name="website_ext.our_work">
+                <t t-call="website.layout">
+<t t-call="website_ext.portal_side_contact_us"/>
+                    <section class="service-hero">
+                        <div class="service-hero-bg "
+
+                             style="background: url('/website_ext/static/src/images/about-us/about-us-bg.jpg') center / cover;"></div>
+                    </section>
+
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_our_work" model="website.menu">
+        <field name="name">our_work</field>
+        <field name="url">/our-work</field>
+        <field name="page_id" ref="website_ext.our_work"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

@@ -46,6 +46,7 @@
         'views/extended_views/thankyou_ext.xml',
         'data/config_data_ext.xml',
         'views/seo_templates.xml',
+        'views/our_work.xml',
         'views/extended_views/account_asset_ext.xml',
         'views/event_image_views.xml',
         'data/event_image_data.xml'
