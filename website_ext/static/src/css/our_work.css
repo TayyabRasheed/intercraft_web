@@ -1,0 +1,80 @@
+/* ===================================================================
+   OUR WORK PAGE - COMPLETE STYLES (FINAL VERSION)
+   =================================================================== */
+
+.ic_work_page { font-family: 'Inter', 'Manrope', sans-serif; color: #0F172A; }
+.ic-section-label { color: #F05A24; font-weight: 700; font-size: 1.1rem; display: block; margin-bottom: 10px; }
+.ic-section-main-title { font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; color: #0F172A; letter-spacing: -0.02em; }
+
+/* Section 1: Hero */
+.ic-hero-section { background: radial-gradient(circle at center, rgba(255, 240, 230, 0.7) 0%, #fff 70%); padding: 180px 0 100px; position: relative; }
+.ic-hero-title { font-size: clamp(2.2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.1; margin-bottom: 24px; color: #1e293b; }
+.ic-hero-subtitle { font-size: 1.15rem; color: #64748b; max-width: 750px; margin-bottom: 60px; line-height: 1.6; }
+.ic-hero-img-wrapper { border-radius: 28px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.07); }
+.ic-hero-img { width: 100%; height: 300px; object-fit: cover; display: block; }
+
+/* Section 2: What We Build */
+.ic-build-section { padding: 100px 0; position: relative; overflow: hidden; background: #fff; }
+.ic-pattern-top-right, .ic-pattern-bottom-left { position: absolute; width: 280px; height: 280px; background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23E2E8F0" opacity="0.4"><rect x="10" y="10" width="16" height="16" transform="rotate(15 18 18)"/><rect x="45" y="5" width="16" height="16" transform="rotate(30 53 13)"/><rect x="75" y="25" width="16" height="16" transform="rotate(45 83 33)"/></g></svg>'); background-size: contain; z-index: 0; pointer-events: none; }
+.ic-pattern-top-right { top: 0; right: 0; transform: translate(15%, -10%); }
+.ic-pattern-bottom-left { bottom: 0; left: 0; transform: translate(-15%, 10%); }
+.ic-build-card { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 24px; padding: 48px; height: 100%; transition: all 0.3s; position: relative; z-index: 1; }
+.ic-build-card:hover { background: #fff; box-shadow: 0 15px 45px rgba(0,0,0,0.05); }
+.ic-build-icon-box { width: 52px; height: 52px; background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 28px; color: #475569; font-size: 1.2rem; }
+.ic-build-card-title { font-weight: 700; font-size: 1.4rem; margin-bottom: 15px; color: #1e293b; }
+.ic-build-card-text { color: #64748b; line-height: 1.7; margin-bottom: 0; }
+
+/* Section 3: Projects */
+.ic-projects-section { padding: 100px 0; background: #fdfdfd; }
+.ic-project-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 20px; padding: 24px; height: 100%; transition: all 0.3s; display: flex; flex-direction: column; }
+.ic-project-card.active { border: 1.8px solid #F05A24; box-shadow: 0 20px 40px rgba(240, 90, 36, 0.08); }
+.ic-project-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.ic-project-logo { height: 32px; object-fit: contain; }
+.ic-project-badge { font-size: 0.7rem; font-weight: 700; padding: 6px 12px; border-radius: 8px; }
+.badge-ai { background: #E0F2FE; color: #0EA5E9; }
+.badge-dashboard { background: #FFEDD5; color: #F97316; }
+.badge-website { background: #F1F5F9; color: #64748B; }
+.ic-project-img-container { border-radius: 14px; overflow: hidden; margin-bottom: 20px; height: 190px; }
+.ic-project-img { width: 100%; height: 100%; object-fit: cover; }
+.ic-project-title { font-size: 1.3rem; font-weight: 700; margin-bottom: 12px; }
+.ic-project-card.active .ic-project-title { color: #F05A24; }
+.ic-project-tags span { background: #F1F5F9; color: #64748B; font-size: 0.75rem; font-weight: 600; padding: 4px 12px; border-radius: 100px; margin-right: 6px; }
+.ic-project-desc { color: #64748b; font-size: 0.95rem; line-height: 1.6; margin: 15px 0 20px; }
+.ic-project-link { font-weight: 700; color: #475569; text-decoration: none; margin-top: auto; }
+.ic-project-card.active .ic-project-link, .ic-project-link:hover { color: #F05A24; }
+.ic-dot { width: 32px; height: 6px; background: #E2E8F0; border-radius: 10px; display: inline-block; margin: 0 4px; }
+.ic-dot.active { background: #F05A24; }
+
+/* Section 4: CTA & Testimonials */
+.ic-final-wrap-section { padding: 80px 0 120px; background: #fff; }
+.ic-cta-banner-wrapper {
+    background: linear-gradient(90deg, rgba(255, 230, 210, 0.6) 0%, rgba(255, 255, 255, 1) 100%);
+    border: 1px solid #F05A24;
+    border-radius: 24px;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+.ic-cta-title { font-weight: 800; color: #1e293b; margin-bottom: 15px; }
+.ic-cta-text { color: #64748b; max-width: 600px; }
+.ic-btn-main-orange {
+    background: linear-gradient(90deg, #F05A24 0%, #E64A19 100%);
+    color: #fff !important; font-weight: 700; padding: 14px 28px; border-radius: 10px; text-decoration: none; display: inline-block;
+}
+
+.ic-testimonial-head { margin-bottom: 50px; }
+.ic-testimonial-card {
+    background: #fff; border: 1px solid #E2E8F0; border-radius: 24px; padding: 50px; text-align: center; height: 100%; transition: all 0.3s;
+}
+.ic-testimonial-card.active { border: 1.5px solid #F05A24; box-shadow: 0 20px 40px rgba(240, 90, 36, 0.08); }
+.ic-testimonial-card.faded { opacity: 0.4; filter: blur(1px); transform: scale(0.9); border: none; }
+.ic-testi-title { color: #F05A24; font-weight: 700; margin-bottom: 20px; font-size: 1.25rem; }
+.ic-testi-text { color: #64748b; font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px; }
+.ic-testi-footer strong { display: block; color: #1e293b; font-size: 1.1rem; }
+.ic-testi-footer span { color: #94a3b8; font-size: 0.9rem; }
+
+/* Responsive */
+@media (max-width: 991px) {
+    .ic-hero-section { padding-top: 140px; }
+    .ic-cta-banner-wrapper { padding: 40px; }
+    .ic-testimonial-card { padding: 30px; }
+}

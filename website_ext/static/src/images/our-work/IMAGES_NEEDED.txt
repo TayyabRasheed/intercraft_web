@@ -1,0 +1,12 @@
+Add the following images to this folder for the Our Work page:
+
+Gallery (Section 1):
+- gallery-1.jpg - Abstract purple/blue data/AI themed image
+- gallery-2.jpg - 3D abstract green/organic growth image  
+- gallery-3.jpg - Wooden tiles / Guide AI concept image
+
+Projects (Section 3):
+- aseyl-logo.png - Aseyl AI logo
+- aseyl-project.jpg - Aseyl AI Platform screenshot
+- it-helpdesk-project.jpg - IT Helpdesk Portal screenshot
+- irthalotrujja-project.jpg - Irthalotrujja website screenshot
