@@ -104,97 +104,91 @@
                             </div>
                         </section>
 
-                        <!-- Section 3: Recent Projects -->
+                        <!-- Section 3: Recent Projects carousel (all projects, scroll left/right, 3 visible) -->
                         <section class="ic-projects-section">
                             <div class="container">
                                 <h2 class="ic-section-main-title text-center mb-5">Our Recent Projects</h2>
-                                <div class="row g-4">
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="ic-project-card">
-                                            <div class="ic-project-card-header">
-                                                <span class="ic-project-badge badge-ai">AI PORTAL</span>
-                                                <img src="/website_ext/static/src/images/services-section/ai-expert/chat-ai.png"
-                                                     class="ic-project-logo"/>
-                                            </div>
-                                            <div class="ic-project-img-container">
-                                                <img src="/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg"
-                                                     class="ic-project-img"/>
-                                            </div>
-                                            <div class="ic-project-content">
-                                                <h4 class="ic-project-title">Aseyl AI Platform</h4>
-                                                <div class="ic-project-tags">
-                                                    <span>UI/UX</span>
-                                                    <span>ERP</span>
-                                                    <span>Portal</span>
+                                <t t-set="projects" t-value="request.env['website.project'].sudo().search([('active', '=', True)], order='sequence, id')"/>
+                                <t t-set="num_projects" t-value="len(projects)"/>
+                                <t t-set="double_count" t-value="num_projects * 2"/>
+                                <div class="ic-projects-viewport" t-if="projects">
+                                    <div class="ic-projects-row ic-projects-track" t-att-data-count="num_projects" t-attf-style="width: {{ double_count * 100 / 3 }}%;">
+                                        <!-- First copy: indices 0..n-1 -->
+                                        <t t-foreach="projects" t-as="project">
+                                            <div class="ic-project-col ic-project-col-idx" t-att-data-index="project_index - 1" t-attf-style="flex: 0 0 {{ 100.0 / double_count }}%; max-width: {{ 100.0 / double_count }}%;">
+                                                <div class="ic-project-card">
+                                                    <div class="ic-project-card-header">
+                                                        <t t-if="project.badge">
+                                                            <span t-attf-class="ic-project-badge badge-#{project.badge_style or 'website'}"><t t-esc="project.badge"/></span>
+                                                        </t>
+                                                        <t t-if="project.logo">
+                                                            <img t-att-src="'/web/image/website.project/%s/logo' % project.id" class="ic-project-logo" alt=""/>
+                                                        </t>
+                                                    </div>
+                                                    <div class="ic-project-img-container">
+                                                        <t t-if="project.image">
+                                                            <img t-att-src="'/web/image/website.project/%s/image' % project.id" class="ic-project-img" alt=""/>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <img src="/web/image/website.s_picture_default_image" class="ic-project-img" alt=""/>
+                                                        </t>
+                                                    </div>
+                                                    <div class="ic-project-content">
+                                                        <h4 class="ic-project-title"><t t-esc="project.title or project.name"/></h4>
+                                                        <div class="ic-project-tags" t-if="project.tag_ids">
+                                                            <t t-foreach="project.tag_ids" t-as="tag">
+                                                                <span><t t-esc="tag.name"/></span>
+                                                            </t>
+                                                        </div>
+                                                        <p class="ic-project-desc" t-if="project.description"><t t-esc="project.description"/></p>
+                                                        <a t-att-href="project.url or '#'" class="ic-project-link">Learn More
+                                                            <i class="fa fa-arrow-right ms-1"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <p class="ic-project-desc">Map out your product's vision, strategic
-                                                    objectives, and development.
-                                                </p>
-                                                <a href="#" class="ic-project-link">Learn More
-                                                    <i class="fa fa-arrow-right ms-1"></i>
-                                                </a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="ic-project-card active">
-                                            <div class="ic-project-card-header">
-                                                <span class="ic-project-badge badge-dashboard">DASHBOARD</span>
-                                                <img src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
-                                                     class="ic-project-logo"/>
-                                            </div>
-                                            <div class="ic-project-img-container">
-                                                <img src="/web/image/website.s_picture_default_image"
-                                                     class="ic-project-img"/>
-                                            </div>
-                                            <div class="ic-project-content">
-                                                <h4 class="ic-project-title">IT Helpdesk Portal</h4>
-                                                <div class="ic-project-tags">
-                                                    <span>UI/UX</span>
-                                                    <span>Education</span>
-                                                    <span>Portal</span>
+                                        </t>
+                                        <!-- Second copy: indices n..2n-1 (for seamless loop) -->
+                                        <t t-foreach="projects" t-as="project">
+                                            <div class="ic-project-col ic-project-col-idx" t-att-data-index="project_index - 1 + num_projects" t-attf-style="flex: 0 0 {{ 100.0 / double_count }}%; max-width: {{ 100.0 / double_count }}%;">
+                                                <div class="ic-project-card">
+                                                    <div class="ic-project-card-header">
+                                                        <t t-if="project.badge">
+                                                            <span t-attf-class="ic-project-badge badge-#{project.badge_style or 'website'}"><t t-esc="project.badge"/></span>
+                                                        </t>
+                                                        <t t-if="project.logo">
+                                                            <img t-att-src="'/web/image/website.project/%s/logo' % project.id" class="ic-project-logo" alt=""/>
+                                                        </t>
+                                                    </div>
+                                                    <div class="ic-project-img-container">
+                                                        <t t-if="project.image">
+                                                            <img t-att-src="'/web/image/website.project/%s/image' % project.id" class="ic-project-img" alt=""/>
+                                                        </t>
+                                                        <t t-else="">
+                                                            <img src="/web/image/website.s_picture_default_image" class="ic-project-img" alt=""/>
+                                                        </t>
+                                                    </div>
+                                                    <div class="ic-project-content">
+                                                        <h4 class="ic-project-title"><t t-esc="project.title or project.name"/></h4>
+                                                        <div class="ic-project-tags" t-if="project.tag_ids">
+                                                            <t t-foreach="project.tag_ids" t-as="tag">
+                                                                <span><t t-esc="tag.name"/></span>
+                                                            </t>
+                                                        </div>
+                                                        <p class="ic-project-desc" t-if="project.description"><t t-esc="project.description"/></p>
+                                                        <a t-att-href="project.url or '#'" class="ic-project-link">Learn More
+                                                            <i class="fa fa-arrow-right ms-1"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                                <p class="ic-project-desc">Comprehensive helpdesk solution for
-                                                    streamlined IT support and management.
-                                                </p>
-                                                <a href="#" class="ic-project-link">Learn More
-                                                    <i class="fa fa-arrow-right ms-1"></i>
-                                                </a>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6">
-                                        <div class="ic-project-card">
-                                            <div class="ic-project-card-header">
-                                                <span class="ic-project-badge badge-website">WEBSITE</span>
-                                                <img src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"
-                                                     class="ic-project-logo"/>
-                                            </div>
-                                            <div class="ic-project-img-container">
-                                                <img src="/web/image/website.s_picture_default_image"
-                                                     class="ic-project-img"/>
-                                            </div>
-                                            <div class="ic-project-content">
-                                                <h4 class="ic-project-title">Irthalotrujja</h4>
-                                                <div class="ic-project-tags">
-                                                    <span>UI/UX</span>
-                                                    <span>Education</span>
-                                                    <span>Website</span>
-                                                </div>
-                                                <p class="ic-project-desc">Digital platform for educational and cultural
-                                                    content.
-                                                </p>
-                                                <a href="#" class="ic-project-link">Learn More
-                                                    <i class="fa fa-arrow-right ms-1"></i>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        </t>
                                     </div>
                                 </div>
-                                <div class="ic-projects-dots text-center mt-5">
-                                    <span class="ic-dot"></span>
-                                    <span class="ic-dot active"></span>
-                                    <span class="ic-dot"></span>
+                                <div class="ic-projects-dots text-center mt-5" aria-hidden="true" t-if="projects">
+                                    <span class="ic-dot" data-index="0" role="button" tabindex="0" aria-label="Project 1"></span>
+                                    <span class="ic-dot" data-index="1" role="button" tabindex="0" aria-label="Project 2"></span>
+                                    <span class="ic-dot" data-index="2" role="button" tabindex="0" aria-label="Project 3"></span>
                                 </div>
                             </div>
                         </section>
@@ -217,54 +211,70 @@
                                     </div>
                                 </div>
 
-                                <!-- Testimonials -->
-                                <div class="ic-testimonial-head text-center">
+                                <!-- Testimonials (dynamic from website.testimonial) -->
+                                <div class="ic-testimonial-head ">
                                     <span class="ic-section-label">What Our Clients Say</span>
                                     <h2 class="ic-section-main-title">Real Results. Real Feedback.</h2>
                                 </div>
 
-                                <div class="ic-testimonial-slider mt-5">
+                                <t t-set="testimonials" t-value="request.env['website.testimonial'].sudo().search([('active', '=', True)], order='sequence, id')"/>
+                                <div class="ic-testimonial-slider mt-5" t-if="testimonials">
+                                    <!-- Hidden data for JS -->
+                                    <div class="d-none ic-testimonial-data" id="ic-testimonial-data">
+                                        <t t-foreach="testimonials" t-as="t">
+                                            <div class="ic-testimonial-item">
+                                                <span class="data-title"><t t-esc="t.title"/></span>
+                                                <span class="data-quote"><t t-esc="t.quote"/></span>
+                                                <span class="data-author"><t t-esc="t.author_name"/></span>
+                                                <span class="data-role"><t t-esc="t.author_role or ''"/></span>
+                                                <span class="data-company"><t t-esc="t.company_name or ''"/></span>
+                                            </div>
+                                        </t>
+                                    </div>
+                                    <!-- Slots filled by JS -->
                                     <div class="row g-4 align-items-center justify-content-center">
-                                        <!-- Left Faded Card -->
                                         <div class="col-md-3 d-none d-lg-block">
-                                            <div class="ic-testimonial-card faded">
-                                                <h5 class="ic-testi-title">Execution</h5>
-                                                <p class="small">The team understood our requirements quickly and
-                                                    delivered an AI-powered solution.
-                                                </p>
+                                            <div class="ic-testimonial-card faded ic-testi-slot-left">
+                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>
+                                                <p class="small ic-testi-slot-quote"></p>
                                             </div>
                                         </div>
-                                        <!-- Main Active Card -->
                                         <div class="col-lg-6 col-md-10">
-                                            <div class="ic-testimonial-card active">
-                                                <h4 class="ic-testi-title">Exceptional AI Expertise and Smooth
-                                                    Execution
-                                                </h4>
-                                                <p class="ic-testi-text">The team understood our requirements quickly
-                                                    and delivered an AI-powered solution that streamlined our
-                                                    operations. Communication was clear, timelines were met, and the
-                                                    results exceeded expectations.
-                                                </p>
+                                            <div class="ic-testimonial-card active ic-testi-slot-center">
+                                                <h4 class="ic-testi-title ic-testi-slot-title"></h4>
+                                                <p class="ic-testi-text ic-testi-slot-quote"></p>
                                                 <div class="ic-testi-footer">
-                                                    <strong>Product Manager</strong>
-                                                    <span>SaaS Company</span>
+                                                    <strong class="ic-testi-slot-author"></strong>
+                                                    <span class="ic-testi-slot-company"></span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- Right Faded Card -->
                                         <div class="col-md-3 d-none d-lg-block">
-                                            <div class="ic-testimonial-card faded">
-                                                <h5 class="ic-testi-title">Execution</h5>
-                                                <p class="small">The team understood our requirements quickly and
-                                                    delivered an AI-powered solution.
-                                                </p>
+                                            <div class="ic-testimonial-card faded ic-testi-slot-right">
+                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>
+                                                <p class="small ic-testi-slot-quote"></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="ic-projects-dots text-center mt-5">
-                                        <span class="ic-dot active"></span>
-                                        <span class="ic-dot"></span>
-                                        <span class="ic-dot"></span>
+                                    <div class="ic-testimonial-bars text-center mt-5" aria-hidden="true">
+                                        <span class="ic-testi-bar"></span>
+                                        <span class="ic-testi-bar"></span>
+                                        <span class="ic-testi-bar"></span>
+                                    </div>
+                                </div>
+
+                                <!-- Let's Build Something Smart CTA -->
+                                <div class="ic-build-smart-cta mt-5 mb-5">
+                                    <div class="ic-build-smart-cta-inner">
+                                        <h2 class="ic-build-smart-title">Let's Build Something Smart</h2>
+                                        <p class="ic-build-smart-desc">Have an idea or need help upgrading your digital product? Let's talk and turn your vision into reality.</p>
+                                        <div class="ic-build-smart-buttons">
+                                            <a href="/contact-us" class="ic-btn-build-outline">
+                                                <i class="fa fa-comments-o" aria-hidden="true"/>
+                                                Let's Talk
+                                            </a>
+                                            <a href="/contact-us" class="ic-btn-build-solid">Book a Free Consultation</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
