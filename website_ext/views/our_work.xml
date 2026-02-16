@@ -112,7 +112,7 @@
                                 <t t-set="num_projects" t-value="len(projects)"/>
                                 <t t-set="double_count" t-value="num_projects * 2"/>
                                 <div class="ic-projects-viewport" t-if="projects">
-                                    <div class="ic-projects-row ic-projects-track" t-att-data-count="num_projects" t-attf-style="width: {{ double_count * 100 / 3 }}%;">
+                                    <div class="ic-projects-row ic-projects-track" t-att-data-count="num_projects" t-attf-style="width: {{ double_count * 100 / 3 }}%; --ic-track-width-mobile: {{ double_count * 100 }}%;">
                                         <!-- First copy: indices 0..n-1 -->
                                         <t t-foreach="projects" t-as="project">
                                             <div class="ic-project-col ic-project-col-idx" t-att-data-index="project_index - 1" t-attf-style="flex: 0 0 {{ 100.0 / double_count }}%; max-width: {{ 100.0 / double_count }}%;">
