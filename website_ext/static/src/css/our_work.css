@@ -1,7 +1,3 @@
-/* ===================================================================
-   OUR WORK PAGE - COMPLETE STYLES (FINAL VERSION)
-   =================================================================== */
-
 .ic_work_page {
     font-family: 'Inter', 'Manrope', sans-serif;
     color: #0F172A;
@@ -332,7 +328,6 @@
     transform: scaleY(1.2);
 }
 
-/* Mobile: 1 card at a time (track width makes each col = 100% of viewport) */
 @media (max-width: 767px) {
     .ic-build-section {
         padding: 0;
@@ -362,7 +357,6 @@
     }
 }
 
-/* Section 4: CTA & Testimonials */
 .ic-final-wrap-section {
     padding: 80px 0 120px;
     background: #fff;
@@ -458,10 +452,9 @@
     font-size: 0.9rem;
 }
 
-/* Let's Build Something Smart CTA */
 .ic-build-smart-cta {
     border-radius: 28px;
-    overflow: hidden; /* THIS is important */
+    overflow: hidden;
 
     min-height: 280px;
     display: flex;
@@ -545,7 +538,6 @@
     transform: translateY(-1px);
 }
 
-/* Responsive */
 @media (max-width: 991px) {
     .ic-hero-section {
         padding-top: 140px;

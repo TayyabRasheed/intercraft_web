@@ -37,7 +37,6 @@
 
         var sliderTrack = slider.querySelector('.row') || slider;
 
-        /* 3 bars: cycle 1st → 2nd → 3rd → 1st as card changes */
         var barsWrap = slider.querySelector('.ic-testimonial-bars');
         function updateBars() {
             if (!barsWrap) return;
@@ -89,12 +88,10 @@
             render();
         }
 
-        /* Click on center card: go to next */
         centerSlot.addEventListener('click', function (e) {
             if (e.target.tagName !== 'A' && !e.target.closest('a')) goNext();
         });
 
-        /* Touch swipe – bind to whole slider */
         var touchStartX = 0;
         function onTouchStart(e) {
             touchStartX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].screenX : e.screenX;
@@ -109,7 +106,6 @@
         slider.addEventListener('touchstart', onTouchStart, { passive: true });
         slider.addEventListener('touchend', onTouchEnd, { passive: true });
 
-        /* Mouse drag (desktop) */
         var mouseStartX = 0;
         slider.addEventListener('mousedown', function (e) {
             mouseStartX = e.screenX;
@@ -120,10 +116,8 @@
             else if (diff < -50) goPrev();
         });
 
-        /* Auto-rotation every 5 seconds */
         setInterval(goNext, 5000);
 
-        /* Initial render – all content from dynamic testimonials (left/center/right) */
         render();
     }
 
@@ -136,7 +130,7 @@
         var dots = section.querySelectorAll('.ic-projects-dots .ic-dot');
         var cols = section.querySelectorAll('.ic-projects-row .ic-project-col-idx');
         var totalCols = cols.length;
-        var n = totalCols / 2; /* logical number of projects (track has 2 copies) */
+        var n = totalCols / 2;
         if (totalCols === 0 || !track || n < 1) return;
 
         var currentIndex = 0;
@@ -145,10 +139,8 @@
         function setActive(index) {
             if (index < 0 || index > n) return;
             currentIndex = index;
-            /* Slide track: offset as % of track width */
             var offset = (currentIndex / totalCols) * 100;
             track.style.transform = 'translateX(-' + offset + '%)';
-            /* Dots: logical position (0..n-1) cycles 1st → 2nd → 3rd */
             var logicalIndex = currentIndex === n ? 0 : currentIndex;
             var activeDotIndex = logicalIndex % 3;
             for (var d = 0; d < dots.length; d++) {
@@ -172,7 +164,6 @@
 
         track.addEventListener('transitionend', function (e) {
             if (e.target !== track || e.propertyName !== 'transform') return;
-            /* After animating to duplicate (position n), jump back to 0 without animation */
             if (currentIndex === n) resetToStart();
         });
 
@@ -190,7 +181,6 @@
             });
         });
 
-        /* Auto-rotate: slide every 5 seconds */
         setInterval(goNext, 5000);
 
         setActive(0);
@@ -213,7 +203,6 @@
         runInit();
     }
 
-    /* Re-init when content appears later (e.g. client-side navigation to Our Work) */
     var observer = new MutationObserver(function (mutations) {
         if (document.querySelector('.ic-testimonial-slider:not([data-ic-testimonial-init])') ||
             document.querySelector('.ic-projects-section:not([data-ic-projects-init])')) {

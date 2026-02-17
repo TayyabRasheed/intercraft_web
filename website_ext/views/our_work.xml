@@ -12,7 +12,6 @@
                 <t t-call="website.layout">
                     <div id="wrap" class="oe_structure ic_work_page">
 
-                        <!-- Section 1: Hero Header -->
                         <section class="ic-hero-section">
                             <div class="container text-center">
                                 <h1 class="ic-hero-title">Real Results Through Strategic Innovation</h1>
@@ -43,7 +42,6 @@
                             </div>
                         </section>
 
-                        <!-- Section 2: What We Build -->
                         <section class="ic-build-section">
                             <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
@@ -106,7 +104,6 @@
                             </div>
                         </section>
 
-                        <!-- Section 3: Recent Projects carousel (all projects, scroll left/right, 3 visible) -->
                         <section class="ic-projects-section">
                             <div class="container">
                                 <h2 class="ic-section-main-title text-center mb-5">Our Recent Projects</h2>
@@ -117,7 +114,6 @@
                                 <div class="ic-projects-viewport" t-if="projects">
                                     <div class="ic-projects-row ic-projects-track" t-att-data-count="num_projects"
                                          t-attf-style="width: {{ double_count * 100 / 3 }}%; --ic-track-width-mobile: {{ double_count * 100 }}%;">
-                                        <!-- First copy: indices 0..n-1 -->
                                         <t t-foreach="projects" t-as="project">
                                             <div class="ic-project-col ic-project-col-idx"
                                                  t-att-data-index="project_index - 1"
@@ -166,7 +162,6 @@
                                                 </div>
                                             </div>
                                         </t>
-                                        <!-- Second copy: indices n..2n-1 (for seamless loop) -->
                                         <t t-foreach="projects" t-as="project">
                                             <div class="ic-project-col ic-project-col-idx"
                                                  t-att-data-index="project_index - 1 + num_projects"
@@ -228,10 +223,8 @@
                             </div>
                         </section>
 
-                        <!-- Section 4: CTA & Testimonials (The Final Part) -->
                         <section class="ic-final-wrap-section">
                             <div class="container">
-                                <!-- CTA Banner -->
                                 <div class="ic-cta-banner-wrapper">
                                     <div class="row align-items-center">
                                         <div class="col-lg-8">
@@ -246,7 +239,6 @@
                                     </div>
                                 </div>
 
-                                <!-- Testimonials (dynamic from website.testimonial) -->
                                 <div class="ic-testimonial-head ">
                                     <span class="ic-section-label">What Our Clients Say</span>
                                     <h2 class="ic-section-main-title">Real Results. Real Feedback.</h2>
@@ -255,7 +247,6 @@
                                 <t t-set="testimonials"
                                    t-value="request.env['website.testimonial'].sudo().search([('active', '=', True)], order='sequence, id')"/>
                                 <div class="ic-testimonial-slider mt-5" t-if="testimonials">
-                                    <!-- Hidden data for JS -->
                                     <div class="d-none ic-testimonial-data" id="ic-testimonial-data">
                                         <t t-foreach="testimonials" t-as="t">
                                             <div class="ic-testimonial-item">
@@ -277,7 +268,6 @@
                                             </div>
                                         </t>
                                     </div>
-                                    <!-- Slots filled by JS -->
                                     <div class="row g-4 align-items-center justify-content-center">
                                         <div class="col-md-3 d-none d-lg-block">
                                             <div class="ic-testimonial-card faded ic-testi-slot-left">
@@ -325,20 +315,7 @@
                                         </div>
                                     </div>
                                 </section>
-                                <!-- Let's Build Something Smart CTA -->
-                                <!--                                <div class="ic-build-smart-cta mt-5 mb-5">-->
-                                <!--                                    <div class="ic-build-smart-cta-inner">-->
-                                <!--                                        <h2 class="ic-build-smart-title">Let's Build Something Smart</h2>-->
-                                <!--                                        <p class="ic-build-smart-desc">Have an idea or need help upgrading your digital product? Let's talk and turn your vision into reality.</p>-->
-                                <!--                                        <div class="ic-build-smart-buttons">-->
-                                <!--                                            <a href="/contact-us" class="ic-btn-build-outline">-->
-                                <!--                                                <i class="fa fa-comments-o" aria-hidden="true"/>-->
-                                <!--                                                Let's Talk-->
-                                <!--                                            </a>-->
-                                <!--                                            <a href="/contact-us" class="ic-btn-build-solid">Book a Free Consultation</a>-->
-                                <!--                                        </div>-->
-                                <!--                                    </div>-->
-                                <!--                                </div>-->
+
                             </div>
                         </section>
 
@@ -348,418 +325,3 @@
         </field>
     </record>
 </odoo>
-
-        <!--<?xml version="1.0" encoding="utf-8"?>-->
-        <!--<odoo>-->
-        <!--    <record id="our_work" model="website.page">-->
-        <!--        <field name="name">Our Work</field>-->
-        <!--        <field name="type">qweb</field>-->
-        <!--        <field name="url">/our-work</field>-->
-        <!--        <field name="website_indexed" eval="False"/>-->
-        <!--        <field name="is_published">True</field>-->
-        <!--        <field name="key">website_ext.our_work</field>-->
-        <!--        <field name="arch" type="xml">-->
-        <!--            <t name="Our Work" t-name="website_ext.our_work">-->
-        <!--                <t t-call="website.layout">-->
-        <!--                    <t t-call="website_ext.portal_side_contact_us"/>-->
-        <!--                    <div id="wrap" class="oe_structure ic_work_page">-->
-
-        <!--                        &lt;!&ndash; Image 1: Hero Header &ndash;&gt;-->
-        <!--                        <section class="ic-hero-section ic-section-padding">-->
-        <!--                            <div class="container text-center">-->
-        <!--                                <h1 class="ic-title-main display-4">Real Results Through Strategic Innovation</h1>-->
-        <!--                                <p class="text-muted mx-auto mb-5 col-lg-7">-->
-        <!--                                    At InterCraft, our work reflects real impact — from system modernization to AI-driven solutions that accelerate growth and streamline operations.-->
-        <!--                                </p>-->
-        <!--                                <div class="row g-4 mb-5">-->
-        <!--                                    <div class="col-md-4"><img src="/web/image/website.s_banner_default_image" class="ic-hero-img" alt="Work 1"/></div>-->
-        <!--                                    <div class="col-md-4"><img src="/web/image/website.s_banner_default_image" class="ic-hero-img" alt="Work 2"/></div>-->
-        <!--                                    <div class="col-md-4"><img src="/web/image/website.s_banner_default_image" class="ic-hero-img" alt="Work 3"/></div>-->
-        <!--                                </div>-->
-
-        <!--                            </div>-->
-        <!--                        </section>-->
-
-        <!--                        &lt;!&ndash; Image 2: What We Build &ndash;&gt;-->
-        <!--                        <section class="ic-what-we-build ic-section-padding">-->
-        <!--                            <div class="container">-->
-        <!--                                <div class="text-center mb-5">-->
-        <!--                                    <span class="ic-title-small">Our Work</span>-->
-        <!--                                    <h2 class="ic-title-main h1">What We Build</h2>-->
-        <!--                                </div>-->
-        <!--                                <div class="row g-4">-->
-        <!--                                    <div class="col-md-5">-->
-        <!--                                        <div class="ic-card">-->
-        <!--                                            <div class="ic-icon-box"><i class="fa fa-bolt"></i></div>-->
-        <!--                                            <h4 class="fw-bold">AI Portals &amp; Intelligent Systems</h4>-->
-        <!--                                            <p class="text-muted">Harness the power of artificial intelligence to transform your business operations. We create intelligent systems that learn, adapt, and deliver exceptional user experiences through cutting-edge AI technology.</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-md-7">-->
-        <!--                                        <div class="ic-card">-->
-        <!--                                            <div class="ic-icon-box"><i class="fa fa-bullseye"></i></div>-->
-        <!--                                            <h4 class="fw-bold">Project Management &amp; Delivery</h4>-->
-        <!--                                            <p class="text-muted">Navigate complex projects with confidence. Our agile approach ensures timely delivery, transparent communication, and seamless execution from concept to launch, while fostering collaboration to deliver value through continuous improvement, strategic alignment, and results that scale with your business.</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-md-7">-->
-        <!--                                        <div class="ic-card">-->
-        <!--                                            <div class="ic-icon-box"><i class="fa fa-globe"></i></div>-->
-        <!--                                            <h4 class="fw-bold">Web Development</h4>-->
-        <!--                                            <p class="text-muted">Build robust, scalable web applications with modern technologies. From responsive websites to complex web platforms, we deliver high-performance solutions tailored to your business needs. Our focus on clean architecture, security, and usability ensures reliable and future-ready products.</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-md-5">-->
-        <!--                                        <div class="ic-card">-->
-        <!--                                            <div class="ic-icon-box"><i class="fa fa-paint-brush"></i></div>-->
-        <!--                                            <h4 class="fw-bold">UI/UX Design</h4>-->
-        <!--                                            <p class="text-muted">Craft beautiful, intuitive interfaces that users love. Our design process combines user research, modern aesthetics, and usability principles to create engaging digital experiences that drive results.</p>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </section>-->
-
-        <!--                        &lt;!&ndash; Image 3: Recent Projects &ndash;&gt;-->
-        <!--                        <section class="ic-projects-section ic-section-padding">-->
-        <!--                            <div class="container">-->
-        <!--                                <h2 class="ic-title-main text-center mb-5 h1">Our Recent Projects</h2>-->
-        <!--                                <div class="row g-4">-->
-        <!--                                    <div class="col-md-4">-->
-        <!--                                        <div class="ic-project-card">-->
-        <!--                                            <div class="d-flex justify-content-between align-items-start mb-3">-->
-        <!--                                                <span class="ic-badge ic-badge-ai">AI PORTAL</span>-->
-        <!--                                                <img src="/website_ext/static/src/images/services-section/ai-expert/voicemail.svg" alt="Aseyl AI" class="ic-project-logo"/>-->
-        <!--                                            </div>-->
-        <!--                                            <img src="/web/image/website.s_picture_default_image" class="ic-project-img rounded mb-3" alt="Aseyl AI Platform"/>-->
-        <!--                                            <h5 class="fw-bold ic-project-title">Aseyl AI Platform</h5>-->
-        <!--                                            <div class="mb-3">-->
-        <!--                                                <span class="ic-tag">UI/UX</span><span class="ic-tag">ERP</span><span class="ic-tag">Portal</span>-->
-        <!--                                            </div>-->
-        <!--                                            <p class="text-muted small mb-3">Map out your product's vision, strategic objectives, and development.</p>-->
-        <!--                                            <a href="#" class="ic-project-link">Learn More →</a>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-md-4">-->
-        <!--                                        <div class="ic-project-card active">-->
-        <!--                                            <div class="d-flex justify-content-between align-items-start mb-3">-->
-        <!--                                                <span class="ic-badge ic-badge-dashboard">DASHBOARD</span>-->
-        <!--                                                <img src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png" alt="Al Faisal University" class="ic-project-logo"/>-->
-        <!--                                            </div>-->
-        <!--                                            <img src="/web/image/website.s_picture_default_image" class="ic-project-img rounded mb-3" alt="IT Helpdesk Portal"/>-->
-        <!--                                            <h5 class="fw-bold ic-project-title">IT Helpdesk Portal</h5>-->
-        <!--                                            <div class="mb-3">-->
-        <!--                                                <span class="ic-tag">UI/UX</span><span class="ic-tag">Education</span><span class="ic-tag">Portal</span>-->
-        <!--                                            </div>-->
-        <!--                                            <p class="text-muted small mb-3">Comprehensive helpdesk solution for streamlined IT support and management.</p>-->
-        <!--                                            <a href="https://eforms.alfaisal.edu/login" target="_blank" class="ic-project-link ic-project-link-active">Learn More →</a>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-md-4">-->
-        <!--                                        <div class="ic-project-card">-->
-        <!--                                            <div class="d-flex justify-content-between align-items-start mb-3">-->
-        <!--                                                <span class="ic-badge ic-badge-website">WEBSITE</span>-->
-        <!--                                                <img src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png" alt="Irthalotrujja" class="ic-project-logo"/>-->
-        <!--                                            </div>-->
-        <!--                                            <img src="/web/image/website.s_picture_default_image" class="ic-project-img rounded mb-3" alt="Irthalotrujja"/>-->
-        <!--                                            <h5 class="fw-bold ic-project-title">Irthalotrujja</h5>-->
-        <!--                                            <div class="mb-3">-->
-        <!--                                                <span class="ic-tag">UI/UX</span><span class="ic-tag">Education</span><span class="ic-tag">Website</span>-->
-        <!--                                            </div>-->
-        <!--                                            <p class="text-muted small mb-3">Digital platform for educational and cultural content.</p>-->
-        <!--                                            <a href="https://www.irthalotrujjah.com/" target="_blank" class="ic-project-link">Learn More →</a>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="text-center mt-5 ic-dots">-->
-        <!--                                    <span class="ic-dot"></span>-->
-        <!--                                    <span class="ic-dot active"></span>-->
-        <!--                                    <span class="ic-dot"></span>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </section>-->
-
-        <!--                        &lt;!&ndash; Image 4: CTA and Testimonial &ndash;&gt;-->
-        <!--                        <section class="ic-cta-testimonial-section pb-5">-->
-        <!--                            <div class="container">-->
-        <!--                                &lt;!&ndash; Banner Section &ndash;&gt;-->
-        <!--                                <div class="ic-cta-banner d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">-->
-        <!--                                    <div class="text-center text-md-start mb-4 mb-md-0">-->
-        <!--                                        <h2 class="ic-title-main mb-2">Build faster solutions with our AI technology</h2>-->
-        <!--                                        <p class="text-muted mb-0">Each project we undertake is designed for measurable outcomes,<br class="d-none d-md-block"/> performance, efficiency, and future readiness.</p>-->
-        <!--                                    </div>-->
-        <!--                                    <a href="/ai-expert" class="ic-btn-orange">See Our AI Services</a>-->
-        <!--                                </div>-->
-
-        <!--                                &lt;!&ndash; Testimonial Section &ndash;&gt;-->
-        <!--                                <div class="text-center pt-5 mb-5">-->
-        <!--                                    <span class="ic-title-small">What Our Clients Say</span>-->
-        <!--                                    <h2 class="ic-title-main h1">Real Results. Real Feedback.</h2>-->
-        <!--                                </div>-->
-        <!--                                <div id="icTestimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">-->
-        <!--                                    <div class="carousel-inner">-->
-        <!--                                        <div class="carousel-item">-->
-        <!--                                            <div class="ic-testimonial-card">-->
-        <!--                                                <h4 class="ic-testimonial-title">Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                                <p class="text-muted lead mb-4">The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                                <div class="fw-bold text-dark">Product Manager</div>-->
-        <!--                                                <div class="text-muted small">SaaS Company</div>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                        <div class="carousel-item active">-->
-        <!--                                            <div class="ic-testimonial-card active">-->
-        <!--                                                <h4 class="ic-testimonial-title">Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                                <p class="text-muted lead mb-4">The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                                <div class="fw-bold text-dark">Product Manager</div>-->
-        <!--                                                <div class="text-muted small">SaaS Company</div>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                        <div class="carousel-item">-->
-        <!--                                            <div class="ic-testimonial-card">-->
-        <!--                                                <h4 class="ic-testimonial-title">Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                                <p class="text-muted lead mb-4">The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                                <div class="fw-bold text-dark">Product Manager</div>-->
-        <!--                                                <div class="text-muted small">SaaS Company</div>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="carousel-indicators ic-carousel-indicators">-->
-        <!--                                        <button type="button" data-bs-target="#icTestimonialsCarousel" data-bs-slide-to="0"></button>-->
-        <!--                                        <button type="button" data-bs-target="#icTestimonialsCarousel" data-bs-slide-to="1" class="active" aria-current="true"></button>-->
-        <!--                                        <button type="button" data-bs-target="#icTestimonialsCarousel" data-bs-slide-to="2"></button>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </section>-->
-
-        <!--                    </div>-->
-        <!--                </t>-->
-        <!--            </t>-->
-        <!--        </field>-->
-        <!--    </record>-->
-        <!--    <record id="menu_our_work" model="website.menu">-->
-        <!--        <field name="name">Our Work</field>-->
-        <!--        <field name="url">/our-work</field>-->
-        <!--        <field name="page_id" ref="website_ext.our_work"/>-->
-        <!--        <field name="parent_id" ref="website.main_menu"/>-->
-        <!--        <field name="sequence" type="int">60</field>-->
-        <!--    </record>-->
-        <!--</odoo>-->
-        <!--<?xml version="1.0" encoding="utf-8"?>-->
-        <!--<odoo>-->
-        <!--    <record id="our_work" model="website.page">-->
-        <!--        <field name="name">our_work</field>-->
-        <!--        <field name="type">qweb</field>-->
-        <!--        <field name="url">/our-work</field>-->
-        <!--        <field name="website_indexed" eval="False"/>-->
-        <!--        <field name="is_published">True</field>-->
-        <!--        <field name="key">website_ext.our_work</field>-->
-        <!--        <field name="arch" type="xml">-->
-        <!--            <t name="our_work" t-name="website_ext.our_work">-->
-        <!--                <t t-call="website.layout">-->
-        <!--                    <t t-call="website_ext.portal_side_contact_us"/>-->
-        <!--                    &lt;!&ndash; Section 1: Hero & Intro &ndash;&gt;-->
-        <!--                    <section class="our-work-hero">-->
-        <!--                        <div class="container">-->
-        <!--                            <h1 class="our-work-hero-title">Real Results Through Strategic Innovation</h1>-->
-        <!--                            <p class="our-work-hero-subtitle">At InterCraft, our work reflects real impact – from system modernization to AI-driven solutions that accelerate growth and streamline operations.</p>-->
-        <!--                            <div class="our-work-gallery row g-4">-->
-        <!--                                <div class="col-md-4">-->
-        <!--                                    <div class="our-work-gallery-item">-->
-        <!--                                        <img src="/website_ext/static/src/images/who-we-are-section/ai.png" alt="AI &amp; Data Innovation"/>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-md-4">-->
-        <!--                                    <div class="our-work-gallery-item">-->
-        <!--                                        <img src="/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg" alt="Innovation"/>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-md-4">-->
-        <!--                                    <div class="our-work-gallery-item">-->
-        <!--                                        <img src="/website_ext/static/src/images/who-we-are-section/ai.png" alt="Guide AI"/>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                            <span class="our-work-label">Our Work</span>-->
-        <!--                            <h2 class="our-work-section-title">What We Build</h2>-->
-        <!--                        </div>-->
-        <!--                    </section>-->
-        <!--                    &lt;!&ndash; Section 2: What We Build &ndash;&gt;-->
-        <!--                    <section class="our-work-what-we-build">-->
-        <!--                        <div class="container">-->
-        <!--                            <div class="row g-4">-->
-        <!--                                <div class="col-md-4">-->
-        <!--                                    <div class="our-work-card">-->
-        <!--                                        <div class="our-work-card-icon"><i class="fa fa-bolt"></i></div>-->
-        <!--                                        <h3>AI Portals &amp; Intelligent Systems</h3>-->
-        <!--                                        <p>Harness the power of artificial intelligence to transform your business operations. We create intelligent systems that learn, adapt, and deliver exceptional user experiences through cutting-edge AI technology.</p>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-md-8">-->
-        <!--                                    <div class="our-work-card">-->
-        <!--                                        <div class="our-work-card-icon"><i class="fa fa-bullseye"></i></div>-->
-        <!--                                        <h3>Project Management &amp; Delivery</h3>-->
-        <!--                                        <p>Navigate complex projects with confidence. Our agile approach ensures timely delivery, transparent communication, and seamless execution from concept to launch, while fostering collaboration to deliver value through continuous improvement, strategic alignment, and results that scale with your business.</p>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-md-8">-->
-        <!--                                    <div class="our-work-card">-->
-        <!--                                        <div class="our-work-card-icon"><i class="fa fa-globe"></i></div>-->
-        <!--                                        <h3>Web Development</h3>-->
-        <!--                                        <p>Build robust, scalable web applications with modern technologies. From responsive websites to complex web platforms, we deliver high-performance solutions tailored to your business needs. Our focus on clean architecture, security, and usability ensures reliable and future-ready products.</p>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="col-md-4">-->
-        <!--                                    <div class="our-work-card">-->
-        <!--                                        <div class="our-work-card-icon"><i class="fa fa-paint-brush"></i></div>-->
-        <!--                                        <h3>UI/UX Design</h3>-->
-        <!--                                        <p>Craft beautiful, intuitive interfaces that users love. Our design process combines user research, modern aesthetics, and usability principles to create engaging digital experiences that drive results.</p>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </section>-->
-        <!--                    &lt;!&ndash; Section 3: Recent Projects &ndash;&gt;-->
-        <!--                    <section class="our-work-projects">-->
-        <!--                        <div class="container">-->
-        <!--                            <h2 class="our-work-projects-title">Our Recent Projects</h2>-->
-        <!--                            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">-->
-        <!--                                <div class="carousel-inner">-->
-        <!--                                    <div class="carousel-item active">-->
-        <!--                                        <div class="row g-4">-->
-        <!--                                            <div class="col-md-4">-->
-        <!--                                                <div class="our-work-project-card">-->
-        <!--                                                    <div class="project-card-header">-->
-        <!--                                                        <span class="project-category-tag">AI PORTAL</span>-->
-        <!--                                                        <img src="/website_ext/static/src/images/services-section/ai-expert/chat-ai.png" alt="Aseyl AI" class="project-logo"/>-->
-        <!--                                                    </div>-->
-        <!--                                                    <img src="/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg" alt="Aseyl AI Platform" class="project-image"/>-->
-        <!--                                                    <div class="project-card-body">-->
-        <!--                                                        <h3 class="project-title">Aseyl AI Platform</h3>-->
-        <!--                                                        <div class="project-tags">-->
-        <!--                                                            <span class="project-tag">UI/UX</span>-->
-        <!--                                                            <span class="project-tag">ERP</span>-->
-        <!--                                                            <span class="project-tag">Portal</span>-->
-        <!--                                                        </div>-->
-        <!--                                                        <p class="project-description">Map out your product's vision, strategic objectives, and development.</p>-->
-        <!--                                                        <a href="#" class="project-link">Learn More →</a>-->
-        <!--                                                    </div>-->
-        <!--                                                </div>-->
-        <!--                                            </div>-->
-        <!--                                            <div class="col-md-4">-->
-        <!--                                                <div class="our-work-project-card active">-->
-        <!--                                                    <div class="project-card-header">-->
-        <!--                                                        <span class="project-category-tag">DASHBOARD</span>-->
-        <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png" alt="Al Faisal University" class="project-logo"/>-->
-        <!--                                                    </div>-->
-        <!--                                                    <img src="/website_ext/static/src/images/bg_image.png" alt="IT Helpdesk Portal" class="project-image"/>-->
-        <!--                                                    <div class="project-card-body">-->
-        <!--                                                        <h3 class="project-title">IT Helpdesk Portal</h3>-->
-        <!--                                                        <div class="project-tags">-->
-        <!--                                                            <span class="project-tag">UI/UX</span>-->
-        <!--                                                            <span class="project-tag">Education</span>-->
-        <!--                                                            <span class="project-tag">Portal</span>-->
-        <!--                                                        </div>-->
-        <!--                                                        <p class="project-description">Comprehensive helpdesk solution for streamlined IT support and management.</p>-->
-        <!--                                                        <a href="https://eforms.alfaisal.edu/login" target="_blank" class="project-link">Learn More →</a>-->
-        <!--                                                    </div>-->
-        <!--                                                </div>-->
-        <!--                                            </div>-->
-        <!--                                            <div class="col-md-4">-->
-        <!--                                                <div class="our-work-project-card">-->
-        <!--                                                    <div class="project-card-header">-->
-        <!--                                                        <span class="project-category-tag">WEBSITE</span>-->
-        <!--                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png" alt="Irthalotrujja" class="project-logo"/>-->
-        <!--                                                    </div>-->
-        <!--                                                    <img src="/website_ext/static/src/images/bg_image.png" alt="Irthalotrujja" class="project-image"/>-->
-        <!--                                                    <div class="project-card-body">-->
-        <!--                                                        <h3 class="project-title">Irthalotrujja</h3>-->
-        <!--                                                        <div class="project-tags">-->
-        <!--                                                            <span class="project-tag">UI/UX</span>-->
-        <!--                                                            <span class="project-tag">Education</span>-->
-        <!--                                                            <span class="project-tag">Website</span>-->
-        <!--                                                        </div>-->
-        <!--                                                        <p class="project-description">Digital platform for educational and cultural content.</p>-->
-        <!--                                                        <a href="https://www.irthalotrujjah.com/" target="_blank" class="project-link">Learn More →</a>-->
-        <!--                                                    </div>-->
-        <!--                                                </div>-->
-        <!--                                            </div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="carousel-indicators">-->
-        <!--                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>-->
-        <!--                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>-->
-        <!--                                    <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"></button>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </section>-->
-        <!--                    &lt;!&ndash; Section 4a: CTA Banner &ndash;&gt;-->
-        <!--                    <section class="our-work-cta">-->
-        <!--                        <div class="container">-->
-        <!--                            <div class="our-work-cta-banner rounded-4">-->
-        <!--                                <div class="row align-items-center">-->
-        <!--                                    <div class="col-lg-8">-->
-        <!--                                        <h3>Build faster solutions with our AI technology</h3>-->
-        <!--                                        <p>Each project we undertake is designed for measurable outcomes, performance, efficiency, and future readiness.</p>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="col-lg-4 text-lg-end">-->
-        <!--                                        <a href="/ai-expert" class="btn our-work-cta-btn">See Our AI Services</a>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </section>-->
-        <!--                    &lt;!&ndash; Section 4b: Testimonials &ndash;&gt;-->
-        <!--                    <section class="our-work-testimonials">-->
-        <!--                        <div class="container">-->
-        <!--                            <span class="our-work-label">What Our Clients Say</span>-->
-        <!--                            <h2>Real Results. Real Feedback.</h2>-->
-        <!--                            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">-->
-        <!--                                <div class="carousel-inner">-->
-        <!--                                    <div class="carousel-item">-->
-        <!--                                        <div class="our-work-testimonial-card">-->
-        <!--                                            <h4>Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                            <p>The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                            <div class="our-work-testimonial-author">Product Manager</div>-->
-        <!--                                            <div class="our-work-testimonial-company">SaaS Company</div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="carousel-item active">-->
-        <!--                                        <div class="our-work-testimonial-card active">-->
-        <!--                                            <h4>Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                            <p>The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                            <div class="our-work-testimonial-author">Product Manager</div>-->
-        <!--                                            <div class="our-work-testimonial-company">SaaS Company</div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                    <div class="carousel-item">-->
-        <!--                                        <div class="our-work-testimonial-card">-->
-        <!--                                            <h4>Exceptional AI Expertise and Smooth Execution</h4>-->
-        <!--                                            <p>The team understood our requirements quickly and delivered an AI-powered solution that streamlined our operations. Communication was clear, timelines were met, and the results exceeded expectations.</p>-->
-        <!--                                            <div class="our-work-testimonial-author">Product Manager</div>-->
-        <!--                                            <div class="our-work-testimonial-company">SaaS Company</div>-->
-        <!--                                        </div>-->
-        <!--                                    </div>-->
-        <!--                                </div>-->
-        <!--                                <div class="carousel-indicators">-->
-        <!--                                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0"></button>-->
-        <!--                                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1" class="active" aria-current="true"></button>-->
-        <!--                                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>-->
-        <!--                                </div>-->
-        <!--                            </div>-->
-        <!--                        </div>-->
-        <!--                    </section>-->
-        <!--                </t>-->
-        <!--            </t>-->
-        <!--        </field>-->
-        <!--    </record>-->
-        <!--    <record id="menu_our_work" model="website.menu">-->
-        <!--        <field name="name">our_work</field>-->
-        <!--        <field name="url">/our-work</field>-->
-        <!--        <field name="page_id" ref="website_ext.our_work"/>-->
-        <!--        <field name="parent_id" ref="website.main_menu"/>-->
-        <!--        <field name="sequence" type="int">60</field>-->
-        <!--    </record>-->
-        <!--</odoo>-->
