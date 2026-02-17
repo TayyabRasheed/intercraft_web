@@ -5,18 +5,77 @@
             <header>
                 <div class="top-bar">
                     <div class="container d-flex justify-content-between align-items-center">
-                        <div class="top-bar-social">
-                            <a href="https://www.instagram.com/intercraftsol/" target="_blank">
-                                <i class="fa fa-instagram"></i>
+                        <div class="top-bar-social" style="color:blue">
+                            <!--                            <a href="https://www.instagram.com/intercraftsol/" target="_blank">-->
+                            <!--                                <i class="fa fa-instagram"></i>-->
+                            <!--                            </a>-->
+                            <!--                            <a href="https://www.linkedin.com/company/intercraftsol" target="_blank">-->
+                            <!--                                <i class="fa fa-linkedin"></i>-->
+                            <!--                            </a>-->
+                            <!--                            <a href="https://www.youtube.com/@intercraft-sol" target="_blank">-->
+                            <!--                                <i class="fa fa-youtube-play"></i>-->
+                            <!--                            </a>-->
+                            <!--                            <a href="https://www.facebook.com/Intercraftsol/" target="_blank">-->
+                            <!--                                <i class="fa fa-facebook"></i>-->
+                            <!--                            </a>-->
+                            <a href="https://www.linkedin.com/company/intercraftsol" target="_blank"
+                               aria-label="LinkedIn" style="color:#0077B5;">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="18"
+                                        height="18"
+                                        viewBox="0 0 24 24"
+                                        fill="#0077B5"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    />
+                                    <rect width="4" height="12" x="2" y="9"/>
+                                    <circle cx="4" cy="4" r="2"/>
+                                </svg>
                             </a>
-                            <a href="https://www.linkedin.com/company/intercraftsol" target="_blank">
-                                <i class="fa fa-linkedin"></i>
+                            <a href="https://www.instagram.com/intercraftsol/" aria-label="Instagram"
+                               target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22"
+                                     viewBox="0 0 24 24"
+                                     fill="none" stroke="#E1306C" stroke-width="2"
+                                     stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
                             </a>
-                            <a href="https://www.youtube.com/@intercraft-sol" target="_blank">
-                                <i class="fa fa-youtube-play"></i>
+                            <a href="https://www.facebook.com/Intercraftsol/" aria-label="Facebook"
+                               target="_blank"
+                               style="color:#1877F2">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="18"
+                                        height="18"
+                                        viewBox="0 0 24 24"
+                                        fill="#1877F2"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                >
+                                    <path
+                                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                    />
+                                </svg>
                             </a>
-                            <a href="https://www.facebook.com/Intercraftsol/" target="_blank">
-                                <i class="fa fa-facebook"></i>
+                            <a href="https://www.youtube.com/@intercraft-sol" aria-label="YouTube"
+                               target="_blank"
+                               rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="22"
+                                     viewBox="0 0 24 24"
+                                     fill="#FF0000">
+                                    <path d="M23.498 6.186a2.99 2.99 0 0 0-2.106-2.113C19.392 3.5 12 3.5 12 3.5s-7.392 0-9.392.573a2.99 2.99 0 0 0-2.106 2.113C0 8.215 0 12 0 12s0 3.785.502 5.814a2.99 2.99 0 0 0 2.106 2.113C4.608 20.5 12 20.5 12 20.5s7.392 0 9.392-.573a2.99 2.99 0 0 0 2.106-2.113C24 15.785 24 12 24 12s0-3.785-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                                </svg>
                             </a>
                         </div>
                         <div class="top-bar-contact">
@@ -52,7 +111,7 @@
                                     <div class="dropdown-menu mega-menu">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-8">
+                                                <div class="col-lg-12">
                                                     <div class="mega-menu-section">
 
                                                         <div class="row">
@@ -317,122 +376,122 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <div class="mega-menu-section">
-                                                        <h6 class="mega-menu-title">Stay Connected</h6>
+                                                <!--                                                <div class="col-lg-4">-->
+                                                <!--                                                    <div class="mega-menu-section">-->
+                                                <!--                                                        <h6 class="mega-menu-title">Stay Connected</h6>-->
 
 
-                                                        <a href="mailto:info@intercraftsol.com" target="_blank"
-                                                           class="mega-menu-item">
-                                                            <div class="mega-menu-icon">
-                                                                <!-- Email Icon -->
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                     height="20"
-                                                                     viewBox="0 0 24 24" fill="none"
-                                                                     stroke="currentColor"
-                                                                     stroke-width="2" stroke-linecap="round"
-                                                                     stroke-linejoin="round">
-                                                                    <rect x="3" y="5" width="18" height="14" rx="2"
-                                                                          ry="2"/>
-                                                                    <polyline points="3 7 12 13 21 7"/>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">info@intercraftsol.com
-                                                                </span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="tel:+15123555400" class="mega-menu-item"
-                                                           target="_blank">
-                                                            <div class="mega-menu-icon">
-                                                                <!--                                                            <i class="fa-solid fa-phone"></i>-->
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                     height="20"
-                                                                     viewBox="0 0 24 24" fill="none"
-                                                                     stroke="currentColor"
-                                                                     stroke-width="2" stroke-linecap="round"
-                                                                     stroke-linejoin="round">
-                                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">+1 512-355-5400</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="https://wa.me/923369237827" class="mega-menu-item"
-                                                           target="_blank">
-                                                            <div class="mega-menu-icon">
-                                                                <!-- WhatsApp Icon using Font Awesome -->
-                                                                <i class="fa fa-whatsapp" style="font-size: 20px;"></i>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">+92 336 9237827</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="https://www.linkedin.com/company/intercraftsol"
-                                                           target="_blank"
-                                                           class="mega-menu-item">
-                                                            <div class="mega-menu-icon">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                     height="20" viewBox="0 0 24 24" fill="none"
-                                                                     stroke="currentColor" stroke-width="2"
-                                                                     stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                                                    <rect x="2" y="9" width="4" height="12"/>
-                                                                    <circle cx="4" cy="4" r="2"/>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">Linkedin</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="https://www.facebook.com/Intercraftsol/"
-                                                           class="mega-menu-item"
-                                                           target="_blank">
-                                                            <div class="mega-menu-icon">
-                                                                <i class="fa fa-facebook" style="font-size: 20px;"></i>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">Facebook</span>
-                                                            </div>
-                                                        </a>
+                                                <!--                                                        <a href="mailto:info@intercraftsol.com" target="_blank"-->
+                                                <!--                                                           class="mega-menu-item">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                &lt;!&ndash; Email Icon &ndash;&gt;-->
+                                                <!--                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
+                                                <!--                                                                     height="20"-->
+                                                <!--                                                                     viewBox="0 0 24 24" fill="none"-->
+                                                <!--                                                                     stroke="currentColor"-->
+                                                <!--                                                                     stroke-width="2" stroke-linecap="round"-->
+                                                <!--                                                                     stroke-linejoin="round">-->
+                                                <!--                                                                    <rect x="3" y="5" width="18" height="14" rx="2"-->
+                                                <!--                                                                          ry="2"/>-->
+                                                <!--                                                                    <polyline points="3 7 12 13 21 7"/>-->
+                                                <!--                                                                </svg>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">info@intercraftsol.com-->
+                                                <!--                                                                </span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
+                                                <!--                                                        <a href="tel:+15123555400" class="mega-menu-item"-->
+                                                <!--                                                           target="_blank">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                &lt;!&ndash;                                                            <i class="fa-solid fa-phone"></i>&ndash;&gt;-->
+                                                <!--                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
+                                                <!--                                                                     height="20"-->
+                                                <!--                                                                     viewBox="0 0 24 24" fill="none"-->
+                                                <!--                                                                     stroke="currentColor"-->
+                                                <!--                                                                     stroke-width="2" stroke-linecap="round"-->
+                                                <!--                                                                     stroke-linejoin="round">-->
+                                                <!--                                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>-->
+                                                <!--                                                                </svg>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">+1 512-355-5400</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
+                                                <!--                                                        <a href="https://wa.me/923369237827" class="mega-menu-item"-->
+                                                <!--                                                           target="_blank">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                &lt;!&ndash; WhatsApp Icon using Font Awesome &ndash;&gt;-->
+                                                <!--                                                                <i class="fa fa-whatsapp" style="font-size: 20px;"></i>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">+92 336 9237827</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
+                                                <!--                                                        <a href="https://www.linkedin.com/company/intercraftsol"-->
+                                                <!--                                                           target="_blank"-->
+                                                <!--                                                           class="mega-menu-item">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
+                                                <!--                                                                     height="20" viewBox="0 0 24 24" fill="none"-->
+                                                <!--                                                                     stroke="currentColor" stroke-width="2"-->
+                                                <!--                                                                     stroke-linecap="round" stroke-linejoin="round">-->
+                                                <!--                                                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>-->
+                                                <!--                                                                    <rect x="2" y="9" width="4" height="12"/>-->
+                                                <!--                                                                    <circle cx="4" cy="4" r="2"/>-->
+                                                <!--                                                                </svg>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">Linkedin</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
+                                                <!--                                                        <a href="https://www.facebook.com/Intercraftsol/"-->
+                                                <!--                                                           class="mega-menu-item"-->
+                                                <!--                                                           target="_blank">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                <i class="fa fa-facebook" style="font-size: 20px;"></i>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">Facebook</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
 
-                                                        <a href="https://www.instagram.com/intercraftsol/"
-                                                           class="mega-menu-item"
-                                                           target="_blank">
-                                                            <div class="mega-menu-icon">
-                                                                <i class="fa fa-instagram" style="font-size: 20px;"></i>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">Instagram</span>
-                                                            </div>
-                                                        </a>
-                                                        <a href="https://www.youtube.com/@intercraft-sol"
-                                                           target="_blank"
-                                                           class="mega-menu-item">
-                                                            <div class="mega-menu-icon">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
-                                                                     height="20" viewBox="0 0 24 24" fill="none"
-                                                                     stroke="currentColor" stroke-width="2"
-                                                                     stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>
-                                                                    <polygon points="10 15 15 12 10 9 10 15"/>
-                                                                </svg>
-                                                            </div>
-                                                            <div class="mega-menu-content">
-                                                                <span class="mega-menu-label">Youtube</span>
-                                                            </div>
-                                                        </a>
+                                                <!--                                                        <a href="https://www.instagram.com/intercraftsol/"-->
+                                                <!--                                                           class="mega-menu-item"-->
+                                                <!--                                                           target="_blank">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                <i class="fa fa-instagram" style="font-size: 20px;"></i>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">Instagram</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
+                                                <!--                                                        <a href="https://www.youtube.com/@intercraft-sol"-->
+                                                <!--                                                           target="_blank"-->
+                                                <!--                                                           class="mega-menu-item">-->
+                                                <!--                                                            <div class="mega-menu-icon">-->
+                                                <!--                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"-->
+                                                <!--                                                                     height="20" viewBox="0 0 24 24" fill="none"-->
+                                                <!--                                                                     stroke="currentColor" stroke-width="2"-->
+                                                <!--                                                                     stroke-linecap="round" stroke-linejoin="round">-->
+                                                <!--                                                                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-2C18.88 4 12 4 12 4s-6.88 0-8.59.42a2.78 2.78 0 0 0-1.95 2A29.94 29.94 0 0 0 1 12a29.94 29.94 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 2C5.12 20 12 20 12 20s6.88 0 8.59-.42a2.78 2.78 0 0 0 1.95-2A29.94 29.94 0 0 0 23 12a29.94 29.94 0 0 0-.46-5.58z"/>-->
+                                                <!--                                                                    <polygon points="10 15 15 12 10 9 10 15"/>-->
+                                                <!--                                                                </svg>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                            <div class="mega-menu-content">-->
+                                                <!--                                                                <span class="mega-menu-label">Youtube</span>-->
+                                                <!--                                                            </div>-->
+                                                <!--                                                        </a>-->
 
 
-                                                        <!--                                                    <div class="events-section">-->
-                                                        <!--                                                        <h6 class="events-title">Events</h6>-->
-                                                        <!--                                                        <p class="events-description">Receive updates on the latest-->
-                                                        <!--                                                            events or new features.-->
-                                                        <!--                                                        </p>-->
-                                                        <!--                                                    </div>-->
-                                                    </div>
-                                                </div>
+                                                <!--                                                        &lt;!&ndash;                                                    <div class="events-section">&ndash;&gt;-->
+                                                <!--                                                        &lt;!&ndash;                                                        <h6 class="events-title">Events</h6>&ndash;&gt;-->
+                                                <!--                                                        &lt;!&ndash;                                                        <p class="events-description">Receive updates on the latest&ndash;&gt;-->
+                                                <!--                                                        &lt;!&ndash;                                                            events or new features.&ndash;&gt;-->
+                                                <!--                                                        &lt;!&ndash;                                                        </p>&ndash;&gt;-->
+                                                <!--                                                        &lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                                <!--                                                    </div>-->
+                                                <!--                                                </div>-->
                                             </div>
                                         </div>
                                     </div>
