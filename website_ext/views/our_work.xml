@@ -45,8 +45,10 @@
 
                         <!-- Section 2: What We Build -->
                         <section class="ic-build-section">
-                            <div class="ic-pattern-top-right"></div>
-                            <div class="ic-pattern-bottom-left"></div>
+                            <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
                             <div class="container">
                                 <div class="text-center mb-5">
                                     <span class="ic-section-label">Our Work</span>
