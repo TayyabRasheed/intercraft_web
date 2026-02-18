@@ -306,10 +306,10 @@
                                                 Have an idea or need help upgrading your digital product? Let's talk and
                                                 turn your vision into reality.
                                             </p>
-                                            <a href="/contact-us" class="ic-btn-build-outline mb-2" style=" position: relative; z-index: 2;">
-                                                <i class="fa fa-comments-o " aria-hidden="true"/>
-                                                Let's Talk
-                                            </a>
+<!--                                            <a href="/contact-us" class="ic-btn-build-outline mb-2" style=" position: relative; z-index: 2;">-->
+<!--                                                <i class="fa fa-comments-o " aria-hidden="true"/>-->
+<!--                                                Let's Talk-->
+<!--                                            </a>-->
                                             <a href="/contact-us" class="ic-btn-build-solid mb-2" style=" position: relative; z-index: 2;">Book a Free Consultation
                                             </a>
                                         </div>
