@@ -44,12 +44,13 @@
                             <field name="description" placeholder="Short description for card"/>
                             <field name="url" placeholder="/page or https://..."/>
                             <field name="tag_ids" widget="many2many_tags"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
                         </group>
                         <group>
                             <field name="image" widget="image" options="{'size': [0, 0]}"/>
                             <field name="logo" widget="image" options="{'size': [0, 0]}"/>
-                            <field name="sequence"/>
-                            <field name="active"/>
+
                         </group>
                     </group>
                 </sheet>
