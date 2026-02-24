@@ -269,13 +269,13 @@
                                         </t>
                                     </div>
                                     <div class="row g-4 align-items-center justify-content-center">
-                                        <div class="col-md-3 d-none d-lg-block">
+                                        <div class="">
                                             <div class="ic-testimonial-card faded ic-testi-slot-left">
-                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>
-                                                <p class="small ic-testi-slot-quote"></p>
+<!--                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>-->
+<!--                                                <p class="small ic-testi-slot-quote"></p>-->
                                             </div>
                                         </div>
-                                        <div class="col-lg-6 col-md-10">
+                                        <div class="col-lg-10 col-md-10">
                                             <div class="ic-testimonial-card active ic-testi-slot-center">
                                                 <h4 class="ic-testi-title ic-testi-slot-title"></h4>
                                                 <p class="ic-testi-text ic-testi-slot-quote"></p>
@@ -285,10 +285,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 d-none d-lg-block">
+                                        <div class="">
                                             <div class="ic-testimonial-card faded ic-testi-slot-right">
-                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>
-                                                <p class="small ic-testi-slot-quote"></p>
+<!--                                                <h5 class="ic-testi-title ic-testi-slot-title"></h5>-->
+<!--                                                <p class="small ic-testi-slot-quote"></p>-->
                                             </div>
                                         </div>
                                     </div>
