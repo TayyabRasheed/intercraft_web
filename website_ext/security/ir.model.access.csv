@@ -5,3 +5,9 @@ access_team_tag_user,team.tag.user,model_website_team_tag,base.group_user,1,1,1,
 access_team_tag_public,team.tag.public,model_website_team_tag,,1,0,0,0
 access_event_image_user,website.event.image.user,model_website_event_image,base.group_user,1,1,1,1
 access_event_image_public,website.event.image.public,model_website_event_image,,1,0,0,0
+access_website_project_tag_user,website.project.tag.user,model_website_project_tag,base.group_user,1,1,1,1
+access_website_project_tag_public,website.project.tag.public,model_website_project_tag,,1,0,0,0
+access_website_project_user,website.project.user,model_website_project,base.group_user,1,1,1,1
+access_website_project_public,website.project.public,model_website_project,,1,0,0,0
+access_website_testimonial_user,website.testimonial.user,model_website_testimonial,base.group_user,1,1,1,1
+access_website_testimonial_public,website.testimonial.public,model_website_testimonial,,1,0,0,0

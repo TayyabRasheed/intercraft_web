@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Project Tag: Tree -->
+    <record id="project_tag_tree_view" model="ir.ui.view">
+        <field name="name">website.project.tag.tree</field>
+        <field name="model">website.project.tag</field>
+        <field name="arch" type="xml">
+            <tree string="Project Tags">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Project: Tree -->
+    <record id="website_project_tree_view" model="ir.ui.view">
+        <field name="name">website.project.tree</field>
+        <field name="model">website.project</field>
+        <field name="arch" type="xml">
+            <tree string="Projects" decoration-muted="active == False">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="title"/>
+                <field name="tag_ids" widget="many2many_tags"/>
+                <field name="url"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Project: Form -->
+    <record id="website_project_form_view" model="ir.ui.view">
+        <field name="name">website.project.form</field>
+        <field name="model">website.project</field>
+        <field name="arch" type="xml">
+            <form string="Project">
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <group>
+                        <group>
+                            <field name="name" placeholder="Internal name"/>
+                            <field name="title" placeholder="Display title (optional)"/>
+                            <field name="badge" placeholder="e.g. AI PORTAL, WEBSITE"/>
+                            <field name="badge_style" placeholder="ai, dashboard, website"/>
+                            <field name="description" placeholder="Short description for card"/>
+                            <field name="url" placeholder="/page or https://..."/>
+                            <field name="tag_ids" widget="many2many_tags"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="image" widget="image" options="{'size': [0, 0]}"/>
+                            <field name="logo" widget="image" options="{'size': [0, 0]}"/>
+
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Actions & Menu -->
+    <record id="project_tag_action" model="ir.actions.act_window">
+        <field name="name">Project Tags</field>
+        <field name="res_model">website.project.tag</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id="website_project_action" model="ir.actions.act_window">
+        <field name="name">Our Work Projects</field>
+        <field name="res_model">website.project</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add projects to show on the Our Work page.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_website_project_root"
+              name="Our Work"
+              parent="team_member_root_menu"
+              sequence="45"/>
+    <menuitem id="menu_website_project"
+              name="Projects"
+              parent="menu_website_project_root"
+              action="website_project_action"
+              sequence="10"/>
+    <menuitem id="menu_project_tag"
+              name="Tags"
+              parent="menu_website_project_root"
+              action="project_tag_action"
+              sequence="20"/>
+
+    <!-- Testimonials -->
+    <record id="website_testimonial_tree_view" model="ir.ui.view">
+        <field name="name">website.testimonial.tree</field>
+        <field name="model">website.testimonial</field>
+        <field name="arch" type="xml">
+            <tree string="Testimonials" decoration-muted="active == False">
+                <field name="sequence" widget="handle"/>
+                <field name="title"/>
+                <field name="author_name"/>
+                <field name="company_name"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="website_testimonial_form_view" model="ir.ui.view">
+        <field name="name">website.testimonial.form</field>
+        <field name="model">website.testimonial</field>
+        <field name="arch" type="xml">
+            <form string="Testimonial">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="title" placeholder="Headline (e.g. Exceptional AI Expertise...)"/>
+                            <field name="quote" placeholder="Full quote text"/>
+                            <field name="author_name"/>
+                            <field name="author_role" placeholder="e.g. Product Manager"/>
+                            <field name="company_name" placeholder="e.g. SaaS Company"/>
+                        </group>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="website_testimonial_action" model="ir.actions.act_window">
+        <field name="name">Testimonials</field>
+        <field name="res_model">website.testimonial</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add testimonials to show on the Our Work page.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_website_testimonial"
+              name="Testimonials"
+              parent="menu_website_project_root"
+              action="website_testimonial_action"
+              sequence="30"/>
+</odoo>

@@ -14,10 +14,11 @@
                         <link rel="stylesheet" type="text/css" href="/website_ext/static/src/css/people_culture.css"/>
                         <link rel="stylesheet" type="text/css"
                               href="/website_ext/static/src/css/people_culture_animation.css"/>
+                        <link rel="stylesheet" type="text/css" href="/website_ext/static/src/css/careers.css"/>
                         <script src="/website_ext/static/src/js/animation.js"></script>
                     </t>
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <section class="service-hero"
+                    <section class="service-hero career-hero"
                              style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/website_ext/static/src/images/career/career-bg.jpg') center/cover; height: 503px;">
                         <div class="container">
                             <div class="hero-content text-center">
@@ -168,6 +169,90 @@
                         </div>
                     </section>
 
+                    <!-- Benefits Section -->
+                    <section class="careers-benefits-section">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 benefits-content">
+                                    <h2 class="benefits-title">The Benefits Working at The Intercraft</h2>
+                                    <p class="benefits-intro">We recognize that compensation and benefits play a major
+                                        part in making sure that you feel you can focus on your work.
+                                    </p>
+                                    <p class="benefits-intro">We offer generous packages to make sure you feel respected
+                                        and appreciated as an employee.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="benefits-list">
+                                        <li class="benefit-item">
+                                            <span class="benefit-icon">
+                                                <i class="fa fa-users" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="benefit-text">
+                                                <h3 class="benefit-title">Lively Working Environment</h3>
+                                                <p class="benefit-desc">Work where energy, creativity, and collaboration
+                                                    thrive.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="benefit-item">
+                                            <span class="benefit-icon">
+                                                <i class="fa fa-star" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="benefit-text">
+                                                <h3 class="benefit-title">Performance Bonus</h3>
+                                                <p class="benefit-desc">Your hard work pays off—literally.</p>
+                                            </div>
+                                        </li>
+                                        <li class="benefit-item">
+                                            <span class="benefit-icon">
+                                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="benefit-text">
+                                                <h3 class="benefit-title">Health Insurance</h3>
+                                                <p class="benefit-desc">Comprehensive coverage for your peace of mind.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="benefit-item">
+                                            <span class="benefit-icon">
+                                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="benefit-text">
+                                                <h3 class="benefit-title">Continuous Learning</h3>
+                                                <p class="benefit-desc">Grow your skills with endless learning
+                                                    opportunities.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="benefit-item">
+                                            <span class="benefit-icon">
+                                                <i class="fa fa-child" aria-hidden="true"></i>
+                                            </span>
+                                            <div class="benefit-text">
+                                                <h3 class="benefit-title">Parental Leave</h3>
+                                                <p class="benefit-desc">Support that puts your family first.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="innovate innovate-career">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Let’s Get be Part of Our Team</h2>
+                                <p class="innovate-subtitle">
+                                    Let’s collaborate to turn your ideas into impactful digital solutions.
+                                </p>
+
+                                <a href="/career" class="ic-btn-build-solid mb-2"
+                                   style=" position: relative; z-index: 2;">See Open Positions
+                                </a>
+                            </div>
+                        </div>
+                    </section>
 
                 </t>
             </t>
