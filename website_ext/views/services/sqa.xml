@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sqa" model="website.page">
+        <field name="name">SQA</field>
+        <field name="type">qweb</field>
+        <field name="url">/sqa</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.sqa</field>
+        <field name="arch" type="xml">
+            <t name="SQA" t-name="website_ext.sqa">
+                <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
+                    <!-- Hero Section -->
+                    <section class="service-hero sqa-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">
+                                            Ensure Excellence with Expert SQA Solutions
+                                        </h1>
+                                        <p class="service-hero-subtitle">
+                                            killed QA professionals handle functional, automated, and performance
+                                            testing, integrating seamlessly into your process to deliver stable,
+                                            scalable, high-quality products.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Software Quality Assurance</span>
+                                        <h2 class="service-title-services">Reliable QA, Better Software</h2>
+                                        <p class="service-description-services">
+                                            Eliminate bugs, delays, and unreliable releases with our end-to-end
+                                            SQA services—including manual testing, automation, performance testing,
+                                            and QA consulting. Whether you're launching a new product or improving
+                                            an existing one, we align QA with your goals to boost reliability, user
+                                            satisfaction, and time to market.
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/sqa/sqa_about.png"
+                                                alt="AI Expert"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- AI Features Section -->
+                    <section class="ai-features">
+                        <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="ai-features-title">Optimize Quality, Accelerate Delivery</h2>
+                                <p class="ai-features-subtitle">
+                                    We provide comprehensive QA solutions tailored to your product and development
+                                    workflow. From manual and automated testing to performance validation,
+                                    our services ensure your software is reliable, secure, and user-ready.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/sp.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/coloured/sp1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Manual Testing</h3>
+                                        <p class="feature-description">
+                                            We uncover real-world issues with precision—covering functional, regression,
+                                            UI/UX, and exploratory testing across browsers and devices.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/gearalt.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/coloured/gearalt1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Automated Testing</h3>
+                                        <p class="feature-description">
+                                            Accelerate releases with automation tailored to your tech stack—using
+                                            Selenium, Cypress, Playwright, Appium, API automation, CI/CD integration,
+                                            and BDD frameworks.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/ar.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/coloured/ar1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Performance Testing</h3>
+                                        <p class="feature-description">
+                                            Ensure your systems remain fast, stable, and scalable under any
+                                            demand—through load testing, stress testing, spike testing, and response
+                                            time optimization.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/lock.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/coloured/lock1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Security Testing</h3>
+                                        <p class="feature-description">
+                                            Build trust by keeping your applications secure with OWASP compliance,
+                                            vulnerability scanning, API security, and penetration testing support.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/ey.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/sqa/coloured/ey1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">QA Strategy &amp; Consulting</h3>
+                                        <p class="feature-description">
+                                            We don’t just test—we embed quality into your product from day one with test
+                                            strategy, shift-left QA, Agile/DevOps practices, QA audits, and actionable
+                                            reporting.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Craft?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to craft your ideas into intelligent and innovative
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_sqa" model="website.menu">
+        <field name="name">sqa</field>
+        <field name="url">/sqa</field>
+        <field name="page_id" ref="website_ext.sqa"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

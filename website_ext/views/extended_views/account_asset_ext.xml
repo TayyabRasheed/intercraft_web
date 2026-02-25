@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="account_asset_form_inherit" model="ir.ui.view">
+        <field name="name">account.asset.form.inherit</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//div[hasclass('oe_title')]" position="before">
+               <widget name="web_ribbon" title="ALLOCATED" invisible="allocation_status != 'allocated'"/>
+           </xpath>
+              <xpath expr="//field[@name='model_id']" position="after">
+                    <field name="lot_no" class="o_input" force_save="1" required="state != 'model'"/>
+              </xpath>
+            <xpath expr="//page[@name='related_items']" position="after">
+                <page string="Allocation Info" name="allocation_info">
+                    <group>
+                        <group>
+                            <field name="allocation_status" string="Allocation Status"/>
+                            <field name="employee_id" required="allocation_status == 'allocated'" string="Allocated To"/>
+                            <field name="email" />
+                            <field name="department_to_id"/>
+                        </group>
+                        <group>
+                            <field name="allocation_date" string="Allocation Date" required="1"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+
+    <record id="view_account_asset_search_inherit" model="ir.ui.view">
+        <field name="name">account.asset.search.inherit</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_search"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group" position="inside">
+                <filter string="Allocation Status" name="group_allocation_status" context="{'group_by': 'allocation_status'}"/>
+            </xpath>
+
+        </field>
+    </record>
+
+    <!--    List View-->
+    <record id="view_account_asset_tree_inherit" model="ir.ui.view">
+        <field name="name">account.asset.tree.inherit</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_tree"/>
+        <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='state']" position="after">
+                    <field name="allocation_status"/>
+                </xpath>
+
+        </field>
+    </record>
+
+</odoo>

@@ -5,7 +5,7 @@
         <xpath expr="//div[@t-field='job.job_details']" position="replace"/>
         <xpath expr="//div[@id='wrap']/nav" position="replace"/>
         <xpath expr="//div[@id='wrap']/h1" position="attributes">
-            <attribute name="style">margin-top: 80px;</attribute>
+            <attribute name="style">margin-top: 140px;</attribute>
         </xpath>
         <xpath expr="//div[contains(@class, 's_website_form_submit')]" position="attributes">
             <attribute name="class">col-12 s_website_form_submit mb64 text-end</attribute>
@@ -17,6 +17,41 @@
         </xpath>
         <xpath expr="//input[@name='linkedin_profile']/ancestor::div[contains(@class, 's_website_form_field')]"
                position="replace"/>
+         <xpath expr="//div[contains(@class, 'col-12 mb-0 py-2 s_website_form_field s_website_form_required')][last()]"
+               position="after">
+
+            <div class="col-12 mb-0 py-2 s_website_form_field"
+                 data-type="float" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label"
+                           style="width: 200px" for="current_salary">
+                        <span class="s_website_form_label_content">Current Salary</span>
+                    </label>
+                    <div class="col-sm">
+                        <input id="current_salary" type="number"
+                               class="form-control s_website_form_input"
+                               name="current_salary" min="0" step="any"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-0 py-2 s_website_form_field"
+                 data-type="float" data-name="Field">
+                <div class="row s_col_no_resize s_col_no_bgcolor">
+                    <label class="col-4 col-sm-auto s_website_form_label"
+                           style="width: 200px" for="salary_expected">
+                        <span class="s_website_form_label_content">Expected Salary</span>
+
+                        <span class="s_website_form_mark">*</span>
+                    </label>
+                    <div class="col-sm">
+                        <input id="salary_expected" type="number"
+                               class="form-control s_website_form_input"
+                               name="salary_expected" min="0" step="any"/>
+                    </div>
+                </div>
+            </div>
+
+        </xpath>
 
 
     </template>

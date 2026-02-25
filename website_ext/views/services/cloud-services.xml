@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="cloud-services" model="website.page">
+        <field name="name">Cloud Services</field>
+        <field name="type">qweb</field>
+        <field name="url">/cloud-services</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.cloud-services</field>
+        <field name="arch" type="xml">
+            <t name="Cloud Services" t-name="website_ext.cloud-services">
+                <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
+                    <!-- Hero Section -->
+                    <section class="service-hero cloud-hero">
+                        <div class="service-hero-bg"/>
+                        <div class="container">
+                            <div class="row align-items-center min-vh-100">
+                                <div class="col-lg-20">
+                                    <div class="service-hero-content">
+                                        <h1 class="service-hero-title">
+                                            Accelerate Innovation with Scalable Cloud Solutions
+                                        </h1>
+                                        <p class="service-hero-subtitle">
+                                            Secure and scalable cloud services built for modern business needs. From
+                                            architecture to deployment, we optimize performance, cut costs, and boost
+                                            agility across your infrastructure.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Service Details Section -->
+                    <section class="service-details">
+
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="service-content">
+                                        <span class="service-label">Cloud Infrastructure Services</span>
+                                        <h2 class="service-title-services">Cloud Solutions Built for Scale and Agility
+                                        </h2>
+                                        <p class="service-description-services">
+                                            In today’s digital-first world, scalable and secure cloud infrastructure is
+                                            critical to staying competitive. Yet many organizations struggle with
+                                            complex cloud environments and rising costs. Our Cloud Engineering services
+                                            simplify this journey—delivering customized, reliable, and cost-effective
+                                            solutions that support innovation, agility, and long-term growth.
+                                        </p>
+                                        <a href="/contact-us" class="service-cta-btn"
+                                        >Let's Connect
+                                        </a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="service-image">
+                                        <img
+                                                src="/website_ext/static/src/images/services-section/cloud/cloud_about.png"
+                                                alt="AI Expert"
+                                                class="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="ai-features">
+                        <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="ai-features-title">Modernize Infrastructure, Maximize Agility</h2>
+                                <p class="ai-features-subtitle">
+                                    We provide end-to-end cloud engineering services tailored to your business and
+                                    technical needs. From architecture design to deployment and optimization, we ensure
+                                    your cloud infrastructure is secure, high-performing, and built to scale.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/cloud.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/cloud1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Architecture Design</h3>
+                                        <p class="feature-description">
+                                            We design robust cloud architectures aligned with your business goals,
+                                            ensuring flexibility, security, and efficiency.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/arrow.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/arrow1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Migration</h3>
+                                        <p class="feature-description">
+                                            Smoothly transition from legacy infrastructure to the cloud with minimal
+                                            downtime and zero data loss.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/cloudlock.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/cloudlock1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Security &amp; Compliance</h3>
+                                        <p class="feature-description">
+                                            Implement best-in-class security practices and compliance measures to
+                                            protect your assets and maintain regulatory standards.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/gear.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/gear1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Optimization</h3>
+                                        <p class="feature-description">
+                                            Maximize performance and reduce costs with continuous monitoring, resource
+                                            right-sizing, and usage analytics.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/refresh.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/refresh1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">DevOps &amp; Automation</h3>
+                                        <p class="feature-description">
+                                            Streamline development and deployment through infrastructure automation and
+                                            CI/CD pipelines.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <div class="feature-card">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/clouds.svg"
+                                                    alt="icon"
+                                                    class="icon-default"
+                                            />
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/cloud/coloured/clouds1.svg"
+                                                    alt="icon"
+                                                    class="icon-colored"
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Multi-Cloud &amp; Hybrid Cloud Solutions</h3>
+                                        <p class="feature-description">
+                                            Design and manage flexible architectures that work across AWS, Azure, GCP,
+                                            or on-prem environments.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- Ready to Innovate Section -->
+                    <section class="innovate">
+                        <div class="container text-center">
+                            <div class="innovate-content">
+                                <h2 class="innovate-title">Ready to Craft?</h2>
+                                <p class="innovate-subtitle">
+                                    Let's collaborate to craft your ideas into intelligent and innovative
+                                    solutions.
+                                </p>
+                                <a href="/contact-us" class="get-started-btn">Get Started</a>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </t>
+        </field>
+    </record>
+    <record id="menu_cloud-services" model="website.menu">
+        <field name="name">cloud-services</field>
+        <field name="url">/cloud-services</field>
+        <field name="page_id" ref="website_ext.cloud-services"/>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence" type="int">60</field>
+    </record>
+</odoo>

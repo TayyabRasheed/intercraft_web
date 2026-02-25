@@ -3,20 +3,37 @@ from odoo.http import request
 from odoo import http
 
 
-class ElearningSnippet(http.Controller):
-    @http.route(['/careers/jobs'], type="json", auth="public", website=True, methods=['POST'])
-    def all_jobs(self):
-        jobs = request.env['hr.job'].search([('is_published', '=', 'True')])
+class CareerController(http.Controller):
+    @http.route(['/career'], type='http', auth="public", website=True, cache=300)
+    def career_page(self, **kwargs):
+        # 1. Fetch the Event Images from your model
+        culture_images = request.env['website.event.image'].sudo().search([
+            ('is_active', '=', True)
+        ], order='sequence, id')
 
-        unique_departments = {}
+        # 2. Your existing job logic
+        jobs = request.env['hr.job'].search([('is_published', '=', True)])
+        departments_dict = {}
         for job in jobs:
-            if job.department_id.id not in unique_departments:
-                unique_departments[job.department_id.id] = {
-                    'college_name': job.department_id.name,
-                    'url': f'jobs?department_id={job.department_id.id}',
-                    'department_image': job.department_id.image_department,
+            dept_id = job.department_id.id
+            if dept_id not in departments_dict:
+                departments_dict[dept_id] = {
+                    'name': job.department_id.name,
+                    'url': f'/jobs?department_id={dept_id}',
+                    'image': job.department_id.image_department,
+                    'job_count': 0
                 }
-        return {'academic_jobs': list(unique_departments.values())}
+            departments_dict[dept_id]['job_count'] += 1
+
+        # 3. Pass culture_images to the template
+        return request.render('website_ext.career', {
+            'job_departments': list(departments_dict.values()),
+            'culture_images': culture_images
+        })
+
+
+class ElearningSnippet(http.Controller):
+    pass
 
 class WebsiteHrRecruitmentExt(WebsiteHrRecruitment):
     @http.route([

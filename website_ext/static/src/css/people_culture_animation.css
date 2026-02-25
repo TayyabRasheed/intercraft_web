@@ -1,0 +1,198 @@
+/* ==========================================================================
+   PEOPLE & CULTURE SECTION
+   ========================================================================== */
+
+.people-culture-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #fcfcfc;
+    padding: 80px 0;
+}
+
+.culture-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.culture-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.culture-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   SVG WAVE ANIMATIONS (The Moving Lines)
+   ========================================================================== */
+
+.svg-container {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.culture-wave {
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+    transform-origin: center;
+    will-change: transform, stroke-dashoffset;
+}
+
+/* Line 1: Faster, tighter float */
+.culture-wave.line-1 {
+    animation:
+        drawWave 4s ease-out forwards,
+        floatWave1 10s ease-in-out infinite alternate;
+}
+
+/* Line 2: Slower, wider float */
+.culture-wave.line-2 {
+    animation:
+        drawWave 4s ease-out forwards,
+        floatWave2 15s ease-in-out infinite alternate;
+    animation-delay: 0.5s, 0s;
+}
+
+@keyframes drawWave {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes floatWave1 {
+    0% { transform: translate3d(-30px, -15px, 0) rotate(-1deg); }
+    100% { transform: translate3d(30px, 15px, 0) rotate(1deg); }
+}
+
+@keyframes floatWave2 {
+    0% { transform: translate3d(30px, 20px, 0) scaleX(1.05); }
+    100% { transform: translate3d(-30px, -20px, 0) scaleX(0.95); }
+}
+
+/* ==========================================================================
+   ANIMATION STAGE & SLIDER
+   ========================================================================== */
+
+.animation-stage {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Edge Mask: Fades out the left and right to hide the loop reset point */
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    perspective: 1000px;
+}
+
+.slider-track {
+    display: flex;
+    gap: 60px;
+    align-items: center; /* VITAL: Vertically centers Portrait & Landscape */
+    animation: slideLeft 100s linear infinite;
+    will-change: transform;
+    transform-style: preserve-3d;
+}
+
+.slider-container:hover .slider-track {
+    animation-play-state: paused;
+}
+
+/* ==========================================================================
+   SLIDE ITEMS (Portrait vs Landscape)
+   ========================================================================== */
+
+.slide-item {
+    flex-shrink: 0;
+    position: relative;
+    will-change: transform, opacity;
+    /* DO NOT add transitions here (JS handles it) */
+    transition: none !important;
+    transform-style: preserve-3d;
+}
+
+/* Custom Base Sizes */
+.slide-item.landscape { width: 400px; height: 280px; }
+.slide-item.portrait { width: 240px; height: 320px; }
+
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    /* Performance Fixes */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Clarity/Anti-Blur */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
+}
+
+/* Standard Infinite Loop Animation */
+@keyframes slideLeft {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .culture-header h2 { font-size: 2.5rem; }
+    .animation-stage { height: 450px; }
+    .slide-item.landscape { width: 320px; height: 220px; }
+    .slide-item.portrait { width: 200px; height: 260px; }
+}
+
+@media (max-width: 768px) {
+    .culture-header h2 { font-size: 2rem; }
+    .culture-header p { font-size: 1rem; padding: 0 20px; }
+    .animation-stage { height: 380px; }
+    .slide-item.landscape { width: 260px; height: 180px; }
+    .slide-item.portrait { width: 160px; height: 220px; }
+    .slider-track { gap: 30px; }
+}
+
+@media (max-width: 576px) {
+    .people-culture-section { padding: 40px 0; }
+    .animation-stage { height: 220px; }
+    .slide-item.landscape { width: 200px; height: 140px; }
+    .slide-item.portrait { width: 130px; height: 180px; }
+    .slider-track { gap: 15px; }
+    .img-card { border-width: 3px; }
+}

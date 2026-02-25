@@ -42,7 +42,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
     background: url("/website_ext/static/src/images/services-section/moodle-lms/moodle-lms.jpg") center / cover;
 }
-
+.blockchain-hero .service-hero-bg{
+     background: url("/website_ext/static/src/images/services-section/blockchain/blockchain.jpg") center / cover;
+}
 /* AI Expert Hero Background */
 .ai-hero {
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
@@ -51,7 +53,23 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .ai-hero .service-hero-bg {
     background: url("/website_ext/static/src/images/services-section/ai-expert/ai-bg-header.jpg") center / cover;
 }
+/* Cloud Hero Background */
+.cloud-hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
 
+.cloud-hero .service-hero-bg {
+    background: url("/website_ext/static/src/images/services-section/cloud/cloud_banner.jpg") center / cover;
+}
+
+/* Sqa Hero Background */
+.sqa-hero {
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.sqa-hero .service-hero-bg {
+    background: url("/website_ext/static/src/images/services-section/sqa/sqa_banner.jpg") center / cover;
+}
 /* ERP Solutions Hero Background */
 .erp-hero {
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
@@ -191,7 +209,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     padding: 80px 0;
     position: relative;
     overflow: hidden;
-    background-image: url(/website_ext/static/src/images/BG_image.png);
+    background-image: url(/website_ext/static/src/images/bg_image.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -227,7 +245,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     font-weight: 700;
     margin-bottom: 20px;
     color: #303030;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .section-subtitle {
@@ -359,7 +377,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     padding: 80px 0;
     position: relative;
     overflow: hidden;
-    background-image: url(/website_ext/static/src/images/BG_image.png);
+    background-image: url(/website_ext/static/src/images/bg_image.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -677,3 +695,13 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     }
 }
 
+
+@media (max-width: 768px) {
+    .hero-heading-career {
+        color: white !important;
+        font-size: 1.8rem !important;
+        font-weight: 700 !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+}

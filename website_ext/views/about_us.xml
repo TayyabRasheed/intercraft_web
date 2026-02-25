@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <record id="aboutus" model="website.page">
         <field name="name">About Us</field>
         <field name="type">qweb</field>
@@ -10,6 +11,7 @@
         <field name="arch" type="xml">
             <t name="About Us Page" t-name="website_ext.aboutus">
                 <t t-call="website.layout">
+                    <t t-call="website_ext.portal_side_contact_us"/>
                     <section class="service-hero">
                         <div class="service-hero-bg "
 
@@ -41,13 +43,14 @@
                                         Empowering Digital Growth Since 2016
                                     </h2>
                                     <p class="section-description">
-                                        We are a forward-thinking software company delivering web-based
-                                        solutions that simplify processes and enhance productivity.
-                                        Specializing in Artificial Intelligence, LMS, Odoo, Moodle, and mobile apps, we use
-                                        open-source technologies to build smart, scalable systems. Our
-                                        focus: simple, innovative, and unified digital experiences.
+                                        We are a forward-thinking software company delivering web and mobile-based
+                                        solutions that simplify processes and enhance productivity. Specializing in
+                                        Artificial Intelligence, Cloud Networks, DevOps, Web Applications, Odoo ERP,
+                                        Moodle LMS and Mobile Applications. We prefer open-source technologies to build
+                                        smart and scalable systems. Our focus is simple, innovative, and unified digital
+                                        experiences.
                                     </p>
-                                    <a href="/aboutus" class="learn-more-btn">Learn More</a>
+                                    <!--                                    <a href="/aboutus" class="learn-more-btn">Learn More</a>a-->
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="ai-image-container">
@@ -63,11 +66,13 @@
                     </section>
 
                     <!-- Partners Section with Automatic Carousel -->
+
+
                     <section class="partners">
                         <div class="container text-center">
                             <h3 class="partners-title">
-                                We partner with forward-thinking businesses to boost efficiency and<br/>drive
-                                digital transformation
+                                We partner with forward-thinking businesses to boost efficiency and drive
+                                digital transformation.
                             </h3>
                             <div
                                     id="partnersCarousel"
@@ -79,173 +84,228 @@
                                     <div class="carousel-item active">
                                         <div class="partners-logos">
                                             <div class="row">
-                                                <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
-                                                                alt="Partner 1"
-                                                                class="img-fluid partner-logo-default"
-                                                        />
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
-                                                                alt="Partner 1"
-                                                                class="img-fluid partner-logo-colored"
-                                                        />
-                                                    </div>
+                                                <!-- Partner 1 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://eforms.alfaisal.edu/login" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/alfaisal.png"
+                                                             alt="Alfaisal University Logo"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/alfaisal1.png"
+                                                             alt="Alfaisal University Logo Colored"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo2.png"
-                                                                alt="Partner 2"
-                                                                class="img-fluid partner-logo-default"
-                                                        />
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-2.png"
-                                                                alt="Partner 2"
-                                                                class="img-fluid partner-logo-colored"
-                                                        />
-                                                    </div>
+                                                <!-- Partner 2 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://bap.baseerat.academy/login" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
+                                                             alt="Baseerat Academy Logo"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
+                                                             alt="Baseerat Academy Logo Colored"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo3.png"
-                                                                alt="Partner 3"
-                                                                class="img-fluid partner-logo-default"
-                                                        />
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-3.png"
-                                                                alt="Partner 3"
-                                                                class="img-fluid partner-logo-colored"
-                                                        />
-                                                    </div>
+                                                <!-- Partner 3 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://sap.taleemmuyassar.academy/login" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/taleem.png"
+                                                             alt="Taleem Muyassar Logo"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/taleem1.png"
+                                                             alt="Taleem Muyassar Logo Colored"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-3 col-sm-6 col-6">
-                                                    <div class="partner-logo-container">
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
-                                                                alt="Partner 4"
-                                                                class="img-fluid partner-logo-default"
-                                                        />
-                                                        <img
-                                                                src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
-                                                                alt="Partner 4"
-                                                                class="img-fluid partner-logo-colored"
-                                                        />
-                                                    </div>
+                                                <!-- Partner 4 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://www.irthalotrujjah.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/Erth.png"
+                                                             alt="Irth Alotrujjah Logo"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/Erth1.png"
+                                                             alt="Irth Alotrujjah Logo Colored"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="partners-logos">
+                                            <div class="row" style=" justify-content: center;">
+                                                <!-- Partner 5 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://www.hmg.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo1.png"
+                                                             alt="HMG Logo"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-1.png"
+                                                             alt="HMG Logo Colored"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
+                                                <!-- Partner 6 -->
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://misbarbuilds.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/logo4.png"
+                                                             alt="Misbar Builds Logo"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/logo-4.png"
+                                                             alt="Misbar Builds Logo Colored"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://qts-fitout.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/qts.png"
+                                                             alt="QTS Fitout Logo"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/qts1.png"
+                                                             alt="QTS Fitout Logo Colored"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
+                                                </div>
+                                                <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
+                                                    <a href="https://taawunholding.com/" target="_blank"
+                                                       class="logo-showcase-partner">
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/sa.png"
+                                                             alt="sa Fitout Logo"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--default"/>
+                                                        <img src="/website_ext/static/src/images/who-we-are-section/partners/coloured-logo/sa.png"
+                                                             alt="sa Fitout Logo Colored"
+                                                             style="padding-top: 10px;"
+                                                             class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+                    </section>
+                    <section>
+                        <div class="container py-5">
+                            <div class="row g-4 justify-content-center">
+
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/vision.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body card-body-flip text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Vision</h5>
+
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <p style="padding-right: 15px; padding-left: 15px; text-align: left; font-size: 16px;">
+                                                    To be the world’s most trusted partner in digital
+                                                    transformation—empowering organizations of all sizes to thrive
+                                                    through creativity, innovation, and seamless experiences
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/mission.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body card-body-flip text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Mission</h5>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+
+                                                <p style="padding-right: 15px; padding-left: 15px; text-align: left; font-size: 16px;">
+                                                    Shaping the future with simple,innovative, and Unified
+                                                    digitalsolutions that enhance efficiency,fuel growth, and solve
+                                                    real-worldchallenges to transform industries.
+                                                </p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12  col-md-3">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="icon-container d-flex align-items-center justify-content-center">
+                                                    <img src="/website_ext/static/src/images/vision/values.svg"
+                                                         alt="Team Member" style="max-height: 100px;"/>
+                                                </div>
+                                                <div class="card-body card-body-flip text-center">
+                                                    <h5 class="card-title" style="font-size: 30px;">Our Values</h5>
+                                                </div>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <ul style="text-align: left; padding-right: 15px;">
+                                                    <li>
+                                                        <span style="font-size: 16px;">Quality &amp; Reliability</span>
+                                                        Deliversolutions that meet the
+                                                        higheststandards of performance andtrust.
+
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Continuous Innovation</span>
+                                                        Embrace change and explorenew ideas to
+                                                        stay future-ready.
+
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Strategic Partnerships</span>
+                                                        Buildrelationships that create
+                                                        mutualgrowth and value.
+                                                    </li>
+                                                    <li>
+                                                        <span style="font-size: 16px;">Global Presence</span>
+                                                        Expandworldwide while adapting tolocal needs
+                                                        and cultures.
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!--                        <t t-call="website.s_features"/>-->
                     </section>
 
-                    <!-- Our Expertise Section -->
-                    <section class="service-features" id="expertise">
-                        <div class="services-bg d-none d-md-block">
-                            <img src="/website_ext/static/src/images/BG_image.png" alt="service_sec"
-                                 aria-hidden="true"/>
-                        </div>
-                        <div class="container">
-                            <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our Expertise</h2>
-                                <p class="section-subtitle">To empower organizations by providing innovative, scalable,
-                                    and cost-effective
-                                    digital solutions that streamline operations and enhance productivity.
-                                </p>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/moodle-lms">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-1.svg"
-                                                 alt="system integration"/>
-                                        </div>
-                                        <h3 class="feature-title">System Integration</h3>
-                                        <p class="feature-description">Ensuring seamless communication between diverse
-                                            business
-                                            platforms.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/web-application">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-2.svg"
-                                                 alt="application development"/>
-                                        </div>
-                                        <h3 class="feature-title">Web Development</h3>
-                                        <p class="feature-description">Crafting customized applications tailored to
-                                            unique business
-                                            needs.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/erp-solution">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-3.svg"
-                                                 alt="open-source"/>
-                                        </div>
-                                        <h3 class="feature-title">Open-Source Solutions</h3>
-                                        <p class="feature-description">Leveraging platforms like Odoo ERP and Moodle LMS
-                                            to deliver flexible
-                                            and robust solutions.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/mobile-application">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-4.svg"
-                                                 alt="mob-icon"/>
-                                        </div>
-                                        <h3 class="feature-title">Mobile App Development</h3>
-                                        <p class="feature-description">Creating user-friendly mobile applications to
-                                            engage customers
-                                            effectively.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/moodle-lms">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-5.svg"
-                                                 alt="e-learning"/>
-                                        </div>
-                                        <h3 class="feature-title">E-Learning Solutions</h3>
-                                        <p class="feature-description">Developing comprehensive e-learning platforms to
-                                            facilitate modern
-                                            education and training needs.
-                                        </p>
-                                    </a>
-                                </div>
-                                <div class="col-lg-6 col-md-6 mb-4">
-                                    <a class="feature-card" href="/ui-ux">
-                                        <div class="feature-icon">
-                                            <img src="/website_ext/static/src/images/about-us/about-6.svg"
-                                                 alt="ui-ux-design"/>
-                                        </div>
-                                        <h3 class="feature-title">UI/UX Design</h3>
-                                        <p class="feature-description">Designing clean, user-friendly interfaces that
-                                            enhance usability,
-                                            engagement, and brand experience.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
 
                     <!-- Our Reach & Culture Section -->
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-5">
-                                <h2 class="section-title-sub">Our Reach &amp; Culture</h2>
-                                <p class="section-subtitle">With offices in Riyadh, KSA, and Islamabad, Pakistan,
+                                <h2 class="section-title-sub">Our Culture</h2>
+                                <p class="section-subtitle">With offices in USA and Islamabad, Pakistan,
                                     InterCraft serves a global
                                     clientele with innovative solutions. Our culture is the foundation of our success,
                                     built on:
@@ -309,6 +369,188 @@
                             </div>
                         </div>
                     </section>
+                    <!-- Our Expertise Section -->
+                    <section class="service-features" id="expertise">
+                        <div class="services-bg d-none d-md-block">
+                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
+                                 aria-hidden="true"/>
+                        </div>
+                        <div class="container">
+                            <div class="text-center mb-5">
+                                <h2 class="section-title-sub">Our Services</h2>
+                                <p class="section-subtitle">To empower organizations by providing innovative, scalable,
+                                    and cost-effective
+                                    digital solutions that streamline operations and enhance productivity.
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/ai-expert">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/ai-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Artificial Intelligence Transformation</h3>
+                                        <p class="feature-description">From intelligent chatbots to voice insights, our
+                                            AI solutions
+                                            are designed to think, learn, and grow with your business.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/cloud-services">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/cloud-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Cloud Infrastructure Services</h3>
+                                        <p class="feature-description">Robust and Scalable Cloud Infrastructure Services
+                                            to power your digital transformation with reliability and efficiency.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/resource-augmentation">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/blockchain/coloured/chart-network.svg"
+                                                 alt="Resource Aug"/>
+                                        </div>
+                                        <h3 class="feature-title">Blockchain Services</h3>
+                                        <p class="feature-description">
+                                            Unlock the power of blockchain with secure, scalable, and future-ready
+                                            solutions.
+                                            From smart contracts and dApps to DeFi platforms and NFT marketplaces,
+                                            deliver innovation that drives the Web3 era forward.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/resource-augmentation">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/resource-icon.svg"
+                                                 alt="Resource Aug"/>
+                                        </div>
+                                        <h3 class="feature-title">Resource Augmentation</h3>
+                                        <p class="feature-description">Our Resource Augmentation service quickly links
+                                            you with skilled
+                                            professionals—no hiring delays, just smooth, on-demand support.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/web-application">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/web-icon.svg"
+                                                 alt="application development"/>
+                                        </div>
+                                        <h3 class="feature-title">Web Development</h3>
+                                        <p class="feature-description">We build fast, responsive, and scalable web apps
+                                            that elevate
+                                            your brand and streamline business.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/mobile-application">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/mob-icon.svg"
+                                                 alt="mob-icon"/>
+                                        </div>
+                                        <h3 class="feature-title">Mobile Applications</h3>
+                                        <p class="feature-description">We create fast, user-friendly apps using the
+                                            latest tech—native
+                                            or cross-platform—designed to engage users and streamline
+                                            operations.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/ui-ux">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/ui-icon.svg"
+                                                 alt="ui-ux-design"/>
+                                        </div>
+                                        <h3 class="feature-title">UI/UX Design</h3>
+                                        <p class="feature-description">We craft intuitive, engaging, and visually
+                                            stunning user
+                                            experiences that align with your branding goals across web and
+                                            mobile platforms.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/sqa">
+                                        <div class="feature-icon">
+                                            <img
+                                                    src="/website_ext/static/src/images/services-section/coloured-icon/sqa-icon.svg"
+                                                    alt="AI Expert"
+
+                                            />
+                                        </div>
+                                        <h3 class="feature-title">Software Quality Assurance</h3>
+                                        <p class="feature-description">Ensure flawless performance with our end-to-end
+                                            Software Quality Assurance
+                                            services, including manual and automated testing for reliable, bug-free
+                                            delivery.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/moodle-lms">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/moodle-icon.svg"
+                                                 alt="moodle"/>
+                                        </div>
+                                        <h3 class="feature-title">Moodle LMS Solutions</h3>
+                                        <p class="feature-description">We deliver tailored Moodle LMS solutions that
+                                            enable scalable,
+                                            user-friendly, and impactful e-learning for education and
+                                            corporate training.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/erp-solution">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/erp-icon.svg"
+                                                 alt="open-source"/>
+                                        </div>
+                                        <h3 class="feature-title">Odoo ERP Solutions</h3>
+                                        <p class="feature-description">We deliver tailored ERP solutions that streamline
+                                            processes,
+                                            eliminate silos, and boost efficiency—through expert Odoo
+                                            implementation, customization, and support.
+                                        </p>
+                                    </a>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 mb-4">
+                                    <a class="feature-card" href="/koha-ils">
+                                        <div class="feature-icon">
+                                            <img src="/website_ext/static/src/images/services-section/coloured-icon/kohas-icon.svg"
+                                                 alt="e-learning"/>
+                                        </div>
+                                        <h3 class="feature-title">Koha ILS Solutions</h3>
+                                        <p class="feature-description">We offer tailored Koha Integrated Library System
+                                            (ILS) services
+                                            that bring automation, efficiency, and user-centric features to
+                                            libraries of all sizes.
+                                        </p>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
 
                     <!-- Join Our Team Section -->
                     <section class="innovate">
@@ -319,6 +561,7 @@
                                     digital future.
                                 </p>
                                 <a href="/career" class="get-started-btn">Apply Now</a>
+
                             </div>
                         </div>
                     </section>

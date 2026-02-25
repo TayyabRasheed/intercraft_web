@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="custom_newsletter_changes" inherit_id="website_mass_mailing.s_newsletter_subscribe_form" name="Custom Newsletter Changes">
+
+        <!-- Change email placeholder -->
+        <xpath expr="//input[@name='email']" position="attributes">
+            <attribute name="placeholder">Your Email...</attribute>
+        </xpath>
+    </template>
+</odoo>

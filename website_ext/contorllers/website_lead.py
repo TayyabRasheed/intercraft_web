@@ -28,7 +28,7 @@ class WebsiteFormExt(WebsiteForm):
             'partner_id': partner.id,
             'email_from': partner.email,
             'phone': partner.phone,
-            'description': kwargs.get('message'),
+            'description': kwargs.get('description'),
         })
         return partner, lead
 

@@ -37,6 +37,11 @@
     flex-grow: 1;
 }
 
+.job-card {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .job-card .btn-details {
     background-color: #fff;
     border: 2px solid #d9534f;

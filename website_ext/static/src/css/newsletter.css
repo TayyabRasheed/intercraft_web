@@ -1,0 +1,19 @@
+/* Scope styles only to newsletter form */
+.s_newsletter_subscribe_form .input-group:where(:not(:has(.was-validated :invalid ~ .invalid-feedback, 
+                                                        .is-invalid ~ .invalid-feedback))) {
+    flex-flow: column;
+}
+
+.s_newsletter_subscribe_form .input-group > .form-control, 
+.s_newsletter_subscribe_form .input-group > .form-select {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.s_newsletter_subscribe_form .input-group > :not(:first-child):not(.dropdown-menu):not(.o_dropdown_menu)
+    :not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border: 0px;
+    margin-left: 0px;
+    border-radius: 0.5rem;
+}

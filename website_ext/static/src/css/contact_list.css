@@ -1,0 +1,54 @@
+.contact-phone-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 5px;
+}
+
+.contact-phone-icon {
+    width: 37px;
+    height: 37px;
+    background: #ff5500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contact-phone-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.contact-phone-entry a {
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.contact-phone-entry a:hover {
+    text-decoration: underline;
+}
+
+.contact-phone-label {
+    font-weight: normal;
+    color: #555;
+    font-size: 14px;
+}
+.flag-icon {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+

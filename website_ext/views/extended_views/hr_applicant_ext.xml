@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_hr_applicant_form_inherit_current_salary" model="ir.ui.view">
+        <field name="name">hr.applicant.form.current.salary</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
+        <field name="arch" type="xml">
+            <!-- Insert a new row before the salary_expected row -->
+            <xpath expr="//group[@name='recruitment_contract']/label[@for='salary_expected']" position="before">
+                <label for="current_salary"/>
+                <div class="o_row">
+                    <field name="current_salary"/>
+                </div>
+
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

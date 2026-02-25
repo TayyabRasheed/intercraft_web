@@ -18,7 +18,7 @@ nav.navbar.fixed-top.navbar-scrolled {
 }
 
 nav.navbar.fixed-top .navbar-brand img {
-    height: 40px;
+    height: 46px;
 }
 
 nav.navbar.fixed-top .nav-link {
@@ -82,15 +82,14 @@ nav.navbar.fixed-top .navbar-toggler-icon {
         color: #333;
         margin-bottom: 20px;
         padding-bottom: 10px;
-        border-bottom: 2px solid #ff5500;
         display: inline-block;
     }
 
     .mega-menu-item {
         display: flex;
         align-items: center;
-        padding: 12px 15px;
-        margin-bottom: 8px;
+        padding: 4px 4px;
+        margin-bottom: 4px;
         border-radius: 8px;
         text-decoration: none;
         color: #333;
@@ -138,7 +137,8 @@ nav.navbar.fixed-top .navbar-toggler-icon {
         background-color: #f8f9fa;
         padding: 20px;
         border-radius: 8px;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
+       margin-top: 45px;
         border-left: 4px solid #ff5500;
     }
 
@@ -157,7 +157,6 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     }
 }
 
-/* --- 3. Mobile Offcanvas Menu (Slide-in) --- */
 #mobileMenuOffcanvas {
     background-color: #111;
     color: white;
@@ -202,7 +201,7 @@ nav.navbar.fixed-top .navbar-toggler-icon {
 
 #mobileMenuOffcanvas #servicesAccordion .sub-link:hover {
     color: white !important;
-    background-color: transparent !important; /* Override general hover */
+    background-color: transparent !important;
 }
 
 /* --- 4. Shared Contact Button --- */
@@ -229,31 +228,40 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     font-size: 18px;
 }
 
-/* --- 5. Odoo Standard Class Overrides (for pages with this header) --- */
-/* This pushes down content on pages where the header is not transparent */
+
 .navbar-light {
     background-color: white;
-    margin-top: 80px; /* Use fixed value to match --nav-height */
+    margin-top: 80px;
 }
 
 .change_layout {
-    margin-top: 80px; /* Use fixed value to match --nav-height */
+    margin-top: 80px;
 }
 
-@media (max-width: 991px) {
-    nav.navbar.fixed-top{
-         background-color: rgba(0, 0, 0, 0.9);
+/*@media (max-width: 991px) {*/
+/*    nav.navbar.fixed-top{*/
+/*         background-color: rgba(0, 0, 0, 0.9);*/
+/*    }*/
+
+/*}*/
+/*@media (max-width: 576px) {*/
+/*    nav.navbar.fixed-top{*/
+/*         background-color: rgba(0, 0, 0, 0.9);*/
+/*    }*/
+/*    .hero{*/
+/*        margin-top: calc(var(--nav-height));*/
+/*    }*/
+/*    .hero-content {*/
+/*        margin-top: calc(var(--nav-height) + 1px);*/
+/*    }*/
+/*}*/
+@media (max-width: 991.98px) {
+    nav.navbar.fixed-top {
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
-}
-@media (max-width: 576px) {
-    nav.navbar.fixed-top{
-         background-color: rgba(0, 0, 0, 0.9);
-    }
-    .hero{
-        margin-top: calc(var(--nav-height));
-    }
-    .hero-content {
-        margin-top: calc(var(--nav-height) + 1px);
+    /* Ensure the desktop mega menu doesn't show on mobile */
+    .mega-dropdown .mega-menu {
+        display: none !important;
     }
 }
