@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-    <!--    <template id="remove_footer_colored_level" inherit_id="website.layout">-->
-    <!--    <xpath expr="//div[contains(@class, 'o_footer_copyright') ]" position="replace">-->
-    <!--        &lt;!&ndash; Removing entire block &ndash;&gt;-->
-    <!--    </xpath>-->
-    <!--</template>-->
-
     <template id="s_newsletter_subscribe_form_inherit" inherit_id="website_mass_mailing.s_newsletter_subscribe_form">
         <xpath expr="//a[contains(@class, 'js_subscribed_btn')]" position="replace">
             <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none o_submit" disabled="disabled">
@@ -295,7 +289,7 @@
 
                                         />
                                     </a>
-                                    <!--                                    </a>-->
+
                                     <a href="https://moitt.gov.pk/" class="" target="_blank">
                                         <img
                                                 src="/website_ext/static/src/images/footer/digital_logo.png"
@@ -327,24 +321,5 @@
 
         </xpath>
     </template>
-    <!--    <template id="custom_scrolltop_button" inherit_id="website.layout">-->
-    <!--        <xpath expr="//body" position="inside">-->
-    <!--            <script>-->
-    <!--                document.addEventListener('DOMContentLoaded', function() {-->
-    <!--                // Find your custom button (replace with your actual button selector)-->
-    <!--                const customButton = document.querySelector('.your-custom-button-class');-->
 
-    <!--                if (customButton) {-->
-    <!--                customButton.addEventListener('click', function(e) {-->
-    <!--                e.preventDefault();-->
-    <!--                window.scrollTo({-->
-    <!--                top: 0,-->
-    <!--                behavior: 'smooth'-->
-    <!--                });-->
-    <!--                });-->
-    <!--                }-->
-    <!--                });-->
-    <!--            </script>-->
-    <!--        </xpath>-->
-    <!--    </template>-->
 </odoo>

@@ -5,7 +5,6 @@
         <field name="model">hr.applicant</field>
         <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_form"/>
         <field name="arch" type="xml">
-            <!-- Insert a new row before the salary_expected row -->
             <xpath expr="//group[@name='recruitment_contract']/label[@for='salary_expected']" position="before">
                 <label for="current_salary"/>
                 <div class="o_row">

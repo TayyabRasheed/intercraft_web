@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Project Tag: Tree -->
     <record id="project_tag_tree_view" model="ir.ui.view">
         <field name="name">website.project.tag.tree</field>
         <field name="model">website.project.tag</field>
@@ -11,7 +10,6 @@
         </field>
     </record>
 
-    <!-- Project: Tree -->
     <record id="website_project_tree_view" model="ir.ui.view">
         <field name="name">website.project.tree</field>
         <field name="model">website.project</field>
@@ -27,7 +25,6 @@
         </field>
     </record>
 
-    <!-- Project: Form -->
     <record id="website_project_form_view" model="ir.ui.view">
         <field name="name">website.project.form</field>
         <field name="model">website.project</field>
@@ -58,7 +55,6 @@
         </field>
     </record>
 
-    <!-- Actions & Menu -->
     <record id="project_tag_action" model="ir.actions.act_window">
         <field name="name">Project Tags</field>
         <field name="res_model">website.project.tag</field>
@@ -92,7 +88,6 @@
               action="project_tag_action"
               sequence="20"/>
 
-    <!-- Testimonials -->
     <record id="website_testimonial_tree_view" model="ir.ui.view">
         <field name="name">website.testimonial.tree</field>
         <field name="model">website.testimonial</field>

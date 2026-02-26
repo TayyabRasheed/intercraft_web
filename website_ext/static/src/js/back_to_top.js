@@ -14,5 +14,3 @@ $(document).ready(function () {
 
 });
 
-
-// $('#o_event_registration_modal').modal({ focus: false });

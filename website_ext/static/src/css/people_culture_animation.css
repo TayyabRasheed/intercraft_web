@@ -1,7 +1,3 @@
-/* ==========================================================================
-   PEOPLE & CULTURE SECTION
-   ========================================================================== */
-
 .people-culture-section {
     width: 100%;
     position: relative;
@@ -32,11 +28,6 @@
     margin: 0 auto;
     line-height: 1.6;
 }
-
-/* ==========================================================================
-   SVG WAVE ANIMATIONS (The Moving Lines)
-   ========================================================================== */
-
 .svg-container {
     position: absolute;
     inset: 0;
@@ -51,14 +42,12 @@
     will-change: transform, stroke-dashoffset;
 }
 
-/* Line 1: Faster, tighter float */
 .culture-wave.line-1 {
     animation:
         drawWave 4s ease-out forwards,
         floatWave1 10s ease-in-out infinite alternate;
 }
 
-/* Line 2: Slower, wider float */
 .culture-wave.line-2 {
     animation:
         drawWave 4s ease-out forwards,
@@ -80,9 +69,6 @@
     100% { transform: translate3d(-30px, -20px, 0) scaleX(0.95); }
 }
 
-/* ==========================================================================
-   ANIMATION STAGE & SLIDER
-   ========================================================================== */
 
 .animation-stage {
     position: relative;
@@ -92,7 +78,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* Edge Mask: Fades out the left and right to hide the loop reset point */
     -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
 }
@@ -110,7 +95,7 @@
 .slider-track {
     display: flex;
     gap: 60px;
-    align-items: center; /* VITAL: Vertically centers Portrait & Landscape */
+    align-items: center;
     animation: slideLeft 100s linear infinite;
     will-change: transform;
     transform-style: preserve-3d;
@@ -120,20 +105,14 @@
     animation-play-state: paused;
 }
 
-/* ==========================================================================
-   SLIDE ITEMS (Portrait vs Landscape)
-   ========================================================================== */
-
 .slide-item {
     flex-shrink: 0;
     position: relative;
     will-change: transform, opacity;
-    /* DO NOT add transitions here (JS handles it) */
     transition: none !important;
     transform-style: preserve-3d;
 }
 
-/* Custom Base Sizes */
 .slide-item.landscape { width: 400px; height: 280px; }
 .slide-item.portrait { width: 240px; height: 320px; }
 
@@ -145,7 +124,6 @@
     overflow: hidden;
     background: #fff;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
-    /* Performance Fixes */
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     -webkit-font-smoothing: subpixel-antialiased;
@@ -156,21 +134,16 @@
     height: 100%;
     object-fit: cover;
     display: block;
-    /* Clarity/Anti-Blur */
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     transform: translateZ(0);
 }
 
-/* Standard Infinite Loop Animation */
 @keyframes slideLeft {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-50%, 0, 0); }
 }
 
-/* ==========================================================================
-   RESPONSIVE DESIGN
-   ========================================================================== */
 
 @media (max-width: 992px) {
     .culture-header h2 { font-size: 2.5rem; }

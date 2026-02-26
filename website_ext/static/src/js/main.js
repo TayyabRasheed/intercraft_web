@@ -15,13 +15,10 @@ function initMobileAccordion() {
 
     if (accordionToggle && accordionCollapse) {
         accordionToggle.addEventListener('click', function(event) {
-            // Prevent the link's default behavior
             event.preventDefault();
 
-            // Manually add or remove the 'show' class
             accordionCollapse.classList.toggle('show');
 
-            // Manually update the aria-expanded attribute for accessibility
             const isExpanded = accordionCollapse.classList.contains('show');
             accordionToggle.setAttribute('aria-expanded', isExpanded);
         });
@@ -37,7 +34,6 @@ function initNavbar() {
         return;
     }
 
-    // Scroll behavior - This is correct and unrelated to the menu bug.
     const scrollContainer = document.querySelector("#wrapwrap") || window;
     const scrollElement = document.querySelector("#wrapwrap") || document.documentElement;
     const handleScroll = () => {
@@ -50,14 +46,12 @@ function initNavbar() {
     handleScroll();
     scrollContainer.addEventListener("scroll", handleScroll);
 
-    // Main Toggler Click - This is essential for opening/closing the menu container.
     navbarToggler.addEventListener("click", function (e) {
         e.stopPropagation();
         const collapseInstance = bootstrap.Collapse.getOrCreateInstance(navbarCollapse);
         collapseInstance.toggle();
     });
 
-    // Close menu when clicking outside - This is good UX.
     document.addEventListener("click", function (e) {
         if (navbarCollapse.classList.contains("show") && !navbar.contains(e.target)) {
             const collapseInstance = bootstrap.Collapse.getInstance(navbarCollapse);
@@ -67,33 +61,8 @@ function initNavbar() {
         }
     });
 
-    // NOTE: ALL OTHER CUSTOM CLICK HANDLERS FOR NAV-LINKS HAVE BEEN REMOVED.
-    // This prevents any interference with Bootstrap's native dropdown functionality.
-    // Bootstrap will now handle the mobile "Services" dropdown click by itself.
 }
 
-
-// NO CHANGES ARE NEEDED BELOW THIS LINE. THE REST OF THE FILE IS CORRECT.
-// Your other features like service cards, team carousel, etc., are unaffected.
-
-// function initServiceCards() {
-//     const serviceCards = document.querySelectorAll(".service-card");
-//     serviceCards.forEach((card) => {
-//         card.addEventListener("mouseenter", () => card.classList.add("hovered"));
-//         card.addEventListener("mouseleave", () => card.classList.remove("hovered"));
-//         card.addEventListener("click", function (e) {
-//             if (e.target.tagName === "A") { return; }
-//             serviceCards.forEach((c) => c.classList.remove("active"));
-//             this.classList.add("active");
-//             const serviceType = this.getAttribute("data-service");
-//             if (serviceType) {
-//                 setTimeout(() => {
-//                     window.location.href = `/services/${serviceType}.html`;
-//                 }, 300);
-//             }
-//         });
-//     });
-// }
 
 function initFeatureCards() {
     const featureCards = document.querySelectorAll(".feature-card");

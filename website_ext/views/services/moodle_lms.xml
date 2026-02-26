@@ -11,7 +11,6 @@
             <t name="Moodle LMS" t-name="website_ext.moodle-lms">
                 <t t-call="website.layout">
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <!-- Hero Section -->
                     <section class="service-hero moodle-hero">
                         <div class="service-hero-bg"/>
                         <div class="container">
@@ -32,7 +31,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Details Section -->
                     <section class="service-details">
                         <div class="container">
                             <div class="row align-items-center">
@@ -65,7 +63,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Features Section -->
                     <section class="service-features">
 
                         <div class="container">
@@ -210,7 +207,6 @@
                         </div>
                     </section>
 
-                    <!-- Ready to Innovate Section -->
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">

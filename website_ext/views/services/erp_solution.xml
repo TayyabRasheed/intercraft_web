@@ -11,7 +11,6 @@
             <t name="ERP Solution" t-name="website_ext.erp-solution">
                 <t t-call="website.layout">
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <!-- Hero Section -->
                     <section class="service-hero erp-hero">
                         <div class="service-hero-bg"/>
                         <div class="container">
@@ -32,7 +31,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Details Section -->
                     <section class="service-details">
 
                         <div class="container">
@@ -68,7 +66,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Features Section -->
                     <section class="service-features">
                         <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
@@ -196,7 +193,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Ready to Innovate Section -->
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Tree View -->
     <record id="team_member_tree_view" model="ir.ui.view">
         <field name="name">team.member.tree</field>
         <field name="model">website.team.member</field>
@@ -17,7 +16,6 @@
         </field>
     </record>
 
-    <!-- Form View -->
     <record id="team_member_form_view" model="ir.ui.view">
         <field name="name">team.member.form</field>
         <field name="model">website.team.member</field>
@@ -46,7 +44,6 @@
         </field>
     </record>
 
-    <!-- Action -->
     <record id="team_member_action" model="ir.actions.act_window">
         <field name="name">Team Members</field>
         <field name="res_model">website.team.member</field>
@@ -58,7 +55,6 @@
         </field>
     </record>
 
-    <!-- Menu -->
     <menuitem id="team_member_root_menu"
               name="Team Management"
               sequence="60"/>

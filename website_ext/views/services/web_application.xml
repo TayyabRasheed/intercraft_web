@@ -11,7 +11,6 @@
             <t name="Web Application" t-name="website_ext.web-application">
                 <t t-call="website.layout">
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <!-- Hero Section -->
                     <section class="service-hero web-hero">
                         <div class="service-hero-bg"/>
                         <div class="container">
@@ -31,7 +30,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Details Section -->
                     <section class="service-details">
 
                         <div class="container">
@@ -218,7 +216,6 @@
                         </div>
                     </section>
 
-                    <!-- Ready to Innovate Section -->
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">
