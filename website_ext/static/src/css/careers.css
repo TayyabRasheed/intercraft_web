@@ -1,4 +1,3 @@
-/* Culture Section Styles */
 .culture-section {
     padding: 80px 0;
     background: white;
@@ -188,20 +187,17 @@
     animation: none;
 }
 
-/* Career hero: clear fixed header so heading is not cut off */
 .career-hero {
   padding-top: 100px;
   box-sizing: border-box;
 }
 
-/* Career page: override innovate section background */
 .innovate-career .innovate-content {
   background-image: url("/website_ext/static/src/images/our-work/bg_career.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* Careers Benefits Section */
 .careers-benefits-section {
     padding: 80px 0;
     background: #fff;

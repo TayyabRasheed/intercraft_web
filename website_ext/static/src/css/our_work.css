@@ -18,7 +18,6 @@
     letter-spacing: -0.02em;
 }
 
-/* Section 1: Hero */
 .ic-hero-section {
     background: radial-gradient(circle at center, rgba(255, 240, 230, 0.7) 0%, #fff 70%);
     padding: 180px 0 100px;
@@ -54,7 +53,6 @@
     display: block;
 }
 
-/* Section 2: What We Build */
 .ic-build-section {
     padding: 100px 0;
     position: relative;
@@ -127,7 +125,6 @@
     margin-bottom: 0;
 }
 
-/* Section 3: Projects carousel */
 .ic-projects-section {
     padding: 100px 0;
     background: #fdfdfd;
@@ -274,7 +271,6 @@
     background: #F05A24;
 }
 
-/* Testimonial: card entrance animation */
 .ic-testimonial-slider .ic-testimonial-card {
     animation: ic-testi-card-in 0.5s ease-out backwards;
 }
@@ -306,7 +302,6 @@
     animation: none;
 }
 
-/* Testimonial: 3 bars (decorative, random active) */
 .ic-testimonial-bars {
     cursor: default;
     user-select: none;

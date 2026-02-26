@@ -33,7 +33,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Who We Are Section -->
                     <section class="who-we-are">
                         <div class="container">
                             <div class="row align-items-center">
@@ -64,10 +63,6 @@
                             </div>
                         </div>
                     </section>
-
-                    <!-- Partners Section with Automatic Carousel -->
-
-
                     <section class="partners">
                         <div class="container text-center">
                             <h3 class="partners-title">
@@ -84,7 +79,6 @@
                                     <div class="carousel-item active">
                                         <div class="partners-logos">
                                             <div class="row">
-                                                <!-- Partner 1 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://eforms.alfaisal.edu/login" target="_blank"
                                                        class="logo-showcase-partner">
@@ -96,7 +90,6 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
-                                                <!-- Partner 2 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://bap.baseerat.academy/login" target="_blank"
                                                        class="logo-showcase-partner">
@@ -108,7 +101,6 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
-                                                <!-- Partner 3 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://sap.taleemmuyassar.academy/login" target="_blank"
                                                        class="logo-showcase-partner">
@@ -120,7 +112,6 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
-                                                <!-- Partner 4 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://www.irthalotrujjah.com/" target="_blank"
                                                        class="logo-showcase-partner">
@@ -138,7 +129,6 @@
                                     <div class="carousel-item">
                                         <div class="partners-logos">
                                             <div class="row" style=" justify-content: center;">
-                                                <!-- Partner 5 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://www.hmg.com/" target="_blank"
                                                        class="logo-showcase-partner">
@@ -150,7 +140,6 @@
                                                              class="logo-showcase-partner__image logo-showcase-partner__image--hover"/>
                                                     </a>
                                                 </div>
-                                                <!-- Partner 6 -->
                                                 <div class="col-6 col-sm-4 col-md-3 d-flex justify-content-center align-items-center">
                                                     <a href="https://misbarbuilds.com/" target="_blank"
                                                        class="logo-showcase-partner">
@@ -300,7 +289,6 @@
                     </section>
 
 
-                    <!-- Our Reach & Culture Section -->
                     <section class="our-team">
                         <div class="container">
                             <div class="text-center mb-5">
@@ -369,7 +357,6 @@
                             </div>
                         </div>
                     </section>
-                    <!-- Our Expertise Section -->
                     <section class="service-features" id="expertise">
                         <div class="services-bg d-none d-md-block">
                             <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"
@@ -552,7 +539,6 @@
                     </section>
 
 
-                    <!-- Join Our Team Section -->
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">

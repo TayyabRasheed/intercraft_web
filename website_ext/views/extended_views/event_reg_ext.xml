@@ -7,33 +7,24 @@
         </xpath>
 
     </template>
-    <!--    remove nav part -->
     <template id="hide_template_nav" inherit_id="website_event.navbar" name="Hide Event Navbar">
         <xpath expr="//*[contains(@class, 'mb-3')]" position="attributes">
             <attribute name="style">display:none;</attribute>
         </xpath>
     </template>
-    <!--    remove footer part -->
     <template id="hide_event_status_badges" inherit_id="website_event.events_list">
         <xpath expr="//footer[@t-if='not event.event_registrations_open and opt_events_list_columns and opt_events_list_cards']"
                position="replace">
 
         </xpath>
     </template>
-    <!--    remove category part -->
     <template id="remove_event_categories" inherit_id="website_event.index_topbar">
         <xpath expr="//t[@t-foreach='categories']" position="replace">
         </xpath>
     </template>
 
 <template id="remove_event_date_filter" inherit_id="website_event.index_topbar">
-    <!-- Find the dropdown immediately before o_wevent_search -->
     <xpath expr="//div[hasclass('o_wevent_search')]/preceding-sibling::div[@class='dropdown d-none d-lg-block'][1]" position="replace"/>
 </template>
-<!--    <template id="remove_event_date_filter" inherit_id="website_event.event_time">-->
-<!--        <xpath expr="//div[hasclass('dropdown') and hasclass('d-none') and hasclass('d-lg-block') and .//t[t-if='current_date']]"-->
-<!--               position="replace">-->
-<!--            &lt;!&ndash; Removed the Filter by Date dropdown &ndash;&gt;-->
-<!--        </xpath>-->
-<!--    </template>-->
+
 </odoo>

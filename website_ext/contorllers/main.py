@@ -6,12 +6,10 @@ from odoo import http
 class CareerController(http.Controller):
     @http.route(['/career'], type='http', auth="public", website=True, cache=300)
     def career_page(self, **kwargs):
-        # 1. Fetch the Event Images from your model
         culture_images = request.env['website.event.image'].sudo().search([
             ('is_active', '=', True)
         ], order='sequence, id')
 
-        # 2. Your existing job logic
         jobs = request.env['hr.job'].search([('is_published', '=', True)])
         departments_dict = {}
         for job in jobs:
@@ -25,7 +23,6 @@ class CareerController(http.Controller):
                 }
             departments_dict[dept_id]['job_count'] += 1
 
-        # 3. Pass culture_images to the template
         return request.render('website_ext.career', {
             'job_departments': list(departments_dict.values()),
             'culture_images': culture_images

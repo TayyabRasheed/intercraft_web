@@ -1,26 +1,22 @@
-/* ===================================================================
-   INTERCRAFT THEME - CUSTOM HEADER & NAVIGATION STYLES
-   =================================================================== */
+
 :root {
     --nav-height: 80px;
     --top-bar-height: 40px;
 }
 
-/* --- TOP BAR: Fixed, Centered, and Always Visible --- */
 .top-bar {
     height: var(--top-bar-height);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white; /* Keeps the top bar white as seen in your image */
-    z-index: 10000; /* Stays on top of everything */
+    background-color: white;
+    z-index: 10000;
     display: flex;
-    align-items: center; /* Perfectly centers items top-to-bottom */
+    align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Ensure the inner container fills the height for flex centering */
 .top-bar .container {
     height: 100%;
     display: flex;
@@ -28,23 +24,20 @@
     align-items: center;
 }
 
-/* --- MAIN NAVBAR: Preserving your transparency and positioning --- */
 nav.navbar.fixed-top {
     --nav-height: 80px;
-    top: var(--top-bar-height) !important; /* Stays exactly below the top bar */
+    top: var(--top-bar-height) !important;
     height: var(--nav-height);
-    background-color: rgba(0, 0, 0, 0.2); /* Your original transparency */
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 15px 0;
     transition: background-color 0.3s ease-in-out;
     z-index: 9999;
 }
 
-/* Keeping your scroll effect exactly as you had it */
 nav.navbar.fixed-top.navbar-scrolled {
     background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Mobile Adjustment to keep text on one line */
 @media (max-width: 576px) {
     .top-bar-contact span {
         font-size: 11px;
@@ -56,7 +49,6 @@ nav.navbar.fixed-top.navbar-scrolled {
     }
 }
 
-/* Ensure the dark background on mobile doesn't break */
 @media (max-width: 991.98px) {
     nav.navbar.fixed-top {
         background-color: rgba(0, 0, 0, 0.9);
@@ -66,11 +58,11 @@ nav.navbar.fixed-top.navbar-scrolled {
 .top-bar-social {
     display: flex;
     align-items: center;
-    gap: 15px; /* Controls the exact distance between icons */
+    gap: 15px;
 }
 
 .top-bar-social a {
-    color: #e64a19; /* Matches the brand orange in your logo */
+    color: #e64a19;
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -79,30 +71,28 @@ nav.navbar.fixed-top.navbar-scrolled {
     justify-content: center;
 }
 
-/* Hover Effect: Glow or slight scale up */
+
 .top-bar-social a:hover {
-    color: #b71c1c; /* Darker red on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+    color: #b71c1c;
+    transform: translateY(-2px);
 }
 
-/* Styling for the Phone/Contact section to match */
 .top-bar-contact {
     display: flex;
     align-items: center;
-    color: #333; /* Dark gray for the text */
+    color: #333;
     font-weight: 500;
     font-size: 14px;
 }
 
 .top-bar-contact i {
-    color: #e64a19; /* Phone icon matches social icons */
+    color: #e64a19;
     margin-right: 8px;
 }
 
-/* Mobile specific spacing */
 @media (max-width: 576px) {
     .top-bar-social {
-        gap: 1px; /* Tighter spacing on small phones */
+        gap: 1px;
     }
 }
 
@@ -138,11 +128,6 @@ nav.navbar.fixed-top .navbar-toggler {
     padding: 0.25rem 0.5rem;
 }
 
-/*nav.navbar.fixed-top .navbar-toggler-icon {*/
-/*    filter: invert(1);*/
-/*    color: white !important;*/
-/*    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;*/
-/*}*/
 
 nav.navbar.fixed-top .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -289,7 +274,6 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Services Accordion inside Offcanvas */
 #mobileMenuOffcanvas #servicesAccordion {
     margin-left: 1rem;
     border-left: 2px solid rgba(255, 255, 255, 0.1);
@@ -309,7 +293,6 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     background-color: transparent !important;
 }
 
-/* --- 4. Shared Contact Button --- */
 .contact-btn {
     background: linear-gradient(to right, #d12c09, #f25c05);
     color: white !important;
@@ -343,29 +326,12 @@ nav.navbar.fixed-top .navbar-toggler-icon {
     margin-top: 80px;
 }
 
-/*@media (max-width: 991px) {*/
-/*    nav.navbar.fixed-top{*/
-/*         background-color: rgba(0, 0, 0, 0.9);*/
-/*    }*/
 
-/*}*/
-/*@media (max-width: 576px) {*/
-/*    nav.navbar.fixed-top{*/
-/*         background-color: rgba(0, 0, 0, 0.9);*/
-/*    }*/
-/*    .hero{*/
-/*        margin-top: calc(var(--nav-height));*/
-/*    }*/
-/*    .hero-content {*/
-/*        margin-top: calc(var(--nav-height) + 1px);*/
-/*    }*/
-/*}*/
 @media (max-width: 991.98px) {
     nav.navbar.fixed-top {
         background-color: rgba(0, 0, 0, 0.9);
     }
 
-    /* Ensure the desktop mega menu doesn't show on mobile */
     .mega-dropdown .mega-menu {
         display: none !important;
     }

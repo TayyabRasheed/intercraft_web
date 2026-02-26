@@ -11,7 +11,6 @@
             <t name="UI UX" t-name="website_ext.ui-ux">
                 <t t-call="website.layout">
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <!-- Hero Section -->
                     <section class="service-hero uiux-hero">
                         <div class="service-hero-bg"/>
                         <div class="container">
@@ -28,7 +27,6 @@
                         </div>
                     </section>
 
-                    <!-- Service Details Section -->
                     <section class="service-details">
 
                         <div class="container">
@@ -191,7 +189,6 @@
                         </div>
                     </section>
 
-                    <!-- Ready to Innovate Section -->
                     <section class="innovate">
                         <div class="container text-center">
                             <div class="innovate-content">

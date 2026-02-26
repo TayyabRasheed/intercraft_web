@@ -11,7 +11,6 @@
             <t name="Our Team" t-name="website_ext.our-team">
                 <t t-call="website.layout">
                     <t t-call="website_ext.portal_side_contact_us"/>
-                    <!-- Hero Section -->
                     <section class="service-hero">
                         <div
                                 class="service-hero-bg"
@@ -48,13 +47,11 @@
                                 </p>
                             </div>
                             
-                            <!-- Loading Spinner -->
                             <div id="team-loading" class="text-center py-5">
                                 <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
                                 </div>
                             </div>
                             
-                            <!-- Team Content -->
                             <div id="team-content" style="display: none;">
                                 <div class="row" style="justify-content: center;">
                                     <t t-call="website_ext.team_member_card">
@@ -78,7 +75,6 @@
                         </div>
                     </section>
 
-                    <!-- Join Our Team Section -->
                     <section class="innovate">
                         <div class="container">
                             <div class="innovate-content text-center">

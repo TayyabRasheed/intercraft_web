@@ -44,29 +44,3 @@ class WebsiteFormExt(WebsiteForm):
             self._create_partner_and_lead(**kwargs)
 
         return response
-
-
- # @http.route('/website/crm/', type='http', auth="public", methods=['POST'], website=True, csrf=False)
- #    def website_form(self, **kwargs):
- #        recaptcha_token = kwargs.get('g-recaptcha-response')
- #        secret_key = request.env['ir.config_parameter'].sudo().get_param('captcha_private_key')
- #
- #        if not recaptcha_token:
- #            return request.render("website.403")  # Or return an error message
- #
- #        # Verify with Google
- #        verify_url = "https://www.google.com/recaptcha/api/siteverify"
- #        response = requests.post(verify_url, data={
- #            'secret': secret_key,
- #            'response': recaptcha_token
- #        })
- #        result = response.json()
- #
- #        if not result.get('success'):
- #            return request.render("website.403")
- #
- #        else:
- #            self._create_partner_and_lead(**kwargs)
- #
- #            redirect_url = '/contactus-thank-you'
- #            return request.redirect(redirect_url)
