@@ -1245,11 +1245,11 @@ body {
 /*Standard odoo classes to change */
 .navbar-light {
     background-color: white;
-    margin-top: calc(var(--nav-height) + 1px);
+    margin-top: calc(var(--nav-height) + 40px);
 }
 
 .change_layout {
-    margin-top: calc(var(--nav-height) + 1px);
+    margin-top: calc(var(--nav-height) + 40px);
 }
 
 
