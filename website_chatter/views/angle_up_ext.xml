@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="custom_btn_top_css" model="ir.asset">
+        <field name="name">website_chatter top to bottom CSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">/website_chatter/static/src/css/top_to_bottom_ext.css</field>
+    </record>
+    <record id="custom_btn_top_js" model="ir.asset">
+        <field name="name">website_chatter back to top JS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">/website_chatter/static/src/js/back_to_top_ext.js</field>
+    </record>
+</odoo>
