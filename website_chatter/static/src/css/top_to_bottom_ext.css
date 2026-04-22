@@ -1,0 +1,52 @@
+body .btt-link.btn-top {
+    position: fixed !important;
+    bottom: 40px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: 50px !important;
+    height: 50px !important;
+    background: linear-gradient(to right, #d12c09, #f25c05) !important;
+    border-radius: 50% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 10000 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: opacity 0.3s !important;
+    text-align: center !important;
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* NO display: flex here */
+}
+
+body .btt-link.btn-top:hover {
+    opacity: 0.85 !important;
+}
+
+body .btt-link.btn-top a {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+body .btt-link.btn-top a i {
+    font-size: 22px !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+    body .btt-link.btn-top {
+        bottom: 42px !important;
+        left: 32px !important;
+        right: auto !important;
+        transform: none !important;
+    }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_website_chat" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.website.chat</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="25"/>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='website_info_settings']" position="after">
+                <block title="Chatter Configuration" id="website_chat_settings">
+                    <setting string="Chat API Endpoint" help="Enter the full API endpoint URL for the Intercraft chat widget">
+                        <div class="content-group">
+                            <div class="row mt8">
+                                <label class="col-lg-3" string="API Endpoint" for="api_chatter"/>
+                                <field name="api_chatter" placeholder="http://182.191.80.192:1250/chat"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
