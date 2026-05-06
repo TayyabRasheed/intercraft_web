@@ -56,7 +56,8 @@
                                 <div class="row" style="justify-content: center;">
                                     <t t-call="website_ext.team_member_card">
                                         <t t-set="team_members"
-                                           t-value="request.env['website.team.member'].sudo().search(['|', ('tag_ids', '=', False), '&amp;', ('active', '=', True), ('tag_ids.name', '!=', 'ai')], order='sequence, name')"/>
+                                           t-value="request.env['website.team.member'].sudo().search(['&amp;', ('tag_ids', '=', False), ('active', '=', True)], order='sequence, name')"/>
+
                                     </t>
                                 </div>
                                 <div class="text-center mb-5">

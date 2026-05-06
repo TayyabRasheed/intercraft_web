@@ -65,19 +65,19 @@
 
 
                                 </div>
-                                <div class="office-address">
-                                    <img src="/website_ext/static/src/images/flags/uae.png" alt="UAE Flag"
-                                         class="flag-icon"/>
-                                    <p>
-                                        Office 2503, Prime Business Center,
-                                        <br/>
-                                        Prime Tower Business Bay,
-                                        <br/>
-                                        Dubai, UAE
-                                        <br/>
-                                        <a href="tel:+971 564241212" target="_blank">+971 56-424-1212</a>
-                                    </p>
-                                </div>
+<!--                                <div class="office-address">-->
+<!--                                    <img src="/website_ext/static/src/images/flags/uae.png" alt="UAE Flag"-->
+<!--                                         class="flag-icon"/>-->
+<!--                                    <p>-->
+<!--                                        Office 2503, Prime Business Center,-->
+<!--                                        <br/>-->
+<!--                                        Prime Tower Business Bay,-->
+<!--                                        <br/>-->
+<!--                                        Dubai, UAE-->
+<!--                                        <br/>-->
+<!--                                        <a href="tel:+971 564241212" target="_blank">+971 56-424-1212</a>-->
+<!--                                    </p>-->
+<!--                                </div>-->
                                 <div class="office-address">
                                     <img src="/website_ext/static/src/images/flags/pk.svg" alt="Pakistan Flag"
                                          class="flag-icon"/>

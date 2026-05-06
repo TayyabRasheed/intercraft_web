@@ -18,6 +18,11 @@
     z-index: 99998 !important;
 }
 
+#chat-send-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
 /* Mobile: full-width sheet from bottom */
 @media (max-width: 480px) {
     #chatSidePanel {

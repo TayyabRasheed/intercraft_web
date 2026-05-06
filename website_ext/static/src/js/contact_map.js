@@ -26,7 +26,7 @@ function initMap() {
         var locations = [
             { address: "14015 Hymill Dr, Pflugerville, TX 78660, USA", title: "USA Office - Pflugerville" },
             { address: "Office UG-8, 9 Grand Xcito, D - Markaz, Gulberg Greens, Islamabad, Pakistan", title: "Pakistan Office - Islamabad" },
-            { address: "Office 2503, Prime Business Center, Prime Tower Business Bay - Dubai UAE", title: "Dubai UAE Office" }
+            // { address: "Office 2503, Prime Business Center, Prime Tower Business Bay - Dubai UAE", title: "Dubai UAE Office" }
         ];
 
         locations.forEach(function(loc) {

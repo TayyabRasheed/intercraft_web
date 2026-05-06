@@ -93,5 +93,5 @@
 
 
 .set_margin_top {
-    margin-top: var(--nav-height);
+     margin-top: calc(var(--nav-height) + var(--top-bar-height));
 }

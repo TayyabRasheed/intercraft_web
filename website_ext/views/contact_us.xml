@@ -58,13 +58,13 @@
                                                         </span>
                                                     </div>
 
-                                                    <div class="contact-phone-entry">
-                                                        <a href="tel:+971564241212">+971 56-424-1212</a>
-                                                        <span class="contact-phone-label">
-                                                            <img src="/website_ext/static/src/images/flags/uae.png"
-                                                                 alt="UAE" title="UAE" class="flag-icon"/>
-                                                        </span>
-                                                    </div>
+<!--                                                    <div class="contact-phone-entry">-->
+<!--                                                        <a href="tel:+971564241212">+971 56-424-1212</a>-->
+<!--                                                        <span class="contact-phone-label">-->
+<!--                                                            <img src="/website_ext/static/src/images/flags/uae.png"-->
+<!--                                                                 alt="UAE" title="UAE" class="flag-icon"/>-->
+<!--                                                        </span>-->
+<!--                                                    </div>-->
 
                                                     <div class="contact-phone-entry">
                                                         <a href="tel:+92515915931">+92 51 5915931</a>

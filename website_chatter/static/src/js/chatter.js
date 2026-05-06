@@ -86,7 +86,48 @@
             div.querySelectorAll('code').forEach(c => c.style.cssText = 'background:#e2e2e2;padding:1px 4px;border-radius:3px;font-size:0.8rem;');
             div.querySelectorAll('pre').forEach(p => p.style.cssText = 'background:#e8e8e8;padding:8px;border-radius:6px;overflow-x:auto;font-size:0.8rem;');
             div.querySelectorAll('a').forEach(a => a.style.color = '#e8501a');
+
+            // Wrap table in bordered container
+            div.querySelectorAll('table').forEach(t => {
+                t.style.cssText = 'width:100%;border-collapse:collapse;font-size:0.82rem;border:1px solid #d0d0d0;';
+                if (!t.parentElement.classList.contains('table-wrap')) {
+                    var wrap = document.createElement('div');
+                    wrap.className = 'table-wrap';
+                    wrap.style.cssText = 'border:1px solid #d0d0d0;border-radius:6px;overflow:hidden;margin:8px 0;';
+                    t.parentNode.insertBefore(wrap, t);
+                    wrap.appendChild(t);
+                    t.style.border = 'none'; // border handled by wrapper
+                }
+            });
+
+            // Header — white bg, bold, bottom border only
+            div.querySelectorAll('th').forEach((th, i, all) => {
+                th.style.cssText = 'background:#fff;color:#111;padding:10px 14px;text-align:left;font-weight:700;font-size:0.82rem;border-bottom:1.5px solid #bbb;'
+                    + (i < all.length - 1 ? 'border-right:1px solid #d0d0d0;' : '');
+            });
+
+            // All cells — thin borders between rows and columns
+            div.querySelectorAll('td').forEach(td => {
+                td.style.cssText = 'padding:10px 14px;border-bottom:1px solid #d0d0d0;border-right:1px solid #d0d0d0;vertical-align:top;color:#444;font-weight:400;';
+            });
+
+            // First column cells — bold dark text like screenshot
+            div.querySelectorAll('td:first-child').forEach(td => {
+                td.style.fontWeight = '700';
+                td.style.color = '#111';
+            });
+
+            // Last column — no right border
+            div.querySelectorAll('td:last-child, th:last-child').forEach(el => {
+                el.style.borderRight = 'none';
+            });
+
+            // Last row — no bottom border
+            div.querySelectorAll('tbody tr:last-child td').forEach(td => {
+                td.style.borderBottom = 'none';
+            });
         }
+
         function makeAvatar(html, isBot) {
             var el = document.createElement('div');
             el.style.cssText = isBot
@@ -133,7 +174,7 @@
                 btn.style.cssText = 'background:#fff;border:1.5px solid #e8501a;color:#333;border-radius:20px;padding:7px 14px;font-size:0.8rem;cursor:pointer;transition:all 0.15s;white-space:normal;text-align:left;line-height:1.4;box-shadow:0 1px 3px rgba(0,0,0,0.06);';
                 btn.onmouseover = () => { btn.style.background = '#e8501a'; btn.style.color = '#fff'; };
                 btn.onmouseout  = () => { btn.style.background = '#fff';    btn.style.color = '#333'; };
-                btn.onclick     = () => { msgBox.querySelectorAll('.followup-chips').forEach(el => el.remove()); input.value = q; sendChat(); };
+                btn.onclick = () => { if (sendBtn.disabled) return; msgBox.querySelectorAll('.followup-chips').forEach(el => el.remove()); input.value = q; sendChat(); };
                 wrapper.appendChild(btn);
             });
             msgBox.append(wrapper); msgBox.scrollTop = msgBox.scrollHeight;
@@ -167,10 +208,10 @@
                 if (!chatApiUrl) appendMsg('Chat is not configured yet. Please set the API endpoint in Settings.', 'bot');
                 return;
             }
-            input.value = ''; sendBtn.disabled = true;
+            input.value = ''; sendBtn.disabled = true; sendBtn.style.opacity = '0.45'; sendBtn.style.cursor = 'not-allowed'; input.disabled = true;
             appendMsg(msg, 'user');
             msgBox.querySelectorAll('.followup-chips').forEach(el => el.remove());
-            chatState.messages.push({ role: 'user', content: msg });
+            chatState.messages.push({ role: 'human', content: msg });
 
             var avatar = makeAvatar(BOT_AVATAR, true);
             var botDiv = document.createElement('div'), ts = document.createElement('div'),
@@ -196,14 +237,14 @@
                     for (var line of lines) ({ rawText, followUps } = parseChunk(line, rawText, followUps, botDiv));
                 }
                 if (buffer.trim()) ({ rawText, followUps } = parseChunk(buffer, rawText, followUps, botDiv));
-                if (rawText) chatState.messages.push({ role: 'AI', content: rawText });
+                if (rawText) chatState.messages.push({ role: 'ai', content: rawText });
             } catch (e) {
                 botDiv.textContent = 'Could not reach support. Please try again.';
                 chatState.messages.pop();
             }
             saveState(chatState);
             if (followUps.length) appendFollowUps(followUps);
-            sendBtn.disabled = false; input.focus();
+            sendBtn.disabled = false; sendBtn.style.opacity = ''; sendBtn.style.cursor = ''; input.disabled = false; input.focus();
         }
 
         fab.addEventListener('click',      () => panel.style.display === 'flex' ? closePanel() : openPanel());
@@ -212,7 +253,7 @@
         resizeBtn.addEventListener('click', toggleResize);
         overlay.addEventListener('click',   closePanel);
         sendBtn.addEventListener('click',   sendChat);
-        input.addEventListener('keydown',   e => { if (e.key === 'Enter') sendChat(); });
+        input.addEventListener('keydown',   e => { if (e.key === 'Enter' && !sendBtn.disabled) sendChat(); });
 
     }, 500);
 })();
