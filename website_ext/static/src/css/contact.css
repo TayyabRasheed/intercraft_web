@@ -1,6 +1,6 @@
 .contact-hero {
 
-    padding: 120px 0 80px;
+    padding: 160px 0 80px;
     position: relative;
     overflow: hidden;
     /*background: url("/website_ext/static/src/images/contactus_bg.jpg") center / cover;*/
@@ -27,6 +27,7 @@
 .contact-title {
     font-size: 32px;
     font-weight: 700;
+    margin-top: 12px;
     margin-bottom: 20px;
     line-height: 1.2;
     color: #333;
@@ -42,6 +43,109 @@
 
 .contact-info-items {
     margin-top: 40px;
+}
+
+.contact-quick-links-wrap {
+    margin-top: 28px;
+}
+
+.contact-quick-links-heading {
+    color: #f15a24;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.contact-quick-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.contact-quick-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 52px;
+    padding: 10px 14px;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-quick-link:hover,
+.contact-quick-link:focus {
+    color: #222;
+    text-decoration: none;
+    border-color: #ff5500;
+    box-shadow: 0 6px 16px rgba(255, 85, 0, 0.12);
+    transform: translateY(-1px);
+}
+
+.contact-quick-link-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: rgba(241, 90, 36, 0.12);
+    color: #f15a24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.contact-quick-link-label {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.contact-quick-link-arrow {
+    color: #b0b0b0;
+    display: flex;
+    align-items: center;
+}
+
+.contact-quick-link--primary {
+    grid-column: 1 / -1;
+    min-height: 60px;
+    padding: 14px 18px;
+    background: linear-gradient(to right, #d12c09, #f25c05);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 8px 22px rgba(209, 44, 9, 0.3);
+}
+
+.contact-quick-link--primary .contact-quick-link-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+}
+
+.contact-quick-link--primary .contact-quick-link-label {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.contact-quick-link--primary .contact-quick-link-arrow {
+    color: #fff;
+}
+
+.contact-quick-link--primary:hover,
+.contact-quick-link--primary:focus {
+    color: #fff;
+    border-color: transparent;
+    background: linear-gradient(to right, #f25c05, #d12c09);
+    box-shadow: 0 12px 28px rgba(209, 44, 9, 0.38);
 }
 
 .contact-item {
@@ -168,7 +272,7 @@
 
 @media (max-width: 992px) {
     .contact-hero {
-        padding: 100px 0 60px;
+        padding: 150px 0 60px;
     }
 
     .contact-title {
@@ -183,7 +287,7 @@
 
 @media (max-width: 768px) {
     .contact-hero {
-        padding: 80px 0 50px;
+        padding: 140px 0 50px;
     }
 
     .contact-title {
@@ -206,16 +310,20 @@
 
 @media (max-width: 576px) {
     .contact-hero {
-        padding: 70px 0 40px;
+        padding: 140px 0 40px;
     }
 
     .contact-title {
         font-size: 24px;
-        margin-top: 85px;
+        margin-top: 8px;
     }
 
     .contact-form {
         padding: 20px;
+    }
+
+    .contact-quick-links {
+        grid-template-columns: 1fr;
     }
 
     .contact-icon {
