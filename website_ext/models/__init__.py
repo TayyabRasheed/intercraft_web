@@ -8,3 +8,4 @@ from . import event_image
 from . import project_tag
 from . import website_project
 from . import website_testimonial
+from . import website_upcoming_event

@@ -1,0 +1,107 @@
+.ic-event-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 200000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.ic-event-popup.is-hidden {
+    display: none;
+}
+
+.ic-event-popup-backdrop {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(10, 16, 40, 0.68);
+    backdrop-filter: blur(4px);
+}
+
+.ic-event-popup-dialog {
+    position: relative;
+    z-index: 1;
+    max-width: min(1100px, 92vw);
+    max-height: 88vh;
+    animation: ic-event-popup-in 0.28s ease-out;
+}
+
+.ic-event-popup-media {
+    display: block;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.ic-event-popup-dialog img {
+    display: block;
+    max-width: 100%;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.ic-event-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 28px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    z-index: 5;
+    pointer-events: auto;
+}
+
+.ic-event-popup-close:hover,
+.ic-event-popup-close:focus {
+    background: #f15a24;
+    color: #fff;
+    outline: none;
+}
+
+body.ic-event-popup-open {
+    overflow: hidden;
+}
+
+@keyframes ic-event-popup-in {
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 576px) {
+    .ic-event-popup {
+        padding: 16px;
+    }
+
+    .ic-event-popup-close {
+        top: 8px;
+        right: 8px;
+        width: 32px;
+        height: 32px;
+        font-size: 24px;
+    }
+
+    .ic-event-popup-dialog img {
+        border-radius: 8px;
+        max-height: 80vh;
+    }
+}

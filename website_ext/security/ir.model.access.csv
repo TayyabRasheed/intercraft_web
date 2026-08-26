@@ -11,3 +11,5 @@ access_website_project_user,website.project.user,model_website_project,base.grou
 access_website_project_public,website.project.public,model_website_project,,1,0,0,0
 access_website_testimonial_user,website.testimonial.user,model_website_testimonial,base.group_user,1,1,1,1
 access_website_testimonial_public,website.testimonial.public,model_website_testimonial,,1,0,0,0
+access_website_upcoming_event_user,website.upcoming.event.user,model_website_upcoming_event,base.group_user,1,1,1,1
+access_website_upcoming_event_public,website.upcoming.event.public,model_website_upcoming_event,,1,0,0,0

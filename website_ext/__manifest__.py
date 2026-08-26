@@ -50,7 +50,9 @@
         'views/our_work.xml',
         'views/extended_views/account_asset_ext.xml',
         'views/event_image_views.xml',
-        'data/event_image_data.xml'
+        'data/event_image_data.xml',
+        'views/upcoming_event_views.xml',
+        'data/upcoming_event_data.xml',
     ],
     'assets': {
         'web.assets_frontend': [
