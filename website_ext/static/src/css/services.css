@@ -454,7 +454,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     .service-hero {
         padding-bottom: 40px !important;
         height: 40dvh !important;
-        margin-top: var(--nav-height) ;
+        margin-top: calc(var(--top-bar-height) + var(--nav-height));
     }
 
     .service-hero-title {
@@ -490,9 +490,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 @media (max-width: 768px) {
  .service-hero {
-             padding-bottom: 40px !important;
+        padding-bottom: 40px !important;
         height: 40dvh !important;
-        margin-top: var(--nav-height) ;
+        margin-top: calc(var(--top-bar-height) + var(--nav-height));
     }
 
     .service-hero-title {
@@ -541,9 +541,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 @media (max-width: 576px) {
      .service-hero {
-             padding-bottom: 40px !important;
+        padding-bottom: 40px !important;
         height: 40dvh !important;
-        margin-top: calc(var(--nav-height) - 1px) !important ;
+        margin-top: calc(var(--top-bar-height) + var(--nav-height)) !important;
     }
     .section-label {
         font-size: 22px !important;
@@ -630,7 +630,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
     .service-hero {
         padding-bottom: 40px !important;
         height: 40dvh !important;
-        margin-top: var(--nav-height) ;
+        margin-top: calc(var(--top-bar-height) + var(--nav-height)) !important;
     }
 
     .service-image img {

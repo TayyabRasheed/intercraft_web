@@ -944,9 +944,12 @@ body {
 
 @media (max-width: 992px) {
     .hero {
-        padding-bottom: 40px;
-        height: 40dvh !important;
-        margin-top: calc(var(--nav-height));
+        height: auto !important;
+        min-height: 50dvh;
+        margin-top: 0;
+        padding-top: calc(var(--top-bar-height) + var(--nav-height) + 24px);
+        padding-bottom: 48px;
+        align-items: center;
     }
 
     .hero h1 {
@@ -983,8 +986,11 @@ body {
 
 @media (max-width: 768px) {
     .hero {
-        padding-bottom: 50px;
-        height: 40dvh !important;
+        height: auto !important;
+        min-height: 48dvh;
+        margin-top: 0;
+        padding-top: calc(var(--top-bar-height) + var(--nav-height) + 20px);
+        padding-bottom: 40px;
     }
 
     .hero h1 {
@@ -1039,9 +1045,11 @@ body {
 
 @media (max-width: 576px) {
     .hero {
-        padding-bottom: 40px;
-        height: 40dvh !important;
-        margin-top: calc(var(--nav-height) - 3px);
+        height: auto !important;
+        min-height: 46dvh;
+        margin-top: 0;
+        padding-top: calc(var(--top-bar-height) + var(--nav-height) + 16px);
+        padding-bottom: 36px;
     }
 
     .hero h1 {
