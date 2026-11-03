@@ -94,7 +94,6 @@ class WebsiteProduct(models.Model):
         products = super().create(vals_list)
         products._ensure_slug()
         self.env.registry.clear_cache('templates')
-        self.env.registry.clear_cache('templates.cached_values')
         return products
 
     def write(self, vals):
@@ -120,13 +119,11 @@ class WebsiteProduct(models.Model):
             'sequence', 'active', 'slug', 'url', 'image', 'logo', 'tag_ids',
         )):
             self.env.registry.clear_cache('templates')
-            self.env.registry.clear_cache('templates.cached_values')
         return res
 
     def unlink(self):
         res = super().unlink()
         self.env.registry.clear_cache('templates')
-        self.env.registry.clear_cache('templates.cached_values')
         return res
 
     def _publish_detail_html_attachments(self):
