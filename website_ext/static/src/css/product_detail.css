@@ -470,7 +470,6 @@ button.icpd-portal-tab {
 .icpd-portal-tab .icpd-tab-num {
     color: #64748b;
     margin-right: 6px;
-    pointer-events: none;
 }
 
 .icpd-portal-tab.is-active {

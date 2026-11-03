@@ -369,31 +369,17 @@
 
         root.setAttribute('data-portal-ready', '1');
 
-        // Website Edit mode: keep tabs clickable (not text-editable)
-        tabsRoot.setAttribute('contenteditable', 'false');
-        tabsRoot.classList.add('o_not_editable');
-        tabsRoot.style.setProperty('pointer-events', 'auto', 'important');
-
         var parts = ensureIndicator(tabsRoot);
         var startIndex = 0;
         tabs.forEach(function (tab, idx) {
             if (tab.classList.contains('is-active')) {
                 startIndex = idx;
             }
-            tab.setAttribute('contenteditable', 'false');
-            tab.classList.add('o_not_editable');
-            tab.style.setProperty('pointer-events', 'auto', 'important');
-            tab.style.setProperty('cursor', 'pointer', 'important');
             if (tab.tagName === 'A') {
                 tab.setAttribute('href', '#');
                 tab.setAttribute('role', 'tab');
             }
         });
-        var frame = root.querySelector('.icpd-portal-frame');
-        if (frame) {
-            frame.setAttribute('contenteditable', 'false');
-            frame.classList.add('o_not_editable');
-        }
 
         var state = {
             root: root,
@@ -415,10 +401,13 @@
             if (!tab || !tabsRoot.contains(tab)) {
                 return;
             }
-            ev.preventDefault();
-            ev.stopPropagation();
-            if (typeof ev.stopImmediatePropagation === 'function') {
-                ev.stopImmediatePropagation();
+            // Website Edit mode: tab text is editable, so let the caret land in it
+            if (!tab.isContentEditable) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                if (typeof ev.stopImmediatePropagation === 'function') {
+                    ev.stopImmediatePropagation();
+                }
             }
             // Re-read tabs/shots in case editor/DOM mutated
             state.tabs = Array.prototype.slice.call(

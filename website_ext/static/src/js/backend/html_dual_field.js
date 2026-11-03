@@ -240,7 +240,10 @@ function getShotForTab(section, tab) {
     return frame.querySelector(`img[data-portal-shot="${idx}"]`);
 }
 
-/** Turn a portal tab div into a real <button> so clicks always work in the editor. */
+/**
+ * Tabs must be <div>s (text inside a <button> cannot be edited).
+ * Converts older <button> tabs and keeps the data-portal-tab index.
+ */
 function ensurePortalTabButton(tab, index) {
     if (!tab) {
         return null;
@@ -248,27 +251,73 @@ function ensurePortalTabButton(tab, index) {
     const idx = tab.hasAttribute("data-portal-tab")
         ? getTabIndex(tab)
         : index;
-    if (tab.tagName === "BUTTON") {
-        tab.setAttribute("type", "button");
+    if (tab.tagName !== "BUTTON") {
         tab.setAttribute("data-portal-tab", String(idx));
         return tab;
     }
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = tab.className || "icpd-portal-tab";
-    btn.innerHTML = tab.innerHTML;
+    const div = document.createElement("div");
+    div.className = tab.className || "icpd-portal-tab";
+    div.innerHTML = tab.innerHTML;
     [...tab.attributes].forEach((attr) => {
-        if (attr.name === "type") {
+        if (attr.name !== "type") {
+            div.setAttribute(attr.name, attr.value);
+        }
+    });
+    div.setAttribute("data-portal-tab", String(idx));
+    div.setAttribute("role", "tab");
+    if (tab.parentNode) {
+        tab.parentNode.replaceChild(div, tab);
+    }
+    return div;
+}
+
+/** Wrap the tab text (after the 01/02… number) in an editable label span. */
+function ensureTabLabel(tab) {
+    let label = tab.querySelector(".icpd-tab-label");
+    if (!label) {
+        const numEl = tab.querySelector(".icpd-tab-num");
+        label = document.createElement("span");
+        label.className = "icpd-tab-label";
+        [...tab.childNodes].forEach((node) => {
+            if (node !== numEl) {
+                label.appendChild(node);
+            }
+        });
+        if (!label.textContent.trim()) {
+            label.textContent = " ";
+        }
+        tab.appendChild(label);
+    }
+    // The 01 / 02 / 03 / 04 number is editable too
+    const numEl = tab.querySelector(".icpd-tab-num");
+    [label, numEl].forEach((el) => {
+        if (!el) {
             return;
         }
-        btn.setAttribute(attr.name, attr.value);
+        el.setAttribute("contenteditable", "true");
+        el.removeAttribute("data-oe-protected");
+        el.classList.remove("o_not_editable");
+        el.style.setProperty("user-select", "text", "important");
+        el.style.setProperty("-webkit-user-select", "text", "important");
+        el.style.setProperty("pointer-events", "auto", "important");
+        el.style.setProperty("cursor", "text", "important");
+        el.style.setProperty("outline", "none");
     });
-    btn.setAttribute("data-portal-tab", String(idx));
-    btn.setAttribute("role", "tab");
-    if (tab.parentNode) {
-        tab.parentNode.replaceChild(btn, tab);
-    }
-    return btn;
+    return label;
+}
+
+/** A tab whose number AND label were both cleared. */
+function isTabEmpty(tab) {
+    return !!tab && !(tab.textContent || "").replace(/[\s\u200b\u00a0]/g, "");
+}
+
+/** True when the pointer is on the ACTIVE tab's label → let the user type there. */
+function isEditingTabLabel(ev, tab) {
+    return !!(
+        tab &&
+        tab.classList.contains("is-active") &&
+        closestFromEvent(ev, ".icpd-tab-label, .icpd-tab-num")
+    );
 }
 
 /**
@@ -301,6 +350,7 @@ function hardenPortalTabs(section) {
         btn.style.setProperty("cursor", "pointer", "important");
         btn.style.setProperty("user-select", "none", "important");
         btn.style.setProperty("-webkit-user-select", "none", "important");
+        ensureTabLabel(btn);
     });
 }
 
@@ -780,6 +830,10 @@ function stripEditorChrome(root, { clearSelected = true } = {}) {
         ].join(", ")
     ).forEach((el) => el.remove());
     if (clearSelected) {
+        // Label editing is editor-only; visitors must not get editable tab text
+        root.querySelectorAll(".icpd-tab-label, .icpd-tab-num").forEach((el) => {
+            el.removeAttribute("contenteditable");
+        });
         root.querySelectorAll(".icpd-portals").forEach((section) => {
             section.removeAttribute("data-active-shot");
         });
@@ -941,6 +995,9 @@ export class HtmlDualField extends HtmlField {
             }
             tab.dataset.icpdTabBound = "1";
             const onActivate = (ev) => {
+                if (isTabEmpty(tab) || isEditingTabLabel(ev, tab)) {
+                    return;
+                }
                 ev.preventDefault();
                 ev.stopPropagation();
                 if (typeof ev.stopImmediatePropagation === "function") {
@@ -957,23 +1014,55 @@ export class HtmlDualField extends HtmlField {
         });
     }
 
-    _renamePortalTab(section, tab) {
-        const numEl = tab.querySelector(".icpd-tab-num");
-        const current = tabDisplayName(tab).replace(/^\d+\s*/, "");
-        const next = window.prompt("Tab label", current);
-        if (next === null) {
-            return;
+    /**
+     * Remove an emptied tab and its image slot, then re-index the rest so
+     * every remaining tab keeps ITS OWN image and the bar re-fills the width.
+     */
+    _deletePortalTab(section, tab) {
+        const tabs = [...section.querySelectorAll("[data-portal-tab]")];
+        if (tabs.length <= 1) {
+            return; // keep at least one tab
         }
-        [...tab.childNodes].forEach((node) => {
-            if (node !== numEl) {
-                node.remove();
+        const frame = section.querySelector(".icpd-portal-frame");
+        const pos = tabs.indexOf(tab);
+        const removedKey = String(getTabIndex(tab));
+
+        const imgByKey = new Map();
+        if (frame) {
+            frame.querySelectorAll("img[data-portal-shot]").forEach((img) => {
+                imgByKey.set(img.getAttribute("data-portal-shot"), img);
+            });
+        }
+        const removedImg = imgByKey.get(removedKey);
+        if (removedImg) {
+            removedImg.remove();
+            imgByKey.delete(removedKey);
+        }
+        tab.remove();
+
+        const remaining = tabs.filter((t) => t !== tab);
+        const moves = remaining.map((t) => ({
+            tab: t,
+            img: imgByKey.get(String(getTabIndex(t))) || null,
+        }));
+        moves.forEach(({ tab: t, img }, i) => {
+            t.setAttribute("data-portal-tab", String(i));
+            if (img) {
+                img.setAttribute("data-portal-shot", String(i));
+            }
+            // Renumber plain "01 / 02 …" numbers; custom numbers are left alone
+            const numEl = t.querySelector(".icpd-tab-num");
+            if (numEl && /^\s*\d{1,2}\s*$/.test(numEl.textContent)) {
+                numEl.textContent = String(i + 1).padStart(2, "0");
             }
         });
-        tab.appendChild(document.createTextNode(" " + next.trim()));
-        const shot = getShotForTab(section, tab);
-        if (shot) {
-            shot.setAttribute("alt", tabDisplayName(tab));
-        }
+
+        this._tabDeletedAt = Date.now();
+        this._clearBlockSelection();
+        const next = remaining[Math.min(pos, remaining.length - 1)];
+        this._activePortalTabIndex = getTabIndex(next);
+        ensurePerTabShots(section, { force: true });
+        this._switchPortalTab(section, next, { sticky: true });
         try {
             const editor = this._getEditor();
             if (editor && editor.historyStep) {
@@ -1140,6 +1229,26 @@ export class HtmlDualField extends HtmlField {
             if (!section) {
                 return;
             }
+            // Swallow the tail of the click that just deleted a tab
+            if (this._tabDeletedAt && Date.now() - this._tabDeletedAt < 500) {
+                ev.preventDefault();
+                ev.stopPropagation();
+                return;
+            }
+            // Text was removed from this tab → one more click deletes the whole tab
+            if (isTabEmpty(tab) && ev.type === "pointerdown") {
+                ev.preventDefault();
+                ev.stopPropagation();
+                if (typeof ev.stopImmediatePropagation === "function") {
+                    ev.stopImmediatePropagation();
+                }
+                this._deletePortalTab(section, tab);
+                return;
+            }
+            // Active tab's label: let the click through so the text can be edited in place
+            if (isEditingTabLabel(ev, tab)) {
+                return;
+            }
             ev.preventDefault();
             ev.stopPropagation();
             if (typeof ev.stopImmediatePropagation === "function") {
@@ -1160,10 +1269,6 @@ export class HtmlDualField extends HtmlField {
             if (ev.type === "pointerdown" || ev.type === "mousedown") {
                 this._clearBlockSelection();
                 this._switchPortalTab(section, tab, { sticky: true });
-            }
-            // Double-click a tab → rename its label (tab text stays editable)
-            if (ev.type === "dblclick") {
-                this._renamePortalTab(section, tab);
             }
             return;
         }
