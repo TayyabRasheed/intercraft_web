@@ -1,0 +1,436 @@
+/* Case Study editor: preview + code view fill the full notebook section */
+.o_field_html_dual,
+.o_field_widget.o_field_html_dual,
+.o_form_view .o_notebook .tab-pane .o_field_widget[name="detail_html"] {
+    position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+
+    .icpd-html-dual-wrap {
+        position: relative;
+        width: 100%;
+        min-height: calc(100vh - 220px);
+    }
+
+    /* Selection chrome OUTSIDE contenteditable so Odoo cannot strip it */
+    .icpd-block-overlay {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        z-index: 80;
+        display: none;
+    }
+
+    .icpd-block-overlay.is-active {
+        display: block;
+    }
+
+    .icpd-block-outline {
+        position: absolute;
+        box-sizing: border-box;
+        border: 2px solid #38bdf8;
+        box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.18);
+        border-radius: 4px;
+        pointer-events: none;
+    }
+
+    .icpd-block-toolbar {
+        position: absolute !important;
+        transform: translateX(-50%);
+        z-index: 81 !important;
+        display: flex !important;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 6px;
+        border-radius: 8px;
+        background: #fff !important;
+        box-shadow: 0 6px 18px rgba(15, 23, 42, 0.22);
+        pointer-events: auto !important;
+        user-select: none;
+    }
+
+    .icpd-block-delete {
+        appearance: none;
+        -webkit-appearance: none;
+        border: 0 !important;
+        height: 30px;
+        min-width: 30px;
+        padding: 0 10px !important;
+        border-radius: 7px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        background: transparent !important;
+        color: #dc2626 !important;
+        cursor: pointer !important;
+        pointer-events: auto !important;
+        line-height: 1;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .icpd-block-delete:hover {
+        background: #dc2626 !important;
+        color: #fff !important;
+    }
+
+    .icpd-block-delete i {
+        font-size: 14px;
+    }
+
+    .icpd-html-dual-frame .icpd-block-selected {
+        outline: 1px dashed rgba(56, 189, 248, 0.45);
+        outline-offset: 2px;
+    }
+
+    /* Keep the </> control on the full Case Study box, not nested content */
+    #codeview-btn-group.icpd-codeview-btn {
+        position: absolute !important;
+        top: 12px !important;
+        right: 12px !important;
+        left: auto !important;
+        z-index: 100 !important;
+        margin: 0 !important;
+
+        .o_codeview_btn {
+            min-width: 40px;
+            min-height: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.25);
+        }
+    }
+
+    iframe.icpd-html-dual-frame,
+    .icpd-html-dual-frame iframe,
+    iframe {
+        display: block !important;
+        width: 100% !important;
+        min-height: calc(100vh - 220px) !important;
+        height: calc(100vh - 220px) !important;
+        border: 1px solid #d8dadd !important;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .icpd-html-dual-frame {
+        width: 100%;
+        min-height: calc(100vh - 220px);
+    }
+
+    /* Visual WYSIWYG: click text / double-click images */
+    .icpd-html-dual-frame .note-editable,
+    .icpd-html-dual-frame .odoo-editor-editable,
+    .icpd-html-dual-frame .o_wysiwyg_wrapper,
+    .icpd-html-dual-frame .o_editable {
+        min-height: calc(100vh - 260px);
+        padding: 16px 20px 40px;
+        background: #fff;
+        border: 1px solid #d8dadd;
+        border-radius: 8px;
+        overflow: auto;
+    }
+
+    .icpd-html-dual-frame .icpd-case-hero p,
+    .icpd-html-dual-frame .icpd-lead,
+    .icpd-html-dual-frame .icpd-hero-intro p {
+        text-align: center !important;
+        hyphens: none !important;
+    }
+
+    .icpd-html-dual-frame img {
+        cursor: pointer;
+        max-width: 100%;
+    }
+
+    /* Editor: fixed frame size — uploads must not resize the box */
+    .icpd-html-dual-frame .icpd-portal-frame {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        line-height: 0;
+        overflow: hidden;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-frame > img {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        object-fit: contain !important;
+        object-position: center center !important;
+        background: transparent !important;
+        opacity: 0;
+        position: absolute !important;
+        inset: 0;
+        transition: opacity 0.35s ease;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-frame > img:not(.is-active),
+    .icpd-html-dual-frame .icpd-portal-shot:not(.is-active) {
+        opacity: 0 !important;
+        visibility: hidden !important;
+        z-index: 0 !important;
+        pointer-events: none !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-frame > img.is-active {
+        opacity: 1 !important;
+        visibility: visible !important;
+        z-index: 2;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-empty-label {
+        display: none;
+        position: absolute;
+        inset: 0;
+        z-index: 4;
+        align-items: center;
+        justify-content: center;
+        padding: 28px;
+        background: #1e293b;
+        color: #e2e8f0;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.45;
+        text-align: center;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-empty-label.is-on {
+        display: flex !important;
+    }
+
+    /* Black dummy stays visible so it can be clicked and replaced */
+    .icpd-html-dual-frame .icpd-portal-frame > img.is-active.is-empty,
+    .icpd-html-dual-frame .icpd-portal-frame > img.is-active[data-portal-empty="1"] {
+        opacity: 1 !important;
+        visibility: visible !important;
+        object-fit: contain !important;
+        cursor: pointer !important;
+        outline: 2px dashed rgba(240, 90, 36, 0.7);
+        outline-offset: -10px;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-sources {
+        display: none !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tabs {
+        display: flex !important;
+        position: relative !important;
+        z-index: 200 !important;
+        overflow: visible !important;
+        background: #16191d;
+        pointer-events: auto !important;
+    }
+
+    /* Click switches that button's image. Not a text field. */
+    .icpd-html-dual-frame .icpd-portal-tabs button.icpd-portal-tab,
+    .icpd-html-dual-frame .icpd-portal-tab,
+    .icpd-html-dual-frame button.icpd-portal-tab {
+        flex: 1 1 0 !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+        z-index: 51 !important;
+        outline: 2px solid transparent;
+        border-top: 3px solid transparent !important;
+        color: #94a3b8 !important;
+        background: transparent;
+        transition: color 0.2s ease, background 0.2s ease;
+        appearance: none !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
+    }
+
+    /* Filled portal images: select + Delete like normal HTML (empty slots still upload on click) */
+    .icpd-html-dual-frame .icpd-portal-frame > img.is-active:not(.is-empty):not([data-portal-empty="1"]) {
+        cursor: default !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tab:hover {
+        outline-color: rgba(240, 90, 36, 0.55);
+        color: #e2e8f0 !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tab.is-active {
+        background: #22262c !important;
+        color: #fff !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tab.is-active .icpd-tab-num {
+        color: #F05A24 !important;
+    }
+
+    /* Orange line that slides across tabs */
+    .icpd-html-dual-frame .icpd-portal-tab-indicator {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        height: 3px !important;
+        width: 25%;
+        min-width: 40px;
+        background: rgba(240, 90, 36, 0.28) !important;
+        opacity: 1 !important;
+        display: block !important;
+        pointer-events: none !important;
+        z-index: 6 !important;
+        overflow: hidden;
+        transform: translateX(0);
+        transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            width 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.2s ease !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tab-progress {
+        display: block !important;
+        height: 100% !important;
+        width: 100%;
+        background: #F05A24 !important;
+        transition: width 0.32s ease;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-editor-hint {
+        margin: 10px 0 0;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: #fff7ed;
+        border: 1px solid #fdba74;
+        color: #9a3412;
+        font-size: 12px;
+        line-height: 1.4;
+        user-select: none;
+    }
+
+    /* Shows which tab owns the visible image slot */
+    .icpd-html-dual-frame .icpd-portal-slot-badge {
+        margin: 0 0 8px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: #0f172a;
+        color: #e2e8f0;
+        font-size: 13px;
+        line-height: 1.35;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-slot-badge strong {
+        color: #F05A24;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-slot-badge span {
+        color: #94a3b8;
+        font-weight: 400;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-tabs,
+    .icpd-html-dual-frame .icpd-portal-tab {
+        user-select: none !important;
+        -webkit-user-select: none !important;
+        pointer-events: auto !important;
+        cursor: pointer !important;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-frame {
+        position: relative !important;
+        overflow: hidden !important;
+        min-height: 280px;
+    }
+
+    .icpd-html-dual-frame .icpd-portal-frame > img {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: contain !important;
+        margin: 0 !important;
+    }
+
+    /* Upload controls sit above the editor. They are real buttons, not part of the page. */
+    .icpd-portal-toolbar {
+        display: flex;
+        position: relative;
+        z-index: 5;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 10px;
+        padding: 8px 12px;
+        border-radius: 8px;
+        background: #0f172a;
+        color: #fff;
+        box-shadow: none;
+        pointer-events: auto;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .icpd-portal-toolbar-label {
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+
+    .icpd-slot-btn {
+        flex: 0 0 auto;
+        border: 1px solid #334155;
+        background: transparent;
+        color: #e2e8f0;
+        border-radius: 6px;
+        padding: 4px 10px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .icpd-slot-btn.is-active {
+        background: #F05A24;
+        border-color: #F05A24;
+        color: #fff;
+    }
+
+    .icpd-portal-toolbar-upload {
+        flex: 0 0 auto;
+        background: #F05A24 !important;
+        border-color: #F05A24 !important;
+        white-space: nowrap;
+    }
+
+    .icpd-portal-toolbar-upload:hover {
+        background: #d94e1c !important;
+        border-color: #d94e1c !important;
+    }
+
+    textarea.o_codeview {
+        display: block !important;
+        width: 100% !important;
+        min-height: calc(100vh - 220px) !important;
+        height: calc(100vh - 220px) !important;
+        box-sizing: border-box !important;
+        font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+        font-size: 13px;
+        line-height: 1.45;
+        padding: 16px 56px 16px 16px;
+        border: 1px solid #c9cbd0;
+        border-radius: 8px;
+        resize: vertical;
+        background: #fff;
+    }
+
+    .o_readonly {
+        min-height: calc(100vh - 220px);
+        width: 100%;
+    }
+}
+
+/* Notebook Case Study page uses full width */
+.o_form_view .o_notebook .tab-pane:has(.o_field_widget[name="detail_html"]) {
+    max-width: 100%;
+}

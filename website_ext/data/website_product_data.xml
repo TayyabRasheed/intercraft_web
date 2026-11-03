@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <function model="website.product" name="_init_learn_more_pages"/>
+</odoo>

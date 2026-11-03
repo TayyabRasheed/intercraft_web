@@ -152,13 +152,14 @@
 
 .ic-project-card {
     background: #fff;
-    border: 1px solid #E2E8F0;
+    border: 1px solid #E5E7EB;
     border-radius: 20px;
-    padding: 24px;
+    padding: 0;
     height: 100%;
-    transition: all 0.3s;
+    transition: border-color 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .ic-project-card:hover {
@@ -175,23 +176,41 @@
     color: #F05A24;
 }
 
+/* Same light orangish glow as Our Products cards */
+.ic-project-media {
+    background:
+        radial-gradient(ellipse 95% 85% at 50% 35%, #FFFFFF 0%, #FFF9F5 42%, transparent 72%),
+        radial-gradient(ellipse 80% 70% at 0% 100%, rgba(255, 176, 122, 0.28) 0%, transparent 55%),
+        radial-gradient(ellipse 80% 70% at 100% 100%, rgba(255, 168, 110, 0.26) 0%, transparent 55%),
+        radial-gradient(ellipse 90% 60% at 50% 100%, rgba(255, 186, 140, 0.22) 0%, transparent 60%),
+        #FFF3EA;
+    padding: 20px 20px 18px;
+    flex-shrink: 0;
+}
+
 .ic-project-card-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    min-height: 32px;
+    gap: 12px;
 }
 
 .ic-project-logo {
-    height: 32px;
+    height: 28px;
+    max-width: 140px;
     object-fit: contain;
+    margin-left: auto;
 }
 
 .ic-project-badge {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    padding: 6px 12px;
-    border-radius: 8px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 6px;
 }
 
 .badge-ai {
@@ -205,44 +224,69 @@
 }
 
 .badge-website {
-    background: #F1F5F9;
+    background: #EEF1F4;
     color: #64748B;
 }
 
 .ic-project-img-container {
-    border-radius: 14px;
+    border-radius: 12px;
     overflow: hidden;
-    margin-bottom: 20px;
-    height: 190px;
+    height: 200px;
+    flex-shrink: 0;
+    background: transparent;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
 }
 
 .ic-project-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.ic-project-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    background: #fff;
+    padding: 22px 22px 24px;
 }
 
 .ic-project-title {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.ic-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     margin-bottom: 12px;
 }
 
 .ic-project-tags span {
-    background: #F1F5F9;
-    color: #64748B;
+    background: #fff;
+    border: 1px solid #E2E8F0;
+    color: #334155;
     font-size: 0.75rem;
     font-weight: 600;
     padding: 4px 12px;
     border-radius: 100px;
-    margin-right: 6px;
+    margin-right: 0;
+    display: inline-block;
 }
 
 .ic-project-desc {
     color: #64748b;
     font-size: 0.95rem;
     line-height: 1.6;
-    margin: 15px 0 20px;
+    margin: 0 0 16px;
+    flex: 1 1 auto;
+    text-align: left;
 }
 
 .ic-project-link {
@@ -250,6 +294,8 @@
     color: #475569;
     text-decoration: none;
     margin-top: auto;
+    display: inline-flex;
+    align-items: center;
 }
 
 .ic-dot {

@@ -7,5 +7,8 @@ from . import account_asset_ext
 from . import event_image
 from . import project_tag
 from . import website_project
+from . import product_tag
+from . import website_product
+from . import website_product_image
 from . import website_testimonial
 from . import website_upcoming_event

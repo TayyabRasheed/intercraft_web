@@ -199,19 +199,197 @@ function initAccessibility(teamCarouselEl) {
 }
 
 function initGenericScrollAnimations() {
-    const observer = new IntersectionObserver((entries) => {
+    // Codeerts-style: each card gets its own reveal + stagger delay (never dump a whole grid at once)
+    if (window.__icRevealInit) {
+        return;
+    }
+    window.__icRevealInit = true;
+
+    document.documentElement.classList.add("ic-js");
+
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const root =
+        document.querySelector("#wrap") ||
+        document.querySelector("main") ||
+        document.querySelector("#wrapwrap");
+
+    if (!root) {
+        return;
+    }
+
+    const SKIP = [
+        "header", "nav", "script", "style", "link", "noscript", "iframe",
+        ".navbar", ".modal", ".dropdown-menu",
+        "#portal_side_contact_us", "#contactFormModal", ".btn-top",
+        ".carousel-indicators", ".carousel-control-prev", ".carousel-control-next",
+        ".services-bg", ".service-hero-bg", ".hero-video-container",
+    ].join(",");
+
+    // Prefer real cards/tiles — avoid marking huge parents (that made whole grids pop together)
+    const CARD_SEL = [
+        ".service-card", ".feature-card", ".team-card",
+        ".icp-product-card", ".icp-build-card", ".ic-build-card", ".ic-project-card",
+        ".ic-hero-img-wrapper", ".ic-testimonial-card", ".icp-testimonial-card",
+        ".partner-logo-container", ".job-card", ".open-job-card", ".event-card",
+        ".service-feature-card", ".flip-card", ".card",
+        /* Product case study */
+        ".icpd-cap-card", ".icpd-audience-item", ".icpd-callout",
+        ".icpd-revenue-card", ".icpd-meta-item", ".icpd-cta-banner",
+    ].join(",");
+
+    const COPY_SEL = [
+        ".service-hero-content", ".hero-content",
+        ".service-content", ".service-image",
+        ".icpd-portal", ".icpd-section",
+        /* Product case study */
+        ".icpd-hero-intro", ".icpd-hero-media", ".icpd-portals-head",
+        ".icpd-portal-frame", ".icpd-split-head", ".icpd-tech-row",
+        ".icpd-h1", ".icpd-h2", ".icpd-h2-light", ".icpd-lead", ".icpd-body",
+        ".ic-hero-title", ".ic-hero-subtitle", ".icp-hero-title", ".icp-hero-subtitle",
+        ".ic-section-main-title", ".icp-section-main-title",
+        ".section-title", ".section-label", ".section-subtitle",
+        ".text-center.mb-5",
+    ].join(",");
+
+    const marked = new Set();
+    const inSkipTree = (el) => {
+        if (!el || el.nodeType !== 1) {
+            return true;
+        }
+        try {
+            return !!el.closest(SKIP);
+        } catch (e) {
+            return false;
+        }
+    };
+
+    const mark = (el) => {
+        if (!el || el.nodeType !== 1 || marked.has(el) || inSkipTree(el)) {
+            return false;
+        }
+        if (el.querySelector && el.querySelector(".ic-reveal")) {
+            return false;
+        }
+        if (el.closest && el.closest(".ic-reveal")) {
+            return false;
+        }
+        marked.add(el);
+        el.classList.add("ic-reveal");
+        return true;
+    };
+
+    const sections = Array.from(root.querySelectorAll("section")).filter((section) => {
+        return !inSkipTree(section) && section.getClientRects().length > 0;
+    });
+
+    sections.forEach((section) => {
+        section.querySelectorAll(COPY_SEL).forEach((el) => mark(el));
+
+        const cards = Array.from(section.querySelectorAll(CARD_SEL));
+        if (cards.length) {
+            cards.forEach((card) => mark(card));
+            return;
+        }
+
+        // No cards: stagger columns instead of the whole section
+        section.querySelectorAll(".row > [class*='col']").forEach((col) => {
+            mark(col.firstElementChild || col);
+        });
+    });
+
+    root.querySelectorAll(CARD_SEL).forEach((el) => mark(el));
+
+    // Final stagger per section so siblings never share the same delay
+    sections.forEach((section) => {
+        const items = Array.from(section.querySelectorAll(".ic-reveal"));
+        items.forEach((el, i) => {
+            el.style.setProperty("--rd", `${Math.min(i * 90, 720)}ms`);
+        });
+    });
+
+    const rev = Array.from(marked);
+    if (!rev.length) {
+        return;
+    }
+
+    const showNow = (el) => {
+        if (!el || el.classList.contains("in")) {
+            return;
+        }
+        el.classList.add("in");
+    };
+
+    if (reduce || !("IntersectionObserver" in window)) {
+        rev.forEach(showNow);
+        return;
+    }
+
+    const scrollRoot = document.querySelector("#wrapwrap");
+    const ioRoot =
+        scrollRoot && scrollRoot.scrollHeight > scrollRoot.clientHeight + 40
+            ? scrollRoot
+            : null;
+
+    // Batch intersecting cards, then reveal in DOM order with fresh stagger
+    // (fixes “whole grid at once” when IO fires them together)
+    let batch = [];
+    let batchTimer = null;
+
+    const flushBatch = () => {
+        batchTimer = null;
+        const items = batch.splice(0);
+        if (!items.length) {
+            return;
+        }
+        items.sort((a, b) => {
+            if (a === b) {
+                return 0;
+            }
+            const pos = a.compareDocumentPosition(b);
+            if (pos & Node.DOCUMENT_POSITION_FOLLOWING) {
+                return -1;
+            }
+            if (pos & Node.DOCUMENT_POSITION_PRECEDING) {
+                return 1;
+            }
+            return 0;
+        });
+        items.forEach((el, i) => {
+            el.style.setProperty("--rd", `${i * 90}ms`);
+            // reflow so the new --rd applies before .in
+            void el.offsetWidth;
+            showNow(el);
+        });
+    };
+
+    const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('is-visible');
+            if (!entry.isIntersecting) {
+                return;
+            }
+            io.unobserve(entry.target);
+            batch.push(entry.target);
+        });
+        if (batch.length && !batchTimer) {
+            batchTimer = setTimeout(flushBatch, 40);
+        }
+    }, {
+        root: ioRoot,
+        threshold: 0.15,
+        rootMargin: "0px 0px -10% 0px",
+    });
+
+    rev.forEach((el) => io.observe(el));
+
+    // Failsafe only for stuck items (not a hard dump of the whole page at 3.5s)
+    setTimeout(() => {
+        rev.forEach((el) => {
+            if (!el.classList.contains("in")) {
+                el.style.setProperty("--rd", "0ms");
+                showNow(el);
             }
         });
-    }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-    const animatedElements = document.querySelectorAll(".service-card, .feature-card");
-    animatedElements.forEach((el) => {
-        el.classList.add('animate-on-scroll');
-        observer.observe(el);
-    });
+    }, 12000);
 }
 
 

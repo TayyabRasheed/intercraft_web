@@ -1,0 +1,1000 @@
+/* Product Case Study — Figma landing layout */
+.ic_product_detail_page {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    color: #1e293b;
+    background: #fff;
+}
+
+/* Hide any leftover editor delete chrome if it was saved earlier */
+.ic_product_detail_page .icpd-section-toolbar,
+.ic_product_detail_page .icpd-section-delete,
+.ic_product_detail_page .icpd-part-toolbar,
+.ic_product_detail_page .icpd-part-delete,
+.ic_product_detail_page .icpd-block-toolbar,
+.ic_product_detail_page .icpd-block-delete,
+.ic_product_detail_page .icpd-block-overlay,
+.ic_product_detail_page .icpd-block-outline,
+.ic_product_detail_page .icpd-portal-editor-hint,
+.ic_product_detail_page .icpd-portal-upload-btn,
+.ic_product_detail_page .icpd-portal-slot-badge,
+.ic_product_detail_page .icpd-portal-empty-label,
+.ic_product_detail_page .icpd-portal-upload-bait,
+.ic_product_detail_page .icpd-portal-toolbar {
+    display: none !important;
+}
+
+.icpd-case-hero p,
+.icpd-case-hero .icpd-lead,
+.icpd-hero-intro p {
+    text-align: center !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+    word-break: normal;
+    overflow-wrap: break-word;
+}
+
+.icpd-page {
+    overflow: hidden;
+}
+
+.icpd-page .container {
+    max-width: 1140px;
+}
+
+/* Match Our Products end-card width (escape the tighter page grid) */
+.ic_product_detail_page .icpd-page > .icpd-cta-dark > .container,
+.ic_product_detail_page .icpd-page > section.innovate > .container {
+    max-width: 1170px !important;
+}
+
+.icpd-accent {
+    color: #F05A24;
+}
+
+.icpd-pill {
+    display: inline-block;
+    background: #eef2f6;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+/* Hide legacy "PRODUCT CASE STUDY" pill in hero (still present in older DB HTML) */
+.icpd-case-hero .icpd-pill {
+    display: none !important;
+}
+
+.icpd-hero-kicker .icpd-pill {
+    margin-bottom: 0;
+}
+
+.icpd-hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 14px;
+    margin-bottom: 22px;
+}
+
+.icpd-kicker-type {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F05A24;
+}
+
+.icpd-h1 {
+    font-family: 'Manrope', 'Inter', sans-serif;
+    font-size: clamp(2.35rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    color: #1f2937;
+    margin: 0 0 18px;
+    text-align: center;
+}
+
+.icpd-h1 .icpd-accent {
+    color: #F05A24;
+    font-weight: 800;
+}
+
+.icpd-h2 {
+    font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: #0f172a;
+    margin: 0 0 18px;
+}
+
+.icpd-h2-light {
+    font-size: clamp(1.75rem, 3.2vw, 2.45rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.02em;
+    color: #fff;
+    margin: 0;
+}
+
+.icpd-lead,
+.icpd-body {
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: #64748b;
+    margin: 0 0 18px;
+}
+
+.icpd-lead {
+    max-width: 640px;
+    margin: 0 auto 28px;
+    font-size: 1.08rem;
+    line-height: 1.65;
+    color: #64748b;
+    text-align: center !important;
+    hyphens: none !important;
+    -webkit-hyphens: none !important;
+}
+
+.icpd-btn-solid,
+.icpd-btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #F05A24;
+    color: #fff !important;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 26px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none !important;
+    box-shadow: 0 10px 24px rgba(240, 90, 36, 0.28);
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.icpd-btn-solid:hover,
+.icpd-btn-cta:hover {
+    background: #d94e1c;
+    color: #fff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(240, 90, 36, 0.32);
+}
+
+/* Hero — centered copy stacked above laptop mockup */
+.icpd-case-hero {
+    padding: 150px 0 12px;
+    background:
+        radial-gradient(ellipse 70% 45% at 50% 0%, rgba(240, 90, 36, 0.05) 0%, transparent 70%),
+        #fff;
+}
+
+.icpd-hero-intro {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.icpd-case-hero > .container {
+    max-width: 1180px;
+}
+
+.icpd-hero-media {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.icpd-hero-shot {
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    border-radius: 0;
+    overflow: visible;
+    filter: drop-shadow(0 28px 50px rgba(15, 23, 42, 0.18));
+}
+
+.icpd-hero-shot img {
+    width: 100%;
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    background: transparent;
+}
+
+.icpd-meta {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 46px;
+    padding-top: 28px;
+    border-top: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.icpd-meta-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    margin-bottom: 6px;
+}
+
+.icpd-meta-value {
+    display: block;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* The Product */
+.icpd-about {
+    padding: 50px 0 88px;
+    position: relative;
+    background: #fff;
+}
+
+.icpd-about::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    bottom: 40px;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(148, 163, 184, 0.18) 0%, transparent 68%);
+    pointer-events: none;
+}
+
+.icpd-callout {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-top: 8px;
+}
+
+.icpd-callout-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    background: rgba(240, 90, 36, 0.1);
+    color: #F05A24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icpd-callout strong {
+    display: block;
+    color: #0f172a;
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+}
+
+.icpd-callout p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Portals — black center, burnt-orange side glow (matches product card edge pattern) */
+.icpd-portals {
+    scroll-margin-top: 96px;
+    padding: 40px 0 40px;
+    background:
+        radial-gradient(ellipse 70% 90% at 50% 45%, #0a0807 0%, #0d0a09 45%, transparent 75%),
+        radial-gradient(ellipse 55% 100% at 0% 50%, rgba(61, 26, 10, 0.95) 0%, rgba(240, 90, 36, 0.28) 28%, transparent 62%),
+        radial-gradient(ellipse 55% 100% at 100% 50%, rgba(61, 26, 10, 0.95) 0%, rgba(240, 90, 36, 0.26) 28%, transparent 62%),
+        radial-gradient(ellipse 90% 55% at 50% 100%, rgba(42, 18, 8, 0.7) 0%, transparent 58%),
+        #080605;
+    color: #fff;
+}
+
+.icpd-overline {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: #94a3b8;
+    margin: 0 0 18px;
+}
+
+.icpd-portals-head {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 40px;
+}
+
+.icpd-portals-desc {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.98rem;
+    line-height: 1.65;
+    max-width: 360px;
+    justify-self: end;
+    align-self: start;
+    text-align: left;
+}
+
+.icpd-portal-frame {
+    position: relative;
+    width: 100%;
+    /* Fixed box — never grows/shrinks with each screenshot's natural size */
+    aspect-ratio: 16 / 10;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(20, 8, 4, 0.45);
+    line-height: 0;
+}
+
+.icpd-portal-frame > img,
+.icpd-portal-shot {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    display: block !important;
+    object-fit: contain;
+    object-position: center center;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    transition: opacity 0.45s ease;
+}
+
+.icpd-portal-frame > img:not(.is-active),
+.icpd-portal-shot:not(.is-active) {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+}
+
+.icpd-portal-frame > img.is-active,
+.icpd-portal-shot.is-active {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto;
+    z-index: 2;
+}
+
+/* Active slot is chosen by data-active-shot so only that button's image shows */
+.icpd-portals[data-active-shot] .icpd-portal-frame > img {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.icpd-portals[data-active-shot="0"] .icpd-portal-frame > img[data-portal-shot="0"],
+.icpd-portals[data-active-shot="1"] .icpd-portal-frame > img[data-portal-shot="1"],
+.icpd-portals[data-active-shot="2"] .icpd-portal-frame > img[data-portal-shot="2"],
+.icpd-portals[data-active-shot="3"] .icpd-portal-frame > img[data-portal-shot="3"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.icpd-portal-shot.is-switching {
+    opacity: 0;
+}
+
+/* Source slots are for the Case Study editor only — never show on website */
+.ic_product_detail_page .icpd-portal-sources {
+    display: none !important;
+}
+
+.icpd-portal-tabs {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0;
+    margin-top: 0;
+    background:
+        linear-gradient(180deg, rgba(61, 26, 10, 0.45) 0%, transparent 40%),
+        #1a1410;
+    border-top: 1px solid rgba(240, 90, 36, 0.22);
+    z-index: 20;
+    isolation: isolate;
+    pointer-events: auto !important;
+}
+
+/* Orange line that slides from tab → tab; progress fills left → right */
+.icpd-portal-tab-indicator {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 25%;
+    min-width: 40px;
+    background: rgba(240, 90, 36, 0.28);
+    opacity: 1;
+    pointer-events: none !important;
+    transform: translateX(0);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.2s ease;
+    z-index: 6;
+    overflow: hidden;
+    will-change: transform, width;
+}
+
+.icpd-portal-tab-progress {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #F05A24;
+    transition: width linear;
+    pointer-events: none !important;
+}
+
+.icpd-portal-tab,
+button.icpd-portal-tab {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    color: #94a3b8 !important;
+    text-align: left;
+    padding: 18px 20px;
+    font-size: 0.92rem;
+    font-weight: 500;
+    border-top: 3px solid transparent;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: block;
+    position: relative;
+    z-index: 3;
+    flex: 1 1 0;
+    min-width: 0;
+    pointer-events: auto !important;
+    transition: color 0.15s ease, background 0.15s ease;
+}
+
+.icpd-portal-tab .icpd-tab-num {
+    color: #64748b;
+    margin-right: 6px;
+    pointer-events: none;
+}
+
+.icpd-portal-tab.is-active {
+    background:
+        linear-gradient(180deg, rgba(240, 90, 36, 0.14) 0%, rgba(42, 18, 8, 0.55) 100%),
+        #221812;
+    color: #fff !important;
+}
+
+.icpd-portal-tab.is-active .icpd-tab-num {
+    color: #F05A24;
+}
+
+.icpd-portal-tab:hover {
+    color: #e2e8f0 !important;
+}
+
+/* Capabilities */
+.icpd-capabilities {
+    padding: 60px 0 40px;
+    background: #fff;
+}
+
+.icpd-split-head {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 32px;
+    align-items: start;
+    margin-bottom: 36px;
+}
+
+.icpd-split-head .icpd-body {
+    margin: 0;
+    max-width: 360px;
+    justify-self: end;
+    align-self: start;
+    text-align: left;
+}
+
+.icpd-cap-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.icpd-cap-card {
+    background: #f3f4f6;
+    border-radius: 6px;
+    padding: 28px 24px;
+    min-height: 180px;
+}
+
+.icpd-cap-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background: #fff;
+    color: #64748b;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+.icpd-cap-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 8px;
+}
+
+.icpd-cap-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+/* Audience */
+.icpd-audience {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.icpd-audience-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.icpd-audience-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.icpd-audience-item:first-child {
+    padding-top: 0;
+}
+
+.icpd-audience-item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.icpd-audience-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background: rgba(240, 90, 36, 0.1);
+    color: #F05A24;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icpd-audience-item h4 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.icpd-audience-item p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.92rem;
+    line-height: 1.55;
+}
+
+/* Insights */
+.icpd-insights {
+    padding: 40px 0 64px;
+    background: #fff;
+}
+
+.icpd-insights .icpd-body {
+    max-width: none;
+}
+
+.icpd-insights .icpd-check-list {
+    max-width: none;
+}
+
+.icpd-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+}
+
+.icpd-check-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #334155;
+    line-height: 1.35;
+}
+
+.icpd-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1.5px solid #e2e8f0;
+    color: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.icpd-check.is-done {
+    background: #F05A24;
+    border-color: #F05A24;
+    color: #fff;
+}
+
+.icpd-revenue-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.icpd-revenue-mark {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    background: rgba(22, 163, 74, 0.12);
+    color: #16a34a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+}
+
+.icpd-revenue-head strong {
+    display: block;
+    font-size: 0.95rem;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.icpd-revenue-head small {
+    color: #94a3b8;
+    font-size: 0.75rem;
+}
+
+.icpd-revenue-card {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
+}
+
+.icpd-revenue-total {
+    background: #ecfdf3;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icpd-revenue-amount {
+    font-size: clamp(1.6rem, 2.5vw, 2rem);
+    font-weight: 700;
+    color: #16a34a;
+    line-height: 1.1;
+}
+
+.icpd-revenue-label {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.icpd-revenue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icpd-revenue-grid > div {
+    padding: 22px 18px;
+    border-left: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.icpd-revenue-grid > div:nth-child(2n) {
+    border-right: 0;
+}
+
+.icpd-revenue-grid > div:nth-child(n+3) {
+    border-bottom: 0;
+}
+
+.icpd-revenue-grid strong {
+    display: block;
+    font-size: 1.05rem;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.icpd-revenue-grid span {
+    color: #94a3b8;
+    font-size: 0.78rem;
+}
+
+/* Tech */
+.icpd-tech {
+    padding: 28px 0 56px;
+    background: #fff;
+}
+
+.icpd-tech-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 28px;
+    width: 100%;
+    color: #94a3b8;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.icpd-tech-row > span {
+    flex: 1 1 0;
+    margin: 0;
+    min-width: 0;
+    white-space: nowrap;
+    text-align: center;
+    color: #94a3b8;
+}
+
+/*
+ * Legacy CTA markup (.icpd-cta-*) → force exact Our Products / Our Work
+ * .innovate-content card sizing (not oversized).
+ */
+.ic_product_detail_page .icpd-cta-dark {
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+}
+
+.ic_product_detail_page .icpd-cta-banner {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    border: 0 !important;
+    border-radius: 20px;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 80px 40px;
+    color: #fff;
+    margin: 40px 0;
+    min-height: 0;
+    background-color: transparent;
+    background-image: url("/website_ext/static/src/images/inovate-section-bg.png");
+    /* Slightly oversized to crop the PNG’s grey/black frame edge */
+    background-size: 112% 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ic_product_detail_page .icpd-cta-banner::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+    border: 0 !important;
+}
+
+.ic_product_detail_page .icpd-cta-banner::after {
+    content: none !important;
+    display: none !important;
+}
+
+.ic_product_detail_page .icpd-cta-banner > * {
+    position: relative;
+    z-index: 2;
+}
+
+.ic_product_detail_page .icpd-cta-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: normal;
+    color: #fff;
+    max-width: none;
+    margin: 0 0 20px;
+}
+
+.ic_product_detail_page .icpd-cta-text {
+    margin: 0 0 30px;
+    max-width: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.ic_product_detail_page .icpd-cta-banner .icpd-btn-cta {
+    display: inline-block;
+    background: linear-gradient(90deg, #F05A24 0%, #E64A19 100%);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: inherit;
+    padding: 14px 26px;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.ic_product_detail_page .icpd-cta-banner .icpd-btn-cta:hover {
+    background: linear-gradient(90deg, #F05A24 0%, #E64A19 100%);
+    opacity: 0.95;
+    transform: translateY(-1px);
+    box-shadow: none;
+}
+
+/* Product detail CTA — same network bg as Our Products, crop PNG grey edge */
+.ic_product_detail_page .innovate {
+    padding: 0;
+    background-color: #fff;
+    border: 0;
+    box-shadow: none;
+}
+
+.ic_product_detail_page .innovate-content {
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 20px;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 80px 40px;
+    margin: 40px 0;
+    color: #fff;
+    background-color: transparent;
+    background-image: url("/website_ext/static/src/images/inovate-section-bg.png") !important;
+    background-size: 112% 120% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.ic_product_detail_page .innovate-content::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    pointer-events: none;
+    border: 0 !important;
+}
+
+.ic_product_detail_page .innovate-content::after {
+    content: none !important;
+    display: none !important;
+}
+
+.ic_product_detail_page .innovate-content .innovate-title,
+.ic_product_detail_page .innovate-content .innovate-subtitle {
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .icpd-meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .icpd-portals-head,
+    .icpd-split-head {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .icpd-portals-desc,
+    .icpd-split-head .icpd-body {
+        justify-self: start;
+        max-width: none;
+    }
+
+    .icpd-cap-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icpd-portal-tabs {
+        flex-wrap: wrap;
+    }
+
+    .icpd-portal-tabs .icpd-portal-tab {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .icpd-case-hero {
+        padding: 108px 0 28px;
+    }
+
+    .icpd-hero-intro {
+        margin-bottom: 28px;
+    }
+
+    .icpd-hero-kicker {
+        gap: 8px 10px;
+        margin-bottom: 18px;
+    }
+
+    .icpd-lead {
+        font-size: 0.98rem;
+        margin-bottom: 22px;
+    }
+
+    .icpd-meta {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 20px;
+        margin-top: 36px;
+    }
+
+    .icpd-cap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .icpd-portal-tabs .icpd-portal-tab {
+        flex: 1 1 100%;
+    }
+
+    .icpd-revenue-card {
+        grid-template-columns: 1fr;
+    }
+
+    .icpd-revenue-grid > div {
+        border-left: 0;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .ic_product_detail_page .icpd-cta-banner,
+    .ic_product_detail_page .innovate-content {
+        border-radius: 20px;
+        padding: 60px 20px;
+        background-size: 112% 120% !important;
+    }
+
+    .ic_product_detail_page .icpd-cta-title,
+    .ic_product_detail_page .innovate-title {
+        font-size: 28px;
+    }
+
+    .icpd-about::after {
+        display: none;
+    }
+}
