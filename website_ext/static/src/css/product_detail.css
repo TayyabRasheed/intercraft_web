@@ -198,7 +198,11 @@
     background: transparent;
     border-radius: 0;
     overflow: visible;
-    filter: drop-shadow(0 28px 50px rgba(15, 23, 42, 0.18));
+    /* Layered drop-shadow = smooth floor contact (use *_nobg PNGs with NO baked shadow) */
+    filter:
+        drop-shadow(0 2px 4px rgba(15, 23, 42, 0.04))
+        drop-shadow(0 12px 24px rgba(15, 23, 42, 0.08))
+        drop-shadow(0 28px 56px rgba(15, 23, 42, 0.12));
 }
 
 .icpd-hero-shot img {
