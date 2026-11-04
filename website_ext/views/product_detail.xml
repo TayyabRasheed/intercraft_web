@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="product_detail" name="Product Learn More">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure ic_product_detail_page"
+                 t-att-data-explore-url="product.explore_url or None">
+                <div t-field="product.detail_html"/>
+            </div>
+        </t>
+    </template>
+</odoo>

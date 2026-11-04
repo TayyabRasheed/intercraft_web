@@ -368,6 +368,9 @@
                                     <a class="nav-link" href="/our-work">Our Work</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="/our-product">Our Products</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="/aboutus">About Us</a>
                                 </li>
                                 <li class="nav-item">
@@ -472,6 +475,9 @@
                                         <a class="nav-link" href="/our-work">Our Work</a>
                                     </li>
                                     <li class="nav-item">
+                                        <a class="nav-link" href="/our-product">Our Products</a>
+                                    </li>
+                                    <li class="nav-item">
                                         <a class="nav-link" href="/aboutus">About Us</a>
                                     </li>
                                     <li class="nav-item">
@@ -495,6 +501,14 @@
     <template id="inject_manrope_font" inherit_id="website.layout" name="Inject Assets">
         <xpath expr="//head" position="inside">
             <link href="https://fonts.googleapis.com/css2?family=Manrope&amp;display=swap" rel="stylesheet"/>
+            <!-- Same approach as Codeerts: enable reveal CSS only when JS is present -->
+            <script>
+                (function () {
+                    try {
+                        document.documentElement.classList.add("ic-js");
+                    } catch (e) {}
+                })();
+            </script>
         </xpath>
         <xpath expr="//body" position="inside">
             <script type="text/javascript" src="/website_ext/static/src/js/main.js"/>

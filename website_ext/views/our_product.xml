@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="our_product" model="website.page">
+        <field name="name">Our Product</field>
+        <field name="type">qweb</field>
+        <field name="url">/our-product</field>
+        <field name="website_indexed" eval="False"/>
+        <field name="is_published">True</field>
+        <field name="key">website_ext.our_product</field>
+        <field name="arch" type="xml">
+            <t name="Our Product" t-name="website_ext.our_product">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure ic_product_page">
+
+                        <section class="icp-hero-section">
+                            <div class="container text-center">
+                                <h1 class="icp-hero-title">Technology That Transforms Business</h1>
+                                <p class="icp-hero-subtitle mx-auto">
+                                    At InterCraft, our products deliver real value — from intelligent business applications to innovative digital solutions that simplify workflows, enhance productivity, and empower businesses to grow.
+                                </p>
+<!--                                <div class="row g-4 justify-content-center icp-hero-gallery">-->
+<!--                                    <div class="col-md-4">-->
+<!--                                        <div class="icp-hero-img-wrapper">-->
+<!--                                            <img src="/website_ext/static/src/images/our-work/img1.png"-->
+<!--                                                 class="icp-hero-img"/>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-4">-->
+<!--                                        <div class="icp-hero-img-wrapper">-->
+<!--                                            <img src="/website_ext/static/src/images/our-work/img2.png"-->
+<!--                                                 class="icp-hero-img"/>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-md-4">-->
+<!--                                        <div class="icp-hero-img-wrapper">-->
+<!--                                            <img src="/website_ext/static/src/images/our-work/img3.png"-->
+<!--                                                 class="icp-hero-img"/>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                            </div>
+                        </section>
+
+<!--                        <section class="icp-build-section">-->
+<!--                            <div class="services-bg d-none d-md-block">-->
+<!--                            <img src="/website_ext/static/src/images/bg_image.png" alt="service_sec"-->
+<!--                                 aria-hidden="true"/>-->
+<!--                        </div>-->
+<!--                            <div class="container">-->
+<!--                                <div class="text-center mb-5">-->
+<!--                                    <span class="icp-section-label">Our Product</span>-->
+<!--                                    <h2 class="icp-section-main-title">What We Build</h2>-->
+<!--                                </div>-->
+<!--                                <div class="row g-4">-->
+<!--                                    <div class="col-lg-5 col-md-6">-->
+<!--                                        <div class="icp-build-card">-->
+<!--                                            <div class="icp-build-icon-box">-->
+<!--                                                <i class="fa fa-magic"></i>-->
+<!--                                            </div>-->
+<!--                                            <h4 class="icp-build-card-title">AI Portals &amp; Intelligent Systems</h4>-->
+<!--                                            <p class="icp-build-card-text">Harness the power of artificial intelligence-->
+<!--                                                to transform your business operations. We create intelligent systems-->
+<!--                                                that learn and adapt.-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-7 col-md-6">-->
+<!--                                        <div class="icp-build-card">-->
+<!--                                            <div class="icp-build-icon-box">-->
+<!--                                                <i class="fa fa-bullseye"></i>-->
+<!--                                            </div>-->
+<!--                                            <h4 class="icp-build-card-title">Project Management &amp; Delivery</h4>-->
+<!--                                            <p class="icp-build-card-text">Navigate complex projects with confidence. Our-->
+<!--                                                agile approach ensures timely delivery, transparent communication, and-->
+<!--                                                seamless execution from concept to launch.-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-7 col-md-6">-->
+<!--                                        <div class="icp-build-card">-->
+<!--                                            <div class="icp-build-icon-box">-->
+<!--                                                <i class="fa fa-globe"></i>-->
+<!--                                            </div>-->
+<!--                                            <h4 class="icp-build-card-title">Web Development</h4>-->
+<!--                                            <p class="icp-build-card-text">Build robust, scalable web applications with-->
+<!--                                                modern technologies. We deliver high-performance solutions tailored to-->
+<!--                                                your business needs.-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="col-lg-5 col-md-6">-->
+<!--                                        <div class="icp-build-card">-->
+<!--                                            <div class="icp-build-icon-box">-->
+<!--                                                <i class="fa fa-paint-brush"></i>-->
+<!--                                            </div>-->
+<!--                                            <h4 class="icp-build-card-title">UI/UX Design</h4>-->
+<!--                                            <p class="icp-build-card-text">Craft beautiful, intuitive interfaces that-->
+<!--                                                users love. Our design process combines research and modern aesthetics.-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </section>-->
+
+                        <section class="icp-products-section">
+                            <div class="container">
+                                <h2 class="icp-section-main-title text-center mb-5">Our Products</h2>
+                                <!-- t-nocache: product text must refresh when backend records change -->
+                                <t t-nocache="Our Products cards">
+                                    <t t-set="products"
+                                       t-value="request.env['website.product'].sudo().search([('active', '=', True)], order='sequence, id')"/>
+                                    <div class="row g-4 align-items-stretch justify-content-center icp-products-grid" t-if="products">
+                                        <t t-foreach="products" t-as="product">
+                                            <div class="col-12 col-md-6 col-lg-4 icp-product-col d-flex">
+                                                <div class="icp-product-card w-100">
+                                                    <div class="icp-product-media">
+                                                        <div class="icp-product-card-header">
+                                                            <t t-if="product.logo">
+                                                                <img t-att-src="'/web/image/website.product/%s/logo' % product.id"
+                                                                     class="icp-product-logo" alt=""/>
+                                                            </t>
+                                                            <t t-if="product.badge">
+                                                                <span t-attf-class="icp-product-badge icp-badge-#{product.badge_style or 'website'}">
+                                                                    <t t-esc="product.badge"/>
+                                                                </span>
+                                                            </t>
+                                                        </div>
+                                                        <div class="icp-product-img-container">
+                                                            <t t-if="product.image">
+                                                                <img t-att-src="'/web/image/website.product/%s/image' % product.id"
+                                                                     class="icp-product-img" alt=""/>
+                                                            </t>
+                                                            <t t-else="">
+                                                                <img src="/web/image/website.s_picture_default_image"
+                                                                     class="icp-product-img" alt=""/>
+                                                            </t>
+                                                        </div>
+                                                    </div>
+                                                    <div class="icp-product-content">
+                                                        <h4 class="icp-product-title">
+                                                            <t t-esc="product.title or product.name"/>
+                                                        </h4>
+                                                        <div class="icp-product-tags" t-if="product.tag_ids">
+                                                            <t t-foreach="product.tag_ids" t-as="tag">
+                                                                <span>
+                                                                    <t t-esc="tag.name"/>
+                                                                </span>
+                                                            </t>
+                                                        </div>
+                                                        <p class="icp-product-desc" t-if="product.description">
+                                                            <t t-esc="product.description"/>
+                                                        </p>
+                                                        <a t-att-href="product.get_learn_more_url()" class="icp-product-link">Learn
+                                                            More
+                                                            <i class="fa fa-arrow-right ms-1"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </div>
+                                </t>
+                            </div>
+                        </section>
+
+                        <section class="icp-final-wrap-section">
+                            <div class="container">
+<!--                                <div class="icp-cta-banner-wrapper">-->
+<!--                                    <div class="row align-items-center">-->
+<!--                                        <div class="col-lg-8">-->
+<!--                                            <h2 class="icp-cta-title">Build faster solutions with our AI technology</h2>-->
+<!--                                            <p class="icp-cta-text">Each project we undertake is designed for measurable-->
+<!--                                                outcomes, performance, efficiency, and future readiness.-->
+<!--                                            </p>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-lg-4 text-lg-end text-center mt-4 mt-lg-0">-->
+<!--                                            <a href="/ai-expert" class="icp-btn-main-orange">See Our AI Services</a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                                <div class="icp-testimonial-head ">-->
+<!--                                    <span class="icp-section-label">What Our Clients Say</span>-->
+<!--                                    <h2 class="icp-section-main-title">Real Results. Real Feedback.</h2>-->
+<!--                                </div>-->
+
+<!--                                <t t-set="testimonials"-->
+<!--                                   t-value="request.env['website.testimonial'].sudo().search([('active', '=', True)], order='sequence, id')"/>-->
+<!--                                <div class="icp-testimonial-slider mt-5" t-if="testimonials">-->
+<!--                                    <div class="d-none icp-testimonial-data" id="icp-testimonial-data">-->
+<!--                                        <t t-foreach="testimonials" t-as="t">-->
+<!--                                            <div class="icp-testimonial-item">-->
+<!--                                                <span class="data-title">-->
+<!--                                                    <t t-esc="t.title"/>-->
+<!--                                                </span>-->
+<!--                                                <span class="data-quote">-->
+<!--                                                    <t t-esc="t.quote"/>-->
+<!--                                                </span>-->
+<!--                                                <span class="data-author">-->
+<!--                                                    <t t-esc="t.author_name"/>-->
+<!--                                                </span>-->
+<!--                                                <span class="data-role">-->
+<!--                                                    <t t-esc="t.author_role or ''"/>-->
+<!--                                                </span>-->
+<!--                                                <span class="data-company">-->
+<!--                                                    <t t-esc="t.company_name or ''"/>-->
+<!--                                                </span>-->
+<!--                                            </div>-->
+<!--                                        </t>-->
+<!--                                    </div>-->
+<!--                                    <div class="row g-4 align-items-center justify-content-center">-->
+<!--                                        <div class="">-->
+<!--                                            <div class="icp-testimonial-card faded icp-testi-slot-left">-->
+<!--&lt;!&ndash;                                                <h5 class="icp-testi-title icp-testi-slot-title"></h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <p class="small icp-testi-slot-quote"></p>&ndash;&gt;-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="col-lg-10 col-md-10">-->
+<!--                                            <div class="icp-testimonial-card active icp-testi-slot-center">-->
+<!--                                                <h4 class="icp-testi-title icp-testi-slot-title"></h4>-->
+<!--                                                <p class="icp-testi-text icp-testi-slot-quote"></p>-->
+<!--                                                <div class="icp-testi-footer">-->
+<!--                                                    <strong class="icp-testi-slot-author"></strong>-->
+<!--                                                    <span class="icp-testi-slot-company"></span>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="">-->
+<!--                                            <div class="icp-testimonial-card faded icp-testi-slot-right">-->
+<!--&lt;!&ndash;                                                <h5 class="icp-testi-title icp-testi-slot-title"></h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <p class="small icp-testi-slot-quote"></p>&ndash;&gt;-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="icp-testimonial-bars text-center mt-5" aria-hidden="true">-->
+<!--                                        <span class="icp-testi-bar"></span>-->
+<!--                                        <span class="icp-testi-bar"></span>-->
+<!--                                        <span class="icp-testi-bar"></span>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+                                <section class="innovate">
+                                    <div class="container text-center">
+                                        <div class="innovate-content">
+                                            <h2 class="innovate-title">Let's Build Something Smart</h2>
+                                            <p class="innovate-subtitle">
+                                                Have an idea or need help upgrading your digital product? Let's talk and
+                                                turn your vision into reality.
+                                            </p>
+<!--                                            <a href="/contact-us" class="icp-btn-build-outline mb-2" style=" position: relative; z-index: 2;">-->
+<!--                                                <i class="fa fa-comments-o " aria-hidden="true"/>-->
+<!--                                                Let's Talk-->
+<!--                                            </a>-->
+                                            <a href="/contact-us" class="icp-btn-build-solid mb-2" style=" position: relative; z-index: 2;">Book a Free Consultation
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+                        </section>
+
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+</odoo>

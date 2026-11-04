@@ -1,6 +1,56 @@
+import os
+import re
+
 from odoo.addons.website_hr_recruitment.controllers.main import WebsiteHrRecruitment
-from odoo.http import request
+from odoo.http import request, Stream
 from odoo import http
+from odoo.modules.module import get_module_path
+
+
+class ProductDetailController(http.Controller):
+    @http.route(['/our-product/<string:slug>'], type='http', auth='public', website=True, sitemap=True)
+    def product_detail(self, slug, **kwargs):
+        product = request.env['website.product'].sudo().search([
+            ('slug', '=', slug),
+            ('active', '=', True),
+        ], limit=1)
+        if not product:
+            return request.not_found()
+        return request.render('website_ext.product_detail', {
+            'product': product,
+            'main_object': product,
+        })
+
+    @http.route(['/case-image/<string:name>'], type='http', auth='public', website=True, sitemap=False)
+    def case_image(self, name, **kwargs):
+        """Serve Product Images uploads, or static case-study/<name>.jpg|png as fallback."""
+        if not re.match(r'^[A-Za-z0-9][A-Za-z0-9_-]*$', name or ''):
+            return request.not_found()
+
+        record = request.env['website.product.image'].sudo().search([
+            ('name', '=', name),
+            ('active', '=', True),
+        ], limit=1)
+        if record and record.image:
+            return request.env['ir.binary']._get_image_stream_from(
+                record, 'image', filename=record.name,
+            ).get_response()
+
+        module_path = get_module_path('website_ext')
+        if module_path:
+            images_dir = os.path.join(module_path, 'static', 'src', 'images', 'case-study')
+            for ext in ('.jpg', '.jpeg', '.png', '.webp', '.svg'):
+                file_path = os.path.join(images_dir, name + ext)
+                if os.path.isfile(file_path):
+                    return Stream.from_path(file_path, public=True).get_response()
+            # Fallback so missing tab names still show a picture
+            for fallback in ('marketplace', 'dashboard'):
+                for ext in ('.jpg', '.jpeg', '.png', '.webp'):
+                    file_path = os.path.join(images_dir, fallback + ext)
+                    if os.path.isfile(file_path):
+                        return Stream.from_path(file_path, public=True).get_response()
+
+        return request.not_found()
 
 
 class CareerController(http.Controller):

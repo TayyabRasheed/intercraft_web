@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_tag_tree_view" model="ir.ui.view">
+        <field name="name">website.product.tag.tree</field>
+        <field name="model">website.product.tag</field>
+        <field name="arch" type="xml">
+            <tree string="Product Tags">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="website_product_tree_view" model="ir.ui.view">
+        <field name="name">website.product.tree</field>
+        <field name="model">website.product</field>
+        <field name="arch" type="xml">
+            <tree string="Products" decoration-muted="active == False">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="title"/>
+                <field name="slug"/>
+                <field name="tag_ids" widget="many2many_tags"/>
+                <field name="url"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="website_product_form_view" model="ir.ui.view">
+        <field name="name">website.product.form</field>
+        <field name="model">website.product</field>
+        <field name="arch" type="xml">
+            <form string="Product">
+                <header>
+                    <button name="action_open_learn_more" type="object" string="Open Learn More"
+                            class="btn-secondary" invisible="not slug"/>
+                    <button name="action_reset_detail_template" type="object" string="Reset HTML Template"
+                            class="btn-secondary"
+                            confirm="Restore the full Case Study layout (all sections) from the template file? Your current Case Study HTML will be replaced."/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box"/>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="Product name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="title" placeholder="Display title (optional)"/>
+                            <field name="badge" placeholder="e.g. AI PORTAL, WEBSITE"/>
+                            <field name="badge_style" placeholder="ai, dashboard, website"/>
+                            <field name="description" placeholder="Short description"/>
+                            <field name="slug" placeholder="e.g. docverify"/>
+                            <field name="url" placeholder="Optional external URL (fallback if no slug)"/>
+                            <field name="explore_url" placeholder="https://… or /path — Explore the product button"/>
+                            <field name="tag_ids" widget="many2many_tags"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                        <group>
+                            <field name="image" widget="image" options="{'size': [0, 0]}"/>
+                            <field name="logo" widget="image" options="{'size': [0, 0]}"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Case Study" name="detail_html">
+                            <div class="alert alert-info" role="alert">
+                                <p class="mb-1"><strong>Portal screenshots</strong> — each of the 4 tabs has its own image.</p>
+                                <p class="mb-0">
+                                    Click tab 01 → click the picture to upload for 01.
+                                    Click tab 02 → click the picture to upload for 02.
+                                    Same for 03 and 04. Save when done.
+                                </p>
+                            </div>
+                            <field name="detail_html" nolabel="1" widget="html_dual"
+                                   options="{'style-inline': false, 'codeview': true, 'resizable': true, 'sandboxedPreview': false, 'allowCommandImage': true}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="product_tag_action" model="ir.actions.act_window">
+        <field name="name">Product Tags</field>
+        <field name="res_model">website.product.tag</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <record id="website_product_action" model="ir.actions.act_window">
+        <field name="name">Our Products</field>
+        <field name="res_model">website.product</field>
+        <field name="view_mode">tree,form</field>
+        <field name="context">{'search_default_active': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add products to show on the Our Product page.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_website_product"
+              name="Products"
+              parent="menu_website_project_root"
+              action="website_product_action"
+              sequence="15"/>
+    <menuitem id="menu_product_tag"
+              name="Product Tags"
+              parent="menu_website_project_root"
+              action="product_tag_action"
+              sequence="25"/>
+
+    <record id="website_product_image_tree_view" model="ir.ui.view">
+        <field name="name">website.product.image.tree</field>
+        <field name="model">website.product.image</field>
+        <field name="arch" type="xml">
+            <tree string="Product Images">
+                <field name="name"/>
+                <field name="image_url"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="website_product_image_form_view" model="ir.ui.view">
+        <field name="name">website.product.image.form</field>
+        <field name="model">website.product.image</field>
+        <field name="arch" type="xml">
+            <form string="Product Image">
+                <sheet>
+                    <group>
+                        <field name="name" placeholder="marketplace"/>
+                        <field name="active"/>
+                        <field name="image_url" widget="CopyClipboardChar" readonly="1"/>
+                    </group>
+                    <group>
+                        <field name="image" widget="image" options="{'size': [0, 0]}"/>
+                    </group>
+                    <div class="alert alert-info" role="status">
+                        Copy the <strong>HTML path</strong> below into the product Case Study:
+                        hero <code>img src</code>, portal preview <code>src</code>, and each tab
+                        <code>data-portal-src</code>. Example: <code>/case-image/marketplace</code>.
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="website_product_image_action" model="ir.actions.act_window">
+        <field name="name">Product Images</field>
+        <field name="res_model">website.product.image</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Upload a picture and give it a short name.
+            </p>
+            <p>
+                Use the HTML path in a product Case Study, for example /case-image/marketplace.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_website_product_image"
+              name="Product Images"
+              parent="menu_website_project_root"
+              action="website_product_image_action"
+              sequence="16"/>
+</odoo>

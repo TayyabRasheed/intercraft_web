@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <!-- Visual WYSIWYG by default; code button always visible in edit mode -->
+    <t t-name="website_ext.HtmlDualField">
+        <div class="icpd-html-dual-wrap" t-ref="dualRoot">
+            <t t-if="props.readonly || props.notEditable || (sandboxedPreview and !state.showCodeView)">
+                <t t-if="this.showIframe">
+                    <iframe t-ref="iframe"
+                            t-att-class="{
+                                'icpd-html-dual-frame': true,
+                                'd-none': !this.state.iframeVisible,
+                                'o_readonly': true,
+                            }"
+                            t-att-sandbox="sandboxedPreview ? 'allow-same-origin allow-popups allow-popups-to-escape-sandbox' : false"/>
+                </t>
+                <t t-else="">
+                    <div t-ref="readonlyElement" class="o_readonly icpd-html-dual-frame" t-out="markupValue"/>
+                </t>
+            </t>
+            <div t-else="" class="icpd-html-dual-frame" t-ref="spellcheck">
+                <t t-if="state.showCodeView">
+                    <textarea t-ref="codeView" class="o_codeview" t-att-value="markupValue"/>
+                </t>
+                <t t-else="">
+                    <t t-component="this.Wysiwyg" t-props="{
+                        'options': this.wysiwygOptions,
+                        'startWysiwyg': this.startWysiwyg.bind(this),
+                        'editingValue': this.currentEditingValue,
+                    }"/>
+                </t>
+                <t t-if="isTranslatable">
+                    <span t-attf-style="font-size: 15px; position: absolute; right: 48px; top: 5px;">
+                        <TranslationButton
+                            fieldName="props.name"
+                            record="props.record"
+                        />
+                    </span>
+                </t>
+            </div>
+            <!-- Selection outline + Delete live outside contenteditable -->
+            <div t-if="!props.readonly and !props.notEditable"
+                 t-ref="blockOverlay"
+                 class="icpd-block-overlay"
+                 contenteditable="false"/>
+            <div t-if="!props.readonly and !props.notEditable"
+                 t-ref="codeViewButton"
+                 id="codeview-btn-group"
+                 class="btn-group icpd-codeview-btn"
+                 t-on-click="toggleCodeView"
+                 title="Toggle HTML code view — full Case Study section">
+                <button type="button" class="o_codeview_btn btn btn-primary">
+                    <i class="fa fa-code"/>
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,6 +1,6 @@
 {
     'name': 'Website Ext',
-    'version': '17.0.0.0.0',
+    'version': '17.0.1.8.4',
     'category': 'Website',
     'description': "Module to resdeign website",
     'author': 'Intercraftsol',
@@ -13,6 +13,8 @@
         'views/team_member_views.xml',
         'views/team_components.xml',
         'views/website_project_views.xml',
+        'views/website_product_views.xml',
+        'data/website_product_data.xml',
         'views/extended_views/header_ext.xml',
         'views/extended_views/s_google_map_ext.xml',
         'views/extended_views/website_form_view_ext.xml',
@@ -48,6 +50,8 @@
         'data/config_data_ext.xml',
         'views/seo_templates.xml',
         'views/our_work.xml',
+        'views/our_product.xml',
+        'views/product_detail.xml',
         'views/extended_views/account_asset_ext.xml',
         'views/event_image_views.xml',
         'data/event_image_data.xml',
@@ -55,13 +59,17 @@
         'data/upcoming_event_data.xml',
     ],
     'assets': {
+        'web.assets_backend': [
+            'website_ext/static/src/css/product_detail.css',
+            'website_ext/static/src/js/backend/html_dual_field.js',
+            'website_ext/static/src/js/backend/html_dual_field.xml',
+            'website_ext/static/src/js/backend/html_dual_field.scss',
+        ],
         'web.assets_frontend': [
-
             # '/website_ext/static/src/js/open_jobs.js',
             '/website_ext/static/src/js/*.js',
             '/website_ext/static/src/css/*.css'
             # '/website_ext/static/src/scss/*.s/css'
-
         ],
     },
     'license': 'AGPL-3',

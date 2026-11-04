@@ -1,0 +1,248 @@
+<div class="icpd-page">
+
+  <!-- ========== 1. HERO — centered copy + laptop mockup ========== -->
+  <section class="icpd-case-hero">
+    <div class="container">
+      <div class="icpd-hero-intro">
+        <div class="icpd-hero-kicker">
+          <span class="icpd-kicker-type">[PLATFORM TYPE e.g. MARKETPLACE PLATFORM]</span>
+        </div>
+        <h1 class="icpd-h1">[Your main headline], <span class="icpd-accent">[accent word].</span></h1>
+        <p class="icpd-lead">[1–2 sentences describing the product. Who it is for and what problem it solves.]</p>
+        <a href="#icpd-portals" class="icpd-btn-solid">Explore the product <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="icpd-hero-media">
+        <div class="icpd-hero-shot">
+          <!-- Double-click this image in the editor to replace it. Prefer a laptop/device mockup PNG. -->
+          <img src="/case-image/marketplace_nobg" class="img-fluid" alt="[Product preview on laptop]"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 2. ABOUT THE PRODUCT ========== -->
+  <section class="icpd-about" id="icpd-product">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <span class="icpd-pill">[SECTION LABEL e.g. THE PRODUCT]</span>
+          <h2 class="icpd-h2">[About headline]<br/><span class="icpd-accent">[accent part].</span></h2>
+        </div>
+        <div class="col-lg-7">
+          <p class="icpd-body">[Paragraph 1 — background / problem before your product.]</p>
+          <p class="icpd-body">[Paragraph 2 — what you built and the outcome.]</p>
+          <div class="icpd-callout">
+            <span class="icpd-callout-icon"><i class="fa fa-bolt"></i></span>
+            <div>
+              <strong>[Callout title]</strong>
+              <p>[Short highlight under the callout title.]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="icpd-meta">
+        <div class="icpd-meta-item">
+          <span class="icpd-meta-label">INDUSTRY</span>
+          <span class="icpd-meta-value">[e.g. Healthcare]</span>
+        </div>
+        <div class="icpd-meta-item">
+          <span class="icpd-meta-label">PLATFORM</span>
+          <span class="icpd-meta-value">[e.g. Web + Mobile]</span>
+        </div>
+        <div class="icpd-meta-item">
+          <span class="icpd-meta-label">YEAR</span>
+          <span class="icpd-meta-value">[e.g. 2026]</span>
+        </div>
+        <div class="icpd-meta-item">
+          <span class="icpd-meta-label">SERVICES</span>
+          <span class="icpd-meta-value">[e.g. Design · Build]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 3. PORTAL TABS ========== -->
+  <!--
+    Edit ONLY in Odoo backend → Product → Case Study (html_dual), NOT on the website.
+
+    FOUR SEPARATE images — never one shared image for all tabs:
+      data-portal-shot="0" ↔ tab 01
+      data-portal-shot="1" ↔ tab 02
+      data-portal-shot="2" ↔ tab 03
+      data-portal-shot="3" ↔ tab 04
+    Click tab N → see/upload only that tab’s image. Use "Upload image for this tab".
+  -->
+  <section class="icpd-portals" id="icpd-portals">
+    <div class="container">
+      <p class="icpd-overline">[SMALL OVERLINE e.g. ONE PLATFORM, FOUR KEY SCREENS]</p>
+      <div class="icpd-portals-head">
+        <h2 class="icpd-h2-light">[Portals headline]<br/><span class="icpd-accent">[accent].</span></h2>
+        <p class="icpd-portals-desc">[Short description of the portals / screens below.]</p>
+      </div>
+      <div class="icpd-portal-frame">
+        <!-- Slot 01 — Public marketplace (example) -->
+        <img class="icpd-portal-shot img img-fluid is-active" data-portal-shot="0" data-portal-empty="1"
+             src="/website_ext/static/src/images/case-study/portal-dummy.png" alt="01 [Tab 1 label]"/>
+        <img class="icpd-portal-shot img img-fluid" data-portal-shot="1" data-portal-empty="1"
+             src="/website_ext/static/src/images/case-study/portal-dummy.png" alt="02 [Tab 2 label]"/>
+        <img class="icpd-portal-shot img img-fluid" data-portal-shot="2" data-portal-empty="1"
+             src="/website_ext/static/src/images/case-study/portal-dummy.png" alt="03 [Tab 3 label]"/>
+        <img class="icpd-portal-shot img img-fluid" data-portal-shot="3" data-portal-empty="1"
+             src="/website_ext/static/src/images/case-study/portal-dummy.png" alt="04 [Tab 4 label]"/>
+      </div>
+      <div class="icpd-portal-tabs" role="tablist" contenteditable="false">
+        <span class="icpd-portal-tab-indicator" aria-hidden="true" contenteditable="false">
+          <span class="icpd-portal-tab-progress"></span>
+        </span>
+        <button type="button" class="icpd-portal-tab is-active" role="tab" data-portal-tab="0" aria-selected="true" contenteditable="false">
+          <span class="icpd-tab-num">01</span> [Tab 1 label]
+        </button>
+        <button type="button" class="icpd-portal-tab" role="tab" data-portal-tab="1" aria-selected="false" contenteditable="false">
+          <span class="icpd-tab-num">02</span> [Tab 2 label]
+        </button>
+        <button type="button" class="icpd-portal-tab" role="tab" data-portal-tab="2" aria-selected="false" contenteditable="false">
+          <span class="icpd-tab-num">03</span> [Tab 3 label]
+        </button>
+        <button type="button" class="icpd-portal-tab" role="tab" data-portal-tab="3" aria-selected="false" contenteditable="false">
+          <span class="icpd-tab-num">04</span> [Tab 4 label]
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. CAPABILITIES — 6 feature cards ========== -->
+  <section class="icpd-capabilities">
+    <div class="container">
+      <span class="icpd-pill">[SECTION LABEL e.g. CAPABILITIES]</span>
+      <div class="icpd-split-head">
+        <h2 class="icpd-h2">[Capabilities headline]<br/><span class="icpd-accent">[accent].</span></h2>
+        <p class="icpd-body">[One sentence introducing the feature cards.]</p>
+      </div>
+      <div class="icpd-cap-grid">
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-search"></i></span>
+          <h3>[Feature 1]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-shopping-cart"></i></span>
+          <h3>[Feature 2]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-home"></i></span>
+          <h3>[Feature 3]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-shield"></i></span>
+          <h3>[Feature 4]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-th-large"></i></span>
+          <h3>[Feature 5]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+        <div class="icpd-cap-card">
+          <span class="icpd-cap-icon"><i class="fa fa-users"></i></span>
+          <h3>[Feature 6]</h3>
+          <p>[Short feature description.]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. AUDIENCE — who it is for ========== -->
+  <section class="icpd-audience">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <span class="icpd-pill">[SECTION LABEL e.g. BUILT FOR EVERYONE]</span>
+          <h2 class="icpd-h2">[Audience headline]<br/><span class="icpd-accent">[accent].</span></h2>
+          <p class="icpd-body">[Intro paragraph about who benefits.]</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="icpd-audience-list">
+            <div class="icpd-audience-item">
+              <span class="icpd-audience-icon"><i class="fa fa-leaf"></i></span>
+              <div>
+                <h4>[Audience 1 title]</h4>
+                <p>[What they get.]</p>
+              </div>
+            </div>
+            <div class="icpd-audience-item">
+              <span class="icpd-audience-icon"><i class="fa fa-shopping-cart"></i></span>
+              <div>
+                <h4>[Audience 2 title]</h4>
+                <p>[What they get.]</p>
+              </div>
+            </div>
+            <div class="icpd-audience-item">
+              <span class="icpd-audience-icon"><i class="fa fa-truck"></i></span>
+              <div>
+                <h4>[Audience 3 title]</h4>
+                <p>[What they get.]</p>
+              </div>
+            </div>
+            <div class="icpd-audience-item">
+              <span class="icpd-audience-icon"><i class="fa fa-cog"></i></span>
+              <div>
+                <h4>[Audience 4 title]</h4>
+                <p>[What they get.]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. INSIGHTS / RESULTS ========== -->
+  <section class="icpd-insights">
+    <div class="container">
+      <span class="icpd-pill">[SECTION LABEL e.g. RESULTS]</span>
+      <h2 class="icpd-h2">[Insights headline]<br/><span class="icpd-accent">[accent].</span></h2>
+      <p class="icpd-body">[Short paragraph about outcomes or reporting.]</p>
+      <ul class="icpd-check-list">
+        <li>
+          <span class="icpd-check is-done"><i class="fa fa-check"></i></span>
+          <span>[Bullet point 1]</span>
+        </li>
+        <li>
+          <span class="icpd-check is-done"><i class="fa fa-check"></i></span>
+          <span>[Bullet point 2]</span>
+        </li>
+        <li>
+          <span class="icpd-check is-done"><i class="fa fa-check"></i></span>
+          <span>[Bullet point 3]</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========== 7. TECH STACK ========== -->
+  <section class="icpd-tech">
+    <div class="container">
+      <div class="icpd-tech-row">
+        <span>[Tech 1]</span>
+        <span>[Tech 2]</span>
+        <span>[Tech 3]</span>
+        <span>[Tech 4]</span>
+        <span>[Tech 5]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. BOTTOM CTA (same card chrome as Our Products .innovate-content) ========== -->
+  <section class="innovate">
+    <div class="container text-center">
+      <div class="innovate-content">
+        <h2 class="innovate-title">[Closing headline line 1]<br/>[Closing headline line 2]</h2>
+        <p class="innovate-subtitle">[Short closing paragraph.]</p>
+        <a href="/contact-us" class="icp-btn-build-solid mb-2" style="position: relative; z-index: 2;">[CTA button text]</a>
+      </div>
+    </div>
+  </section>
+
+</div>
