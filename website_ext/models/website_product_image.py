@@ -14,7 +14,7 @@ class WebsiteProductImage(models.Model):
     name = fields.Char(
         'Name',
         required=True,
-        help='Short name used in the case study HTML. Example: marketplace',
+        help='Short name used in the case study HTML. Example: dashboard',
     )
     image = fields.Binary('Image', required=True, attachment=True)
     active = fields.Boolean('Active', default=True)
@@ -36,7 +36,7 @@ class WebsiteProductImage(models.Model):
             if not pattern.match(record.name or ''):
                 raise ValidationError(
                     'Use a short name with letters, numbers, hyphens, or underscores. '
-                    'Example: marketplace'
+                    'Example: dashboard'
                 )
 
     @api.model_create_multi

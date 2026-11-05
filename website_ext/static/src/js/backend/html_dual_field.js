@@ -12,7 +12,7 @@ import { registry } from "@web/core/registry";
 import { onMounted, onPatched, onWillUnmount, useRef } from "@odoo/owl";
 import { useService } from "@web/core/utils/hooks";
 
-const BLANK_PORTAL_SRC = "/website_ext/static/src/images/case-study/portal-dummy.png";
+const BLANK_PORTAL_SRC = "/website_ext/static/src/images/case-study/dashboard.png";
 
 /** Tags that can show click → rectangle → Delete. */
 const BLOCK_TAGS = new Set([
@@ -147,9 +147,13 @@ function isBlankSrc(src) {
         return true;
     }
     const s = String(src).trim();
+    const path = s.split("?")[0];
     return (
         !s ||
         s === BLANK_PORTAL_SRC ||
+        path === BLANK_PORTAL_SRC ||
+        path.endsWith("/case-study/dashboard.png") ||
+        path.endsWith("/case-image/dashboard") ||
         s.includes("portal-dummy") ||
         s.includes("s_picture_default_image") ||
         s === "about:blank"
@@ -550,7 +554,7 @@ function ensurePerTabShots(section, { createMissing = false, force = false } = {
         shot.removeAttribute("data-portal-preview");
         shot.removeAttribute("hidden");
 
-        // Each button keeps its own file. A copied URL becomes a black dummy
+        // Each button keeps its own file. A copied URL becomes the sample dashboard
         // so the next button still has a slot to upload into.
         const fromTab = (tab.getAttribute("data-portal-src") || "").trim();
         const fromImg = (shot.getAttribute("src") || "").trim();
@@ -697,7 +701,7 @@ function updateEmptyOverlay(frame) {
     if (!frame) {
         return;
     }
-    // The black dummy image is the placeholder. Do not cover it.
+    // The sample dashboard image is the placeholder. Do not cover it.
     frame.querySelectorAll(":scope > .icpd-portal-empty-label").forEach((el) => el.remove());
 }
 
@@ -1183,7 +1187,7 @@ export class HtmlDualField extends HtmlField {
             return;
         }
 
-        // Click the visible black dummy (or double-click any slot image) → replace THAT button only.
+        // Click the sample dashboard (or double-click any slot image) → replace THAT button only.
         const shotHit = closestFromEvent(ev, ".icpd-portal-frame img");
         if (
             shotHit &&
@@ -1694,7 +1698,8 @@ export const htmlDualField = {
     component: HtmlDualField,
     extractProps(params, dynamicInfo) {
         const props = htmlField.extractProps(params, dynamicInfo);
-        props.codeview = true;
+        // Keep standard Odoo gate: codeview only when debugger mode is on
+        // (htmlField already sets props.codeview = Boolean(odoo.debug && options.codeview))
         props.sandboxedPreview = false;
         if (props.wysiwygOptions) {
             props.wysiwygOptions = {

@@ -58,13 +58,16 @@
             return [];
         }
 
-        var DUMMY = '/website_ext/static/src/images/case-study/portal-dummy.png';
+        var DUMMY = '/website_ext/static/src/images/case-study/dashboard.png';
         function isPlaceholder(value) {
             var src = (value || '').trim();
+            var path = src.split('?')[0];
             return (
                 !src ||
                 src.indexOf('s_picture_default_image') !== -1 ||
-                src.indexOf('portal-dummy') !== -1
+                src.indexOf('portal-dummy') !== -1 ||
+                path.indexOf('/case-study/dashboard.png') !== -1 ||
+                path.indexOf('/case-image/dashboard') !== -1
             );
         }
 

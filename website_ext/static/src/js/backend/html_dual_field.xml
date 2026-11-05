@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templates xml:space="preserve">
-    <!-- Visual WYSIWYG by default; code button always visible in edit mode -->
+    <!-- Visual WYSIWYG by default; </> code button only when debugger mode is on -->
     <t t-name="website_ext.HtmlDualField">
         <div class="icpd-html-dual-wrap" t-ref="dualRoot">
             <t t-if="props.readonly || props.notEditable || (sandboxedPreview and !state.showCodeView)">
@@ -42,7 +42,7 @@
                  t-ref="blockOverlay"
                  class="icpd-block-overlay"
                  contenteditable="false"/>
-            <div t-if="!props.readonly and !props.notEditable"
+            <div t-if="!props.readonly and !props.notEditable and (props.codeview or state.showCodeView)"
                  t-ref="codeViewButton"
                  id="codeview-btn-group"
                  class="btn-group icpd-codeview-btn"

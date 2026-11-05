@@ -21,8 +21,23 @@
                 <field name="slug"/>
                 <field name="tag_ids" widget="many2many_tags"/>
                 <field name="url"/>
-                <field name="active"/>
+                <field name="active" widget="boolean_toggle"/>
             </tree>
+        </field>
+    </record>
+
+    <record id="website_product_search_view" model="ir.ui.view">
+        <field name="name">website.product.search</field>
+        <field name="model">website.product</field>
+        <field name="arch" type="xml">
+            <search string="Products">
+                <field name="name"/>
+                <field name="title"/>
+                <field name="slug"/>
+                <field name="tag_ids"/>
+                <filter name="active" string="Active" domain="[('active', '=', True)]"/>
+                <filter name="inactive" string="Inactive" domain="[('active', '=', False)]"/>
+            </search>
         </field>
     </record>
 
@@ -92,7 +107,7 @@
         <field name="name">Our Products</field>
         <field name="res_model">website.product</field>
         <field name="view_mode">tree,form</field>
-        <field name="context">{'search_default_active': 1}</field>
+        <field name="context">{'active_test': False, 'search_default_active': 1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Add products to show on the Our Product page.
@@ -130,7 +145,7 @@
             <form string="Product Image">
                 <sheet>
                     <group>
-                        <field name="name" placeholder="marketplace"/>
+                        <field name="name" placeholder="dashboard"/>
                         <field name="active"/>
                         <field name="image_url" widget="CopyClipboardChar" readonly="1"/>
                     </group>
@@ -140,7 +155,7 @@
                     <div class="alert alert-info" role="status">
                         Copy the <strong>HTML path</strong> below into the product Case Study:
                         hero <code>img src</code>, portal preview <code>src</code>, and each tab
-                        <code>data-portal-src</code>. Example: <code>/case-image/marketplace</code>.
+                        <code>data-portal-src</code>. Example: <code>/case-image/dashboard</code>.
                     </div>
                 </sheet>
             </form>
@@ -156,7 +171,7 @@
                 Upload a picture and give it a short name.
             </p>
             <p>
-                Use the HTML path in a product Case Study, for example /case-image/marketplace.
+                Use the HTML path in a product Case Study, for example /case-image/dashboard.
             </p>
         </field>
     </record>
