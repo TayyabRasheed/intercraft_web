@@ -44,11 +44,10 @@ class ProductDetailController(http.Controller):
                 if os.path.isfile(file_path):
                     return Stream.from_path(file_path, public=True).get_response()
             # Fallback so missing tab names still show a picture
-            for fallback in ('marketplace', 'dashboard'):
-                for ext in ('.jpg', '.jpeg', '.png', '.webp'):
-                    file_path = os.path.join(images_dir, fallback + ext)
-                    if os.path.isfile(file_path):
-                        return Stream.from_path(file_path, public=True).get_response()
+            for ext in ('.png', '.jpg', '.jpeg', '.webp'):
+                file_path = os.path.join(images_dir, 'dashboard' + ext)
+                if os.path.isfile(file_path):
+                    return Stream.from_path(file_path, public=True).get_response()
 
         return request.not_found()
 

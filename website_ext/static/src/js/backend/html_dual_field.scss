@@ -206,7 +206,7 @@
         display: flex !important;
     }
 
-    /* Black dummy stays visible so it can be clicked and replaced */
+    /* Sample dashboard stays visible so it can be clicked and replaced */
     .icpd-html-dual-frame .icpd-portal-frame > img.is-active.is-empty,
     .icpd-html-dual-frame .icpd-portal-frame > img.is-active[data-portal-empty="1"] {
         opacity: 1 !important;
