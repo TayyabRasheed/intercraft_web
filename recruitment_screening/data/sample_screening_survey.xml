@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="screening_survey_sample" model="survey.survey">
+            <field name="title">Sample: Odoo Developer Screening</field>
+            <field name="survey_type">recruitment</field>
+            <field name="access_mode">token</field>
+            <field name="questions_layout">page_per_section</field>
+            <field name="scoring_type">scoring_without_answers</field>
+            <field name="scoring_success_min">60</field>
+            <field name="users_can_go_back" eval="True"/>
+            <field name="is_attempts_limited" eval="True"/>
+            <field name="attempts_limit">1</field>
+            <field name="description" type="html"><p>Thank you for applying. Please answer honestly; this takes about 10 minutes.</p></field>
+        </record>
+
+        <record id="sq_page_knowledge" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">10</field>
+            <field name="is_page" eval="True"/>
+            <field name="title">Part 1: Technical Knowledge</field>
+            <field name="description" type="html"><p>Choose one answer. 10 marks each.</p></field>
+        </record>
+
+        <record id="sq_k1" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">20</field>
+            <field name="title">Which file declares an Odoo module's name, version and dependencies?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_k1_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_k1"/>
+            <field name="sequence">1</field>
+            <field name="value">__manifest__.py</field>
+            <field name="is_correct" eval="True"/>
+            <field name="answer_score">10</field>
+        </record>
+
+        <record id="sq_k1_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_k1"/>
+            <field name="sequence">2</field>
+            <field name="value">__init__.py</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k1_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_k1"/>
+            <field name="sequence">3</field>
+            <field name="value">models.py</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k1_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_k1"/>
+            <field name="sequence">4</field>
+            <field name="value">setup.py</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k2" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">30</field>
+            <field name="title">Which ORM method do you override to run logic when new records are created?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_k2_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_k2"/>
+            <field name="sequence">1</field>
+            <field name="value">create()</field>
+            <field name="is_correct" eval="True"/>
+            <field name="answer_score">10</field>
+        </record>
+
+        <record id="sq_k2_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_k2"/>
+            <field name="sequence">2</field>
+            <field name="value">write()</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k2_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_k2"/>
+            <field name="sequence">3</field>
+            <field name="value">unlink()</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k2_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_k2"/>
+            <field name="sequence">4</field>
+            <field name="value">default_get()</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k3" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">40</field>
+            <field name="title">In Odoo 17 and later, how do you hide a field based on a condition in a view?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_k3_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_k3"/>
+            <field name="sequence">1</field>
+            <field name="value">invisible="expression"</field>
+            <field name="is_correct" eval="True"/>
+            <field name="answer_score">10</field>
+        </record>
+
+        <record id="sq_k3_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_k3"/>
+            <field name="sequence">2</field>
+            <field name="value">attrs="{...}"</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k3_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_k3"/>
+            <field name="sequence">3</field>
+            <field name="value">states="draft"</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k3_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_k3"/>
+            <field name="sequence">4</field>
+            <field name="value">groups="base.group_user"</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k4" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">50</field>
+            <field name="title">Which field type links many records to one record (e.g. many orders to one customer)?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_k4_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_k4"/>
+            <field name="sequence">1</field>
+            <field name="value">Many2one</field>
+            <field name="is_correct" eval="True"/>
+            <field name="answer_score">10</field>
+        </record>
+
+        <record id="sq_k4_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_k4"/>
+            <field name="sequence">2</field>
+            <field name="value">One2many</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k4_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_k4"/>
+            <field name="sequence">3</field>
+            <field name="value">Many2many</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k4_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_k4"/>
+            <field name="sequence">4</field>
+            <field name="value">Reference</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k5" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">60</field>
+            <field name="title">What does .sudo() do on a recordset?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_k5_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_k5"/>
+            <field name="sequence">1</field>
+            <field name="value">Runs the following operations bypassing access rights</field>
+            <field name="is_correct" eval="True"/>
+            <field name="answer_score">10</field>
+        </record>
+
+        <record id="sq_k5_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_k5"/>
+            <field name="sequence">2</field>
+            <field name="value">Switches the language to the admin's</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k5_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_k5"/>
+            <field name="sequence">3</field>
+            <field name="value">Commits the transaction</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_k5_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_k5"/>
+            <field name="sequence">4</field>
+            <field name="value">Clears the cache</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_page_rating" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">70</field>
+            <field name="is_page" eval="True"/>
+            <field name="title">Part 2: Rate Yourself</field>
+            <field name="description" type="html"><p>How do you rate yourself in each technology? 1 = Beginner, 5 = Expert. Marks = your rating.</p></field>
+        </record>
+
+        <record id="sq_r1" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">80</field>
+            <field name="title">Python</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_r1_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_r1"/>
+            <field name="sequence">1</field>
+            <field name="value">1 - Beginner</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_r1_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_r1"/>
+            <field name="sequence">2</field>
+            <field name="value">2 - Basic</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_r1_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_r1"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - Intermediate</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">3</field>
+        </record>
+
+        <record id="sq_r1_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_r1"/>
+            <field name="sequence">4</field>
+            <field name="value">4 - Advanced</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_r1_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_r1"/>
+            <field name="sequence">5</field>
+            <field name="value">5 - Expert</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_r2" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">90</field>
+            <field name="title">Odoo ORM and models</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_r2_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_r2"/>
+            <field name="sequence">1</field>
+            <field name="value">1 - Beginner</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_r2_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_r2"/>
+            <field name="sequence">2</field>
+            <field name="value">2 - Basic</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_r2_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_r2"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - Intermediate</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">3</field>
+        </record>
+
+        <record id="sq_r2_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_r2"/>
+            <field name="sequence">4</field>
+            <field name="value">4 - Advanced</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_r2_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_r2"/>
+            <field name="sequence">5</field>
+            <field name="value">5 - Expert</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_r3" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">100</field>
+            <field name="title">Odoo views (XML) and QWeb reports</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_r3_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_r3"/>
+            <field name="sequence">1</field>
+            <field name="value">1 - Beginner</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_r3_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_r3"/>
+            <field name="sequence">2</field>
+            <field name="value">2 - Basic</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_r3_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_r3"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - Intermediate</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">3</field>
+        </record>
+
+        <record id="sq_r3_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_r3"/>
+            <field name="sequence">4</field>
+            <field name="value">4 - Advanced</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_r3_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_r3"/>
+            <field name="sequence">5</field>
+            <field name="value">5 - Expert</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_r4" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">110</field>
+            <field name="title">PostgreSQL / SQL</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_r4_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_r4"/>
+            <field name="sequence">1</field>
+            <field name="value">1 - Beginner</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_r4_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_r4"/>
+            <field name="sequence">2</field>
+            <field name="value">2 - Basic</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_r4_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_r4"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - Intermediate</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">3</field>
+        </record>
+
+        <record id="sq_r4_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_r4"/>
+            <field name="sequence">4</field>
+            <field name="value">4 - Advanced</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_r4_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_r4"/>
+            <field name="sequence">5</field>
+            <field name="value">5 - Expert</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_r5" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">120</field>
+            <field name="title">JavaScript / OWL</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_r5_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_r5"/>
+            <field name="sequence">1</field>
+            <field name="value">1 - Beginner</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_r5_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_r5"/>
+            <field name="sequence">2</field>
+            <field name="value">2 - Basic</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_r5_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_r5"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - Intermediate</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">3</field>
+        </record>
+
+        <record id="sq_r5_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_r5"/>
+            <field name="sequence">4</field>
+            <field name="value">4 - Advanced</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_r5_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_r5"/>
+            <field name="sequence">5</field>
+            <field name="value">5 - Expert</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_page_experience" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">130</field>
+            <field name="is_page" eval="True"/>
+            <field name="title">Part 3: Experience</field>
+            <field name="description" type="html"><p></p></field>
+        </record>
+
+        <record id="sq_e1" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">140</field>
+            <field name="title">How many years of hands-on Odoo development experience do you have?</field>
+            <field name="question_type">simple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_e1_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_e1"/>
+            <field name="sequence">1</field>
+            <field name="value">Less than 1 year</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_e1_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_e1"/>
+            <field name="sequence">2</field>
+            <field name="value">1 - 2 years</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_e1_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_e1"/>
+            <field name="sequence">3</field>
+            <field name="value">3 - 4 years</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">4</field>
+        </record>
+
+        <record id="sq_e1_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_e1"/>
+            <field name="sequence">4</field>
+            <field name="value">5 years or more</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">5</field>
+        </record>
+
+        <record id="sq_e2" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">150</field>
+            <field name="title">Which Odoo versions have you worked on? (select all)</field>
+            <field name="question_type">multiple_choice</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_e2_a1" model="survey.question.answer">
+            <field name="question_id" ref="sq_e2"/>
+            <field name="sequence">1</field>
+            <field name="value">Odoo 15 or older</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">0</field>
+        </record>
+
+        <record id="sq_e2_a2" model="survey.question.answer">
+            <field name="question_id" ref="sq_e2"/>
+            <field name="sequence">2</field>
+            <field name="value">Odoo 16</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_e2_a3" model="survey.question.answer">
+            <field name="question_id" ref="sq_e2"/>
+            <field name="sequence">3</field>
+            <field name="value">Odoo 17</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_e2_a4" model="survey.question.answer">
+            <field name="question_id" ref="sq_e2"/>
+            <field name="sequence">4</field>
+            <field name="value">Odoo 18</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">1</field>
+        </record>
+
+        <record id="sq_e2_a5" model="survey.question.answer">
+            <field name="question_id" ref="sq_e2"/>
+            <field name="sequence">5</field>
+            <field name="value">Odoo 19</field>
+            <field name="is_correct" eval="False"/>
+            <field name="answer_score">2</field>
+        </record>
+
+        <record id="sq_e3" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">160</field>
+            <field name="title">Notice period / earliest joining date</field>
+            <field name="question_type">char_box</field>
+            <field name="constr_mandatory" eval="True"/>
+        </record>
+
+        <record id="sq_e4" model="survey.question">
+            <field name="survey_id" ref="screening_survey_sample"/>
+            <field name="sequence">170</field>
+            <field name="title">Link to your GitHub, portfolio or a module you built (optional)</field>
+            <field name="question_type">char_box</field>
+            <field name="constr_mandatory" eval="False"/>
+        </record>
+    </data>
+</odoo>

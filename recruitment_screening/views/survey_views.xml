@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Questionnaire > Options: foldable sections -->
+    <record id="survey_survey_form_screening" model="ir.ui.view">
+        <field name="name">survey.survey.form.screening</field>
+        <field name="model">survey.survey</field>
+        <field name="inherit_id" ref="survey.survey_survey_view_form"/>
+        <field name="arch" type="xml">
+            <field name="questions_layout" position="after">
+                <field name="screening_collapsible_sections"
+                       invisible="survey_type != 'recruitment'"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Question > Options: show answers as slider / dropdown -->
+    <record id="survey_question_form_screening_display" model="ir.ui.view">
+        <field name="name">survey.question.form.screening.display</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='options']//field[@name='validation_required']" position="before">
+                <field name="screening_display" invisible="question_type != 'simple_choice'"/>
+                <field name="screening_opens_followup" invisible="question_type != 'simple_choice'"/>
+                <field name="screening_gate_answer_ids" widget="many2many_tags" options="{'no_create': True}"
+                       placeholder="Yes"
+                       invisible="question_type != 'simple_choice' or not screening_opens_followup"/>
+                <field name="screening_gate_closes_form"
+                       invisible="question_type != 'simple_choice' or not screening_opens_followup"/>
+                <field name="screening_gate_reject"
+                       invisible="question_type != 'simple_choice' or not screening_opens_followup or not screening_gate_closes_form"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

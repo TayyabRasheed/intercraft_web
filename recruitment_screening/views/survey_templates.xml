@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tell the frontend how to show each single-choice question -->
+    <template id="screening_question_container" inherit_id="survey.question_container">
+        <xpath expr="//div[@t-att-id='question.id']" position="attributes">
+            <attribute name="t-att-data-screening-display">question.screening_display_mode if question.question_type == 'simple_choice' and question.screening_display_mode != 'radio' and not survey_form_readonly else None</attribute>
+        </xpath>
+    </template>
+
+    <!-- Tell the frontend that sections can be folded -->
+    <template id="screening_fill_form_in_progress" inherit_id="survey.survey_fill_form_in_progress">
+        <xpath expr="//div[hasclass('o_survey_form_content_data')]" position="attributes">
+            <attribute name="t-att-data-screening-collapsible">bool(survey.survey_type == 'recruitment' and survey.screening_collapsible_sections and survey.questions_layout == 'one_page') or None</attribute>
+        </xpath>
+        <!-- Odoo 17 prints sections flat on a one-page survey (Odoo 18 wraps each one in .js_section_wrapper).
+             Recruitment surveys get the same wrapper, so a section whose questions are all hidden
+             (e.g. "willing to work on site" = No) disappears completely, and sections can be folded. -->
+        <xpath expr="//t[@t-foreach='survey.question_and_page_ids']" position="replace">
+            <t t-if="survey.survey_type != 'recruitment'">
+                <t t-foreach="survey.question_and_page_ids" t-as="question">
+                    <h2 t-if="question.is_page" t-field="question.title" class="o_survey_title pb16 text-break"/>
+                    <div t-if="question.is_page" t-field="question.description" class="text-break"/>
+                    <t t-if="not question.is_page and question in answer.predefined_question_ids" t-call="survey.question_container"/>
+                </t>
+            </t>
+            <t t-else="">
+                <t t-foreach="survey.question_ids.filtered(lambda q: not q.page_id)" t-as="question">
+                    <t t-if="question in answer.predefined_question_ids" t-call="survey.question_container"/>
+                </t>
+                <t t-foreach="survey.page_ids" t-as="page">
+                    <t t-set="display_section" t-value="page.description or any(not q.triggering_answer_ids for q in page.question_ids)"/>
+                    <div t-attf-class="js_section_wrapper #{'d-none' if not display_section else ''}">
+                        <h2 t-field="page.title" class="o_survey_title pb16 text-break"/>
+                        <div t-field="page.description" class="o_survey_description text-break"/>
+                        <t t-foreach="page.question_ids" t-as="question">
+                            <t t-if="question in answer.predefined_question_ids" t-call="survey.question_container"/>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+    <!-- ============================================================== -->
+    <!-- Recruitment questionnaires: no "survey" wording for candidates, -->
+    <!-- and the candidate never sees a score or pass / fail.            -->
+    <!-- ============================================================== -->
+
+    <!-- Start page: "Start" instead of "Start Survey" -->
+    <template id="screening_fill_form_start" inherit_id="survey.survey_fill_form_start">
+        <xpath expr="//button[hasclass('btn-lg')]/t[@t-else='']" position="before">
+            <t t-elif="survey.survey_type == 'recruitment'">Start</t>
+        </xpath>
+        <xpath expr="//span[@t-if='not survey.certification']" position="before">
+            <span t-if="survey.survey_type == 'recruitment'">Time limit: </span>
+        </xpath>
+        <xpath expr="//span[@t-if='not survey.certification']" position="attributes">
+            <attribute name="t-if"/>
+            <attribute name="t-elif">not survey.certification</attribute>
+        </xpath>
+    </template>
+
+    <!-- No "Section 1 / Section 2 / ..." breadcrumb line at the top -->
+    <template id="screening_fill_header" inherit_id="survey.survey_fill_header">
+        <xpath expr="//div[@t-att-data-pages='json.dumps(breadcrumb_pages)']" position="attributes">
+            <attribute name="t-if">not survey.has_conditional_questions and survey.questions_layout == 'page_per_section' and answer.state != 'done' and survey.survey_type != 'recruitment'</attribute>
+        </xpath>
+    </template>
+
+    <!-- Error messages on the form -->
+    <template id="screening_fill_form" inherit_id="survey.survey_fill_form">
+        <xpath expr="//div[hasclass('o_survey_error')]/p" position="attributes">
+            <attribute name="t-if">survey.survey_type != 'recruitment'</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_survey_error')]/p" position="after">
+            <p t-if="survey.survey_type == 'recruitment'">There was an error while checking your answers.</p>
+        </xpath>
+        <xpath expr="//div[@id='MasterTabErrorModal']//main/p" position="attributes">
+            <attribute name="t-if">survey.survey_type != 'recruitment'</attribute>
+        </xpath>
+        <xpath expr="//div[@id='MasterTabErrorModal']//main/p" position="after">
+            <p t-if="survey.survey_type == 'recruitment'">To answer this questionnaire, please close all other tabs on <strong class="text-danger"></strong>.</p>
+        </xpath>
+    </template>
+
+    <!-- End page: a simple thank-you, no score, no pass / fail, no retake -->
+    <template id="screening_fill_form_done" inherit_id="survey.survey_fill_form_done">
+        <xpath expr="//div[hasclass('o_survey_finished')]" position="attributes">
+            <attribute name="t-if">survey.survey_type != 'recruitment'</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_survey_finished')]" position="before">
+            <div t-if="survey.survey_type == 'recruitment'" class="o_survey_finished o_screening_finished mt32 mb32">
+                <h1 class="fs-2">Thank you!</h1>
+                <p t-if="is_html_empty(survey.description_done)">
+                    Your answers have been submitted. Our recruitment team will review them and get back to you.
+                </p>
+                <div t-field="survey.description_done" class="oe_no_empty"/>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Link expired / closed -->
+    <template id="screening_closed_expired" inherit_id="survey.survey_closed_expired">
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="t-if">not (survey and survey.survey_type == 'recruitment')</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('jumbotron')]" position="before">
+            <div t-if="survey and survey.survey_type == 'recruitment'" class="jumbotron mt32">
+                <h1>This link has expired</h1>
+                <p>This questionnaire is now closed. Thank you for your interest!</p>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Wrong / not allowed link -->
+    <template id="screening_access_error" inherit_id="survey.survey_access_error">
+        <xpath expr="//div[hasclass('jumbotron')]" position="attributes">
+            <attribute name="t-if">not (survey and survey.survey_type == 'recruitment')</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('jumbotron')]" position="before">
+            <div t-if="survey and survey.survey_type == 'recruitment'" class="jumbotron mt32">
+                <h1>This link cannot be opened</h1>
+                <p>Please use the exact link you received by email, in a private / incognito window,
+                    or contact the recruitment team.</p>
+                <a class="btn btn-secondary" href="/">Leave</a>
+            </div>
+        </xpath>
+    </template>
+
+    <!-- Questionnaire without questions -->
+    <template id="screening_void_content" inherit_id="survey.survey_void_content">
+        <xpath expr="//h1[span[@t-field='survey.title']]" position="attributes">
+            <attribute name="t-if">survey.survey_type != 'recruitment'</attribute>
+        </xpath>
+        <xpath expr="//h1[span[@t-field='survey.title']]" position="after">
+            <h1 t-if="survey.survey_type == 'recruitment'"><span t-field="survey.title"/> has no questions yet</h1>
+        </xpath>
+    </template>
+</odoo>

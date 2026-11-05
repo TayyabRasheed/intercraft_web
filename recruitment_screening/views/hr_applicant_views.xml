@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Form -->
+    <record id="hr_applicant_form_screening" model="ir.ui.view">
+        <field name="name">hr.applicant.form.screening</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment_survey.hr_applicant_view_form_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_send_survey']" position="after">
+                <button name="action_generate_screening_link" type="object" string="Get Screening Link"
+                        class="btn-primary"
+                        invisible="not active or not survey_id or screening_state in ('selected', 'not_selected')"/>
+                <button name="action_email_screening_link" type="object" string="Email Screening Link"
+                        invisible="not active or not survey_id or not email_from or screening_state in ('selected', 'not_selected')"/>
+                <button name="action_open_screening_review" type="object" string="Review Answers"
+                        class="btn-primary" invisible="screening_state != 'review'"/>
+                <button name="action_confirm_screening_review" type="object" string="Confirm Review"
+                        invisible="screening_state != 'review'"
+                        confirm="Confirm the review? The final result will be calculated and the applicant moved to the configured stage."/>
+                <button name="action_open_screening_review" type="object" string="See Review"
+                        invisible="not screening_review_ids or screening_state == 'review'"/>
+                <button name="action_export_screening_xlsx" type="object" string="Export to Excel"
+                        icon="fa-file-excel-o"
+                        invisible="screening_state not in ('review', 'selected', 'not_selected')"/>
+            </xpath>
+            <xpath expr="//field[@name='job_id']" position="after">
+                <field name="screening_review_ids" invisible="1"/>
+                <field name="screening_state" widget="badge" invisible="not survey_id"
+                       decoration-success="screening_state == 'selected'"
+                       decoration-danger="screening_state == 'not_selected'"
+                       decoration-info="screening_state == 'review'"
+                       decoration-warning="screening_state == 'pending'"/>
+                <field name="screening_score" string="Final Score (%)"
+                       invisible="screening_state not in ('selected', 'not_selected')"/>
+                <field name="screening_pass_mark" invisible="screening_state not in ('selected', 'not_selected', 'review')"/>
+                <label for="screening_points" string="Self-rating Marks"
+                       invisible="screening_state not in ('selected', 'not_selected', 'review')"/>
+                <div class="o_row" invisible="screening_state not in ('selected', 'not_selected', 'review')">
+                    <field name="screening_points" nolabel="1" class="oe_inline"/>
+                    <span>/</span>
+                    <field name="screening_max_points" nolabel="1" class="oe_inline"/>
+                    <span>(</span><field name="screening_rating_score" nolabel="1" class="oe_inline"/><span>%)</span>
+                </div>
+                <field name="screening_section_scores" readonly="1"
+                       invisible="not screening_section_scores or screening_state not in ('selected', 'not_selected', 'review')"/>
+                <field name="screening_review_score" invisible="not screening_review_ids"/>
+                <field name="screening_review_progress" invisible="not screening_review_ids"/>
+                <field name="screening_overclaim_count" invisible="not screening_review_ids"
+                       decoration-warning="screening_overclaim_count &gt; 0"/>
+                <field name="screening_url" widget="CopyClipboardChar"
+                       invisible="not screening_url or screening_state in ('selected', 'not_selected')"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- List -->
+    <record id="hr_applicant_list_screening" model="ir.ui.view">
+        <field name="name">hr.applicant.list.screening</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_tree_view_job"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='categ_ids']" position="after">
+                <field name="screening_state" widget="badge" optional="show"
+                       decoration-info="screening_state == 'review'"
+                       decoration-success="screening_state == 'selected'"
+                       decoration-danger="screening_state == 'not_selected'"
+                       decoration-warning="screening_state == 'pending'"/>
+                <field name="screening_score" optional="show"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Kanban card -->
+    <record id="hr_applicant_kanban_screening" model="ir.ui.view">
+        <field name="name">hr.applicant.kanban.screening</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_kanban_view_applicant"/>
+        <field name="arch" type="xml">
+            <xpath expr="//t[@t-name='kanban-box']//field[@name='categ_ids']" position="after">
+                <div invisible="screening_state in (False, 'not_sent')" class="d-flex align-items-center gap-1">
+                    <field name="screening_state" widget="badge"
+                           decoration-info="screening_state == 'review'"
+                           decoration-success="screening_state == 'selected'"
+                           decoration-danger="screening_state == 'not_selected'"
+                           decoration-warning="screening_state == 'pending'"/>
+                    <span invisible="screening_state not in ('selected', 'not_selected', 'review')" class="text-muted small">
+                        <field name="screening_score"/>%
+                    </span>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Search -->
+    <record id="hr_applicant_search_screening" model="ir.ui.view">
+        <field name="name">hr.applicant.search.screening</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.hr_applicant_view_search_bis"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <separator/>
+                <filter name="screening_selected" string="Screening: Selected"
+                        domain="[('screening_state', '=', 'selected')]"/>
+                <filter name="screening_not_selected" string="Screening: Not Selected"
+                        domain="[('screening_state', '=', 'not_selected')]"/>
+                <filter name="screening_review" string="Screening: Review Pending"
+                        domain="[('screening_state', '=', 'review')]"/>
+                <filter name="screening_pending" string="Screening: Waiting"
+                        domain="[('screening_state', '=', 'pending')]"/>
+                <filter name="group_screening" string="Screening Result"
+                        context="{'group_by': 'screening_state'}"/>
+            </xpath>
+        </field>
+    </record>
+
+
+    <!-- Applicants list > select rows > Actions > Export screening to Excel -->
+    <record id="action_export_screening_xlsx_server" model="ir.actions.server">
+        <field name="name">Export screening to Excel</field>
+        <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="state">code</field>
+        <field name="code">action = records.action_export_screening_xlsx()</field>
+    </record>
+
+    <!-- List / form: Actions > Get Screening Link (links for several applicants, no email) -->
+    <record id="action_generate_screening_link_multi" model="ir.actions.server">
+        <field name="name">Get Screening Link</field>
+        <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="groups_id" eval="[(4, ref('hr_recruitment.group_hr_recruitment_user'))]"/>
+        <field name="state">code</field>
+        <field name="code">action = records.action_generate_screening_bulk()</field>
+    </record>
+
+    <!-- List / form: Actions > Email Screening Link (several applicants in one go) -->
+    <record id="action_email_screening_link_multi" model="ir.actions.server">
+        <field name="name">Email Screening Link</field>
+        <field name="model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_model_id" ref="hr_recruitment.model_hr_applicant"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="groups_id" eval="[(4, ref('hr_recruitment.group_hr_recruitment_user'))]"/>
+        <field name="state">code</field>
+        <field name="code">action = records.action_email_screening_bulk()</field>
+    </record>
+
+</odoo>
