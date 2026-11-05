@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_job_form_screening" model="ir.ui.view">
+        <field name="name">hr.job.form.screening</field>
+        <field name="model">hr.job</field>
+        <field name="inherit_id" ref="hr_recruitment_survey.hr_job_survey_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[field[@name='survey_id']]" position="after">
+                <field groups="survey.group_survey_user" name="screening_pass_mark" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_deadline_days" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_auto_send" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_pass_stage_id" invisible="not survey_id"
+                       options="{'no_create': True}" placeholder="e.g. Initial Interview"/>
+                <field groups="survey.group_survey_user" name="screening_fail_stage_id" invisible="not survey_id"
+                       options="{'no_create': True}" placeholder="Keep current stage"/>
+                <field groups="survey.group_survey_user" name="screening_review_required" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_review_weight" invisible="not survey_id or not screening_review_required"/>
+                <field groups="survey.group_survey_user" name="screening_notify_recruiter" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_auto_refuse" invisible="not survey_id"/>
+                <field groups="survey.group_survey_user" name="screening_refuse_reason_id" invisible="not survey_id or not screening_auto_refuse"
+                       required="screening_auto_refuse" options="{'no_create': True}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

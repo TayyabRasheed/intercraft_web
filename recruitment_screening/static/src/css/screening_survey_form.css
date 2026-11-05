@@ -1,0 +1,163 @@
+/* Recruitment Screening - candidate form */
+
+.o_screening_hidden {
+    display: none !important;
+}
+
+/* ---------- dropdown ---------- */
+.o_screening_dropdown {
+    max-width: 32rem;
+}
+
+/* ---------- slider ---------- */
+.o_screening_slider {
+    max-width: 36rem;
+    padding: 0.25rem 0 0.5rem;
+}
+.o_screening_slider .form-range {
+    width: 100%;
+    cursor: pointer;
+}
+.o_screening_slider_ticks {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2px;
+    font-size: 0.9rem;
+    user-select: none;
+}
+.o_screening_slider_ticks span {
+    width: 1.8rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    color: #6c757d;
+}
+.o_screening_slider_ticks span.active {
+    font-weight: 700;
+    color: #fff;
+    background: var(--o-color-1, #714b67);
+}
+.o_screening_slider_value {
+    margin-top: 0.35rem;
+    font-weight: 600;
+}
+.o_screening_untouched .form-range::-webkit-slider-thumb {
+    opacity: 0.35;
+}
+.o_screening_untouched .form-range::-moz-range-thumb {
+    opacity: 0.35;
+}
+.o_screening_untouched .o_screening_slider_value {
+    font-weight: 400;
+    color: #6c757d;
+}
+
+/* ---------- foldable sections ---------- */
+.o_screening_section {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+.o_screening_section_header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: 100%;
+    padding: 0.9rem 1.1rem;
+    border: 0;
+    background: transparent;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.o_screening_section_title {
+    flex: 1 1 auto;
+}
+.o_screening_chevron {
+    transition: transform 0.15s ease;
+    width: 1rem;
+}
+.o_screening_section_open > .o_screening_section_header .o_screening_chevron {
+    transform: rotate(90deg);
+}
+.o_screening_section_status {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #6c757d;
+    white-space: nowrap;
+}
+.o_screening_section_check {
+    display: none;
+    color: #28a745;
+}
+.o_screening_section_done .o_screening_section_check {
+    display: inline-block;
+}
+.o_screening_section_body {
+    display: none;
+    padding: 0 1.1rem 1.1rem;
+}
+.o_screening_section_open > .o_screening_section_body {
+    display: block;
+}
+.o_screening_next_section {
+    margin-top: 0.5rem;
+}
+
+/* ---------- sub-sections (e.g. Linux, Docker inside Technical): always open ---------- */
+.o_screening_subsection {
+    border: 0;
+    border-top: 1px solid #e9ecef;
+    border-radius: 0;
+    margin: 0 0 0.5rem;
+    background: transparent;
+}
+.o_screening_subsection > .o_screening_section_header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 0 0.25rem;
+    cursor: default;
+}
+.o_screening_subsection > .o_screening_section_header h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--o-color-1, #714b67);
+}
+.o_screening_subsection > .o_screening_section_body {
+    display: block;
+    padding: 0.25rem 0 0;
+}
+.o_screening_mainsection > .o_screening_section_body > .o_screening_subsection:first-of-type {
+    border-top: 0;
+}
+
+/* Confirmation dialog before the final Submit */
+.o_screening_confirm_overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1090;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+.o_screening_confirm_box {
+    width: 100%;
+    max-width: 28rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--bs-body-bg, #fff);
+    color: var(--bs-body-color, #212529);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+.o_screening_confirm_actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="screening_review_view_list" model="ir.ui.view">
+        <field name="name">hr.applicant.screening.review.list</field>
+        <field name="model">hr.applicant.screening.review</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom" create="0" delete="0"
+                  decoration-warning="overclaim" decoration-muted="not score">
+                <header>
+                    <button name="action_export_screening_xlsx" type="object" string="Export to Excel"
+                            icon="fa-file-excel-o" display="always"/>
+                </header>
+                <field name="section" readonly="1" optional="show"/>
+                <field name="question" readonly="1"/>
+                <field name="answer" readonly="1" widget="text"/>
+                <field name="topic_answers" readonly="1" widget="text" optional="show"/>
+                <field name="marking_key" readonly="1" widget="text" optional="show"/>
+                <field name="self_rating" readonly="1"/>
+                <field name="score" widget="selection" required="0"/>
+                <field name="overclaim" readonly="1" widget="boolean"/>
+                <field name="comment" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="screening_review_view_form" model="ir.ui.view">
+        <field name="name">hr.applicant.screening.review.form</field>
+        <field name="model">hr.applicant.screening.review</field>
+        <field name="arch" type="xml">
+            <form create="0" delete="0">
+                <sheet>
+                    <group>
+                        <field name="applicant_id" readonly="1"/>
+                        <field name="section" readonly="1"/>
+                        <field name="question" readonly="1"/>
+                    </group>
+                    <group string="Candidate's answer">
+                        <field name="answer" nolabel="1" colspan="2" readonly="1"/>
+                    </group>
+                    <group string="Other answers in this topic">
+                        <field name="topic_answers" nolabel="1" colspan="2" readonly="1"/>
+                    </group>
+                    <group string="Marking key (not shown to the candidate)">
+                        <field name="marking_key" nolabel="1" colspan="2" readonly="1"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="self_rating" readonly="1"/>
+                            <field name="score" widget="radio"/>
+                        </group>
+                        <group>
+                            <field name="overclaim" readonly="1"/>
+                            <field name="comment"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Question form: reviewer settings (never shown to candidates) -->
+    <record id="survey_question_form_screening" model="ir.ui.view">
+        <field name="name">survey.question.form.screening</field>
+        <field name="model">survey.question</field>
+        <field name="inherit_id" ref="survey.survey_question_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Reviewer" name="screening_reviewer" invisible="is_page">
+                    <group>
+                        <field name="screening_review"/>
+                        <field name="screening_rating_question_id" invisible="not screening_review"
+                               options="{'no_create': True}"/>
+                    </group>
+                    <group string="Marking key (reviewer only, never shown to the candidate)" invisible="not screening_review">
+                        <field name="screening_marking_key" nolabel="1" colspan="2"
+                               placeholder="Expected points, e.g. du -sh /* | sort -h; check inodes (df -i); deleted-but-open files (lsof +L1)"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
